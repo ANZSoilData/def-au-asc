@@ -1,6 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,base,uri,preflabel,lower,sub
-C_H_CARBONATE_EFF,H,Highly calcareous,http://registry.it.csiro.au/def/soils/carbonate-effervescence/,http://registry.it.csiro.au/def/soils/carbonate-effervescence/highly-calcareous,'Dry'@en,highly calcareous,highly-calcareous
-C_H_CARBONATE_EFF,M,Moderately calcareous,http://registry.it.csiro.au/def/soils/carbonate-effervescence/,http://registry.it.csiro.au/def/soils/carbonate-effervescence/moderately-calcareous,'Moist'@en,moderately calcareous,moderately-calcareous
-C_H_CARBONATE_EFF,N,Non-calcareous,http://registry.it.csiro.au/def/soils/carbonate-effervescence/,http://registry.it.csiro.au/def/soils/carbonate-effervescence/non-calcareous,'Moist'@en,non-calcareous,non-calcareous
-C_H_CARBONATE_EFF,S,Slightly calcareous,http://registry.it.csiro.au/def/soils/carbonate-effervescence/,http://registry.it.csiro.au/def/soils/carbonate-effervescence/slightly-calcareous,'Dry'@en,slightly calcareous,slightly-calcareous
-C_H_CARBONATE_EFF,V,Very highly calcareous,http://registry.it.csiro.au/def/soils/carbonate-effervescence/,http://registry.it.csiro.au/def/soils/carbonate-effervescence/very-highly-calcareous,'Moist'@en,very highly calcareous,very-highly-calcareous

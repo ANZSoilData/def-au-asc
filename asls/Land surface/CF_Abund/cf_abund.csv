@@ -1,8 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_LOW_NO_VALUE,CODE_HIGH_NO_VALUE,CODE_DESC,uri,uri2,uri3,pref labe
-N_CF_ABUN,0,0,0,No coarse fragments,http://registry.it.csiro.au/def/soils/cf-abund/,no-coarse-fragments,http://registry.it.csiro.au/def/soils/cf-abund/no-coarse-fragments,'No Coarse Fragments'@en
-N_CF_ABUN,1,0,2,"very few, <2%",http://registry.it.csiro.au/def/soils/cf-abund/,very-few,http://registry.it.csiro.au/def/soils/cf-abund/very-few,'Very Few'@en
-N_CF_ABUN,2,2,10,"few, 2-10%",http://registry.it.csiro.au/def/soils/cf-abund/,few,http://registry.it.csiro.au/def/soils/cf-abund/few,'Few'@en
-N_CF_ABUN,3,10,20,"common, 10-20%",http://registry.it.csiro.au/def/soils/cf-abund/,common,http://registry.it.csiro.au/def/soils/cf-abund/common,'Common'@en
-N_CF_ABUN,4,20,50,"many, 20-50%",http://registry.it.csiro.au/def/soils/cf-abund/,many,http://registry.it.csiro.au/def/soils/cf-abund/many,'Many'@en
-N_CF_ABUN,5,50,90,"abundant, 50-90%",http://registry.it.csiro.au/def/soils/cf-abund/,abundant,http://registry.it.csiro.au/def/soils/cf-abund/abundant,'Abundant'@en
-N_CF_ABUN,6,90,100,"very abundant, >90%",http://registry.it.csiro.au/def/soils/cf-abund/,very-abundant,http://registry.it.csiro.au/def/soils/cf-abund/very-abundant,'Very Abundant'@en

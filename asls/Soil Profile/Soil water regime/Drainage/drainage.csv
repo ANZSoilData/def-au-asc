@@ -1,7 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,uri,uri2,uri3,uri4,label1,label2,label3
-C_O_DRAINAGE,1,Very poorly drained,http://registry.it.csiro.au/def/soils/drainage/,very poorly drained,very-poorly-drained,http://registry.it.csiro.au/def/soils/drainage/very-poorly-drained,',@en,'Very poorly drained'@en
-C_O_DRAINAGE,2,Poorly drained,http://registry.it.csiro.au/def/soils/drainage/,poorly drained,poorly-drained,http://registry.it.csiro.au/def/soils/drainage/poorly-drained,',@en,'Poorly drained'@en
-C_O_DRAINAGE,3,Imperfectly drained,http://registry.it.csiro.au/def/soils/drainage/,imperfectly drained,imperfectly-drained,http://registry.it.csiro.au/def/soils/drainage/imperfectly-drained,',@en,'Imperfectly drained'@en
-C_O_DRAINAGE,4,Moderately well drained,http://registry.it.csiro.au/def/soils/drainage/,moderately well drained,moderately-well-drained,http://registry.it.csiro.au/def/soils/drainage/moderately-well-drained,',@en,'Moderately well drained'@en
-C_O_DRAINAGE,5,Well drained,http://registry.it.csiro.au/def/soils/drainage/,well drained,well-drained,http://registry.it.csiro.au/def/soils/drainage/well-drained,',@en,'Well drained'@en
-C_O_DRAINAGE,6,Rapidly drained,http://registry.it.csiro.au/def/soils/drainage/,rapidly drained,rapidly-drained,http://registry.it.csiro.au/def/soils/drainage/rapidly-drained,',@en,'Rapidly drained'@en

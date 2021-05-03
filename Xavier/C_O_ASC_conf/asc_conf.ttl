@@ -1,0 +1,55 @@
+# baseURI: http://registry.it.csiro.au/def/soils/asc-confidence/
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix asc_conf: <http://registry.it.csiro.au/def/soils/asc-confidence/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf123: <http://rdf123.umbc.edu/ns/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+asc_conf:
+  rdf:type owl:Ontology ;
+  dc:source "natsoil CSIRO database - ASC confidence table"^^xsd:string ;
+  dct:created "2015-12-10"^^xsd:date ;
+  dct:creator <mailto:xavier.butcher@csiro.au> ;
+  rdfs:comment "A rating of confidence of the Australian Soil Classification."^^xsd:string ;
+  rdfs:label "ASC Confidence"^^xsd:string ;
+  rdfs:seeAlso "National Committee on Soil and Terrain (2009), 'Australian soil and land survey field handbook (3rd edn).' (CSIRO Publishing: Melbourne)"^^xsd:string ;
+  owl:imports dc: ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+asc_conf:available
+  rdf:type skos:Concept ;
+  skos:definition "All necessary analytical data are available." ;
+  skos:notation "1" ;
+  skos:prefLabel "Available"@en ;
+.
+asc_conf:fair
+  rdf:type skos:Concept ;
+  skos:definition "No analytical data are available but confidence is fair." ;
+  skos:notation "3" ;
+  skos:prefLabel "Fair"@en ;
+.
+asc_conf:none
+  rdf:type skos:Concept ;
+  skos:definition "No confidence level recorded." ;
+  skos:notation "-" ;
+  skos:prefLabel "None"@en ;
+.
+asc_conf:reasonable
+  rdf:type skos:Concept ;
+  skos:definition "Analytical data are incomplete but reasonable confidence." ;
+  skos:notation "2" ;
+  skos:prefLabel "Reasonable"@en ;
+.
+asc_conf:unknown
+  rdf:type skos:Concept ;
+  skos:definition "No analytical data and little or no knowledge of this soil." ;
+  skos:notation "4" ;
+  skos:prefLabel "Unknown"@en ;
+.

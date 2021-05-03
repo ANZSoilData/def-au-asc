@@ -1,8 +1,0 @@
-CODE_DOMAIN,CODE_DESC,CODE_LOW_NO_VALUE,CODE_HIGH_NO_VALUE,CODE_VALUE,uri,uri2,uri3,pref labe
-N_CF_SIZE,"Fine gravelly, 2-6mm",2,6,1,http://registry.it.csiro.au/def/soils/cf-size/,fine-gravelly,http://registry.it.csiro.au/def/soils/cf-size/fine-gravelly,'Fine Gravelly'@en
-N_CF_SIZE,"Medium gravelly, 6-20mm",6,20,2,http://registry.it.csiro.au/def/soils/cf-size/,medium-gravelly,http://registry.it.csiro.au/def/soils/cf-size/medium-gravelly,'Medium Gravelly'@en
-N_CF_SIZE,"Coarse gravelly, 20-60mm",20,60,3,http://registry.it.csiro.au/def/soils/cf-size/,coarse-gravelly,http://registry.it.csiro.au/def/soils/cf-size/coarse-gravelly,'Coarse Gravelly'@en
-N_CF_SIZE,"Cobbly, 60-200mm",60,200,4,http://registry.it.csiro.au/def/soils/cf-size/,cobbly,http://registry.it.csiro.au/def/soils/cf-size/cobbly,'Cobbly'@en
-N_CF_SIZE,"Stony, 200-600mm",200,600,5,http://registry.it.csiro.au/def/soils/cf-size/,stony,http://registry.it.csiro.au/def/soils/cf-size/stony,'Stony'@en
-N_CF_SIZE,"Bouldery, 600mm-2m",600,2000,6,http://registry.it.csiro.au/def/soils/cf-size/,bouldery,http://registry.it.csiro.au/def/soils/cf-size/bouldery,'Bouldery'@en
-N_CF_SIZE,"Large Boulders, >2m",2000,,7,http://registry.it.csiro.au/def/soils/cf-size/,large-boulders,http://registry.it.csiro.au/def/soils/cf-size/large-boulders,'Large Boulders'@en

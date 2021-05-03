@@ -1,6 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,uri,uri2,uri3,pref labe
-N_ROOT_ABUN,0,No roots,http://registry.it.csiro.au/def/soils/root-abundance/,no-roots,http://registry.it.csiro.au/def/soils/root-abundance/no-roots,No Roots'@en
-N_ROOT_ABUN,1,Few,http://registry.it.csiro.au/def/soils/root-abundance/,few,http://registry.it.csiro.au/def/soils/root-abundance/few,Few'@en
-N_ROOT_ABUN,2,Common,http://registry.it.csiro.au/def/soils/root-abundance/,common,http://registry.it.csiro.au/def/soils/root-abundance/common,Common'@en
-N_ROOT_ABUN,3,Many,http://registry.it.csiro.au/def/soils/root-abundance/,many,http://registry.it.csiro.au/def/soils/root-abundance/many,Many'@en
-N_ROOT_ABUN,4,Abundant,http://registry.it.csiro.au/def/soils/root-abundance/,abundant,http://registry.it.csiro.au/def/soils/root-abundance/abundant,Abundant'@en

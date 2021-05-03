@@ -1,6 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,CODE_LOW_NO_VALUE,CODE_HIGH_NO_VALUE,uri,preflabel
-N_CRACK_WIDTH,1,"Fine, <5mm",0,5,http://registry.it.csiro.au/def/soils/crack-width/fine/,"""Fine""@en"
-N_CRACK_WIDTH,2,"Medium, 5-10mm",5,10,http://registry.it.csiro.au/def/soils/crack-width/medium/,"""Medium""@en"
-N_CRACK_WIDTH,3,"Coarse, 10-20mm",10,20,http://registry.it.csiro.au/def/soils/crack-width/coarse/,"""Coarse""@en"
-N_CRACK_WIDTH,4,"Very coarse, 20-50mm",20,50,http://registry.it.csiro.au/def/soils/crack-width/very-coarse/,"""Very Coarse""@en"
-N_CRACK_WIDTH,5,"Extremely coarse, >50mm",50,100,http://registry.it.csiro.au/def/soils/crack-width/extremely-coarse/,"""Extremely Coarse""@en"

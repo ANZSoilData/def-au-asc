@@ -1,0 +1,6 @@
+CODE_DOMAIN,CODE_VALUE,CODE_DESC,uri,uri2,uri3,pref labe
+C_O_ASC_CONF,-,No confidence level recorded.,http://registry.it.csiro.au/def/soils/asc-confidence/,none,http://registry.it.csiro.au/def/soils/asc-confidence/none,'None'@en
+C_O_ASC_CONF,1,All necessary analytical data are available.,http://registry.it.csiro.au/def/soils/asc-confidence/,available,http://registry.it.csiro.au/def/soils/asc-confidence/available,'Available'@en
+C_O_ASC_CONF,2,Analytical data are incomplete but reasonable confidence.,http://registry.it.csiro.au/def/soils/asc-confidence/,reasonable,http://registry.it.csiro.au/def/soils/asc-confidence/reasonable,'Reasonable'@en
+C_O_ASC_CONF,3,No analytical data are available but confidence is fair.,http://registry.it.csiro.au/def/soils/asc-confidence/,fair,http://registry.it.csiro.au/def/soils/asc-confidence/fair,'Fair'@en
+C_O_ASC_CONF,4,No analytical data and little or no knowledge of this soil.,http://registry.it.csiro.au/def/soils/asc-confidence/,unknown,http://registry.it.csiro.au/def/soils/asc-confidence/unknown,'Unknown'@en

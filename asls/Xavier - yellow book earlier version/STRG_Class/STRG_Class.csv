@@ -1,9 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,uri,uri2,uri3,pref labe
-C_STRG_CLASS,0,Loose,http://registry.it.csiro.au/def/soils/strg-class/,loose,http://registry.it.csiro.au/def/soils/strg-class/loose,'Loose'@en
-C_STRG_CLASS,1,Very weak,http://registry.it.csiro.au/def/soils/strg-class/,very-weak,http://registry.it.csiro.au/def/soils/strg-class/very-weak,'Very Weak'@en
-C_STRG_CLASS,2,Weak,http://registry.it.csiro.au/def/soils/strg-class/,weak,http://registry.it.csiro.au/def/soils/strg-class/weak,'Weak'@en
-C_STRG_CLASS,3,Firm,http://registry.it.csiro.au/def/soils/strg-class/,firm,http://registry.it.csiro.au/def/soils/strg-class/firm,'Firm'@en
-C_STRG_CLASS,4,Very firm,http://registry.it.csiro.au/def/soils/strg-class/,very-firm,http://registry.it.csiro.au/def/soils/strg-class/very-firm,'Very Firm'@en
-C_STRG_CLASS,5,Strong,http://registry.it.csiro.au/def/soils/strg-class/,strong,http://registry.it.csiro.au/def/soils/strg-class/strong,'Strong'@en
-C_STRG_CLASS,6,Very strong,http://registry.it.csiro.au/def/soils/strg-class/,very-strong,http://registry.it.csiro.au/def/soils/strg-class/very-strong,'Very Strong'@en
-C_STRG_CLASS,7,Rigid,http://registry.it.csiro.au/def/soils/strg-class/,rigid,http://registry.it.csiro.au/def/soils/strg-class/rigid,'Rigid'@en

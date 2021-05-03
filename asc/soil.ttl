@@ -1,0 +1,279 @@
+# baseURI: http://www.anzsoil.org/schema/soil-classification
+# imports: http://purl.org/dc/elements/1.1/
+# prefix: soil
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix soil: <http://www.anzsoil.org/schema/soil-classification#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.anzsoil.org/schema/soil-classification>
+  rdf:type owl:Ontology ;
+  dct:contributor <mailto:linda.gregory@csiro.au> ;
+  dct:created "2017-02-01"^^xsd:date ;
+  dct:creator <http://orcid.org/0000-0002-3884-3420> ;
+  dct:creator <mailto:simon.cox@csiro.au> ;
+  dct:modified "2017-05-19"^^xsd:date ;
+  dct:source """The Australian Soil Classification, second edition (2016). 
+CSIRO Publishing, Melbourne, Australia""" ;
+  rdfs:comment """This ontology provides a 'schema' for soil classification. It defines classes for the classifiers used in a soil classification (orders, classes and families) and a structure for combining these in an individual soil classification.  
+
+The classification model is drawn from the Australian Soil Classification, but is believed to apply more generally. 
+
+An associated ontology contains the actual classifiers (concepts) from the Australian Soil Classification.  """ ;
+  rdfs:seeAlso <http://www.clw.csiro.au/aclep/asc_re_on_line_V2/soilhome.htm> ;
+  owl:imports dc: ;
+  skos:editorialNote "Work in progress" ;
+.
+soil:A1horizonTexture
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "A1 horizon texture" ;
+  skos:broader soil:SurfaceAndA1horizonGravel ;
+.
+soil:A1horizonThickness
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "A1 horizon thickness" ;
+  skos:broader soil:SurfaceAndA1horizonGravel ;
+.
+soil:BhorizonTexture
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "B horizon maximum texture" ;
+.
+soil:Class
+  rdf:type owl:Class ;
+  rdfs:comment """Currently soil:Class is range of
+soil:subOrder
+soil:greatGroup
+soil:subGroup""" ;
+  rdfs:subClassOf skos:Concept ;
+.
+soil:ClassLevel
+  rdf:type owl:Class ;
+  rdfs:label "Class level" ;
+  rdfs:subClassOf skos:Concept ;
+.
+soil:Classification
+  rdf:type owl:Class ;
+  rdfs:comment "An instance of a soil classification, applied to an actual profile (or sample)" ;
+  rdfs:comment "Check that these cardinalities are correct" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:order ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:fam-type1 ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:fam-type2 ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:fam-type3 ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:fam-type4 ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:fam-type5 ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:greatGroup ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:subGroup ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:subOrder ;
+    ] ;
+.
+soil:DefInContext
+  rdf:type owl:Class ;
+  rdfs:label "definition in context" ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          [
+            rdf:type owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty soil:hasFamilyCriteria ;
+          ]
+          [
+            rdf:type owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty soil:hasClassLevel ;
+          ]
+        ) ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom soil:ClassLevel ;
+      owl:onProperty soil:hasClassLevel ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom soil:FamilyCriteria ;
+      owl:onProperty soil:hasFamilyCriteria ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty soil:context ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty skos:definition ;
+    ] ;
+.
+soil:Family
+  rdf:type owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+.
+soil:FamilyCriteria
+  rdf:type owl:Class ;
+  rdfs:label "Family criteria" ;
+  rdfs:subClassOf skos:Concept ;
+.
+soil:Great-group
+  rdf:type soil:ClassLevel ;
+  rdfs:label "Great-group" ;
+.
+soil:Order
+  rdf:type owl:Class ;
+  rdfs:comment """by having a choice of collection and concept we might be able to use 
+	some more skos predicates for the rules
+	""" ;
+  rdfs:comment "note that this concept is an alternative to the soil:Orders collection" ;
+  rdfs:subClassOf skos:Concept ;
+.
+soil:OrganicsNature
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "Nature of uppermost organic materials" ;
+.
+soil:OrganicsThickness
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "Cumulative thickness of organic materials" ;
+.
+soil:SoilDepth
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "Soil depth" ;
+.
+soil:Subgroup
+  rdf:type soil:ClassLevel ;
+  rdfs:label "Subgroup" ;
+.
+soil:Suborder
+  rdf:type soil:ClassLevel ;
+  rdfs:label "Suborder" ;
+.
+soil:SurfaceAndA1horizonGravel
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "Gravel of surface and A1 horizon" ;
+  skos:narrower soil:A1horizonTexture ;
+  skos:narrower soil:SurfaceSoilGravel ;
+.
+soil:SurfaceSoilGravel
+  rdf:type soil:FamilyCriteria ;
+  rdfs:label "Gravel of surface soil" ;
+  skos:broader soil:SurfaceAndA1horizonGravel ;
+.
+soil:Unknown
+  rdf:type soil:ClassLevel ;
+  rdfs:label "Unknown" ;
+.
+soil:context
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:DefInContext ;
+  rdfs:label "context" ;
+  rdfs:range soil:Order ;
+.
+soil:fam-type1
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Family ;
+.
+soil:fam-type2
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Family ;
+.
+soil:fam-type3
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Family ;
+.
+soil:fam-type4
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Family ;
+.
+soil:fam-type5
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Family ;
+.
+soil:greatGroup
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Class ;
+.
+soil:hasClassLevel
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "level for this class in context" ;
+  rdfs:range soil:ClassLevel ;
+.
+soil:hasDefInContext
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          soil:Class
+          soil:Family
+        ) ;
+    ] ;
+  rdfs:label "has definition in context" ;
+  rdfs:range soil:DefInContext ;
+.
+soil:hasFamilyCriteria
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:DefInContext ;
+  rdfs:label "has family criteria" ;
+  rdfs:range soil:FamilyCriteria ;
+.
+soil:order
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Order ;
+.
+soil:subGroup
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Class ;
+.
+soil:subOrder
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain soil:Classification ;
+  rdfs:range soil:Class ;
+.

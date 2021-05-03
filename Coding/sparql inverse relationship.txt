@@ -1,4 +1,0 @@
-CONSTRUCT { ?o skos:related ?s }
-WHERE {
-    ?s skos:related ?o .
-}

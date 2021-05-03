@@ -1,0 +1,22 @@
+@prefix asc: <http://registry.it.csiro.au/sandbox/soil/classifier/asc/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+
+<asc>
+  rdf:type reg:Register ;
+  dc:source "Isbell, R.F. (1996;2002;2016) The Australian Soil Classification (2nd edn). CSIRO Publishing, Melbourne"^^xsd:string ;
+  dct:created "2016-06-23"^^xsd:date ;
+  dct:creator <mailto:asris@csiro.au> ;
+  dct:description "The Australian Soil Classification provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key."^^xsd:string ;
+  dct:license <http://creativecommons.org/licences/by/4.0> ;
+  dct:publisher <http://www.publish.csiro.au/> ;
+  dct:rights "copyright CSIRO 2009, 2016. All rights reserved." ;
+  rdfs:label "Australian Soil Classification (ASC)"^^xsd:string ;
+  rdfs:seeAlso "http://www.publish.csiro.au/pid/7428.htm"^^xsd:string ;
+.

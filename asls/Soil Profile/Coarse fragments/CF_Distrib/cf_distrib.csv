@@ -1,5 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,uri,uri2,uri3,pref labe
-C_CF_DISTRIBUTION,D,Dispersed,http://registry.it.csiro.au/def/soils/cf-distribution/,dispersed,http://registry.it.csiro.au/def/soils/cf-distribution/dispersed,'Dispersed'@en
-C_CF_DISTRIBUTION,R,Reoriented,http://registry.it.csiro.au/def/soils/cf-distribution/,reoriented,http://registry.it.csiro.au/def/soils/cf-distribution/reoriented,'Reoriented'@en
-C_CF_DISTRIBUTION,S,Stratified,http://registry.it.csiro.au/def/soils/cf-distribution/,stratified,http://registry.it.csiro.au/def/soils/cf-distribution/stratified,'Stratified'@en
-C_CF_DISTRIBUTION,U,Undisturbed,http://registry.it.csiro.au/def/soils/cf-distribution/,undisturbed,http://registry.it.csiro.au/def/soils/cf-distribution/undisturbed,'Undisturbed'@en

@@ -1,8 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,CODE_LOW_NO_VALUE,CODE_HIGH_NO_VALUE,uri,uri2,uri3,pref labe
-N_PORE_ABUN,0,None,0,0,http://registry.it.csiro.au/def/soils/pore-abundance/,none,http://registry.it.csiro.au/def/soils/pore-abundance/none,'None'@en
-N_PORE_ABUN,1,"Few, <1 per 100mm2",0,1,http://registry.it.csiro.au/def/soils/pore-abundance/,few-mm,http://registry.it.csiro.au/def/soils/pore-abundance/few-mm,'Few per 100mm2'@en
-N_PORE_ABUN,2,"Common, 1-5 per 100mm2",1,5,http://registry.it.csiro.au/def/soils/pore-abundance/,common-mm,http://registry.it.csiro.au/def/soils/pore-abundance/common-mm,'Common per 100mm2'@en
-N_PORE_ABUN,3,"Many, >5 per 100mm2",5,NULL,http://registry.it.csiro.au/def/soils/pore-abundance/,many-mm,http://registry.it.csiro.au/def/soils/pore-abundance/many-mm,'Many per 100mm2'@en
-N_PORE_ABUN,4,"Few, <1 per 0.01m2",0,1,http://registry.it.csiro.au/def/soils/pore-abundance/,few-m,http://registry.it.csiro.au/def/soils/pore-abundance/few-m,'Few per 0.01m2'@en
-N_PORE_ABUN,5,"Common, 1-5 per 0.01m2",1,5,http://registry.it.csiro.au/def/soils/pore-abundance/,common-m,http://registry.it.csiro.au/def/soils/pore-abundance/common-m,'Common per 0.01m2'@en
-N_PORE_ABUN,6,"Many, >5 per 0.01m2",5,NULL,http://registry.it.csiro.au/def/soils/pore-abundance/,many-mm,http://registry.it.csiro.au/def/soils/pore-abundance/many-mm,'Many per 0.01m2'@en

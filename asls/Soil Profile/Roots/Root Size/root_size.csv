@@ -1,5 +1,0 @@
-CODE_DOMAIN,CODE_DESC,CODE_LOW_NO_VALUE,CODE_HIGH_NO_VALUE,CODE_VALUE,CODE_DESCerino,uri,uri2,uri3,pref labe
-N_ROOT_SIZE,"Very Fine, <1mm",0,1,1,Very Fine,http://registry.it.csiro.au/def/soils/root-size/,very-fine,http://registry.it.csiro.au/def/soils/root-size/very-fine,'Very Fine'@en
-N_ROOT_SIZE,"Fine, 1-2mm",1,2,2,Fine,http://registry.it.csiro.au/def/soils/root-size/,fine,http://registry.it.csiro.au/def/soils/root-size/fine,'Fine'@en
-N_ROOT_SIZE,"Medium, 2-5mm",2,5,3,Medium,http://registry.it.csiro.au/def/soils/root-size/,medium,http://registry.it.csiro.au/def/soils/root-size/medium,'Medium'@en
-N_ROOT_SIZE,"Coarse, >5mm",5,NULL,4,Coarse,http://registry.it.csiro.au/def/soils/root-size/,coarse,http://registry.it.csiro.au/def/soils/root-size/coarse,'Coarse'@en

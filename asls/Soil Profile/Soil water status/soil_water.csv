@@ -1,5 +1,0 @@
-Domain,Notation,Definition,URI,Label
-C_H_SOIL_WATER_STAT,D,Dry,http://registry.it.csiro.au/def/soils/soil-water-stat/dry/,"""Dry""@en"
-C_H_SOIL_WATER_STAT,M,Moist,http://registry.it.csiro.au/def/soils/soil-water-stat/moist/,"""Moist""@en"
-C_H_SOIL_WATER_STAT,T,Moderately moist,http://registry.it.csiro.au/def/soils/soil-water-stat/moderately-moist/,"""Moderately moist""@en"
-C_H_SOIL_WATER_STAT,W,Wet,http://registry.it.csiro.au/def/soils/soil-water-stat/wet/,"""Wet""@en"

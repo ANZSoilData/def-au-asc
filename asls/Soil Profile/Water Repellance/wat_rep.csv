@@ -1,4 +1,0 @@
-CODE_DOMAIN,CODE_VALUE,CODE_DESC,base,uri,preflabel
-C_H_WATER_REPELLENCE,N,Non-repellent,http://registry.it.csiro.au/def/soils/water-repellence/,http://registry.it.csiro.au/def/soils/moisture-status/non-repellent,'Non-Repellent'@en
-C_H_WATER_REPELLENCE,R,Water repellent,http://registry.it.csiro.au/def/soils/water-repellence/,http://registry.it.csiro.au/def/soils/moisture-status/water-repellent,'Water Repellent'@en
-C_H_WATER_REPELLENCE,S,Strongly water repellent,http://registry.it.csiro.au/def/soils/water-repellence/,http://registry.it.csiro.au/def/soils/moisture-status/strongly-water-repellent,'Strongly Water Repellent'@en

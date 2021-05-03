@@ -1,3 +1,0 @@
-C_MOISTURE_STAT,Value,Description,base,uri,preflabel
-C_MOISTURE_STAT,D,Dry,http://registry.it.csiro.au/def/soils/moisture-status/,http://registry.it.csiro.au/def/soils/moisture-status/dry,'Dry'@en
-C_MOISTURE_STAT,M,Moist,http://registry.it.csiro.au/def/soils/moisture-status/,http://registry.it.csiro.au/def/soils/moisture-status/moist,'Moist'@en
