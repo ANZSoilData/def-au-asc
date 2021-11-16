@@ -1,150 +1,628 @@
-# baseURI: http://registry.it.csiro.au/sandbox/soil/classifier/asc/
+# baseURI: http://anzsoil.org/def/au/asc/
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://www.w3.org/2004/02/skos/core
 # prefix: asc
 
-@prefix asc: <http://registry.it.csiro.au/sandbox/soil/classifier/asc/> .
+@prefix asc: <http://anzsoil.org/def/au/asc/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdf123: <http://rdf123.umbc.edu/ns/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dc:
-  dct:description "This version has been modified for use in TopBraid: it defines the dc namespace prefix and imports SKOS and DCTerms."^^xsd:string ;
-  rdfs:label "Dublin Core Metadata Element Set, Version 1.1" ;
-.
 asc:
-  rdf:type owl:Ontology ;
-  dc:source "Isbell, R.F. (1996;2002;2016) The Australian Soil Classification (2nd edn). CSIRO Publishing, Melbourne"^^xsd:string ;
-  dct:created "2016-06-23"^^xsd:date ;
-  dct:creator <mailto:asris@csiro.au> ;
-  dct:description "The Australian Soil Classification provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key."^^xsd:string ;
-  dct:license <http://creativecommons.org/licences/by/4.0> ;
-  dct:publisher <http://www.publish.csiro.au/> ;
-  dct:rights "copyright CSIRO 2009, 2016. All rights reserved." ;
-  rdfs:label "Australian Soil Classification (ASC)"^^xsd:string ;
-  rdfs:seeAlso "http://www.publish.csiro.au/pid/7428.htm"^^xsd:string ;
+  a owl:Ontology ;
+  dcterms:contributor <https://orcid.org/0000-0002-3884-3420> ;
+  dcterms:created "2016-06-23"^^xsd:date ;
+  dcterms:creator <mailto:asris@csiro.au> ;
+  dcterms:description "The Australian Soil Classification provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key." ;
+  dcterms:license <http://creativecommons.org/licences/by/4.0> ;
+  dcterms:modified "2021-11-16" ;
+  dcterms:publisher <http://www.publish.csiro.au/> ;
+  dcterms:rights "copyright CSIRO 2009, 2016, 2021. All rights reserved." ;
+  dcterms:source "Isbell, R.F. (1996;2002;2016;2021) The Australian Soil Classification (3rd edn). CSIRO Publishing, Melbourne" ;
+  dcterms:title "The Australian Soil Classification (ASC)" ;
+  rdfs:seeAlso "https://www.publish.csiro.au/book/8016" ;
   owl:imports dc: ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
 .
-asc:anthroposols
-  rdf:type skos:Concept ;
-  dct:description "Soil resulting from human activity"^^xsd:string ;
-  rdfs:label "Anthroposols" ;
-  skos:definition "Soil resulting from human activity"^^xsd:string ;
-  skos:notation "AN" ;
-  skos:prefLabel "Anthroposols"@en ;
+asc:AA
+  a asc:ColourClass ;
+  skos:notation "AA" ;
+  skos:prefLabel "Red" ;
 .
-asc:calcarosols
-  rdf:type skos:Concept ;
-  dct:description "Soil with calcium carbonate"^^xsd:string ;
-  rdfs:label "Calcarosols"^^xsd:string ;
-  skos:definition "Soil with calcium carbonate"^^xsd:string ;
-  skos:notation "CA"^^xsd:string ;
+asc:AB
+  a asc:ColourClass ;
+  skos:notation "AB" ;
+  skos:prefLabel "Brown" ;
+.
+asc:AC
+  a asc:ColourClass ;
+  skos:notation "AC" ;
+  skos:prefLabel "Yellow" ;
+.
+asc:AD
+  a asc:ColourClass ;
+  skos:notation "AD" ;
+  skos:prefLabel "Grey" ;
+.
+asc:AE
+  a asc:ColourClass ;
+  skos:notation "AE" ;
+  skos:prefLabel "Black" ;
+.
+asc:AI
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the major part of the solum is strongly acid." ;
+  skos:notation "AI" ;
+  skos:prefLabel "Acidic  " ;
+.
+asc:AK
+  a asc:Class ;
+  skos:definition "[TE] Soils which have andic properties and has formed in basaltic tephric materials that may be visibly stratified." ;
+  skos:notation "AK" ;
+  skos:prefLabel "Andic " ;
+.
+asc:AN
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description """These soils result from human activities which have caused a profound modification, mixing, truncation or burial of the original soil horizons, or the creation of new soil parent materials. Note that the concept of soil used in this classification of Australian soils (see Background) also applies to the Anthroposols, and hence sealed and semi-sealed surfaces such as streets, roads etc. are regarded as 'non-soil'. Also, in depositional situations, the anthropic material must be 0.3 m or more thick where it overlies buried soils. A soil with anthropic materials less than 0.3 m thick should be classified as an anthropic phase of the underlying soil.
+
+To qualify as soil an Anthroposol needs to possess some pedogenic features, as noted below. Key criteria in the identification of an Anthroposol are the presence of artefacts in the profile or knowledge that the soils or their parent materials have been made or altered by human action.
+
+Anthroposols differ from other soils in that we normally know their origin with a degree of certainty, and hence we can invoke a knowledge of process rather than defined pedogenic attributes to initially classify the soil. We can then subdivide at the higher levels on the basis of type of process and nature of the product which forms the parent material of the new soil. At lower levels in the classification, conventional soil properties could be used when available, although obviously these will be limited in very young soils.""" ;
+  rdfs:comment """It is difficult to quantify ‘profound modification, mixing and truncation’ but this would normally exclude the usual agricultural operations (including land planning) which may change a soil from say a Chromosol to a Dermosol by mixing or removal of the upper horizons. Similarly, soils that are artificially drained or flooded are not Anthroposols but may classify as different soil orders following a permanent change in water status (see also comment in Hydrosols).
+
+There will be instances where the question is how much truncation results in ‘profound modification’ or merely a truncated phase. It is difficult to give guidelines that will cover all circumstances, and inevitably judgement is required. Similarly, there will be instances where land reclamation and restoration in the past have been so successful that little evidence of a prior disturbance remains, and soil development gives no clue to past history. A good example of this is Podosol development on restored and revegetated coastal dunes following sand mining.""" ;
+  skos:definition "Soils resulting from human activities which have led to a profound modification, truncation or burial of the original soil horizons, or the creation of new soil parent materials by a variety of mechanical means. Where burial of a pre-existing soil is involved, the anthropic materials must be 0.3 m or more thick. Pedogenic features may be the result of in situ processes (usually the minimal development of an A1 horizon, sometimes the stronger development of typical soil horizons) or the result of pedogenic processes prior to modification or placement (ie. the presence of identifiable pre-existing soil material)." ;
+  skos:notation "AN" ;
+  skos:prefLabel "Anthroposols" ;
+.
+asc:AO
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the profile is not or only slightly gravelly (<20% >2mm) throughout, the soil material is either loose or only weakly coherent both moist and dry, may have aeolian cross bedding, and the texture is dominantly sandy (i.e. field textures of S-LS-CS) in >80% of the profile and no layer with a clay content of >15% (i.e. field texture of SL+)." ;
+  skos:notation "AO" ;
+  skos:prefLabel "Arenic " ;
+.
+asc:AP
+  a asc:Class ;
+  skos:definition "[TE] Soils with an argic horizon within the solum." ;
+  skos:notation "AP" ;
+  skos:prefLabel "Argic " ;
+.
+asc:AR
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the major part of the solum is not strongly acid and no part of the solum is calcareous." ;
+  skos:notation "AR" ;
+  skos:prefLabel "Basic  " ;
+.
+asc:AS
+  a asc:Class ;
+  skos:definition "[TE] Soils with a bauxitic horizon." ;
+  skos:notation "AS" ;
+  skos:prefLabel "Bauxitic  " ;
+.
+asc:AT
+  a asc:Class ;
+  skos:definition "[TE] Soils with a conspicuously bleached A2 horizon." ;
+  skos:notation "AT" ;
+  skos:prefLabel "Bleached " ;
+.
+asc:AW
+  a asc:Class ;
+  skos:definition "[TE] Soils with a conspicuously bleached A2 horizon, and are underlain within 0.5 m of the surface by a calcrete pan ; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite." ;
+  skos:notation "AW" ;
+  skos:prefLabel "Bleached-Leptic" ;
+.
+asc:AY
+  a asc:Class ;
+  skos:definition "[TE] Soils with a conspicuously bleached A2 horizon and a manganic horizon within the solum." ;
+  skos:notation "AY" ;
+  skos:prefLabel "Bleached-Manganic" ;
+.
+asc:BC
+  a asc:Class ;
+  skos:definition "[TE] Other soils in which at least some part of the solum is calcareous." ;
+  skos:notation "BC" ;
+  skos:prefLabel "Calcareous   " ;
+.
+asc:BE
+  a asc:Class ;
+  skos:definition "[TE] Soils with a peaty, humose, melacic or melanic horizon. A conspicuously bleached A2 horizon is not present." ;
+  skos:notation "BE" ;
+  skos:prefLabel "Chernic" ;
+.
+asc:BF
+  a asc:Class ;
+  skos:definition "[TE] Soils with a peaty, humose, melacic or melanic horizon, and are underlain within 0.5 m of the surface by a calcrete pan; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite. An unbleached A2 horizon may be present between the dark surface horizons and the substrate material." ;
+  skos:notation "BF" ;
+  skos:prefLabel "Chernic-Leptic" ;
+.
+asc:BJ
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie a red-brown hardpan." ;
+  skos:notation "BJ" ;
+  skos:prefLabel "Duric " ;
+.
+asc:BU
+  a asc:Class ;
+  skos:definition "[TE] Soils with a ferric horizon." ;
+  skos:notation "BU" ;
+  skos:prefLabel "Ferric " ;
+.
+asc:CA
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "The soils in this Order are usually calcareous throughout the profile, often highly so. They constitute a widespread and important group of soils in southern Australia." ;
+  rdfs:comment """A difficulty may arise in separating those Calcarosols that are not calcareous throughout from calcareous Kandosols and from Tenosols containing pedogenic carbonate. However, in the latter two soils it is usual for the carbonate to occur in the lower part of the B horizon, and not immediately below the A horizon. Even so, transitional cases will arise where it becomes a matter of judgement as to which order the particular soil is best placed. Similar transitions might occur between shallow Calcarosols and Arenic Rudosols overlying a layer of calcrete or limestone. Again, Calcareous Arenic Rudosols will occur where recent aeolian calcareous material has been deposited.
+
+In landscapes dominated by wind-blown calcareous material it may be difficult to determine if the carbonates are of pedogenic origin. Deep calcareous sands, which commonly occur in this situation, are now included in the Arenosols order.
+
+Soils with minimal soil development and dominated by coarse fragments of shells or other aquatic animals are included in Shelly Rudosols.
+
+In dune landscapes, where these soils frequently occur, it is common to find evidence of post-European settlement deflation and layering of soil profiles caused by wind erosion and consequent deposition. Unless the surface depositional material is 0.3 m or more thick, it is ignored in the classification and treated as a phase. (see 'What do we classify?').""" ;
+  skos:definition """Soils that:
+
+1. Are either calcareous throughout the solum - or calcareous at least directly below the A1 or Ap horizon, or within a depth of 0.2 m (whichever is shallower). Carbonate accumulations must be judged to be pedogenic1, ie. are a result of soil forming processes in situ (either current or relict). Soils dominated by non-pedogenic calcareous materials such as fragments of limestone or shells are excluded. See also calcrete, and
+2. Do not have deep sandy profiles that have a field texture of sand, loamy sand or clayey sand in 80% or more of the upper 1.0 m.""" ;
+  skos:notation "CA" ;
+  skos:prefLabel "Calcarosols" ;
   skos:prefLabel "Calcarosols"@en ;
 .
-asc:chromosols
-  rdf:type skos:Concept ;
-  dct:description "Soil with an abrupt increase in clay"^^xsd:string ;
-  rdfs:label "Chromosols"^^xsd:string ;
-  skos:definition "Soil with an abrupt increase in clay"^^xsd:string ;
+asc:CH
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "Soils with strong texture contrast between A horizons and B horizons. The latter are not strongly acid and are not sodic. The soils of this order are among the most widespread soils used for agriculture in Australia, particularly those with red subsoils." ;
+  rdfs:comment "In the case of those soils with strongly subplastic B horizons, care needs to be taken to ensure if they qualify for the clear or abrupt textural B horizon. As far as is presently known, such soils appear to be largely confined to the Riverine Plain of south eastern Australia." ;
+  skos:definition "Soils other than Hydrosols with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is not sodic and not strongly acid. Soils with strongly subplastic upper B2t horizons are also included even if they are sodic." ;
   skos:notation "CH" ;
-  skos:prefLabel "Chromosols"@en ;
+  skos:prefLabel "Chromosols" ;
 .
-asc:dermosols
-  rdf:type skos:Concept ;
-  dct:description "Structured soil"^^xsd:string ;
-  rdfs:label "Dermosols"^^xsd:string ;
-  skos:definition "Structured soil"^^xsd:string ;
-  skos:notation "DE"^^xsd:string ;
+asc:CK
+  a asc:Class ;
+  skos:definition "[TE] Soils with a humose horizon." ;
+  skos:notation "CK" ;
+  skos:prefLabel "Humose  " ;
+.
+asc:CQ
+  a asc:Class ;
+  skos:definition "[TE] Other soils in which the calcareous horizon contains less than 20% of hard calcrete fragments and/or carbonate nodules or concretions." ;
+  skos:notation "CQ" ;
+  skos:prefLabel "Hypercalcic    " ;
+.
+asc:CY
+  a asc:Class ;
+  skos:definition "[TE] Soils which are underlain within 0.5 m of the surface by a calcrete pan; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite." ;
+  skos:notation "CY" ;
+  skos:prefLabel "Leptic " ;
+.
+asc:CZ
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie hard rock." ;
+  skos:notation "CZ" ;
+  skos:prefLabel "Lithic " ;
+.
+asc:Class
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+.
+asc:ColourClass
+  a owl:Class ;
+  rdfs:label "Colour Class" ;
+  rdfs:subClassOf skos:Concept ;
+.
+asc:DA
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the calcareous horizon contains more than 50% of hard calcrete fragments and/or carbonate nodules or concretions." ;
+  skos:notation "DA" ;
+  skos:prefLabel "Lithocalcic " ;
+.
+asc:DC
+  a asc:Class ;
+  skos:definition "[TE] Soils with a manganic horizon with the solum." ;
+  skos:notation "DC" ;
+  skos:prefLabel "Manganic   " ;
+.
+asc:DD
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie marl." ;
+  skos:notation "DD" ;
+  skos:prefLabel "Marly " ;
+.
+asc:DE
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "Soils with structured B2 horizons and lacking a strong texture-contrast between the A and B horizons. Although there is some diversity within the order, it brings together a range of soils with some important properties in common." ;
+  rdfs:comment "Some clayey soils in the arid zone which are relatively high in salt tend to have strong, fine blocky structure. It may be difficult to decide if they are Vertosols or Dermosols because of an apparent lack of cracking and slickensides or lenticular peds. The use of shrinkage measurements such as those discussed under vertic properties will help to resolve this situation." ;
+  skos:definition """Soils other than Vertosols, Hydrosols, Calcarosols and Ferrosols which:
+
+1. Have B2 horizons that have grade of pedality greater than weak1 throughout the major part of the horizon, and
+2. Do not have clear or abrupt textural B horizon.""" ;
+  skos:notation "DE" ;
+  skos:prefLabel "Dermosols" ;
   skos:prefLabel "Dermosols"@en ;
 .
-asc:ferrosols
-  rdf:type skos:Concept ;
-  dct:description "Iron rich soil"^^xsd:string ;
-  rdfs:label "Ferrosols"^^xsd:string ;
-  skos:definition "Iron rich soil"^^xsd:string ;
-  skos:notation "FE"^^xsd:string ;
+asc:DG
+  a asc:Class ;
+  skos:definition "[TE] Soils with a melacic horizon." ;
+  skos:notation "DG" ;
+  skos:prefLabel "Melacic  " ;
+.
+asc:DK
+  a asc:Class ;
+  skos:definition "[TE] Soils with a melanic horizon." ;
+  skos:notation "DK" ;
+  skos:prefLabel "Melanic   " ;
+.
+asc:DR
+  a asc:Class ;
+  skos:definition "[TE] Soils with all the requirements of a humose horizon except the thickness." ;
+  skos:notation "DR" ;
+  skos:prefLabel "Subhumose    " ;
+.
+asc:DU
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie partially weathered or decomposed rock or saprolite." ;
+  skos:notation "DU" ;
+  skos:prefLabel "Paralithic" ;
+.
+asc:DW
+  a asc:Class ;
+  skos:definition "[TE] Soils with a peaty horizon." ;
+  skos:notation "DW" ;
+  skos:prefLabel "Peaty " ;
+.
+asc:DZ
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie a calcrete pan." ;
+  skos:notation "DZ" ;
+  skos:prefLabel "Petrocalcic" ;
+.
+asc:EA
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie ferricrete, a petroferric horizon or a petroreticulate horizon." ;
+  skos:notation "EA" ;
+  skos:prefLabel "Petroferric" ;
+.
+asc:EC
+  a asc:Class ;
+  skos:definition "[TE] Soils with a thin ironpan." ;
+  skos:notation "EC" ;
+  skos:prefLabel "Placic " ;
+.
+asc:EF
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie a reticulate horizon." ;
+  skos:notation "EF" ;
+  skos:prefLabel "Reticulate  " ;
+.
+asc:EM
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie a siliceous pan." ;
+  skos:notation "EM" ;
+  skos:prefLabel "Silpanic " ;
+.
+asc:FB
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the calcareous horizon contains 20-50% of hard calcrete fragments and/or carbonate nodules or concretions." ;
+  skos:notation "FB" ;
+  skos:prefLabel "Supracalcic   " ;
+.
+asc:FC
+  a asc:Class ;
+  skos:definition "[TE] Soils with a melanic horizon and at least some part of the B, BC or C/B horizon (if present) is calcareous." ;
+  skos:notation "FC" ;
+  skos:prefLabel "Melanic-Calcareous" ;
+.
+asc:FE
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "Soils with B2 horizons which are high in free iron oxide and lacking a strong texture-contrast between the A and B horizons." ;
+  rdfs:comment "These soils are almost entirely formed on either mafic or ultramafic igneous rocks, their metamorphic equivalents, or alluvium derived therefrom. Although these soils do not occupy large areas in Australia, they are widely recognised and often intensively used because of their favourable physical properties. The most common forms have B2 horizons with a strong grade of pedality; such horizons typically have polyhedral compound peds up to 10-15 mm, usually with smooth and often shiny faces, which break down readily to primary peds about 5 mm or less in size. However forms also occur with a very fine granular structure which may appear massive in place. Horizons are usually high in clay and subplastic." ;
+  skos:definition """Soils other than Vertosols, Hydrosols, and Calcarosols that:
+
+1. Have B2 horizons in which the major part has a free iron oxide content greater than 5% Fe in the fine earth fraction (<2 mm), and
+2. Do not have a clear or abrupt textural B horizon or a B2 horizon in which at least 0.3 m has vertic properties.""" ;
+  skos:notation "FE" ;
+  skos:prefLabel "Ferrosols" ;
   skos:prefLabel "Ferrosols"@en ;
 .
-asc:hydrosols
-  rdf:type skos:Concept ;
-  dct:description "Seasonally or permanently wet soil"^^xsd:string ;
-  rdfs:label "Hydrosols"^^xsd:string ;
-  skos:definition "Seasonally or permanently wet soil"^^xsd:string ;
-  skos:notation "HY"^^xsd:string ;
-  skos:prefLabel "Hydrosols"@en ;
+asc:FF
+  a asc:Class ;
+  skos:definition "[TE] Soils with all the requirements of a melacic horizon except the thickness." ;
+  skos:notation "FF" ;
+  skos:prefLabel "Submelacic     " ;
 .
-asc:kandosols
-  rdf:type skos:Concept ;
-  dct:description "Structureless soil"^^xsd:string ;
-  rdfs:label "Kandosols"^^xsd:string ;
-  skos:definition "Structureless soil"^^xsd:string ;
-  skos:notation "KA"^^xsd:string ;
+asc:FG
+  a asc:Class ;
+  skos:definition "[TE] Soils with all the requirements of a melanic horizon except the thickness." ;
+  skos:notation "FG" ;
+  skos:prefLabel "Submelanic     " ;
+.
+asc:FK
+  a asc:Class ;
+  skos:definition "[TE] Soils which have a ferric horizon and overlies a red-brown hardpan." ;
+  skos:notation "FK" ;
+  skos:prefLabel "Ferric-Duric" ;
+.
+asc:FU
+  a asc:Class ;
+  skos:definition "[TE] Soils with a melacic horizon and the major part of the B horizon (if present) is not strongly acid but the B and BC or C/B horizons are not calcareous." ;
+  skos:notation "FU" ;
+  skos:prefLabel "Melacic-Basic  " ;
+.
+asc:FV
+  a asc:Class ;
+  skos:definition "[TE] Soils with a melanic horizon and the major part of the B horizon (if present) is strongly acid." ;
+  skos:notation "FV" ;
+  skos:prefLabel "Melanic-Acidic" ;
+.
+asc:Family
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+.
+asc:GE
+  a asc:Class ;
+  skos:definition "[TE] Soils which contains a ferric horizon and directly overlies ferricrete, a petroferric horizon or a petroreticulate horizon." ;
+  skos:notation "GE" ;
+  skos:prefLabel "Ferric-Petroferric" ;
+.
+asc:GF
+  a asc:Class ;
+  skos:definition "[TE] Soils which overlie other unconsolidated mineral materials." ;
+  skos:notation "GF" ;
+  skos:prefLabel "Regolithic " ;
+.
+asc:GU
+  a asc:Class ;
+  skos:definition "[TE] Soils with a humose horizon and at least some part of the B, BC or C/B horizon (if present) is calcareous." ;
+  skos:notation "GU" ;
+  skos:prefLabel "Humose-Calcareous" ;
+.
+asc:GY
+  a asc:Class ;
+  skos:definition "[TE] Soils with a humose horizon and the major part of the B horizon (if present) is strongly acid." ;
+  skos:notation "GY" ;
+  skos:prefLabel "Humose-Acidic " ;
+.
+asc:GZ
+  a asc:Class ;
+  skos:definition "[TE] Soils with a conspicuously bleached A2 horizon." ;
+  skos:notation "GZ" ;
+  skos:prefLabel "Bleached " ;
+.
+asc:HF
+  a asc:Class ;
+  skos:definition "[TE] Soils which have formed in tephric materials that may be visibly stratified." ;
+  skos:notation "HF" ;
+  skos:prefLabel "Tephric " ;
+.
+asc:HY
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description """This order is designed to accommodate a range of seasonally or permanently wet soils and thus there is some diversity within the order. The key criterion is saturation of the major part of the soil profile for prolonged periods (2-3 months) in most years. Some Hydrosols are permanently submerged. The soils may or may not experience reducing conditions for all or part of the period of saturation, and thus manifestations of reduction and oxidation such as gley colours and ochrous mottles may or may not be present.
+
+Saturation by a water table may not necessarily be caused by low soil permeability. Often site drainage will be the most important factor, while in other well-known cases tidal influence is dominant. The relevant Field Handbook drainage classes are very poorly and poorly drained.
+
+Several major classes of soils are excluded because it is considered their other profile characteristics are of greater significance than wetness. These are the Organosols, Podosols and Vertosols. Although some Hydrosols are dominated by organic materials (see Intertidal Hydrosols below), it is thought that because of their unique nature (ie. largely consisting of mangrove debris that is regularly inundated by saline tidal waters), it is more appropriate to classify them as an organic form of Hydrosols rather than as a class of Organosols that occur in a mangrove environment.""" ;
+  rdfs:comment """The approach taken in this concept of 'wet' soils differs from more traditional usage in that reducing conditions are not emphasised. The rationale for the present approach is based on the assumption that saturation affects soil properties irrespective of whether or not reducing conditions are present. Obvious examples are those relating to certain physical and engineering properties, which result in limitations to the use of a soil eg. trafficability, etc.
+
+A further reason for not making reducing conditions mandatory is the well-known difficulty in identifying such conditions, which are often of a temporal nature and sporadic in spatial distribution. It is widely recognised that the traditional use of gley colours and particular kinds of mottling are not universally indicative of a saturated condition or its duration. In particular, mottles or other segregations can be relict. Another problem in identification of reducing conditions, is the experience that various indicator dyes such as α,α-dipyridyl (Childs & Clayden 1986) may be unreliable.
+
+It will also be apparent that the concept adopted for Hydrosols will normally exclude the pseudo (or surface water) gley class commonly distinguished in several European classification schemes. These soils have a perched water table usually caused by a slowly permeable horizon or layer within the soil profile.
+
+A difficult question arises as to how artificially drained soils are best treated. In many cases drainage will merely lower the water table to depths which permit the successful growth of particular plants. Such depths may still be relatively shallow eg. 0.5 - 1 m, and capillary rise may result in wet soil conditions to variable heights above the new water table. Additionally, the topographic situation and/or the climatic environment may mean that drainage merely reduces the period of saturation. If drainage is such that saturation no longer occurs for appropriate periods in the relevant parts of the profile, the soil can strictly no longer be considered a Hydrosol. Possibly a 'drained' phase may be appropriate in some such circumstances.
+
+In the case of irrigated soils, the main example is when more or less permanent flood irrigation is employed to grow rice. This would be expected to change, for example, a Chromosol to a Chromosolic Hydrosol. It should be noted that the definition of the order is deliberately somewhat equivocal in that the duration and frequency of saturation of a precise section of the profile are not specifically defined. Lack of water table data is one reason, but it is also thought that a degree of flexibility is required for the definition. It is recognised that the extent of soil wetness can seldom be assessed by a single inspection of a particular site. However, in the author's experience judicious questioning of people with local knowledge, together with the soil scientist's assessment of soil and site drainage and climatic environment, can usually achieve a satisfactory resolution of the problem.""" ;
+  skos:definition "Soils other than Organosols, Podosols and Vertosols in which the major part of the soil profile is saturated for at least 2-3 months in most years." ;
+  skos:notation "HY" ;
+  skos:prefLabel "Hydrosols" ;
+.
+asc:IA
+  a asc:Class ;
+  skos:definition "[TE] Soils with a transitional horizon (C/B) occurring in fissures in the parent rock or saprolite which contains between 10 and 50% of B horizon material (including pedogenic carbonate)." ;
+  skos:notation "IA" ;
+  skos:prefLabel "Inceptic " ;
+.
+asc:ID
+  a asc:Class ;
+  skos:definition "[TE] Soils with all the requirements for a peaty horizon except the thickness." ;
+  skos:notation "ID" ;
+  skos:prefLabel "Subpeaty   " ;
+.
+asc:IL
+  a asc:Class ;
+  skos:definition "[TE] Soils with a ferric or bauxitic horizon (nodules or concretions) that is at least 0.2 m thick and occupies >50% of the solum depth. The solum depth excludes cemented layers. Genetically these soils may be closely related to Podosols" ;
+  skos:notation "IL" ;
+  skos:prefLabel "Sesqui-Nodular" ;
+.
+asc:IM
+  a asc:Class ;
+  skos:definition "[TE] Soils with a horizon containing more than 20% of fine earth carbonate that is at least 0.2 m thick." ;
+  skos:notation "IM" ;
+  skos:prefLabel "Calcenic" ;
+.
+asc:IS
+  a asc:Class ;
+  skos:definition "[TE] Soils which contain a ferric horizon and which overlie a reticulate horizon." ;
+  skos:notation "IS" ;
+  skos:prefLabel "Ferric-Reticulate" ;
+.
+asc:JV
+  a asc:Class ;
+  skos:definition "[TE] Soils in which a major part of the upper 1.0 m has a distinct gritty feel and overlies a siliceous pan." ;
+  skos:notation "JV" ;
+  skos:prefLabel "Gritty-Silpanic " ;
+.
+asc:JW
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel and overlies hard rock." ;
+  skos:notation "JW" ;
+  skos:prefLabel "Gritty-Lithic " ;
+.
+asc:JX
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel and overlies partially weathered or decomposed rock or saprolite." ;
+  skos:notation "JX" ;
+  skos:prefLabel "Gritty-Paralithic" ;
+.
+asc:KA
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "This order accommodates those soils which lack strong texture contrast, have massive or only weakly structured B horizons, and are not calcareous throughout. The soils of this order range throughout the continent, often occurring locally as very large areas." ;
+  rdfs:comment """Because of the lack of clearly defined horizons in some of these soils (particularly the red forms) with thick sola, there can be argument as to how to identify the limits of the B2 horizon.
+
+There may be difficulty differentiating between Kandosols and Arenosols, where texture and horizon development is weak and sandy textures dominate. Some Kandosols have very thick A and/or B1 horizons with sandy textures that overlie at > 1m deep, B2t horizons which exceed 15% clay.""" ;
+  skos:definition """Soils other than Hydrosols which have all of the following:
+
+1. B2 horizons in which the major part has a grade of pedality that is massive or weak.
+2. A maximum clay content in some part of the B2 horizon which exceeds 15% (ie. heavy sandy loam [SL+] or heavier).
+3. Do not have a clear or abrupt textural B horizon.
+4. Are not calcareous throughout the solum, or below the A1 or Ap horizon or to a depth of 0.2 m if the A1 horizon is only weakly developed.""" ;
+  skos:notation "KA" ;
+  skos:prefLabel "Kandosols" ;
   skos:prefLabel "Kandosols"@en ;
 .
-asc:kurosols
-  rdf:type skos:Concept ;
-  dct:description "Acidic soil with an abrupt increase in clay"^^xsd:string ;
-  rdfs:label "Kurosols"^^xsd:string ;
-  skos:definition "Acidic soil with an abrupt increase in clay"^^xsd:string ;
-  skos:notation "KU"^^xsd:string ;
-  skos:prefLabel "Kurosols"@en ;
+asc:KU
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "Soils with strong texture contrast between A horizons and strongly acid B horizons. Many of these soils have some unusual subsoil chemical features (high magnesium, sodium and aluminium)." ;
+  rdfs:comment "The relevance of sodicity in strongly acid soils is open to question as in theory the presence of aluminium in such soils should counterbalance the usual deleterious effect of sodium (via dispersion) on soil physical properties. Unpublished data from many localities in Australia imply that for B horizons the critical limits of pHw 5.5 and ESP of 6 to distinguish dispersive and non-dispersive soils seems to generally work in practice, although as might be expected, some soils do not behave as predicted. For this reason, sodicity is also used in Kurosols, but at a lower hierarchical level, to cater for those soils which have an ESP > 6 and may disperse in spite of having a pHw less than 5.5. The role of the high exchangeable magnesium in many Kurosols is largely unknown." ;
+  skos:definition "Soils other than Hydrosols with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is strongly acid." ;
+  skos:notation "KU" ;
+  skos:prefLabel "Kurosols" ;
 .
-asc:organosols
-  rdf:type skos:Concept ;
-  dct:description "Organic soil"^^xsd:string ;
-  rdfs:label "Organosols"^^xsd:string ;
-  skos:definition "Organic soil"^^xsd:string ;
-  skos:notation "OR"^^xsd:string ;
-  skos:prefLabel "Organosols"@en ;
+asc:OR
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "This class caters for most soils dominated by organic materials Although they are found from the wet tropics to the alpine regions, areas are mostly small except in south west Tasmania. There have been few previous attempts to subdivide these soils and substantial data are limited to Tasmania." ;
+  rdfs:comment "Soils with peaty horizons that do not meet the organic materials requirements of Organosols are catered for in other Orders, commonly Hydrosols. Organosols may classify as a buried soil if overlain by aeolian or fluvial deposits that may have undergone other developmental processes. If the overlying material is less than 0.3 m and can only qualify as a Rudosol, it is regarded as a depositional phase of the Organosol below." ;
+  skos:definition """Soils that are not regularly inundated by saline tidal waters and either:
+
+1. Have more than 0.4 m of organic materials within the upper 0.8 m. The required thickness may either extend down from the surface or be taken cumulatively within the upper 0.8 m; or
+2. Have organic materials extending from the surface to a minimum depth of 0.1 m; these either overlie a mineral soil horizon or unconsolidated mineral material no thicker than the organic materials above, or directly overlie rock or other hard layers, partially weathered or decomposed rock or saprolite, or overlie fragmental material such as gravel, cobbles or stones in which the interstices are filled or partially filled with organic material. In some soils there may be layers of humose, melacic and/or melanic horizon material underlying the organic materials and overlying the substrate.""" ;
+  skos:notation "OR" ;
+  skos:prefLabel "Organosols" ;
 .
-asc:podosols
-  rdf:type skos:Concept ;
-  dct:description "Organic materials and aluminium, with or without iron"^^xsd:string ;
-  rdfs:label "Podosols"^^xsd:string ;
-  skos:definition "Organic materials and aluminium, with or without iron"^^xsd:string ;
-  skos:notation "PO"^^xsd:string ;
-  skos:prefLabel "Podosols"@en ;
+asc:Order
+  a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
 .
-asc:rudosols
-  rdf:type skos:Concept ;
-  dct:description "Minimal soil development"^^xsd:string ;
-  rdfs:label "Rudosols"^^xsd:string ;
-  skos:definition "Minimal soil development"^^xsd:string ;
-  skos:notation "RU"^^xsd:string ;
-  skos:prefLabel "Rudosols"@en ;
+asc:PO
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "Soils with B horizons dominated by the accumulation of compounds of organic matter, aluminium and/or iron. These soils are recognised world-wide, and Australia is particularly noted for its 'giant' forms. Podosols are typically found in close proximity to the coast and on islands comprised of quartz sand." ;
+  rdfs:comment """Extensive revisions of the classification of Spodosols and Podzols have taken place in the USA (with world-wide input) and New Zealand. It is clear that there is considerable diversity of opinion on the desirability, nature and efficacy of chemical criteria to define Spodosols/Podzols. For this reason the present proposal for Australian 'podzols' has deliberately avoided the use of chemical diagnostic criteria.
+
+Some Podosols with deep diagnostic B horizons may classify initially as Bleached Arenosols. Only deep examination of the soil profile can confirm the order of such soils.""" ;
+  skos:definition "Soils which possess either a Bs horizon (visible dominance of iron compounds), a Bhs horizon (organic-aluminium and iron compounds), or a Bh horizon (organic-aluminium compounds). These horizons may occur singly in a profile or in combination (see Podosol diagnostic horizons)." ;
+  skos:notation "PO" ;
+  skos:prefLabel "Podosols" ;
 .
-asc:sodosols
-  rdf:type skos:Concept ;
-  dct:description "Soil high in sodium and abrupt increase in clay"^^xsd:string ;
-  rdfs:label "Sodosols"^^xsd:string ;
-  skos:definition "Soil high in sodium and abrupt increase in clay"^^xsd:string ;
-  skos:notation "SO"^^xsd:string ;
-  skos:prefLabel "Sodosols"@en ;
+asc:RE
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description """The core concept of this Order is \"deep sandy soils\".
+
+Arenosols accommodate soils with predominantly sandy field textures (≤10% clay content), and with no horizons containing more than 15% clay within the upper 1.0 m of the profile. The presence of argic horizons are the only exception. Arenosols generally have no observable peds apart from some structural development in the A1 horizon. The upper 1.0 m of the soil profile can only contain relatively small amounts of coarse fragments or coarse, hard segregations and does not contain any hard layers such as pans or rock. Arenosols occur extensively in inland arid areas, in and adjacent to waterways, near to the coast (especially in the west), but are also present in many other parts of Australia. This Order incorporates the most widespread and abundant soils in Australia.""" ;
+  rdfs:comment """As B horizons are difficult to identify consistently in some Arenosols, specific mention of a B2 horizon is omitted from some Suborders. Arenosols will obviously grade to Kandosols and some difficulty may be experienced in separating them. Here Kandosols must have a clearly distinguishable, well-developed B2 horizon with more than 15% clay whereas Arenosols have less than 15% clay.
+
+Reclassification may also be required for other sandy soils where deep examination below 1.0 m reveals deep more clayey B horizons. See How to Classify for assistance with determining whether the layer is a B or D horizon. If the layer is a D horizon, the soil remains classified as an Arenosol.
+
+Bleached or Grey Arenosols are distinguished from Podosols by the absence of Podosol diagnostic horizons. These horizons can occur below 1.0 m deep and commonly at considerable depth. If no deep examination has been done in similar soils in similar environments, then the soil should classify as a Bleached or Grey Arenosol with a confidence level of 4. If evidence at a later date reveals the presence of Podosols diagnostic horizons at depth, the soil will need to be reclassified.
+
+Some Arenosols may include one or more thin argic horizons (also termed lamellae) which are usually 5-10 mm thick.
+
+Arenosols will also grade to Tenosols. This third edition of the Australian Soil Classification reflects a major change to the Tenosol Order. Many sandy soils previously classified as the colour-linked Orthic Suborders of Tenosols will now classify as Arenosols.
+
+As the Arenosols Order includes soils with negligible development many deep sandy soils previously described as Rudosols will now classify as Arenosols.
+
+This third edition of the Australian Soil Classification also reflects a significant change to the Calcarosol Order. Many deep sandy soils with pedogenic carbonates previously classified as Shelly, Calcic or Hypocalcic Calcarosols will now classify as Carbonatic or Calsilic Arenosols.""" ;
+  skos:definition """Soils that have, within the upper 1.0 m of the soil profile:
+
+1. A sandy field texture (i.e. a field texture of sand, loamy sand or clayey sand) in one or more layers or horizons with a combined thickness of at least 0.8 m; and
+2. No layer or horizon with a clay content that exceeds 15% (i.e. heavy sandy loam [SL+] or heavier) excluding argic horizon/s; and
+3. ≤10% (by visual abundance and weighted average) of coarse fragments and/or hard segregations >2 mm in size; and
+4. No hard layers (cemented pans, other cemented materials, rock, saprock or saprolite that do not soften when moist1)
+
+1this qualification has been added since publication and is not reflected in CSIRO March 2021 published edition. The purpose is to not exclude from Arenosols soils with layers in the top 1.0 m that are hard when dry but soften when moist.""" ;
+  skos:notation "RE" ;
+  skos:prefLabel "Arenosols" ;
 .
-asc:tenosols
-  rdf:type skos:Concept ;
-  dct:description "Weakly developed soil"^^xsd:string ;
-  rdfs:label "Tenosols"^^xsd:string ;
-  skos:definition "Weakly developed soil"^^xsd:string ;
-  skos:notation "TE"^^xsd:string ;
+asc:RU
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "This order is designed to accommodate soils that have little, if any, pedologic organisation. They are usually young soils in the sense that soil forming factors have had little time to pedologically modify parent rocks or sediments. The component soils can obviously vary widely in terms of texture and depth; many are stratified and some are highly saline. Data on some of them are very limited." ;
+  rdfs:comment """By definition, these soils will grade to Tenosols, so before deciding on the order check the Tenosol definition as it will often be a matter of judgement as to which order a particular soil is best placed. Arenic (sandy) Rudosols will grade to Arenosols, although by definition will have sand less than 1.0 m deep. Hydrosols are excluded on the basis that these will normally show some pedological development eg. mottling. A particular problem with the definition and subdivision of Rudosols is the difficulty in distinguishing between soil and 'non-soil', (see also 'What do we classify?'). In many instances they are classified on the basis of the nature of AC or C horizon materials or other substrates because these are the dominating features of the profile. It also follows that there may be difficulties in deciding if a soil is best classified as an Anthroposol or be regarded as an ‘anthropic’ Rudosol because the little-altered soil parent material may be human-made.
+
+Rudosols in arid climatic zones form under a variety of processes (i.e. dust accretion, biological surface crusts, reduced leaching and more active wind and water erosion under sparse vegetation cover). The relative significance of these processes will differ from other climatic zones.""" ;
+  skos:definition "Soil with little, if any, (rudimentary) pedologic organisation apart from (a) minimal development of an Al horizon or (b) the presence of less than 10% of B horizon material (including pedogenic carbonate) in fissures in the parent rock or saprolite. The soils are apedal or only weakly structured in the A1 horizon and show no pedological colour changes apart from the darkening of an A1 horizon. There is little or no texture or colour change with depth unless stratified or buried soils are present." ;
+  skos:notation "RU" ;
+  skos:prefLabel "Rudosols" ;
+.
+asc:SO
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "Soils with strong texture contrast between A horizons and sodic B horizons which are not strongly acid. Australia is noteworthy for the extent and diversity of sodic soils (Isbell 1995)." ;
+  rdfs:comment """There is convincing evidence from the Riverine Plain of south eastern Australia that soils with sodic clay B horizons (ESP 25-30) which are strongly subplastic behave very differently in terms of permeability to the more commonly found plastic sodic clay B horizons which are characterised by low to very low saturated hydraulic conductivity (McIntyre 1979). It is on this basis that subplastic sodic soils are excluded from Sodosols, because of their very different land use properties.
+
+Strongly acid sodic soils are also excluded from Sodosols because they usually contain appreciable exchangeable aluminium (KCl extractable) and thus should be unlikely to disperse.
+
+It is usually possible to assess, in the field, the likelihood of a soil possessing a sodic B2t horizon. Such a criterion as the presence of a bleached A2 horizon with an abrupt change to a B2t horizon which has columnar or prismatic structure is a useful but not universal guide. A high pHw value (>8.5) suggests sodicity, but the converse is not true. The soapy nature of the bolus produced in field texturing will also often suggest appreciable sodium (and/or magnesium) on the clay exchange complex.
+
+Increasing experience in many parts of Australia is confirming that the Emerson dispersion test (Emerson 1967) and the modified version of Loveday and Pyle (1973) is a reliable guide to sodicity. It can be carried out as a preliminary test in the field, but should always be repeated under the better controlled conditions of the laboratory. In the initial test at least several fragments (each about 0.2 g or about 4 -5 mm diameter) are immersed in 100 ml of distilled water. The large water:soil ratio is necessary to remove any salt present in the aggregate. Also for this reason Emerson (1991) suggests that the classification for each test be made after 24 hours. For the remoulded test, use a 5 mm cube which can be obtained from the bolus used for determining field texture. This will be approximately in the plastic limit condition. Note that distilled water should be used to prepare the bolus.
+
+Data from Loveday and Pyle (1973) and unpublished data available to the original author Ray Isbell suggest that a dispersive soil will usually indicate sodicity, ie. ESP of 6 or greater. The data of Murphy (1995) indicate that whereas Emerson class 1 and the more strongly dispersive soils of class 2 are a reliable indicator of sodicity, whereas class 3 is a more variable predictor. Emerson classes of 5 or greater or a Loveday and Pyle score of zero strongly suggest soils are non-sodic. There is less evidence that the dispersion tests give a reliable indication of the degree of sodicity; factors such as extent of initial slaking and initial salt content in the aggregates, and the amount of magnesium and amount and form of aluminium on the exchange complex (Emerson 1994), can also influence the rapidity of dispersion. Nevertheless, the data of Loveday and Pyle measuring dispersion after 2 hours and 20 hours showed that the rate of dispersion could be used as a guide to ESP. This relationship does not apply to the subplastic soils of the Riverine Plain where subsoils with an ESP of 25-30 do not disperse unless remoulded (Blackmore 1976). Other anomalous results occur in a small minority of normal plastic soils in which dispersion will not occur even after remoulding in spite of an ESP much greater than 6 and a pHw as high as neutral. In at least some of these non-dispersive soils the typical sodic soil morphology is present, ie. a conspicuously bleached A2 horizon abruptly overlying a B2t horizon with prismatic or columnar structure, suggesting the low hydraulic conductivity expected of a sodic B horizon.""" ;
+  skos:definition "Soils with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is sodic and not strongly acid. Hydrosols and soils with strongly subplastic upper B2t horizons are excluded." ;
+  skos:notation "SO" ;
+  skos:prefLabel "Sodosols" ;
+.
+asc:TE
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "This order is designed to embrace soils with generally only weak pedologic organisation apart from the A horizons, excluding soils that have deep sandy profiles with a field texture of sand, loamy sand or clayey sand in 80% or more of the upper 1.0 m. It encompasses a rather diverse range of soils which occur in many parts of Australia." ;
+  rdfs:comment """It may be desirable to specify a minimum thickness for those A1 horizons which do not meet the requirements for a peaty, humose, melacic or melanic horizon. The inclusion of certain soils with conspicuously bleached A2 horizons may be questioned by some, but it is difficult to find a more appropriate place for them.
+
+The Tenosols will differ from Rudosols by virtue of having either a more than weakly developed A1 horizon, an A2, or a weakly developed B horizon. As B horizons are difficult to identify consistently in some Tenosols, specific mention of a B horizon is omitted from some Suborders. They will obviously grade to Kandosols, and some difficulty may be experienced in separating medium-textured Tenosols from Kandosols. Here again, B horizon development is the key; Kandosols must have a clearly distinguishable, well-developed B2 horizon with more than 15% clay. Tenosols will grade to Podosols, but the latter must have a Podosol diagnostic B horizon. Tenosols also grade to Arenosols but lack the deep sandy horizons characteristic of this order. In cold, wet environments, some Tenosols with peaty A horizons will grade to Organosols.
+
+This third edition of the Australian Soil Classification removes the Orthic term from the bleached and colour suborders.""" ;
+  skos:definition """Soils that do not fit the requirements of any other soil orders and generally with one or more of the following:
+
+1. A peaty horizon.
+2. A humose, melacic or melanic horizon, or conspicuously bleached A2 horizon, which overlies a calcrete pan, hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite, or unconsolidated mineral materials.
+3. A horizons which meet all the conditions for a peaty, humose, melacic or melanic horizon except the depth requirement, and directly overlie a calcrete pan, hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite, or unconsolidated mineral materials.
+4. A1 horizons which have more than a weak development of structure and directly overlie a calcrete pan, hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite, or unconsolidated mineral materials.
+5. An A2 horizon which overlies a calcrete pan, hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite, or unconsolidated mineral materials.
+6. B2 horizon with 15% clay (SL) or less1 , or a transitional horizon (C/B) occurring in fissures in the parent rock or saprolite which contains between 10 and 50% of B horizon material (including pedogenic carbonate).
+7. A ferric or bauxitic horizon >0.2 m thick.
+8. A calcareous horizon >0.2 m thick.""" ;
+  skos:notation "TE" ;
+  skos:prefLabel "Tenosols" ;
   skos:prefLabel "Tenosols"@en ;
 .
-asc:vertosols
-  rdf:type skos:Concept ;
-  dct:description "Shrink and swell clay soil"^^xsd:string ;
-  rdfs:label "Vertosols"^^xsd:string ;
-  skos:definition "Shrink and swell clay soil"^^xsd:string ;
-  skos:notation "VE"^^xsd:string ;
-  skos:prefLabel "Vertosols"@en ;
+asc:VE
+  a asc:Order ;
+  a skos:Concept ;
+  dcterms:description "Clay soils with shrink-swell properties that exhibit strong cracking when dry and at depth have slickensides and/or lenticular peds. Although many soils exhibit gilgai microrelief, this feature is not used in their definition. Australia has the greatest area and diversity of cracking clay soils of any country in the world." ;
+  rdfs:comment """In some clay soils it may be difficult to decide if sufficient cracks are present, or at the time of inspection the soil may be too moist to exhibit cracking. Also, in arid zone clay soils which commonly have high salt contents, the soil structure may be so fine and strong granular, or 'puffy', that it is difficult to decide if cracks are present or not. In such soils it is also obviously difficult to discern slickensides and/or lenticular peds. In yet other clay soils (up to 50% clay or more) cracks may develop but slickensides and/or lenticular peds are apparently not present.
+
+Because cracking, slickensides and/or lenticular peds are essentially used as evidence to indicate shrink-swell behaviour, it is desirable that surrogate measurements be available if the morphological evidence is lacking or cannot be determined. See Vertic properties.""" ;
+  skos:definition """Soils with the following:
+
+1.  A clay field texture or 35% or more clay throughout the solum except for thin, surface crusty horizons 30 mm or less thick and
+2. When dry, open cracks occur at some time in most years1. These are at least 5 mm wide and extend upward to the surface or to the base of any plough layer, peaty horizon, self-mulching horizon, or thin, surface crusty horizon; and
+3. Slickensides and/or lenticular peds occur at some depth in the solum. """ ;
+  skos:notation "VE" ;
+  skos:prefLabel "Vertosols" ;
+.
+dc:
+  skos:definition "This version has been modified for use in TopBraid: it defines the dc namespace prefix and imports SKOS and DCTerms." ;
+  skos:prefLabel "Dublin Core Metadata Element Set, Version 1.1" ;
 .
 <http://www.w3.org/2002/07/owl>
-  dct:description """
+  skos:definition """
   This ontology partially describes the built-in classes and
   properties that together form the basis of the RDF/XML syntax of OWL 2.
   The content of this ontology is based on Tables 6.1 and 6.2
@@ -162,5 +640,5 @@ asc:vertosols
   will cause it to become an OWL 2 Full ontology and may have other,
   unexpected, consequences.
    """ ;
-  rdfs:label "owl" ;
+  skos:prefLabel "owl" ;
 .
