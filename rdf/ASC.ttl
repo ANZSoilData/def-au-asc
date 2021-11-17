@@ -582,6 +582,68 @@ Data from Loveday and Pyle (1973) and unpublished data available to the original
 asc:TE
   a asc:Order ;
   a skos:Concept ;
+  asc:colourclass asc:AA ;
+  asc:colourclass asc:AB ;
+  asc:colourclass asc:AC ;
+  asc:colourclass asc:AD ;
+  asc:colourclass asc:AE ;
+  asc:colourclass-comment "The dominant colour class in the major part of the upper 0.5 m of the profile (or the entire profile if it is less than 0.5 m thick) is:" ;
+  asc:greatgroup asc:AK ;
+  asc:greatgroup asc:AO ;
+  asc:greatgroup asc:AP ;
+  asc:greatgroup asc:AS ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BU ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DD ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EC ;
+  asc:greatgroup asc:EF ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:FK ;
+  asc:greatgroup asc:GE ;
+  asc:greatgroup asc:GF ;
+  asc:greatgroup asc:HF ;
+  asc:greatgroup asc:IA ;
+  asc:greatgroup asc:IS ;
+  asc:greatgroup asc:JV ;
+  asc:greatgroup asc:JW ;
+  asc:greatgroup asc:JX ;
+  asc:greatgroup-comment "If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification." ;
+  asc:subgroup asc:AI ;
+  asc:subgroup asc:AR ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:BC ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CQ ;
+  asc:subgroup asc:DA ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DR ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:FB ;
+  asc:subgroup asc:FC ;
+  asc:subgroup asc:FF ;
+  asc:subgroup asc:FG ;
+  asc:subgroup asc:FU ;
+  asc:subgroup asc:FV ;
+  asc:subgroup asc:GU ;
+  asc:subgroup asc:GY ;
+  asc:subgroup asc:ID ;
+  asc:subgroup-comment """These have been grouped into the various suborders, but not all subgroups will be appropriate for each great group of a particular suborder.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:suborder asc:AW ;
+  asc:suborder asc:BE ;
+  asc:suborder asc:BF ;
+  asc:suborder asc:CY ;
+  asc:suborder asc:GZ ;
+  asc:suborder asc:IL ;
+  asc:suborder asc:IM ;
   dcterms:description "This order is designed to embrace soils with generally only weak pedologic organisation apart from the A horizons, excluding soils that have deep sandy profiles with a field texture of sand, loamy sand or clayey sand in 80% or more of the upper 1.0 m. It encompasses a rather diverse range of soils which occur in many parts of Australia." ;
   rdfs:comment """It may be desirable to specify a minimum thickness for those A1 horizons which do not meet the requirements for a peaty, humose, melacic or melanic horizon. The inclusion of certain soils with conspicuously bleached A2 horizons may be questioned by some, but it is difficult to find a more appropriate place for them.
 
@@ -600,7 +662,6 @@ This third edition of the Australian Soil Classification removes the Orthic term
 8. A calcareous horizon >0.2 m thick.""" ;
   skos:notation "TE" ;
   skos:prefLabel "Tenosols" ;
-  skos:prefLabel "Tenosols"@en ;
 .
 asc:VE
   a asc:Order ;
@@ -616,6 +677,71 @@ Because cracking, slickensides and/or lenticular peds are essentially used as ev
 3. Slickensides and/or lenticular peds occur at some depth in the solum. """ ;
   skos:notation "VE" ;
   skos:prefLabel "Vertosols" ;
+.
+asc:colourclass
+  a owl:ObjectProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Colour class" ;
+  rdfs:range asc:ColourClass ;
+  rdfs:subPropertyOf dcterms:relation ;
+.
+asc:colourclass-comment
+  a owl:AnnotationProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Colour class comment" ;
+  rdfs:subPropertyOf skos:note ;
+.
+asc:family-comment
+  a owl:AnnotationProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Family comment" ;
+  rdfs:subPropertyOf skos:note ;
+.
+asc:family-criteria
+  a owl:ObjectProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Family criteria" ;
+  rdfs:range asc:Family ;
+  rdfs:subPropertyOf dcterms:relation ;
+.
+asc:greatgroup
+  a owl:ObjectProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Great group" ;
+  rdfs:range asc:Class ;
+  rdfs:subPropertyOf dcterms:relation ;
+.
+asc:greatgroup-comment
+  a owl:AnnotationProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Great group comment" ;
+  rdfs:subPropertyOf skos:note ;
+.
+asc:subgroup
+  a owl:ObjectProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Subgroup" ;
+  rdfs:range asc:Class ;
+  rdfs:subPropertyOf dcterms:relation ;
+.
+asc:subgroup-comment
+  a owl:AnnotationProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Subgroup comment" ;
+  rdfs:subPropertyOf skos:note ;
+.
+asc:suborder
+  a owl:ObjectProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Suborder" ;
+  rdfs:range asc:Class ;
+  rdfs:subPropertyOf dcterms:relation ;
+.
+asc:suborder-comment
+  a owl:AnnotationProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Suborder comment" ;
+  rdfs:subPropertyOf skos:note ;
 .
 dc:
   skos:definition "This version has been modified for use in TopBraid: it defines the dc namespace prefix and imports SKOS and DCTerms." ;
