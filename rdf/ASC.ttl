@@ -19,7 +19,7 @@ asc:
   dcterms:creator <mailto:asris@csiro.au> ;
   dcterms:description "The Australian Soil Classification provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key." ;
   dcterms:license <http://creativecommons.org/licences/by/4.0> ;
-  dcterms:modified "2021-11-16" ;
+  dcterms:modified "2021-11-18" ;
   dcterms:publisher <http://www.publish.csiro.au/> ;
   dcterms:rights "copyright CSIRO 2009, 2016, 2021. All rights reserved." ;
   dcterms:source "Isbell, R.F. (1996;2002;2016;2021) The Australian Soil Classification (3rd edn). CSIRO Publishing, Melbourne" ;
