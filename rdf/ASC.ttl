@@ -387,11 +387,20 @@ asc:GY
   skos:notation "GY" ;
   skos:prefLabel "Humose-Acidic " ;
 .
-asc:GZ
-  a asc:Class ;
-  skos:definition "[TE] Soils with a conspicuously bleached A2 horizon." ;
-  skos:notation "GZ" ;
-  skos:prefLabel "Bleached " ;
+asc:Greatgroup
+  a owl:Class ;
+  rdfs:label "Soil great group" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom asc:Suborder ;
+      owl:onProperty skos:broader ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty asc:classifier ;
+    ] ;
 .
 asc:HF
   a asc:Class ;
@@ -449,6 +458,12 @@ asc:IS
   skos:definition "[TE] Soils which contain a ferric horizon and which overlie a reticulate horizon." ;
   skos:notation "IS" ;
   skos:prefLabel "Ferric-Reticulate" ;
+.
+asc:JQ
+  a asc:Class ;
+  skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel." ;
+  skos:notation "JQ" ;
+  skos:prefLabel "Gritty" ;
 .
 asc:JV
   a asc:Class ;
@@ -508,7 +523,13 @@ asc:OR
 .
 asc:Order
   a owl:Class ;
+  rdfs:label "Soil order" ;
   rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom asc:Suborder ;
+      owl:onProperty skos:narrower ;
+    ] ;
 .
 asc:PO
   a asc:Order ;
@@ -579,6 +600,26 @@ Data from Loveday and Pyle (1973) and unpublished data available to the original
   skos:notation "SO" ;
   skos:prefLabel "Sodosols" ;
 .
+asc:Suborder
+  a owl:Class ;
+  rdfs:label "Soil suborder" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom asc:Order ;
+      owl:onProperty skos:broader ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty asc:classifier ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty asc:order ;
+    ] ;
+.
 asc:TE
   a asc:Order ;
   a skos:Concept ;
@@ -588,62 +629,10 @@ asc:TE
   asc:colourclass asc:AD ;
   asc:colourclass asc:AE ;
   asc:colourclass-comment "The dominant colour class in the major part of the upper 0.5 m of the profile (or the entire profile if it is less than 0.5 m thick) is:" ;
-  asc:greatgroup asc:AK ;
-  asc:greatgroup asc:AO ;
-  asc:greatgroup asc:AP ;
-  asc:greatgroup asc:AS ;
-  asc:greatgroup asc:BJ ;
-  asc:greatgroup asc:BU ;
-  asc:greatgroup asc:CZ ;
-  asc:greatgroup asc:DD ;
-  asc:greatgroup asc:DU ;
-  asc:greatgroup asc:DZ ;
-  asc:greatgroup asc:EA ;
-  asc:greatgroup asc:EC ;
-  asc:greatgroup asc:EF ;
-  asc:greatgroup asc:EM ;
-  asc:greatgroup asc:FK ;
-  asc:greatgroup asc:GE ;
-  asc:greatgroup asc:GF ;
-  asc:greatgroup asc:HF ;
-  asc:greatgroup asc:IA ;
-  asc:greatgroup asc:IS ;
-  asc:greatgroup asc:JV ;
-  asc:greatgroup asc:JW ;
-  asc:greatgroup asc:JX ;
   asc:greatgroup-comment "If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification." ;
-  asc:subgroup asc:AI ;
-  asc:subgroup asc:AR ;
-  asc:subgroup asc:AT ;
-  asc:subgroup asc:AY ;
-  asc:subgroup asc:BC ;
-  asc:subgroup asc:CK ;
-  asc:subgroup asc:CQ ;
-  asc:subgroup asc:DA ;
-  asc:subgroup asc:DC ;
-  asc:subgroup asc:DG ;
-  asc:subgroup asc:DK ;
-  asc:subgroup asc:DR ;
-  asc:subgroup asc:DW ;
-  asc:subgroup asc:FB ;
-  asc:subgroup asc:FC ;
-  asc:subgroup asc:FF ;
-  asc:subgroup asc:FG ;
-  asc:subgroup asc:FU ;
-  asc:subgroup asc:FV ;
-  asc:subgroup asc:GU ;
-  asc:subgroup asc:GY ;
-  asc:subgroup asc:ID ;
   asc:subgroup-comment """These have been grouped into the various suborders, but not all subgroups will be appropriate for each great group of a particular suborder.
 
 If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
-  asc:suborder asc:AW ;
-  asc:suborder asc:BE ;
-  asc:suborder asc:BF ;
-  asc:suborder asc:CY ;
-  asc:suborder asc:GZ ;
-  asc:suborder asc:IL ;
-  asc:suborder asc:IM ;
   dcterms:description "This order is designed to embrace soils with generally only weak pedologic organisation apart from the A horizons, excluding soils that have deep sandy profiles with a field texture of sand, loamy sand or clayey sand in 80% or more of the upper 1.0 m. It encompasses a rather diverse range of soils which occur in many parts of Australia." ;
   rdfs:comment """It may be desirable to specify a minimum thickness for those A1 horizons which do not meet the requirements for a peaty, humose, melacic or melanic horizon. The inclusion of certain soils with conspicuously bleached A2 horizons may be questioned by some, but it is difficult to find a more appropriate place for them.
 
@@ -660,8 +649,751 @@ This third edition of the Australian Soil Classification removes the Orthic term
 6. B2 horizon with 15% clay (SL) or less1 , or a transitional horizon (C/B) occurring in fissures in the parent rock or saprolite which contains between 10 and 50% of B horizon material (including pedogenic carbonate).
 7. A ferric or bauxitic horizon >0.2 m thick.
 8. A calcareous horizon >0.2 m thick.""" ;
+  skos:narrower asc:TE-AT ;
+  skos:narrower asc:TE-AW ;
+  skos:narrower asc:TE-BE ;
+  skos:narrower asc:TE-BF ;
+  skos:narrower asc:TE-CY ;
+  skos:narrower asc:TE-IL ;
+  skos:narrower asc:TE-IM ;
   skos:notation "TE" ;
   skos:prefLabel "Tenosols" ;
+.
+asc:TE-AT
+  a asc:Suborder ;
+  asc:classifier asc:AT ;
+  asc:greatgroup asc:AK ;
+  asc:greatgroup asc:AO ;
+  asc:greatgroup asc:AP ;
+  asc:greatgroup asc:AS ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BU ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DD ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EF ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:FK ;
+  asc:greatgroup asc:GE ;
+  asc:greatgroup asc:GF ;
+  asc:greatgroup asc:HF ;
+  asc:greatgroup asc:IA ;
+  asc:greatgroup asc:IS ;
+  asc:greatgroup asc:JQ ;
+  asc:greatgroup asc:JW ;
+  asc:greatgroup asc:JX ;
+  asc:subgroup asc:AI ;
+  asc:subgroup asc:AR ;
+  asc:subgroup asc:BC ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:FC ;
+  asc:subgroup asc:FU ;
+  asc:subgroup asc:FV ;
+  asc:subgroup asc:GU ;
+  asc:subgroup asc:GY ;
+  skos:broader asc:TE ;
+  skos:narrower asc:TE-AT-AK ;
+  skos:narrower asc:TE-AT-AO ;
+  skos:narrower asc:TE-AT-AP ;
+  skos:narrower asc:TE-AT-AS ;
+  skos:narrower asc:TE-AT-BJ ;
+  skos:narrower asc:TE-AT-BU ;
+  skos:narrower asc:TE-AT-CZ ;
+  skos:narrower asc:TE-AT-DD ;
+  skos:narrower asc:TE-AT-DU ;
+  skos:narrower asc:TE-AT-DZ ;
+  skos:narrower asc:TE-AT-EA ;
+  skos:narrower asc:TE-AT-EF ;
+  skos:narrower asc:TE-AT-EM ;
+  skos:narrower asc:TE-AT-FK ;
+  skos:narrower asc:TE-AT-GE ;
+  skos:narrower asc:TE-AT-GF ;
+  skos:narrower asc:TE-AT-HF ;
+  skos:narrower asc:TE-AT-IA ;
+  skos:narrower asc:TE-AT-IS ;
+  skos:narrower asc:TE-AT-JQ ;
+  skos:narrower asc:TE-AT-JW ;
+  skos:narrower asc:TE-AT-JX ;
+  skos:prefLabel "Bleached Tenosol" ;
+.
+asc:TE-AT-AK
+  a asc:Greatgroup ;
+  asc:classifier asc:AK ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Andic Bleached Tenosol" ;
+.
+asc:TE-AT-AO
+  a asc:Greatgroup ;
+  asc:classifier asc:AO ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Arenic Bleached Tenosol" ;
+.
+asc:TE-AT-AP
+  a asc:Greatgroup ;
+  asc:classifier asc:AP ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Argic Bleached Tenosol" ;
+.
+asc:TE-AT-AS
+  a asc:Greatgroup ;
+  asc:classifier asc:AS ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Bauxitic Bleached Tenosol" ;
+.
+asc:TE-AT-BJ
+  a asc:Greatgroup ;
+  asc:classifier asc:BJ ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Duric Bleached Tenosol" ;
+.
+asc:TE-AT-BU
+  a asc:Greatgroup ;
+  asc:classifier asc:BU ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Ferric Bleached Tenosol" ;
+.
+asc:TE-AT-CZ
+  a asc:Greatgroup ;
+  asc:classifier asc:CZ ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Lithic Bleached Tenosol" ;
+.
+asc:TE-AT-DD
+  a asc:Greatgroup ;
+  asc:classifier asc:DD ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Marly Bleached Tenosol" ;
+.
+asc:TE-AT-DU
+  a asc:Greatgroup ;
+  asc:classifier asc:DU ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Paralithic Bleached Tenosol" ;
+.
+asc:TE-AT-DZ
+  a asc:Greatgroup ;
+  asc:classifier asc:DZ ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Petrocalcic Bleached Tenosol" ;
+.
+asc:TE-AT-EA
+  a asc:Greatgroup ;
+  asc:classifier asc:EA ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Petroferric Bleached Tenosol" ;
+.
+asc:TE-AT-EF
+  a asc:Greatgroup ;
+  asc:classifier asc:EF ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Reticulate Bleached Tenosol" ;
+.
+asc:TE-AT-EM
+  a asc:Greatgroup ;
+  asc:classifier asc:EM ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Silpanic Bleached Tenosol" ;
+.
+asc:TE-AT-FK
+  a asc:Greatgroup ;
+  asc:classifier asc:FK ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Ferric-Duric Bleached Tenosol" ;
+.
+asc:TE-AT-GE
+  a asc:Greatgroup ;
+  asc:classifier asc:GE ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Ferric-Petroferric Bleached Tenosol" ;
+.
+asc:TE-AT-GF
+  a asc:Greatgroup ;
+  asc:classifier asc:GF ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Regolithic Bleached Tenosol" ;
+.
+asc:TE-AT-HF
+  a asc:Greatgroup ;
+  asc:classifier asc:HF ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Tephric Bleached Tenosol" ;
+.
+asc:TE-AT-IA
+  a asc:Greatgroup ;
+  asc:classifier asc:IA ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Inceptic Bleached Tenosol" ;
+.
+asc:TE-AT-IS
+  a asc:Greatgroup ;
+  asc:classifier asc:IS ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Ferric-Reticulate Bleached Tenosol" ;
+.
+asc:TE-AT-JQ
+  a asc:Greatgroup ;
+  asc:classifier asc:JQ ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Gritty Bleached Tenosol" ;
+.
+asc:TE-AT-JW
+  a asc:Greatgroup ;
+  asc:classifier asc:JW ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Gritty-Lithic Bleached Tenosol" ;
+.
+asc:TE-AT-JX
+  a asc:Greatgroup ;
+  asc:classifier asc:JX ;
+  skos:broader asc:TE-AT ;
+  skos:prefLabel "Gritty-Paralithic Bleached Tenosol" ;
+.
+asc:TE-AW
+  a asc:Suborder ;
+  asc:classifier asc:AW ;
+  asc:greatgroup asc:BU ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:GE ;
+  asc:greatgroup asc:JV ;
+  asc:greatgroup asc:JW ;
+  asc:greatgroup asc:JX ;
+  asc:subgroup asc:AI ;
+  asc:subgroup asc:AR ;
+  asc:subgroup asc:BC ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:FC ;
+  asc:subgroup asc:FU ;
+  asc:subgroup asc:FV ;
+  asc:subgroup asc:GU ;
+  asc:subgroup asc:GY ;
+  skos:broader asc:TE ;
+  skos:narrower asc:TE-AW-BU ;
+  skos:narrower asc:TE-AW-CZ ;
+  skos:narrower asc:TE-AW-DU ;
+  skos:narrower asc:TE-AW-DZ ;
+  skos:narrower asc:TE-AW-EA ;
+  skos:narrower asc:TE-AW-EM ;
+  skos:narrower asc:TE-AW-GE ;
+  skos:narrower asc:TE-AW-JV ;
+  skos:narrower asc:TE-AW-JW ;
+  skos:narrower asc:TE-AW-JX ;
+  skos:prefLabel "Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-BU
+  a asc:Greatgroup ;
+  asc:classifier asc:BU ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Ferric Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-CZ
+  a asc:Greatgroup ;
+  asc:classifier asc:CZ ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Lithic Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-DU
+  a asc:Greatgroup ;
+  asc:classifier asc:DU ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Ferric-Petroferric Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-DZ
+  a asc:Greatgroup ;
+  asc:classifier asc:DZ ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Petrocalcic Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-EA
+  a asc:Greatgroup ;
+  asc:classifier asc:EA ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Petroferric Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-EM
+  a asc:Greatgroup ;
+  asc:classifier asc:EM ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Silpanic Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-GE
+  a asc:Greatgroup ;
+  asc:classifier asc:GE ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Ferric-Petroferric Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-JV
+  a asc:Greatgroup ;
+  asc:classifier asc:JV ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Gritty-Silpanic Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-JW
+  a asc:Greatgroup ;
+  asc:classifier asc:JW ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Gritty-Lithic Bleached-Leptic Tenosol" ;
+.
+asc:TE-AW-JX
+  a asc:Greatgroup ;
+  asc:classifier asc:JX ;
+  skos:broader asc:TE-AW ;
+  skos:prefLabel "Paralithic Bleached-Leptic Tenosol" ;
+.
+asc:TE-BE
+  a asc:Suborder ;
+  asc:classifier asc:BE ;
+  asc:greatgroup asc:AK ;
+  asc:greatgroup asc:AS ;
+  asc:greatgroup asc:BU ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DD ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EC ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:GF ;
+  asc:greatgroup asc:HF ;
+  asc:greatgroup asc:IA ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:FC ;
+  asc:subgroup asc:FU ;
+  asc:subgroup asc:FV ;
+  asc:subgroup asc:GU ;
+  asc:subgroup asc:GY ;
+  skos:broader asc:TE ;
+  skos:narrower asc:TE-BE-AK ;
+  skos:narrower asc:TE-BE-AS ;
+  skos:narrower asc:TE-BE-BU ;
+  skos:narrower asc:TE-BE-CZ ;
+  skos:narrower asc:TE-BE-DD ;
+  skos:narrower asc:TE-BE-DU ;
+  skos:narrower asc:TE-BE-DZ ;
+  skos:narrower asc:TE-BE-EA ;
+  skos:narrower asc:TE-BE-EC ;
+  skos:narrower asc:TE-BE-EM ;
+  skos:narrower asc:TE-BE-GF ;
+  skos:narrower asc:TE-BE-HF ;
+  skos:narrower asc:TE-BE-IA ;
+  skos:prefLabel "Chernic Tenosol" ;
+.
+asc:TE-BE-AK
+  a asc:Greatgroup ;
+  asc:classifier asc:AK ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Andic Chernic Tenosol" ;
+.
+asc:TE-BE-AS
+  a asc:Greatgroup ;
+  asc:classifier asc:AS ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Bauxitic Chernic Tenosol" ;
+.
+asc:TE-BE-BU
+  a asc:Greatgroup ;
+  asc:classifier asc:BU ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Ferric Chernic Tenosol" ;
+.
+asc:TE-BE-CZ
+  a asc:Greatgroup ;
+  asc:classifier asc:CZ ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Lithic Chernic Tenosol" ;
+.
+asc:TE-BE-DD
+  a asc:Greatgroup ;
+  asc:classifier asc:DD ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Marly Chernic Tenosol" ;
+.
+asc:TE-BE-DU
+  a asc:Greatgroup ;
+  asc:classifier asc:DU ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Paralithic Chernic Tenosol" ;
+.
+asc:TE-BE-DZ
+  a asc:Greatgroup ;
+  asc:classifier asc:DZ ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Petrocalcic Chernic Tenosol" ;
+.
+asc:TE-BE-EA
+  a asc:Greatgroup ;
+  asc:classifier asc:EA ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Petroferric Chernic Tenosol" ;
+.
+asc:TE-BE-EC
+  a asc:Greatgroup ;
+  asc:classifier asc:EC ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Placic Chernic Tenosol" ;
+.
+asc:TE-BE-EM
+  a asc:Greatgroup ;
+  asc:classifier asc:EM ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Silpanic Chernic Tenosol" ;
+.
+asc:TE-BE-GF
+  a asc:Greatgroup ;
+  asc:classifier asc:GF ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Regolithic Chernic Tenosol" ;
+.
+asc:TE-BE-HF
+  a asc:Greatgroup ;
+  asc:classifier asc:HF ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Tephric Chernic Tenosol" ;
+.
+asc:TE-BE-IA
+  a asc:Greatgroup ;
+  asc:classifier asc:IA ;
+  skos:broader asc:TE-BE ;
+  skos:prefLabel "Inceptic Chernic Tenosol" ;
+.
+asc:TE-BF
+  a asc:Suborder ;
+  asc:classifier asc:BF ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:GE ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DW ;
+  skos:broader asc:TE ;
+  skos:narrower asc:TE-BF-BJ ;
+  skos:narrower asc:TE-BF-CZ ;
+  skos:narrower asc:TE-BF-DU ;
+  skos:narrower asc:TE-BF-DZ ;
+  skos:narrower asc:TE-BF-EA ;
+  skos:narrower asc:TE-BF-EM ;
+  skos:narrower asc:TE-BF-GE ;
+  skos:prefLabel "Chernic-Leptic Tenosol" ;
+.
+asc:TE-BF-BJ
+  a asc:Greatgroup ;
+  asc:classifier asc:BJ ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Duric Chernic-Leptic Tenosol" ;
+.
+asc:TE-BF-CZ
+  a asc:Greatgroup ;
+  asc:classifier asc:CZ ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Lithic Chernic-Leptic Tenosol" ;
+.
+asc:TE-BF-DU
+  a asc:Greatgroup ;
+  asc:classifier asc:DU ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Paralithic Chernic-Leptic Tenosol" ;
+.
+asc:TE-BF-DZ
+  a asc:Greatgroup ;
+  asc:classifier asc:DZ ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Petrocalcic Chernic-Leptic Tenosol" ;
+.
+asc:TE-BF-EA
+  a asc:Greatgroup ;
+  asc:classifier asc:EA ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Petroferric Chernic-Leptic Tenosol" ;
+.
+asc:TE-BF-EM
+  a asc:Greatgroup ;
+  asc:classifier asc:EM ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Silpanic Chernic-Leptic Tenosol" ;
+.
+asc:TE-BF-GE
+  a asc:Greatgroup ;
+  asc:classifier asc:GE ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Ferric-Petroferric Chernic-Leptic Tenosol" ;
+.
+asc:TE-CY
+  a asc:Suborder ;
+  asc:classifier asc:CY ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:GE ;
+  asc:subgroup asc:AI ;
+  asc:subgroup asc:AR ;
+  asc:subgroup asc:BC ;
+  asc:subgroup asc:DR ;
+  asc:subgroup asc:FF ;
+  asc:subgroup asc:FG ;
+  asc:subgroup asc:ID ;
+  skos:broader asc:TE ;
+  skos:narrower asc:TE-CY-BJ ;
+  skos:narrower asc:TE-CY-CZ ;
+  skos:narrower asc:TE-CY-DU ;
+  skos:narrower asc:TE-CY-DZ ;
+  skos:narrower asc:TE-CY-EA ;
+  skos:narrower asc:TE-CY-EM ;
+  skos:narrower asc:TE-CY-GE ;
+  skos:prefLabel "Leptic Tenosol" ;
+.
+asc:TE-CY-BJ
+  a asc:Greatgroup ;
+  asc:classifier asc:BJ ;
+  skos:broader asc:TE-BF ;
+  skos:prefLabel "Duric Leptic Tenosol" ;
+.
+asc:TE-CY-CZ
+  a asc:Greatgroup ;
+  asc:classifier asc:CZ ;
+  skos:broader asc:TE-CY ;
+  skos:prefLabel "Lithic Leptic Tenosol" ;
+.
+asc:TE-CY-DU
+  a asc:Greatgroup ;
+  asc:classifier asc:DU ;
+  skos:broader asc:TE-CY ;
+  skos:prefLabel "Paralithic Leptic Tenosol" ;
+.
+asc:TE-CY-DZ
+  a asc:Greatgroup ;
+  asc:classifier asc:DZ ;
+  skos:broader asc:TE-CY ;
+  skos:prefLabel "Petrocalcic Leptic Tenosol" ;
+.
+asc:TE-CY-EA
+  a asc:Greatgroup ;
+  asc:classifier asc:EA ;
+  skos:broader asc:TE-CY ;
+  skos:prefLabel "Petroferric Leptic Tenosol" ;
+.
+asc:TE-CY-EM
+  a asc:Greatgroup ;
+  asc:classifier asc:EM ;
+  skos:broader asc:TE-CY ;
+  skos:prefLabel "Silpanic Leptic Tenosol" ;
+.
+asc:TE-CY-GE
+  a asc:Greatgroup ;
+  asc:classifier asc:GE ;
+  skos:broader asc:TE-CY ;
+  skos:prefLabel "Ferric-Petroferric Leptic Tenosol" ;
+.
+asc:TE-IL
+  a asc:Suborder ;
+  asc:classifier asc:IL ;
+  asc:greatgroup asc:AP ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EF ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:GF ;
+  asc:greatgroup asc:IA ;
+  asc:subgroup asc:AI ;
+  asc:subgroup asc:AR ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:BC ;
+  asc:subgroup asc:DC ;
+  skos:broader asc:TE ;
+  skos:narrower asc:TE-IL-AP ;
+  skos:narrower asc:TE-IL-BJ ;
+  skos:narrower asc:TE-IL-CZ ;
+  skos:narrower asc:TE-IL-DU ;
+  skos:narrower asc:TE-IL-DZ ;
+  skos:narrower asc:TE-IL-EA ;
+  skos:narrower asc:TE-IL-EF ;
+  skos:narrower asc:TE-IL-EM ;
+  skos:narrower asc:TE-IL-GF ;
+  skos:narrower asc:TE-IL-IA ;
+  skos:prefLabel "Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-AP
+  a asc:Greatgroup ;
+  asc:classifier asc:AP ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Argic Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-BJ
+  a asc:Greatgroup ;
+  asc:classifier asc:BJ ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Duric Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-CZ
+  a asc:Greatgroup ;
+  asc:classifier asc:CZ ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Lithic Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-DU
+  a asc:Greatgroup ;
+  asc:classifier asc:DU ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Paralithic Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-DZ
+  a asc:Greatgroup ;
+  asc:classifier asc:DZ ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Petrocalcic Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-EA
+  a asc:Greatgroup ;
+  asc:classifier asc:EA ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Petroferric Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-EF
+  a asc:Greatgroup ;
+  asc:classifier asc:EF ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Reticulate Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-EM
+  a asc:Greatgroup ;
+  asc:classifier asc:EM ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Silpanic Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-GF
+  a asc:Greatgroup ;
+  asc:classifier asc:GF ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Regolithic Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IL-IA
+  a asc:Greatgroup ;
+  asc:classifier asc:IA ;
+  skos:broader asc:TE-IL ;
+  skos:prefLabel "Inceptic Sesqui-Nodular Tenosol" ;
+.
+asc:TE-IM
+  a asc:Suborder ;
+  asc:classifier asc:IM ;
+  asc:greatgroup asc:AK ;
+  asc:greatgroup asc:AO ;
+  asc:greatgroup asc:AP ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BU ;
+  asc:greatgroup asc:CZ ;
+  asc:greatgroup asc:DU ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EM ;
+  asc:greatgroup asc:GF ;
+  asc:greatgroup asc:HF ;
+  asc:subgroup asc:CQ ;
+  asc:subgroup asc:DA ;
+  asc:subgroup asc:FB ;
+  skos:broader asc:TE ;
+  skos:narrower asc:TE-IM-AK ;
+  skos:narrower asc:TE-IM-AO ;
+  skos:narrower asc:TE-IM-AP ;
+  skos:narrower asc:TE-IM-BJ ;
+  skos:narrower asc:TE-IM-BU ;
+  skos:narrower asc:TE-IM-CZ ;
+  skos:narrower asc:TE-IM-DU ;
+  skos:narrower asc:TE-IM-DZ ;
+  skos:narrower asc:TE-IM-EM ;
+  skos:narrower asc:TE-IM-GF ;
+  skos:narrower asc:TE-IM-HF ;
+  skos:prefLabel "Calcenic Tenosol" ;
+.
+asc:TE-IM-AK
+  a asc:Greatgroup ;
+  asc:classifier asc:AK ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Andic Calcenic Tenosol" ;
+.
+asc:TE-IM-AO
+  a asc:Greatgroup ;
+  asc:classifier asc:AO ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Arenic Calcenic Tenosol" ;
+.
+asc:TE-IM-AP
+  a asc:Greatgroup ;
+  asc:classifier asc:AP ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Argic Calcenic Tenosol" ;
+.
+asc:TE-IM-BJ
+  a asc:Greatgroup ;
+  asc:classifier asc:BJ ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Duric Calcenic Tenosol" ;
+.
+asc:TE-IM-BU
+  a asc:Greatgroup ;
+  asc:classifier asc:BU ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Ferric Calcenic Tenosol" ;
+.
+asc:TE-IM-CZ
+  a asc:Greatgroup ;
+  asc:classifier asc:CZ ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Lithic Calcenic Tenosol" ;
+.
+asc:TE-IM-DU
+  a asc:Greatgroup ;
+  asc:classifier asc:DU ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Paralithic Calcenic Tenosol" ;
+.
+asc:TE-IM-DZ
+  a asc:Greatgroup ;
+  asc:classifier asc:DZ ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Petrocalcic Calcenic Tenosol" ;
+.
+asc:TE-IM-EM
+  a asc:Greatgroup ;
+  asc:classifier asc:EM ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Silpanic Calcenic Tenosol" ;
+.
+asc:TE-IM-GF
+  a asc:Greatgroup ;
+  asc:classifier asc:GF ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Regolithic Calcenic Tenosol" ;
+.
+asc:TE-IM-HF
+  a asc:Greatgroup ;
+  asc:classifier asc:HF ;
+  skos:broader asc:TE-IM ;
+  skos:prefLabel "Tephric Calcenic Tenosol" ;
 .
 asc:VE
   a asc:Order ;
@@ -677,6 +1409,12 @@ Because cracking, slickensides and/or lenticular peds are essentially used as ev
 3. Slickensides and/or lenticular peds occur at some depth in the solum. """ ;
   skos:notation "VE" ;
   skos:prefLabel "Vertosols" ;
+.
+asc:classifier
+  a owl:ObjectProperty ;
+  rdfs:label "Differentiating class" ;
+  rdfs:range asc:Class ;
+  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:colourclass
   a owl:ObjectProperty ;
@@ -706,7 +1444,7 @@ asc:family-criteria
 .
 asc:greatgroup
   a owl:ObjectProperty ;
-  rdfs:domain asc:Order ;
+  rdfs:domain asc:Suborder ;
   rdfs:label "Great group" ;
   rdfs:range asc:Class ;
   rdfs:subPropertyOf dcterms:relation ;
@@ -717,9 +1455,16 @@ asc:greatgroup-comment
   rdfs:label "Great group comment" ;
   rdfs:subPropertyOf skos:note ;
 .
+asc:order
+  a owl:ObjectProperty ;
+  rdfs:domain asc:Suborder ;
+  rdfs:label "Parent order" ;
+  rdfs:range asc:Order ;
+  rdfs:subPropertyOf skos:broader ;
+.
 asc:subgroup
   a owl:ObjectProperty ;
-  rdfs:domain asc:Order ;
+  rdfs:domain asc:Suborder ;
   rdfs:label "Subgroup" ;
   rdfs:range asc:Class ;
   rdfs:subPropertyOf dcterms:relation ;
@@ -729,13 +1474,6 @@ asc:subgroup-comment
   rdfs:domain asc:Order ;
   rdfs:label "Subgroup comment" ;
   rdfs:subPropertyOf skos:note ;
-.
-asc:suborder
-  a owl:ObjectProperty ;
-  rdfs:domain asc:Order ;
-  rdfs:label "Suborder" ;
-  rdfs:range asc:Class ;
-  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:suborder-comment
   a owl:AnnotationProperty ;
