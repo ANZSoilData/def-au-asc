@@ -1,0 +1,103 @@
+# baseURI: http://anzsoil.org/def/au/asc-glossary/
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: asc-glossary
+
+@prefix asc-glossary: <http://anzsoil.org/def/au/asc-glossary/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+asc-glossary:
+  a owl:Ontology ;
+  dcterms:contributor <https://orcid.org/0000-0002-3884-3420> ;
+  dcterms:created "2021-11-19"^^xsd:date ;
+  dcterms:description """This glossary does not attempt to define all morphological terms used in the classification. It mainly deals with those that are not defined in the Australian Soil and Land Survey Field Handbook (NCST 2009). As the Field Handbook is currently being revised, some definitions in the glossary are aligned with the new Field Handbook rather than the current (third) edition.
+
+Within this glossary, and throughout this website, the Australian Soil and Land Survey Field Handbook is referred to as the Field Handbook (the Field Handbook is also colloquially known as the Yellow book due to the colour of its cover).
+
+For clarity in this publication the levels in the classification are capitalised - e.g. Order, Suborder, Great Group, Subgroup and Family. This is not a requirement when using these terms outside of this publication.""" ;
+  dcterms:license <http://creativecommons.org/licences/by/4.0> ;
+  dcterms:modified "2021-11-19"^^xsd:date ;
+  dcterms:source "The Australian Soil Classification (ASC) Third Edition, by R.F. Isbell and the National Committee on Soil and Terrain. " ;
+  dcterms:title "The Australian Soil Classification - Glossary" ;
+  rdfs:seeAlso <https://www.publish.csiro.au/book/8016> ;
+  rdfs:seeAlso <https://www.soilscienceaustralia.org.au/asc/soilhome.htm> ;
+  owl:imports dcterms: ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+asc-glossary:A-horizons
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A-horizons"^^xsd:anyURI ;
+  skos:narrower asc-glossary:A1-horizon ;
+  skos:narrower asc-glossary:A2-horizon ;
+  skos:narrower asc-glossary:A2-horizon-bleached ;
+  skos:narrower asc-glossary:Ap-horizon ;
+  skos:prefLabel "A horizons" ;
+.
+asc-glossary:A1-horizon
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A1-horizon"^^xsd:anyURI ;
+  skos:definition "Mineral horizon at or near the soil surface with some accumulation of humified organic matter. Usually darker than underlying horizon/s." ;
+  skos:prefLabel "A1 horizon" ;
+.
+asc-glossary:A2-horizon
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A2-horizon"^^xsd:anyURI ;
+  skos:definition "Mineral horizon below the A1 horizon having, either alone or in combination, less organic matter, sesquioxides, or silicate clay than immediately adjacent horizons. Usually paler than adjacent horizons." ;
+  skos:prefLabel "A2 horizon" ;
+.
+asc-glossary:A2-horizon-bleached
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A2-horizon-bleached"^^xsd:anyURI ;
+  skos:definition "80% or more of the horizon is bleached. Bleached horizons are defined in terms of Munsell Soil Color notation for dry soil. For all hues, value 7 or greater and chroma 4 or less or where adjacent horizons have hues 5YR or redder, value 6 or greater with chroma 4 or less." ;
+  skos:prefLabel "Conspicuously bleached A2 horizon" ;
+.
+asc-glossary:Andic-properties
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/Andic-properties"^^xsd:anyURI ;
+  skos:definition "These occur in soils which contain significant amounts of volcanic glass and short-range-order minerals such as allophane. Chemical tests and Soil Taxonomy requirements are given in Soil Survey Staff (1999)." ;
+  skos:prefLabel "Andic properties" ;
+.
+asc-glossary:Ap-horizon
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/Ap-horizon"^^xsd:anyURI ;
+  skos:definition """A horizon/s where ploughing or other disturbance by humans has occurred.
+
+Refer to the Field Handbook for further information.""" ;
+  skos:prefLabel "Ap horizon" ;
+.
+asc-glossary:Argic-horizon
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/Argic-horizon"^^xsd:anyURI ;
+  skos:definition """An argic horizon is a subsoil horizon(s) consisting of distinct lamellae, usually 5 to 10 mm thick but occasionally up to 100 mm or greater. They occur as sharply defined, horizontal to subhorizontal layers which are appreciably more clayey than the adjacent sandy or sandy loam soil material. Consistence strength is stronger, and colour is usually darker and redder or browner than the adjacent soil.
+
+This use of the term 'argic' varies from its use in the World Reference Base (2015).
+
+The most common known occurrences are in the mallee dune landscapes of Victoria-South Australia.""" ;
+  skos:prefLabel "Argic horizon" ;
+.
+asc-glossary:Ash-material
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/Ash-material"^^xsd:anyURI ;
+  skos:definition "The carbon-rich material that remains after the burning of organic materials e.g. P horizons (peat) or O horizons (organic debris). In some cases, humose soil material with >10% organic carbon may also ignite to produce ash material. Ash material may occur on the surface, or as one or more layers in soil horizons or distributed along former root channels." ;
+  skos:prefLabel "Ash material" ;
+.
+asc-glossary:B-horizons
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/B-horizons"^^xsd:anyURI ;
+  skos:definition """The definition of a B horizon has historically differed between the Field Handbook and the A ustralian Soil Classification. The following amended definition of a B horizon is now adopted in both publications.
+
+Horizon in which the dominant feature is one or more of the following:
+
+An illuvial, residual or other concentration of silicate clay, iron, aluminium, carbonate, gypsum, manganese, or organic material, alone or in combination.
+Maximum development of pedologic organisation as evidenced by a different structure and/or consistence, and/or stronger colours than the A horizon(s) above or any horizon immediately below.
+In some shallow, stony soils B horizon material may only be present in fissures within the parent rock or saprolite. In such cases there should be 50% or more (visual abundance estimate) of B horizon material for it to qualify as a B horizon for the purposes of this classification (See also \"What do we classify\" and transitional horizons).
+
+Note: A B1 horizon is a transitional horizon between A and B, which is dominated by properties characteristic of an underlying B2.""" ;
+  skos:prefLabel "B horizons" ;
+.
