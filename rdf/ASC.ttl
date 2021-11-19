@@ -908,7 +908,7 @@ asc:TE-AW-DU
   a asc:Greatgroup ;
   asc:classifier asc:DU ;
   skos:broader asc:TE-AW ;
-  skos:prefLabel "Ferric-Petroferric Bleached-Leptic Tenosol" ;
+  skos:prefLabel "Paralithic Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-DZ
   a asc:Greatgroup ;
@@ -950,7 +950,7 @@ asc:TE-AW-JX
   a asc:Greatgroup ;
   asc:classifier asc:JX ;
   skos:broader asc:TE-AW ;
-  skos:prefLabel "Paralithic Bleached-Leptic Tenosol" ;
+  skos:prefLabel "Gritty-Paralithic Bleached-Leptic Tenosol" ;
 .
 asc:TE-BE
   a asc:Suborder ;
