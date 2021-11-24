@@ -30,37 +30,51 @@ asc:
 .
 asc:AA
   a asc:ColourClass ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AA"^^xsd:anyURI ;
   skos:notation "AA" ;
   skos:prefLabel "Red" ;
 .
 asc:AB
   a asc:ColourClass ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AB"^^xsd:anyURI ;
   skos:notation "AB" ;
   skos:prefLabel "Brown" ;
 .
 asc:AC
   a asc:ColourClass ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AC"^^xsd:anyURI ;
   skos:notation "AC" ;
   skos:prefLabel "Yellow" ;
 .
 asc:AD
   a asc:ColourClass ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AD"^^xsd:anyURI ;
   skos:notation "AD" ;
   skos:prefLabel "Grey" ;
 .
 asc:AE
   a asc:ColourClass ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AE"^^xsd:anyURI ;
   skos:notation "AE" ;
   skos:prefLabel "Black" ;
 .
 asc:AI
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AI"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the major part of the solum is strongly acid." ;
   skos:notation "AI" ;
   skos:prefLabel "Acidic  " ;
 .
 asc:AK
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AK"^^xsd:anyURI ;
   skos:definition "[TE] Soils which have andic properties and has formed in basaltic tephric materials that may be visibly stratified." ;
   skos:notation "AK" ;
   skos:prefLabel "Andic " ;
@@ -73,6 +87,7 @@ asc:AN
 To qualify as soil an Anthroposol needs to possess some pedogenic features, as noted below. Key criteria in the identification of an Anthroposol are the presence of artefacts in the profile or knowledge that the soils or their parent materials have been made or altered by human action.
 
 Anthroposols differ from other soils in that we normally know their origin with a degree of certainty, and hence we can invoke a knowledge of process rather than defined pedogenic attributes to initially classify the soil. We can then subdivide at the higher levels on the basis of type of process and nature of the product which forms the parent material of the new soil. At lower levels in the classification, conventional soil properties could be used when available, although obviously these will be limited in very young soils.""" ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AN"^^xsd:anyURI ;
   rdfs:comment """It is difficult to quantify ‘profound modification, mixing and truncation’ but this would normally exclude the usual agricultural operations (including land planning) which may change a soil from say a Chromosol to a Dermosol by mixing or removal of the upper horizons. Similarly, soils that are artificially drained or flooded are not Anthroposols but may classify as different soil orders following a permanent change in water status (see also comment in Hydrosols).
 
 There will be instances where the question is how much truncation results in ‘profound modification’ or merely a truncated phase. It is difficult to give guidelines that will cover all circumstances, and inevitably judgement is required. Similarly, there will be instances where land reclamation and restoration in the past have been so successful that little evidence of a prior disturbance remains, and soil development gives no clue to past history. A good example of this is Podosol development on restored and revegetated coastal dunes following sand mining.""" ;
@@ -82,72 +97,96 @@ There will be instances where the question is how much truncation results in ‘
 .
 asc:AO
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AO"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the profile is not or only slightly gravelly (<20% >2mm) throughout, the soil material is either loose or only weakly coherent both moist and dry, may have aeolian cross bedding, and the texture is dominantly sandy (i.e. field textures of S-LS-CS) in >80% of the profile and no layer with a clay content of >15% (i.e. field texture of SL+)." ;
   skos:notation "AO" ;
   skos:prefLabel "Arenic " ;
 .
 asc:AP
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AP"^^xsd:anyURI ;
   skos:definition "[TE] Soils with an argic horizon within the solum." ;
   skos:notation "AP" ;
   skos:prefLabel "Argic " ;
 .
 asc:AR
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AR"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the major part of the solum is not strongly acid and no part of the solum is calcareous." ;
   skos:notation "AR" ;
   skos:prefLabel "Basic  " ;
 .
 asc:AS
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AS"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a bauxitic horizon." ;
   skos:notation "AS" ;
   skos:prefLabel "Bauxitic  " ;
 .
 asc:AT
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AT"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a conspicuously bleached A2 horizon." ;
   skos:notation "AT" ;
   skos:prefLabel "Bleached " ;
 .
 asc:AW
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AW"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a conspicuously bleached A2 horizon, and are underlain within 0.5 m of the surface by a calcrete pan ; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite." ;
   skos:notation "AW" ;
   skos:prefLabel "Bleached-Leptic" ;
 .
 asc:AY
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/AY"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a conspicuously bleached A2 horizon and a manganic horizon within the solum." ;
   skos:notation "AY" ;
   skos:prefLabel "Bleached-Manganic" ;
 .
 asc:BC
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/BC"^^xsd:anyURI ;
   skos:definition "[TE] Other soils in which at least some part of the solum is calcareous." ;
   skos:notation "BC" ;
   skos:prefLabel "Calcareous   " ;
 .
 asc:BE
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/BE"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a peaty, humose, melacic or melanic horizon. A conspicuously bleached A2 horizon is not present." ;
   skos:notation "BE" ;
   skos:prefLabel "Chernic" ;
 .
 asc:BF
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/BF"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a peaty, humose, melacic or melanic horizon, and are underlain within 0.5 m of the surface by a calcrete pan; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite. An unbleached A2 horizon may be present between the dark surface horizons and the substrate material." ;
   skos:notation "BF" ;
   skos:prefLabel "Chernic-Leptic" ;
 .
 asc:BJ
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/BJ"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie a red-brown hardpan." ;
   skos:notation "BJ" ;
   skos:prefLabel "Duric " ;
 .
 asc:BU
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/BU"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a ferric horizon." ;
   skos:notation "BU" ;
   skos:prefLabel "Ferric " ;
@@ -156,6 +195,7 @@ asc:CA
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "The soils in this Order are usually calcareous throughout the profile, often highly so. They constitute a widespread and important group of soils in southern Australia." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/CA"^^xsd:anyURI ;
   rdfs:comment """A difficulty may arise in separating those Calcarosols that are not calcareous throughout from calcareous Kandosols and from Tenosols containing pedogenic carbonate. However, in the latter two soils it is usual for the carbonate to occur in the lower part of the B horizon, and not immediately below the A horizon. Even so, transitional cases will arise where it becomes a matter of judgement as to which order the particular soil is best placed. Similar transitions might occur between shallow Calcarosols and Arenic Rudosols overlying a layer of calcrete or limestone. Again, Calcareous Arenic Rudosols will occur where recent aeolian calcareous material has been deposited.
 
 In landscapes dominated by wind-blown calcareous material it may be difficult to determine if the carbonates are of pedogenic origin. Deep calcareous sands, which commonly occur in this situation, are now included in the Arenosols order.
@@ -175,6 +215,7 @@ asc:CH
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "Soils with strong texture contrast between A horizons and B horizons. The latter are not strongly acid and are not sodic. The soils of this order are among the most widespread soils used for agriculture in Australia, particularly those with red subsoils." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/CH"^^xsd:anyURI ;
   rdfs:comment "In the case of those soils with strongly subplastic B horizons, care needs to be taken to ensure if they qualify for the clear or abrupt textural B horizon. As far as is presently known, such soils appear to be largely confined to the Riverine Plain of south eastern Australia." ;
   skos:definition "Soils other than Hydrosols with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is not sodic and not strongly acid. Soils with strongly subplastic upper B2t horizons are also included even if they are sodic." ;
   skos:notation "CH" ;
@@ -182,24 +223,32 @@ asc:CH
 .
 asc:CK
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/CK"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a humose horizon." ;
   skos:notation "CK" ;
   skos:prefLabel "Humose  " ;
 .
 asc:CQ
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/CQ"^^xsd:anyURI ;
   skos:definition "[TE] Other soils in which the calcareous horizon contains less than 20% of hard calcrete fragments and/or carbonate nodules or concretions." ;
   skos:notation "CQ" ;
   skos:prefLabel "Hypercalcic    " ;
 .
 asc:CY
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/CY"^^xsd:anyURI ;
   skos:definition "[TE] Soils which are underlain within 0.5 m of the surface by a calcrete pan; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite." ;
   skos:notation "CY" ;
   skos:prefLabel "Leptic " ;
 .
 asc:CZ
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/CZ"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie hard rock." ;
   skos:notation "CZ" ;
   skos:prefLabel "Lithic " ;
@@ -215,18 +264,24 @@ asc:ColourClass
 .
 asc:DA
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DA"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the calcareous horizon contains more than 50% of hard calcrete fragments and/or carbonate nodules or concretions." ;
   skos:notation "DA" ;
   skos:prefLabel "Lithocalcic " ;
 .
 asc:DC
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DC"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a manganic horizon with the solum." ;
   skos:notation "DC" ;
   skos:prefLabel "Manganic   " ;
 .
 asc:DD
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DD"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie marl." ;
   skos:notation "DD" ;
   skos:prefLabel "Marly " ;
@@ -235,6 +290,7 @@ asc:DE
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "Soils with structured B2 horizons and lacking a strong texture-contrast between the A and B horizons. Although there is some diversity within the order, it brings together a range of soils with some important properties in common." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DE"^^xsd:anyURI ;
   rdfs:comment "Some clayey soils in the arid zone which are relatively high in salt tend to have strong, fine blocky structure. It may be difficult to decide if they are Vertosols or Dermosols because of an apparent lack of cracking and slickensides or lenticular peds. The use of shrinkage measurements such as those discussed under vertic properties will help to resolve this situation." ;
   skos:definition """Soils other than Vertosols, Hydrosols, Calcarosols and Ferrosols which:
 
@@ -246,72 +302,96 @@ asc:DE
 .
 asc:DG
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DG"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a melacic horizon." ;
   skos:notation "DG" ;
   skos:prefLabel "Melacic  " ;
 .
 asc:DK
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DK"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a melanic horizon." ;
   skos:notation "DK" ;
   skos:prefLabel "Melanic   " ;
 .
 asc:DR
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DR"^^xsd:anyURI ;
   skos:definition "[TE] Soils with all the requirements of a humose horizon except the thickness." ;
   skos:notation "DR" ;
   skos:prefLabel "Subhumose    " ;
 .
 asc:DU
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DU"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie partially weathered or decomposed rock or saprolite." ;
   skos:notation "DU" ;
   skos:prefLabel "Paralithic" ;
 .
 asc:DW
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DW"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a peaty horizon." ;
   skos:notation "DW" ;
   skos:prefLabel "Peaty " ;
 .
 asc:DZ
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/DZ"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie a calcrete pan." ;
   skos:notation "DZ" ;
   skos:prefLabel "Petrocalcic" ;
 .
 asc:EA
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/EA"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie ferricrete, a petroferric horizon or a petroreticulate horizon." ;
   skos:notation "EA" ;
   skos:prefLabel "Petroferric" ;
 .
 asc:EC
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/EC"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a thin ironpan." ;
   skos:notation "EC" ;
   skos:prefLabel "Placic " ;
 .
 asc:EF
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/EF"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie a reticulate horizon." ;
   skos:notation "EF" ;
   skos:prefLabel "Reticulate  " ;
 .
 asc:EM
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/EM"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie a siliceous pan." ;
   skos:notation "EM" ;
   skos:prefLabel "Silpanic " ;
 .
 asc:FB
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FB"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the calcareous horizon contains 20-50% of hard calcrete fragments and/or carbonate nodules or concretions." ;
   skos:notation "FB" ;
   skos:prefLabel "Supracalcic   " ;
 .
 asc:FC
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FC"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a melanic horizon and at least some part of the B, BC or C/B horizon (if present) is calcareous." ;
   skos:notation "FC" ;
   skos:prefLabel "Melanic-Calcareous" ;
@@ -320,6 +400,7 @@ asc:FE
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "Soils with B2 horizons which are high in free iron oxide and lacking a strong texture-contrast between the A and B horizons." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FE"^^xsd:anyURI ;
   rdfs:comment "These soils are almost entirely formed on either mafic or ultramafic igneous rocks, their metamorphic equivalents, or alluvium derived therefrom. Although these soils do not occupy large areas in Australia, they are widely recognised and often intensively used because of their favourable physical properties. The most common forms have B2 horizons with a strong grade of pedality; such horizons typically have polyhedral compound peds up to 10-15 mm, usually with smooth and often shiny faces, which break down readily to primary peds about 5 mm or less in size. However forms also occur with a very fine granular structure which may appear massive in place. Horizons are usually high in clay and subplastic." ;
   skos:definition """Soils other than Vertosols, Hydrosols, and Calcarosols that:
 
@@ -331,30 +412,40 @@ asc:FE
 .
 asc:FF
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FF"^^xsd:anyURI ;
   skos:definition "[TE] Soils with all the requirements of a melacic horizon except the thickness." ;
   skos:notation "FF" ;
   skos:prefLabel "Submelacic     " ;
 .
 asc:FG
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FG"^^xsd:anyURI ;
   skos:definition "[TE] Soils with all the requirements of a melanic horizon except the thickness." ;
   skos:notation "FG" ;
   skos:prefLabel "Submelanic     " ;
 .
 asc:FK
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FK"^^xsd:anyURI ;
   skos:definition "[TE] Soils which have a ferric horizon and overlies a red-brown hardpan." ;
   skos:notation "FK" ;
   skos:prefLabel "Ferric-Duric" ;
 .
 asc:FU
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FU"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a melacic horizon and the major part of the B horizon (if present) is not strongly acid but the B and BC or C/B horizons are not calcareous." ;
   skos:notation "FU" ;
   skos:prefLabel "Melacic-Basic  " ;
 .
 asc:FV
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/FV"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a melanic horizon and the major part of the B horizon (if present) is strongly acid." ;
   skos:notation "FV" ;
   skos:prefLabel "Melanic-Acidic" ;
@@ -365,24 +456,32 @@ asc:Family
 .
 asc:GE
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/GE"^^xsd:anyURI ;
   skos:definition "[TE] Soils which contains a ferric horizon and directly overlies ferricrete, a petroferric horizon or a petroreticulate horizon." ;
   skos:notation "GE" ;
   skos:prefLabel "Ferric-Petroferric" ;
 .
 asc:GF
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/GF"^^xsd:anyURI ;
   skos:definition "[TE] Soils which overlie other unconsolidated mineral materials." ;
   skos:notation "GF" ;
   skos:prefLabel "Regolithic " ;
 .
 asc:GU
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/GU"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a humose horizon and at least some part of the B, BC or C/B horizon (if present) is calcareous." ;
   skos:notation "GU" ;
   skos:prefLabel "Humose-Calcareous" ;
 .
 asc:GY
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/GY"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a humose horizon and the major part of the B horizon (if present) is strongly acid." ;
   skos:notation "GY" ;
   skos:prefLabel "Humose-Acidic " ;
@@ -404,6 +503,8 @@ asc:Greatgroup
 .
 asc:HF
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/HF"^^xsd:anyURI ;
   skos:definition "[TE] Soils which have formed in tephric materials that may be visibly stratified." ;
   skos:notation "HF" ;
   skos:prefLabel "Tephric " ;
@@ -416,6 +517,7 @@ asc:HY
 Saturation by a water table may not necessarily be caused by low soil permeability. Often site drainage will be the most important factor, while in other well-known cases tidal influence is dominant. The relevant Field Handbook drainage classes are very poorly and poorly drained.
 
 Several major classes of soils are excluded because it is considered their other profile characteristics are of greater significance than wetness. These are the Organosols, Podosols and Vertosols. Although some Hydrosols are dominated by organic materials (see Intertidal Hydrosols below), it is thought that because of their unique nature (ie. largely consisting of mangrove debris that is regularly inundated by saline tidal waters), it is more appropriate to classify them as an organic form of Hydrosols rather than as a class of Organosols that occur in a mangrove environment.""" ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/HY"^^xsd:anyURI ;
   rdfs:comment """The approach taken in this concept of 'wet' soils differs from more traditional usage in that reducing conditions are not emphasised. The rationale for the present approach is based on the assumption that saturation affects soil properties irrespective of whether or not reducing conditions are present. Obvious examples are those relating to certain physical and engineering properties, which result in limitations to the use of a soil eg. trafficability, etc.
 
 A further reason for not making reducing conditions mandatory is the well-known difficulty in identifying such conditions, which are often of a temporal nature and sporadic in spatial distribution. It is widely recognised that the traditional use of gley colours and particular kinds of mottling are not universally indicative of a saturated condition or its duration. In particular, mottles or other segregations can be relict. Another problem in identification of reducing conditions, is the experience that various indicator dyes such as α,α-dipyridyl (Childs & Clayden 1986) may be unreliable.
@@ -431,54 +533,72 @@ In the case of irrigated soils, the main example is when more or less permanent 
 .
 asc:IA
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/IA"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a transitional horizon (C/B) occurring in fissures in the parent rock or saprolite which contains between 10 and 50% of B horizon material (including pedogenic carbonate)." ;
   skos:notation "IA" ;
   skos:prefLabel "Inceptic " ;
 .
 asc:ID
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/ID"^^xsd:anyURI ;
   skos:definition "[TE] Soils with all the requirements for a peaty horizon except the thickness." ;
   skos:notation "ID" ;
   skos:prefLabel "Subpeaty   " ;
 .
 asc:IL
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/IL"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a ferric or bauxitic horizon (nodules or concretions) that is at least 0.2 m thick and occupies >50% of the solum depth. The solum depth excludes cemented layers. Genetically these soils may be closely related to Podosols" ;
   skos:notation "IL" ;
   skos:prefLabel "Sesqui-Nodular" ;
 .
 asc:IM
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/IM"^^xsd:anyURI ;
   skos:definition "[TE] Soils with a horizon containing more than 20% of fine earth carbonate that is at least 0.2 m thick." ;
   skos:notation "IM" ;
   skos:prefLabel "Calcenic" ;
 .
 asc:IS
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/IS"^^xsd:anyURI ;
   skos:definition "[TE] Soils which contain a ferric horizon and which overlie a reticulate horizon." ;
   skos:notation "IS" ;
   skos:prefLabel "Ferric-Reticulate" ;
 .
 asc:JQ
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/JQ"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel." ;
   skos:notation "JQ" ;
   skos:prefLabel "Gritty" ;
 .
 asc:JV
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/JV"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which a major part of the upper 1.0 m has a distinct gritty feel and overlies a siliceous pan." ;
   skos:notation "JV" ;
   skos:prefLabel "Gritty-Silpanic " ;
 .
 asc:JW
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/JW"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel and overlies hard rock." ;
   skos:notation "JW" ;
   skos:prefLabel "Gritty-Lithic " ;
 .
 asc:JX
   a asc:Class ;
+  a skos:Concept ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/JX"^^xsd:anyURI ;
   skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel and overlies partially weathered or decomposed rock or saprolite." ;
   skos:notation "JX" ;
   skos:prefLabel "Gritty-Paralithic" ;
@@ -487,6 +607,7 @@ asc:KA
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "This order accommodates those soils which lack strong texture contrast, have massive or only weakly structured B horizons, and are not calcareous throughout. The soils of this order range throughout the continent, often occurring locally as very large areas." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/KA"^^xsd:anyURI ;
   rdfs:comment """Because of the lack of clearly defined horizons in some of these soils (particularly the red forms) with thick sola, there can be argument as to how to identify the limits of the B2 horizon.
 
 There may be difficulty differentiating between Kandosols and Arenosols, where texture and horizon development is weak and sandy textures dominate. Some Kandosols have very thick A and/or B1 horizons with sandy textures that overlie at > 1m deep, B2t horizons which exceed 15% clay.""" ;
@@ -504,6 +625,7 @@ asc:KU
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "Soils with strong texture contrast between A horizons and strongly acid B horizons. Many of these soils have some unusual subsoil chemical features (high magnesium, sodium and aluminium)." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/KU"^^xsd:anyURI ;
   rdfs:comment "The relevance of sodicity in strongly acid soils is open to question as in theory the presence of aluminium in such soils should counterbalance the usual deleterious effect of sodium (via dispersion) on soil physical properties. Unpublished data from many localities in Australia imply that for B horizons the critical limits of pHw 5.5 and ESP of 6 to distinguish dispersive and non-dispersive soils seems to generally work in practice, although as might be expected, some soils do not behave as predicted. For this reason, sodicity is also used in Kurosols, but at a lower hierarchical level, to cater for those soils which have an ESP > 6 and may disperse in spite of having a pHw less than 5.5. The role of the high exchangeable magnesium in many Kurosols is largely unknown." ;
   skos:definition "Soils other than Hydrosols with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is strongly acid." ;
   skos:notation "KU" ;
@@ -513,6 +635,7 @@ asc:OR
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "This class caters for most soils dominated by organic materials Although they are found from the wet tropics to the alpine regions, areas are mostly small except in south west Tasmania. There have been few previous attempts to subdivide these soils and substantial data are limited to Tasmania." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/OR"^^xsd:anyURI ;
   rdfs:comment "Soils with peaty horizons that do not meet the organic materials requirements of Organosols are catered for in other Orders, commonly Hydrosols. Organosols may classify as a buried soil if overlain by aeolian or fluvial deposits that may have undergone other developmental processes. If the overlying material is less than 0.3 m and can only qualify as a Rudosol, it is regarded as a depositional phase of the Organosol below." ;
   skos:definition """Soils that are not regularly inundated by saline tidal waters and either:
 
@@ -535,6 +658,7 @@ asc:PO
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "Soils with B horizons dominated by the accumulation of compounds of organic matter, aluminium and/or iron. These soils are recognised world-wide, and Australia is particularly noted for its 'giant' forms. Podosols are typically found in close proximity to the coast and on islands comprised of quartz sand." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/PO"^^xsd:anyURI ;
   rdfs:comment """Extensive revisions of the classification of Spodosols and Podzols have taken place in the USA (with world-wide input) and New Zealand. It is clear that there is considerable diversity of opinion on the desirability, nature and efficacy of chemical criteria to define Spodosols/Podzols. For this reason the present proposal for Australian 'podzols' has deliberately avoided the use of chemical diagnostic criteria.
 
 Some Podosols with deep diagnostic B horizons may classify initially as Bleached Arenosols. Only deep examination of the soil profile can confirm the order of such soils.""" ;
@@ -548,6 +672,7 @@ asc:RE
   dcterms:description """The core concept of this Order is \"deep sandy soils\".
 
 Arenosols accommodate soils with predominantly sandy field textures (≤10% clay content), and with no horizons containing more than 15% clay within the upper 1.0 m of the profile. The presence of argic horizons are the only exception. Arenosols generally have no observable peds apart from some structural development in the A1 horizon. The upper 1.0 m of the soil profile can only contain relatively small amounts of coarse fragments or coarse, hard segregations and does not contain any hard layers such as pans or rock. Arenosols occur extensively in inland arid areas, in and adjacent to waterways, near to the coast (especially in the west), but are also present in many other parts of Australia. This Order incorporates the most widespread and abundant soils in Australia.""" ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/RE"^^xsd:anyURI ;
   rdfs:comment """As B horizons are difficult to identify consistently in some Arenosols, specific mention of a B2 horizon is omitted from some Suborders. Arenosols will obviously grade to Kandosols and some difficulty may be experienced in separating them. Here Kandosols must have a clearly distinguishable, well-developed B2 horizon with more than 15% clay whereas Arenosols have less than 15% clay.
 
 Reclassification may also be required for other sandy soils where deep examination below 1.0 m reveals deep more clayey B horizons. See How to Classify for assistance with determining whether the layer is a B or D horizon. If the layer is a D horizon, the soil remains classified as an Arenosol.
@@ -576,6 +701,7 @@ asc:RU
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "This order is designed to accommodate soils that have little, if any, pedologic organisation. They are usually young soils in the sense that soil forming factors have had little time to pedologically modify parent rocks or sediments. The component soils can obviously vary widely in terms of texture and depth; many are stratified and some are highly saline. Data on some of them are very limited." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/RU"^^xsd:anyURI ;
   rdfs:comment """By definition, these soils will grade to Tenosols, so before deciding on the order check the Tenosol definition as it will often be a matter of judgement as to which order a particular soil is best placed. Arenic (sandy) Rudosols will grade to Arenosols, although by definition will have sand less than 1.0 m deep. Hydrosols are excluded on the basis that these will normally show some pedological development eg. mottling. A particular problem with the definition and subdivision of Rudosols is the difficulty in distinguishing between soil and 'non-soil', (see also 'What do we classify?'). In many instances they are classified on the basis of the nature of AC or C horizon materials or other substrates because these are the dominating features of the profile. It also follows that there may be difficulties in deciding if a soil is best classified as an Anthroposol or be regarded as an ‘anthropic’ Rudosol because the little-altered soil parent material may be human-made.
 
 Rudosols in arid climatic zones form under a variety of processes (i.e. dust accretion, biological surface crusts, reduced leaching and more active wind and water erosion under sparse vegetation cover). The relative significance of these processes will differ from other climatic zones.""" ;
@@ -587,6 +713,7 @@ asc:SO
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "Soils with strong texture contrast between A horizons and sodic B horizons which are not strongly acid. Australia is noteworthy for the extent and diversity of sodic soils (Isbell 1995)." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/SO"^^xsd:anyURI ;
   rdfs:comment """There is convincing evidence from the Riverine Plain of south eastern Australia that soils with sodic clay B horizons (ESP 25-30) which are strongly subplastic behave very differently in terms of permeability to the more commonly found plastic sodic clay B horizons which are characterised by low to very low saturated hydraulic conductivity (McIntyre 1979). It is on this basis that subplastic sodic soils are excluded from Sodosols, because of their very different land use properties.
 
 Strongly acid sodic soils are also excluded from Sodosols because they usually contain appreciable exchangeable aluminium (KCl extractable) and thus should be unlikely to disperse.
@@ -634,6 +761,7 @@ asc:TE
 
 If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
   dcterms:description "This order is designed to embrace soils with generally only weak pedologic organisation apart from the A horizons, excluding soils that have deep sandy profiles with a field texture of sand, loamy sand or clayey sand in 80% or more of the upper 1.0 m. It encompasses a rather diverse range of soils which occur in many parts of Australia." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE"^^xsd:anyURI ;
   rdfs:comment """It may be desirable to specify a minimum thickness for those A1 horizons which do not meet the requirements for a peaty, humose, melacic or melanic horizon. The inclusion of certain soils with conspicuously bleached A2 horizons may be questioned by some, but it is difficult to find a more appropriate place for them.
 
 The Tenosols will differ from Rudosols by virtue of having either a more than weakly developed A1 horizon, an A2, or a weakly developed B horizon. As B horizons are difficult to identify consistently in some Tenosols, specific mention of a B horizon is omitted from some Suborders. They will obviously grade to Kandosols, and some difficulty may be experienced in separating medium-textured Tenosols from Kandosols. Here again, B horizon development is the key; Kandosols must have a clearly distinguishable, well-developed B2 horizon with more than 15% clay. Tenosols will grade to Podosols, but the latter must have a Podosol diagnostic B horizon. Tenosols also grade to Arenosols but lack the deep sandy horizons characteristic of this order. In cold, wet environments, some Tenosols with peaty A horizons will grade to Organosols.
@@ -661,6 +789,7 @@ This third edition of the Australian Soil Classification removes the Orthic term
 .
 asc:TE-AT
   a asc:Suborder ;
+  a skos:Concept ;
   asc:classifier asc:AT ;
   asc:greatgroup asc:AK ;
   asc:greatgroup asc:AO ;
@@ -697,6 +826,7 @@ asc:TE-AT
   asc:subgroup asc:FV ;
   asc:subgroup asc:GU ;
   asc:subgroup asc:GY ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT"^^xsd:anyURI ;
   skos:broader asc:TE ;
   skos:narrower asc:TE-AT-AK ;
   skos:narrower asc:TE-AT-AO ;
@@ -724,138 +854,183 @@ asc:TE-AT
 .
 asc:TE-AT-AK
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AK ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-AK"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Andic Bleached Tenosol" ;
 .
 asc:TE-AT-AO
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AO ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-AO"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Arenic Bleached Tenosol" ;
 .
 asc:TE-AT-AP
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AP ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-AP"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Argic Bleached Tenosol" ;
 .
 asc:TE-AT-AS
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AS ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-AS"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Bauxitic Bleached Tenosol" ;
 .
 asc:TE-AT-BJ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BJ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-BJ"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Duric Bleached Tenosol" ;
 .
 asc:TE-AT-BU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-BU"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Ferric Bleached Tenosol" ;
 .
 asc:TE-AT-CZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:CZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-CZ"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Lithic Bleached Tenosol" ;
 .
 asc:TE-AT-DD
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DD ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-DD"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Marly Bleached Tenosol" ;
 .
 asc:TE-AT-DU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-DU"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Paralithic Bleached Tenosol" ;
 .
 asc:TE-AT-DZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-DZ"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Petrocalcic Bleached Tenosol" ;
 .
 asc:TE-AT-EA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-EA"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Petroferric Bleached Tenosol" ;
 .
 asc:TE-AT-EF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-EF"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Reticulate Bleached Tenosol" ;
 .
 asc:TE-AT-EM
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EM ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-EM"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Silpanic Bleached Tenosol" ;
 .
 asc:TE-AT-FK
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:FK ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-FK"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Ferric-Duric Bleached Tenosol" ;
 .
 asc:TE-AT-GE
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GE ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-GE"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Ferric-Petroferric Bleached Tenosol" ;
 .
 asc:TE-AT-GF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-GF"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Regolithic Bleached Tenosol" ;
 .
 asc:TE-AT-HF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:HF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-HF"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Tephric Bleached Tenosol" ;
 .
 asc:TE-AT-IA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:IA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-IA"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Inceptic Bleached Tenosol" ;
 .
 asc:TE-AT-IS
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:IS ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-IS"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Ferric-Reticulate Bleached Tenosol" ;
 .
 asc:TE-AT-JQ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:JQ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-JQ"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Gritty Bleached Tenosol" ;
 .
 asc:TE-AT-JW
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:JW ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-JW"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Gritty-Lithic Bleached Tenosol" ;
 .
 asc:TE-AT-JX
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:JX ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AT-JX"^^xsd:anyURI ;
   skos:broader asc:TE-AT ;
   skos:prefLabel "Gritty-Paralithic Bleached Tenosol" ;
 .
 asc:TE-AW
   a asc:Suborder ;
+  a skos:Concept ;
   asc:classifier asc:AW ;
   asc:greatgroup asc:BU ;
   asc:greatgroup asc:CZ ;
@@ -879,6 +1054,7 @@ asc:TE-AW
   asc:subgroup asc:FV ;
   asc:subgroup asc:GU ;
   asc:subgroup asc:GY ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW"^^xsd:anyURI ;
   skos:broader asc:TE ;
   skos:narrower asc:TE-AW-BU ;
   skos:narrower asc:TE-AW-CZ ;
@@ -894,66 +1070,87 @@ asc:TE-AW
 .
 asc:TE-AW-BU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-BU"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Ferric Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-CZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:CZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-CZ"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Lithic Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-DU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-DU"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Paralithic Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-DZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-DZ"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Petrocalcic Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-EA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-EA"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Petroferric Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-EM
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EM ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-EM"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Silpanic Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-GE
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GE ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-GE"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Ferric-Petroferric Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-JV
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:JV ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-JV"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Gritty-Silpanic Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-JW
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:JW ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-JW"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Gritty-Lithic Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-JX
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:JX ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-AW-JX"^^xsd:anyURI ;
   skos:broader asc:TE-AW ;
   skos:prefLabel "Gritty-Paralithic Bleached-Leptic Tenosol" ;
 .
 asc:TE-BE
   a asc:Suborder ;
+  a skos:Concept ;
   asc:classifier asc:BE ;
   asc:greatgroup asc:AK ;
   asc:greatgroup asc:AS ;
@@ -977,6 +1174,7 @@ asc:TE-BE
   asc:subgroup asc:FV ;
   asc:subgroup asc:GU ;
   asc:subgroup asc:GY ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE"^^xsd:anyURI ;
   skos:broader asc:TE ;
   skos:narrower asc:TE-BE-AK ;
   skos:narrower asc:TE-BE-AS ;
@@ -995,84 +1193,111 @@ asc:TE-BE
 .
 asc:TE-BE-AK
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AK ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-AK"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Andic Chernic Tenosol" ;
 .
 asc:TE-BE-AS
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AS ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-AS"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Bauxitic Chernic Tenosol" ;
 .
 asc:TE-BE-BU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-BU"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Ferric Chernic Tenosol" ;
 .
 asc:TE-BE-CZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:CZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-CZ"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Lithic Chernic Tenosol" ;
 .
 asc:TE-BE-DD
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DD ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-DD"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Marly Chernic Tenosol" ;
 .
 asc:TE-BE-DU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-DU"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Paralithic Chernic Tenosol" ;
 .
 asc:TE-BE-DZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-DZ"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Petrocalcic Chernic Tenosol" ;
 .
 asc:TE-BE-EA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-EA"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Petroferric Chernic Tenosol" ;
 .
 asc:TE-BE-EC
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EC ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-EC"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Placic Chernic Tenosol" ;
 .
 asc:TE-BE-EM
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EM ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-EM"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Silpanic Chernic Tenosol" ;
 .
 asc:TE-BE-GF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-GF"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Regolithic Chernic Tenosol" ;
 .
 asc:TE-BE-HF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:HF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-HF"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Tephric Chernic Tenosol" ;
 .
 asc:TE-BE-IA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:IA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BE-IA"^^xsd:anyURI ;
   skos:broader asc:TE-BE ;
   skos:prefLabel "Inceptic Chernic Tenosol" ;
 .
 asc:TE-BF
   a asc:Suborder ;
+  a skos:Concept ;
   asc:classifier asc:BF ;
   asc:greatgroup asc:BJ ;
   asc:greatgroup asc:CZ ;
@@ -1085,6 +1310,7 @@ asc:TE-BF
   asc:subgroup asc:DG ;
   asc:subgroup asc:DK ;
   asc:subgroup asc:DW ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF"^^xsd:anyURI ;
   skos:broader asc:TE ;
   skos:narrower asc:TE-BF-BJ ;
   skos:narrower asc:TE-BF-CZ ;
@@ -1097,48 +1323,63 @@ asc:TE-BF
 .
 asc:TE-BF-BJ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BJ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF-BJ"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Duric Chernic-Leptic Tenosol" ;
 .
 asc:TE-BF-CZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:CZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF-CZ"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Lithic Chernic-Leptic Tenosol" ;
 .
 asc:TE-BF-DU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF-DU"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Paralithic Chernic-Leptic Tenosol" ;
 .
 asc:TE-BF-DZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF-DZ"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Petrocalcic Chernic-Leptic Tenosol" ;
 .
 asc:TE-BF-EA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF-EA"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Petroferric Chernic-Leptic Tenosol" ;
 .
 asc:TE-BF-EM
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EM ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF-EM"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Silpanic Chernic-Leptic Tenosol" ;
 .
 asc:TE-BF-GE
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GE ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-BF-GE"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Ferric-Petroferric Chernic-Leptic Tenosol" ;
 .
 asc:TE-CY
   a asc:Suborder ;
+  a skos:Concept ;
   asc:classifier asc:CY ;
   asc:greatgroup asc:BJ ;
   asc:greatgroup asc:CZ ;
@@ -1154,6 +1395,7 @@ asc:TE-CY
   asc:subgroup asc:FF ;
   asc:subgroup asc:FG ;
   asc:subgroup asc:ID ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY"^^xsd:anyURI ;
   skos:broader asc:TE ;
   skos:narrower asc:TE-CY-BJ ;
   skos:narrower asc:TE-CY-CZ ;
@@ -1166,48 +1408,63 @@ asc:TE-CY
 .
 asc:TE-CY-BJ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BJ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY-BJ"^^xsd:anyURI ;
   skos:broader asc:TE-BF ;
   skos:prefLabel "Duric Leptic Tenosol" ;
 .
 asc:TE-CY-CZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:CZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY-CZ"^^xsd:anyURI ;
   skos:broader asc:TE-CY ;
   skos:prefLabel "Lithic Leptic Tenosol" ;
 .
 asc:TE-CY-DU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY-DU"^^xsd:anyURI ;
   skos:broader asc:TE-CY ;
   skos:prefLabel "Paralithic Leptic Tenosol" ;
 .
 asc:TE-CY-DZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY-DZ"^^xsd:anyURI ;
   skos:broader asc:TE-CY ;
   skos:prefLabel "Petrocalcic Leptic Tenosol" ;
 .
 asc:TE-CY-EA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY-EA"^^xsd:anyURI ;
   skos:broader asc:TE-CY ;
   skos:prefLabel "Petroferric Leptic Tenosol" ;
 .
 asc:TE-CY-EM
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EM ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY-EM"^^xsd:anyURI ;
   skos:broader asc:TE-CY ;
   skos:prefLabel "Silpanic Leptic Tenosol" ;
 .
 asc:TE-CY-GE
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GE ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-CY-GE"^^xsd:anyURI ;
   skos:broader asc:TE-CY ;
   skos:prefLabel "Ferric-Petroferric Leptic Tenosol" ;
 .
 asc:TE-IL
   a asc:Suborder ;
+  a skos:Concept ;
   asc:classifier asc:IL ;
   asc:greatgroup asc:AP ;
   asc:greatgroup asc:BJ ;
@@ -1225,6 +1482,7 @@ asc:TE-IL
   asc:subgroup asc:AY ;
   asc:subgroup asc:BC ;
   asc:subgroup asc:DC ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL"^^xsd:anyURI ;
   skos:broader asc:TE ;
   skos:narrower asc:TE-IL-AP ;
   skos:narrower asc:TE-IL-BJ ;
@@ -1240,66 +1498,87 @@ asc:TE-IL
 .
 asc:TE-IL-AP
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AP ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-AP"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Argic Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-BJ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BJ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-BJ"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Duric Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-CZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:CZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-CZ"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Lithic Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-DU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-DU"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Paralithic Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-DZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-DZ"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Petrocalcic Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-EA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-EA"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Petroferric Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-EF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-EF"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Reticulate Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-EM
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EM ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-EM"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Silpanic Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-GF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-GF"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Regolithic Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-IA
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:IA ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IL-IA"^^xsd:anyURI ;
   skos:broader asc:TE-IL ;
   skos:prefLabel "Inceptic Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IM
   a asc:Suborder ;
+  a skos:Concept ;
   asc:classifier asc:IM ;
   asc:greatgroup asc:AK ;
   asc:greatgroup asc:AO ;
@@ -1315,6 +1594,7 @@ asc:TE-IM
   asc:subgroup asc:CQ ;
   asc:subgroup asc:DA ;
   asc:subgroup asc:FB ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM"^^xsd:anyURI ;
   skos:broader asc:TE ;
   skos:narrower asc:TE-IM-AK ;
   skos:narrower asc:TE-IM-AO ;
@@ -1331,67 +1611,89 @@ asc:TE-IM
 .
 asc:TE-IM-AK
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AK ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-AK"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Andic Calcenic Tenosol" ;
 .
 asc:TE-IM-AO
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AO ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-AO"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Arenic Calcenic Tenosol" ;
 .
 asc:TE-IM-AP
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:AP ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-AP"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Argic Calcenic Tenosol" ;
 .
 asc:TE-IM-BJ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BJ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-BJ"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Duric Calcenic Tenosol" ;
 .
 asc:TE-IM-BU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:BU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-BU"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Ferric Calcenic Tenosol" ;
 .
 asc:TE-IM-CZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:CZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-CZ"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Lithic Calcenic Tenosol" ;
 .
 asc:TE-IM-DU
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DU ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-DU"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Paralithic Calcenic Tenosol" ;
 .
 asc:TE-IM-DZ
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:DZ ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-DZ"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Petrocalcic Calcenic Tenosol" ;
 .
 asc:TE-IM-EM
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:EM ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-EM"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Silpanic Calcenic Tenosol" ;
 .
 asc:TE-IM-GF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:GF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-GF"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Regolithic Calcenic Tenosol" ;
 .
 asc:TE-IM-HF
   a asc:Greatgroup ;
+  a skos:Concept ;
   asc:classifier asc:HF ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/TE-IM-HF"^^xsd:anyURI ;
   skos:broader asc:TE-IM ;
   skos:prefLabel "Tephric Calcenic Tenosol" ;
 .
@@ -1399,6 +1701,7 @@ asc:VE
   a asc:Order ;
   a skos:Concept ;
   dcterms:description "Clay soils with shrink-swell properties that exhibit strong cracking when dry and at depth have slickensides and/or lenticular peds. Although many soils exhibit gilgai microrelief, this feature is not used in their definition. Australia has the greatest area and diversity of cracking clay soils of any country in the world." ;
+  dcterms:identifier "http://anzsoil.org/def/au/asc/VE"^^xsd:anyURI ;
   rdfs:comment """In some clay soils it may be difficult to decide if sufficient cracks are present, or at the time of inspection the soil may be too moist to exhibit cracking. Also, in arid zone clay soils which commonly have high salt contents, the soil structure may be so fine and strong granular, or 'puffy', that it is difficult to decide if cracks are present or not. In such soils it is also obviously difficult to discern slickensides and/or lenticular peds. In yet other clay soils (up to 50% clay or more) cracks may develop but slickensides and/or lenticular peds are apparently not present.
 
 Because cracking, slickensides and/or lenticular peds are essentially used as evidence to indicate shrink-swell behaviour, it is desirable that surrogate measurements be available if the morphological evidence is lacking or cannot be determined. See Vertic properties.""" ;
