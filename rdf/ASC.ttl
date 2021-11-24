@@ -741,11 +741,6 @@ asc:Suborder
       owl:cardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty asc:classifier ;
     ] ;
-  rdfs:subClassOf [
-      a owl:Restriction ;
-      owl:cardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty asc:order ;
-    ] ;
 .
 asc:TE
   a asc:Order ;
@@ -760,6 +755,13 @@ asc:TE
   asc:subgroup-comment """These have been grouped into the various suborders, but not all subgroups will be appropriate for each great group of a particular suborder.
 
 If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:suborder asc:AT ;
+  asc:suborder asc:AW ;
+  asc:suborder asc:BE ;
+  asc:suborder asc:BF ;
+  asc:suborder asc:CY ;
+  asc:suborder asc:IL ;
+  asc:suborder asc:IM ;
   dcterms:description "This order is designed to embrace soils with generally only weak pedologic organisation apart from the A horizons, excluding soils that have deep sandy profiles with a field texture of sand, loamy sand or clayey sand in 80% or more of the upper 1.0 m. It encompasses a rather diverse range of soils which occur in many parts of Australia." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/TE"^^xsd:anyURI ;
   rdfs:comment """It may be desirable to specify a minimum thickness for those A1 horizons which do not meet the requirements for a peaty, humose, melacic or melanic horizon. The inclusion of certain soils with conspicuously bleached A2 horizons may be questioned by some, but it is difficult to find a more appropriate place for them.
@@ -1722,7 +1724,7 @@ asc:classifier
 asc:colourclass
   a owl:ObjectProperty ;
   rdfs:domain asc:Order ;
-  rdfs:label "Colour class" ;
+  rdfs:label "Applicable Colour class" ;
   rdfs:range asc:ColourClass ;
   rdfs:subPropertyOf dcterms:relation ;
 .
@@ -1748,7 +1750,7 @@ asc:family-criteria
 asc:greatgroup
   a owl:ObjectProperty ;
   rdfs:domain asc:Suborder ;
-  rdfs:label "Great group" ;
+  rdfs:label "Applicable Great group" ;
   rdfs:range asc:Class ;
   rdfs:subPropertyOf dcterms:relation ;
 .
@@ -1758,17 +1760,10 @@ asc:greatgroup-comment
   rdfs:label "Great group comment" ;
   rdfs:subPropertyOf skos:note ;
 .
-asc:order
-  a owl:ObjectProperty ;
-  rdfs:domain asc:Suborder ;
-  rdfs:label "Parent order" ;
-  rdfs:range asc:Order ;
-  rdfs:subPropertyOf skos:broader ;
-.
 asc:subgroup
   a owl:ObjectProperty ;
   rdfs:domain asc:Suborder ;
-  rdfs:label "Subgroup" ;
+  rdfs:label "Applicable Subgroup" ;
   rdfs:range asc:Class ;
   rdfs:subPropertyOf dcterms:relation ;
 .
@@ -1777,6 +1772,13 @@ asc:subgroup-comment
   rdfs:domain asc:Order ;
   rdfs:label "Subgroup comment" ;
   rdfs:subPropertyOf skos:note ;
+.
+asc:suborder
+  a owl:ObjectProperty ;
+  rdfs:domain asc:Order ;
+  rdfs:label "Applicable suborder" ;
+  rdfs:range asc:Class ;
+  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:suborder-comment
   a owl:AnnotationProperty ;
