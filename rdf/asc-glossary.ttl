@@ -33,6 +33,7 @@ For clarity in this publication the levels in the classification are capitalised
 asc-glossary:A-horizons
   a skos:Concept ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A-horizons"^^xsd:anyURI ;
+  skos:exactMatch <http://anzsoil.org/def/au/asls/soil-profile/horizons-A> ;
   skos:narrower asc-glossary:A1-horizon ;
   skos:narrower asc-glossary:A2-horizon ;
   skos:narrower asc-glossary:A2-horizon-bleached ;
@@ -43,17 +44,21 @@ asc-glossary:A1-horizon
   a skos:Concept ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A1-horizon"^^xsd:anyURI ;
   skos:definition "Mineral horizon at or near the soil surface with some accumulation of humified organic matter. Usually darker than underlying horizon/s." ;
+  skos:exactMatch <http://anzsoil.org/def/au/asls/soil-profile/horizon-A1> ;
   skos:prefLabel "A1 horizon" ;
 .
 asc-glossary:A2-horizon
   a skos:Concept ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A2-horizon"^^xsd:anyURI ;
   skos:definition "Mineral horizon below the A1 horizon having, either alone or in combination, less organic matter, sesquioxides, or silicate clay than immediately adjacent horizons. Usually paler than adjacent horizons." ;
+  skos:exactMatch <http://anzsoil.org/def/au/asls/soil-profile/horizon-A2> ;
   skos:prefLabel "A2 horizon" ;
 .
 asc-glossary:A2-horizon-bleached
   a skos:Concept ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A2-horizon-bleached"^^xsd:anyURI ;
+  skos:broadMatch <http://anzsoil.org/def/au/asls/soil-profile/horizon-A2> ;
+  skos:broadMatch <http://anzsoil.org/def/au/asls/soil-profile/horizons-bleached> ;
   skos:definition "80% or more of the horizon is bleached. Bleached horizons are defined in terms of Munsell Soil Color notation for dry soil. For all hues, value 7 or greater and chroma 4 or less or where adjacent horizons have hues 5YR or redder, value 6 or greater with chroma 4 or less." ;
   skos:prefLabel "Conspicuously bleached A2 horizon" ;
 .
@@ -99,5 +104,6 @@ Maximum development of pedologic organisation as evidenced by a different struct
 In some shallow, stony soils B horizon material may only be present in fissures within the parent rock or saprolite. In such cases there should be 50% or more (visual abundance estimate) of B horizon material for it to qualify as a B horizon for the purposes of this classification (See also \"What do we classify\" and transitional horizons).
 
 Note: A B1 horizon is a transitional horizon between A and B, which is dominated by properties characteristic of an underlying B2.""" ;
+  skos:exactMatch <http://anzsoil.org/def/au/asls/soil-profile/horizons-B> ;
   skos:prefLabel "B horizons" ;
 .
