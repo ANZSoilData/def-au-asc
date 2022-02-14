@@ -2678,6 +2678,10 @@ asc:KU
   rdfs:comment "The relevance of sodicity in strongly acid soils is open to question as in theory the presence of aluminium in such soils should counterbalance the usual deleterious effect of sodium (via dispersion) on soil physical properties. Unpublished data from many localities in Australia imply that for B horizons the critical limits of pHw 5.5 and ESP of 6 to distinguish dispersive and non-dispersive soils seems to generally work in practice, although as might be expected, some soils do not behave as predicted. For this reason, sodicity is also used in Kurosols, but at a lower hierarchical level, to cater for those soils which have an ESP > 6 and may disperse in spite of having a pHw less than 5.5. The role of the high exchangeable magnesium in many Kurosols is largely unknown." ;
   skos:definition "Soils other than Hydrosols with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is strongly acid." ;
   skos:narrower asc:KU-AA ;
+  skos:narrower asc:KU-AB ;
+  skos:narrower asc:KU-AC ;
+  skos:narrower asc:KU-AD ;
+  skos:narrower asc:KU-AE ;
   skos:notation "KU" ;
   skos:prefLabel "Kurosols" ;
 .
@@ -4743,9 +4747,329 @@ Because cracking, slickensides and/or lenticular peds are essentially used as ev
 3. Slickensides and/or lenticular peds occur at some depth in the solum. 
 
 1 Note that there is no crack frequency criterion as in the Factual Key (Northcote 1979).""" ;
+  skos:narrower asc:VE-AA ;
+  skos:narrower asc:VE-AB ;
+  skos:narrower asc:VE-AC ;
+  skos:narrower asc:VE-AD ;
+  skos:narrower asc:VE-AE ;
   skos:narrower asc:VE-AM ;
   skos:notation "VE" ;
   skos:prefLabel "Vertosols" ;
+.
+asc:VE-AA
+  a asc:Suborder ;
+  asc:classifier asc:AA ;
+  asc:greatgroup asc:BH ;
+  asc:greatgroup asc:DF ;
+  asc:greatgroup asc:DW ;
+  asc:greatgroup asc:EI ;
+  asc:greatgroup asc:GS ;
+  asc:greatgroup-comment """These may not all apply to each suborder, in particular our knowledge of the Aquic suborder is limited.
+
+Apart from the Peaty forms, each of the above soil surface conditions tends to reform despite cultivation or surface trampling. There may be a problem in identifying the self-mulching condition in periods of initial drying, i.e. in assessing the stability of the surface flake which forms following rainfall. If there is doubt as to whether a soil is self-mulching or has only a pedal surface, it is suggested that the latter condition be recorded, i.e. use the self-mulching great group only for those soils where the condition is not in doubt. It may be difficult to determine the surface condition if a dense grass sward is present. In this situation it will be necessary to look for a patch of bare ground, or even to kill the grass with herbicide and return at a later date. Note also that large soil units bounded by cracks are not considered to be coarse peds. It is usually necessary to examine these soils in the moist state to determine their degree of pedality.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:BJ ;
+  asc:subgroup asc:BL ;
+  asc:subgroup asc:BN ;
+  asc:subgroup asc:BP ;
+  asc:subgroup asc:BR ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CU ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:DZ ;
+  asc:subgroup asc:EG ;
+  asc:subgroup asc:EP ;
+  asc:subgroup asc:EU ;
+  asc:subgroup asc:EV ;
+  asc:subgroup asc:FM ;
+  asc:subgroup asc:FY ;
+  asc:subgroup asc:FZ ;
+  asc:subgroup asc:GA ;
+  asc:subgroup asc:GB ;
+  asc:subgroup asc:GG ;
+  asc:subgroup asc:GH ;
+  asc:subgroup asc:GI ;
+  asc:subgroup asc:GJ ;
+  asc:subgroup asc:GK ;
+  asc:subgroup asc:GL ;
+  asc:subgroup asc:GM ;
+  asc:subgroup asc:GN ;
+  asc:subgroup asc:GO ;
+  asc:subgroup asc:GQ ;
+  asc:subgroup asc:HE ;
+  asc:subgroup asc:IW ;
+  asc:subgroup asc:IX ;
+  asc:subgroup asc:IZ ;
+  asc:subgroup asc:JA ;
+  asc:subgroup asc:JC ;
+  asc:subgroup asc:JF ;
+  asc:subgroup asc:JG ;
+  asc:subgroup asc:JH ;
+  asc:subgroup asc:JI ;
+  asc:subgroup-comment """It is thought that the following subgroups will be required for most of the suborders and great groups. Note that some of the differentiating criteria are not mutually exclusive, and thus sometimes it has been a subjective decision as to which attributes have priority in the key.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+It should be noted that all the Endoacidic soils classified are also Endohypersodic, with some also being Epihypersodic. Additionally, some Epicalcareous-Epihypersodic soils are Endoacidic at depth. It is not possible to cater for all these combinations.""" ;
+  skos:broader asc:VE ;
+  skos:notation "VE-AA" ;
+  skos:prefLabel "Red Vertosol" ;
+.
+asc:VE-AB
+  a asc:Suborder ;
+  asc:classifier asc:AB ;
+  asc:greatgroup asc:BH ;
+  asc:greatgroup asc:DF ;
+  asc:greatgroup asc:DW ;
+  asc:greatgroup asc:EI ;
+  asc:greatgroup asc:GS ;
+  asc:greatgroup-comment """These may not all apply to each suborder, in particular our knowledge of the Aquic suborder is limited.
+
+Apart from the Peaty forms, each of the above soil surface conditions tends to reform despite cultivation or surface trampling. There may be a problem in identifying the self-mulching condition in periods of initial drying, i.e. in assessing the stability of the surface flake which forms following rainfall. If there is doubt as to whether a soil is self-mulching or has only a pedal surface, it is suggested that the latter condition be recorded, i.e. use the self-mulching great group only for those soils where the condition is not in doubt. It may be difficult to determine the surface condition if a dense grass sward is present. In this situation it will be necessary to look for a patch of bare ground, or even to kill the grass with herbicide and return at a later date. Note also that large soil units bounded by cracks are not considered to be coarse peds. It is usually necessary to examine these soils in the moist state to determine their degree of pedality.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:BJ ;
+  asc:subgroup asc:BL ;
+  asc:subgroup asc:BN ;
+  asc:subgroup asc:BP ;
+  asc:subgroup asc:BR ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CU ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:DZ ;
+  asc:subgroup asc:EG ;
+  asc:subgroup asc:EP ;
+  asc:subgroup asc:EU ;
+  asc:subgroup asc:EV ;
+  asc:subgroup asc:FM ;
+  asc:subgroup asc:FY ;
+  asc:subgroup asc:FZ ;
+  asc:subgroup asc:GA ;
+  asc:subgroup asc:GB ;
+  asc:subgroup asc:GG ;
+  asc:subgroup asc:GH ;
+  asc:subgroup asc:GI ;
+  asc:subgroup asc:GJ ;
+  asc:subgroup asc:GK ;
+  asc:subgroup asc:GL ;
+  asc:subgroup asc:GM ;
+  asc:subgroup asc:GN ;
+  asc:subgroup asc:GO ;
+  asc:subgroup asc:GQ ;
+  asc:subgroup asc:HE ;
+  asc:subgroup asc:IW ;
+  asc:subgroup asc:IX ;
+  asc:subgroup asc:IZ ;
+  asc:subgroup asc:JA ;
+  asc:subgroup asc:JC ;
+  asc:subgroup asc:JF ;
+  asc:subgroup asc:JG ;
+  asc:subgroup asc:JH ;
+  asc:subgroup asc:JI ;
+  asc:subgroup-comment """It is thought that the following subgroups will be required for most of the suborders and great groups. Note that some of the differentiating criteria are not mutually exclusive, and thus sometimes it has been a subjective decision as to which attributes have priority in the key.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+It should be noted that all the Endoacidic soils classified are also Endohypersodic, with some also being Epihypersodic. Additionally, some Epicalcareous-Epihypersodic soils are Endoacidic at depth. It is not possible to cater for all these combinations.""" ;
+  skos:broader asc:VE ;
+  skos:notation "VE-AB" ;
+  skos:prefLabel "Brown Vertosol" ;
+.
+asc:VE-AC
+  a asc:Suborder ;
+  asc:classifier asc:AC ;
+  asc:greatgroup asc:BH ;
+  asc:greatgroup asc:DF ;
+  asc:greatgroup asc:DW ;
+  asc:greatgroup asc:EI ;
+  asc:greatgroup asc:GS ;
+  asc:greatgroup-comment """These may not all apply to each suborder, in particular our knowledge of the Aquic suborder is limited.
+
+Apart from the Peaty forms, each of the above soil surface conditions tends to reform despite cultivation or surface trampling. There may be a problem in identifying the self-mulching condition in periods of initial drying, i.e. in assessing the stability of the surface flake which forms following rainfall. If there is doubt as to whether a soil is self-mulching or has only a pedal surface, it is suggested that the latter condition be recorded, i.e. use the self-mulching great group only for those soils where the condition is not in doubt. It may be difficult to determine the surface condition if a dense grass sward is present. In this situation it will be necessary to look for a patch of bare ground, or even to kill the grass with herbicide and return at a later date. Note also that large soil units bounded by cracks are not considered to be coarse peds. It is usually necessary to examine these soils in the moist state to determine their degree of pedality.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:BJ ;
+  asc:subgroup asc:BL ;
+  asc:subgroup asc:BN ;
+  asc:subgroup asc:BP ;
+  asc:subgroup asc:BR ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CU ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:DZ ;
+  asc:subgroup asc:EG ;
+  asc:subgroup asc:EP ;
+  asc:subgroup asc:EU ;
+  asc:subgroup asc:EV ;
+  asc:subgroup asc:FM ;
+  asc:subgroup asc:FY ;
+  asc:subgroup asc:FZ ;
+  asc:subgroup asc:GA ;
+  asc:subgroup asc:GB ;
+  asc:subgroup asc:GG ;
+  asc:subgroup asc:GH ;
+  asc:subgroup asc:GI ;
+  asc:subgroup asc:GJ ;
+  asc:subgroup asc:GK ;
+  asc:subgroup asc:GL ;
+  asc:subgroup asc:GM ;
+  asc:subgroup asc:GN ;
+  asc:subgroup asc:GO ;
+  asc:subgroup asc:GQ ;
+  asc:subgroup asc:HE ;
+  asc:subgroup asc:IW ;
+  asc:subgroup asc:IX ;
+  asc:subgroup asc:IZ ;
+  asc:subgroup asc:JA ;
+  asc:subgroup asc:JC ;
+  asc:subgroup asc:JF ;
+  asc:subgroup asc:JG ;
+  asc:subgroup asc:JH ;
+  asc:subgroup asc:JI ;
+  asc:subgroup-comment """It is thought that the following subgroups will be required for most of the suborders and great groups. Note that some of the differentiating criteria are not mutually exclusive, and thus sometimes it has been a subjective decision as to which attributes have priority in the key.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+It should be noted that all the Endoacidic soils classified are also Endohypersodic, with some also being Epihypersodic. Additionally, some Epicalcareous-Epihypersodic soils are Endoacidic at depth. It is not possible to cater for all these combinations.""" ;
+  skos:broader asc:VE ;
+  skos:notation "VE-AC" ;
+  skos:prefLabel "Yellow Vertosol" ;
+.
+asc:VE-AD
+  a asc:Suborder ;
+  asc:classifier asc:AD ;
+  asc:greatgroup asc:BH ;
+  asc:greatgroup asc:DF ;
+  asc:greatgroup asc:DW ;
+  asc:greatgroup asc:EI ;
+  asc:greatgroup asc:GS ;
+  asc:greatgroup-comment """These may not all apply to each suborder, in particular our knowledge of the Aquic suborder is limited.
+
+Apart from the Peaty forms, each of the above soil surface conditions tends to reform despite cultivation or surface trampling. There may be a problem in identifying the self-mulching condition in periods of initial drying, i.e. in assessing the stability of the surface flake which forms following rainfall. If there is doubt as to whether a soil is self-mulching or has only a pedal surface, it is suggested that the latter condition be recorded, i.e. use the self-mulching great group only for those soils where the condition is not in doubt. It may be difficult to determine the surface condition if a dense grass sward is present. In this situation it will be necessary to look for a patch of bare ground, or even to kill the grass with herbicide and return at a later date. Note also that large soil units bounded by cracks are not considered to be coarse peds. It is usually necessary to examine these soils in the moist state to determine their degree of pedality.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:BJ ;
+  asc:subgroup asc:BL ;
+  asc:subgroup asc:BN ;
+  asc:subgroup asc:BP ;
+  asc:subgroup asc:BR ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CU ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:DZ ;
+  asc:subgroup asc:EG ;
+  asc:subgroup asc:EP ;
+  asc:subgroup asc:EU ;
+  asc:subgroup asc:EV ;
+  asc:subgroup asc:FM ;
+  asc:subgroup asc:FY ;
+  asc:subgroup asc:FZ ;
+  asc:subgroup asc:GA ;
+  asc:subgroup asc:GB ;
+  asc:subgroup asc:GG ;
+  asc:subgroup asc:GH ;
+  asc:subgroup asc:GI ;
+  asc:subgroup asc:GJ ;
+  asc:subgroup asc:GK ;
+  asc:subgroup asc:GL ;
+  asc:subgroup asc:GM ;
+  asc:subgroup asc:GN ;
+  asc:subgroup asc:GO ;
+  asc:subgroup asc:GQ ;
+  asc:subgroup asc:HE ;
+  asc:subgroup asc:IW ;
+  asc:subgroup asc:IX ;
+  asc:subgroup asc:IZ ;
+  asc:subgroup asc:JA ;
+  asc:subgroup asc:JC ;
+  asc:subgroup asc:JF ;
+  asc:subgroup asc:JG ;
+  asc:subgroup asc:JH ;
+  asc:subgroup asc:JI ;
+  asc:subgroup-comment """It is thought that the following subgroups will be required for most of the suborders and great groups. Note that some of the differentiating criteria are not mutually exclusive, and thus sometimes it has been a subjective decision as to which attributes have priority in the key.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+It should be noted that all the Endoacidic soils classified are also Endohypersodic, with some also being Epihypersodic. Additionally, some Epicalcareous-Epihypersodic soils are Endoacidic at depth. It is not possible to cater for all these combinations.""" ;
+  skos:broader asc:VE ;
+  skos:notation "VE-AD" ;
+  skos:prefLabel "Grey Vertosol" ;
+.
+asc:VE-AE
+  a asc:Suborder ;
+  asc:classifier asc:AE ;
+  asc:greatgroup asc:BH ;
+  asc:greatgroup asc:DF ;
+  asc:greatgroup asc:DW ;
+  asc:greatgroup asc:EI ;
+  asc:greatgroup asc:GS ;
+  asc:greatgroup-comment """These may not all apply to each suborder, in particular our knowledge of the Aquic suborder is limited.
+
+Apart from the Peaty forms, each of the above soil surface conditions tends to reform despite cultivation or surface trampling. There may be a problem in identifying the self-mulching condition in periods of initial drying, i.e. in assessing the stability of the surface flake which forms following rainfall. If there is doubt as to whether a soil is self-mulching or has only a pedal surface, it is suggested that the latter condition be recorded, i.e. use the self-mulching great group only for those soils where the condition is not in doubt. It may be difficult to determine the surface condition if a dense grass sward is present. In this situation it will be necessary to look for a patch of bare ground, or even to kill the grass with herbicide and return at a later date. Note also that large soil units bounded by cracks are not considered to be coarse peds. It is usually necessary to examine these soils in the moist state to determine their degree of pedality.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:BJ ;
+  asc:subgroup asc:BL ;
+  asc:subgroup asc:BN ;
+  asc:subgroup asc:BP ;
+  asc:subgroup asc:BR ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CU ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:DZ ;
+  asc:subgroup asc:EG ;
+  asc:subgroup asc:EP ;
+  asc:subgroup asc:EU ;
+  asc:subgroup asc:EV ;
+  asc:subgroup asc:FM ;
+  asc:subgroup asc:FY ;
+  asc:subgroup asc:FZ ;
+  asc:subgroup asc:GA ;
+  asc:subgroup asc:GB ;
+  asc:subgroup asc:GG ;
+  asc:subgroup asc:GH ;
+  asc:subgroup asc:GI ;
+  asc:subgroup asc:GJ ;
+  asc:subgroup asc:GK ;
+  asc:subgroup asc:GL ;
+  asc:subgroup asc:GM ;
+  asc:subgroup asc:GN ;
+  asc:subgroup asc:GO ;
+  asc:subgroup asc:GQ ;
+  asc:subgroup asc:HE ;
+  asc:subgroup asc:IW ;
+  asc:subgroup asc:IX ;
+  asc:subgroup asc:IZ ;
+  asc:subgroup asc:JA ;
+  asc:subgroup asc:JC ;
+  asc:subgroup asc:JF ;
+  asc:subgroup asc:JG ;
+  asc:subgroup asc:JH ;
+  asc:subgroup asc:JI ;
+  asc:subgroup-comment """It is thought that the following subgroups will be required for most of the suborders and great groups. Note that some of the differentiating criteria are not mutually exclusive, and thus sometimes it has been a subjective decision as to which attributes have priority in the key.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+It should be noted that all the Endoacidic soils classified are also Endohypersodic, with some also being Epihypersodic. Additionally, some Epicalcareous-Epihypersodic soils are Endoacidic at depth. It is not possible to cater for all these combinations.""" ;
+  skos:broader asc:VE ;
+  skos:notation "VE-AE" ;
+  skos:prefLabel "Black Vertosol" ;
 .
 asc:VE-AM
   a asc:Suborder ;
