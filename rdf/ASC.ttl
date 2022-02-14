@@ -28,6 +28,13 @@ asc:
   owl:imports dc: ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
 .
+asc:A
+  a asc:Class ;
+  a asc:Thickness ;
+  skos:definition "< 0.1 m" ;
+  skos:notation "A" ;
+  skos:prefLabel "Thin" ;
+.
 asc:AA
   a asc:ColourClass ;
   a skos:Concept ;
@@ -149,6 +156,31 @@ asc:AM
 asc:AN
   a asc:Order ;
   a skos:Concept ;
+  asc:suborder asc:HR ;
+  asc:suborder asc:HS ;
+  asc:suborder asc:HT ;
+  asc:suborder asc:HU ;
+  asc:suborder asc:HV ;
+  asc:suborder asc:HW ;
+  asc:suborder asc:HX ;
+  asc:suborder asc:IT ;
+  asc:suborder-comment """In the Garbic, Urbic and some Spolic soils it is common practice to cover the anthropic materials with a layer of soil materials as an aid to reclamation. This soil material is regarded as part of the suborder and can be used as a basis for lower category classification. In other situations sewage sludge is being used to rehabilitate mine spoil.
+
+The Scalpic soils may also have material added to their new surface. If this is less than 0.3 m there would be, for example, a spolic phase of the Scalpic suborder; if 0.3 m or more thick the soil would classify as a Spolic suborder.
+
+There will obviously be intergrade situations between some of the suborders. For example, it may sometimes be difficult to decide between Garbic and Urbic, Cumulic and Hortic. In these and similar situations judgement and/or knowledge of the process will be required. With the increasing emphasis on recycling, much of the garbic materials will be composted so the garbic group could become redundant.
+
+Another likely difficult situation results when human-induced or human-accelerated erosion has removed upper soil horizons. On present thinking it would seem more appropriate for such soils to be regarded as an eroded phase of say a Sodosol, provided the original soil can be identified.
+
+The question of soils contaminated by toxic wastes is also unresolved. They could be included in the Garbic suborder, but if the wastes are toxic to plant and animal life their host materials cannot strictly be regarded as soil. In some situations the problem could be overcome by referring to the site as a contaminated phase of the pre-existing soil. Similarly the application of liquid wastes, bore water and other irrigation waters may alter the chemical and physical properties of soil substantially. For example, salts, acids, alkalis, suspended organic matter, nutrients and toxins in applied liquids may affect the pH, salinity, sodicity and fertility of the soil. These soils could be identified as a phase of the pre-existing soils e.g. saline phase, sodic phase or alkaline phase.
+
+Lower Categories
+
+It is hoped that the seven suborders will provide a conceptual framework for the classification of most anthropic soils based on human-induced processes which provide particular kinds of soil parent materials. The suborders are a simplified relevant summary of an almost infinitely large range of anthropic processes and products. The need for subdivision below the suborder level is likely to be more desirable in some classes than others, but a major problem in creating lower category classes is the lack of data on the morphology and laboratory properties of anthropic soils. Most information seems to be available for the spolic soils created by mining operations. Here though it may be more appropriate to create a technical classification based on reclamation needs.
+
+For some of the suborders, differentiae for lower categories could be based on appropriate traditional attributes used in classifying 'natural' soils, both morphologic and laboratory-determined. At present this is impractical due to the lack of an adequate representative profile data base. A related approach is to use at the great group level classes based on the other orders eg. Chromosolic, Sodosolic etc. as has been done for the Hydrosol great groups. In this approach Rudosolic Spolic Anthroposols would obviously be a very common class. A wide range of options is available for subgroup differentiae, but existing family criteria will probably be appropriate for most Anthroposols. A preliminary approach to classifying Australian minesoils based on proposed amendments to Soil Taxonomy has been made by Fitzpatrick and Hollingsworth (1994). A number of their proposed subgroups could be used in Spolic Anthroposols, and some examples are given in their paper.
+
+Until more knowledge and experience is available, it is proposed not to formalise the classification of Anthroposols below the suborder level. Acknowledgment is due to Fanning and Fanning (1989) for a number of the concepts and terminology used in this preliminary classification of Anthroposols.""" ;
   dcterms:description """These soils result from human activities which have caused a profound modification, mixing, truncation or burial of the original soil horizons, or the creation of new soil parent materials. Note that the concept of soil used in this classification of Australian soils (see Background) also applies to the Anthroposols, and hence sealed and semi-sealed surfaces such as streets, roads etc. are regarded as 'non-soil'. Also, in depositional situations, the anthropic material must be 0.3 m or more thick where it overlies buried soils. A soil with anthropic materials less than 0.3 m thick should be classified as an anthropic phase of the underlying soil.
 
 To qualify as soil an Anthroposol needs to possess some pedogenic features, as noted below. Key criteria in the identification of an Anthroposol are the presence of artefacts in the profile or knowledge that the soils or their parent materials have been made or altered by human action.
@@ -159,8 +191,72 @@ Anthroposols differ from other soils in that we normally know their origin with 
 
 There will be instances where the question is how much truncation results in ‘profound modification’ or merely a truncated phase. It is difficult to give guidelines that will cover all circumstances, and inevitably judgement is required. Similarly, there will be instances where land reclamation and restoration in the past have been so successful that little evidence of a prior disturbance remains, and soil development gives no clue to past history. A good example of this is Podosol development on restored and revegetated coastal dunes following sand mining.""" ;
   skos:definition "Soils resulting from human activities which have led to a profound modification, truncation or burial of the original soil horizons, or the creation of new soil parent materials by a variety of mechanical means. Where burial of a pre-existing soil is involved, the anthropic materials must be 0.3 m or more thick. Pedogenic features may be the result of in situ processes (usually the minimal development of an A1 horizon, sometimes the stronger development of typical soil horizons) or the result of pedogenic processes prior to modification or placement (ie. the presence of identifiable pre-existing soil material)." ;
+  skos:narrower asc:AN-HR ;
+  skos:narrower asc:AN-HS ;
+  skos:narrower asc:AN-HT ;
+  skos:narrower asc:AN-HU ;
+  skos:narrower asc:AN-HV ;
+  skos:narrower asc:AN-HW ;
+  skos:narrower asc:AN-HX ;
+  skos:narrower asc:AN-IT ;
   skos:notation "AN" ;
   skos:prefLabel "Anthroposols" ;
+.
+asc:AN-HR
+  a asc:Suborder ;
+  asc:classifier asc:HR ;
+  skos:broader asc:AN ;
+  skos:notation "AN-HR" ;
+  skos:prefLabel "Cumulic Anthroposol" ;
+.
+asc:AN-HS
+  a asc:Suborder ;
+  asc:classifier asc:HS ;
+  skos:broader asc:AN ;
+  skos:notation "AN-HS" ;
+  skos:prefLabel "Hortic Anthroposol" ;
+.
+asc:AN-HT
+  a asc:Suborder ;
+  asc:classifier asc:HT ;
+  skos:broader asc:AN ;
+  skos:notation "AN-HT" ;
+  skos:prefLabel "Garbic Anthroposol" ;
+.
+asc:AN-HU
+  a asc:Suborder ;
+  asc:classifier asc:HU ;
+  skos:broader asc:AN ;
+  skos:notation "AN-HU" ;
+  skos:prefLabel "Urbic Anthroposol" ;
+.
+asc:AN-HV
+  a asc:Suborder ;
+  asc:classifier asc:HV ;
+  skos:broader asc:AN ;
+  skos:notation "AN-HV" ;
+  skos:prefLabel "Dredgic Anthroposol" ;
+.
+asc:AN-HW
+  a asc:Suborder ;
+  asc:classifier asc:HW ;
+  skos:broader asc:AN ;
+  skos:notation "AN-HW" ;
+  skos:prefLabel "Spolic Anthroposol" ;
+.
+asc:AN-HX
+  a asc:Suborder ;
+  asc:classifier asc:HX ;
+  skos:broader asc:AN ;
+  skos:notation "AN-HX" ;
+  skos:prefLabel "Scalpic Anthroposol" ;
+.
+asc:AN-IT
+  a asc:Suborder ;
+  asc:classifier asc:IT ;
+  skos:broader asc:AN ;
+  skos:notation "AN-IT" ;
+  skos:prefLabel "Fusic Anthroposol" ;
 .
 asc:AO
   a asc:Class ;
@@ -288,9 +384,10 @@ asc:Alteration
 asc:B
   a asc:Class ;
   a asc:Thickness ;
-  skos:definition "[OR] 0.1–<0.6 m" ;
+  skos:altLabel "Moderately thick" ;
+  skos:definition "[OR] 0.1–<0.3 m" ;
   skos:notation "B" ;
-  skos:prefLabel "Moderately thick" ;
+  skos:prefLabel "Medium" ;
 .
 asc:BA
   a asc:Class ;
@@ -724,6 +821,11 @@ asc:Class
   a owl:Class ;
   rdfs:subClassOf skos:Concept ;
 .
+asc:Clay-content
+  a owl:Class ;
+  rdfs:subClassOf asc:Class ;
+  skos:prefLabel "Clay content" ;
+.
 asc:ColourClass
   a owl:Class ;
   rdfs:label "Colour Class" ;
@@ -1000,6 +1102,7 @@ asc:Depth
 .
 asc:E
   a asc:Class ;
+  a asc:Gravel-nature ;
   skos:definition "[OR] <2%" ;
   skos:notation "E" ;
   skos:prefLabel "Non-gravelly" ;
@@ -1235,6 +1338,7 @@ asc:EZ
 .
 asc:F
   a asc:Class ;
+  a asc:Gravel-nature ;
   skos:definition "[OR] 2-<10%" ;
   skos:notation "F" ;
   skos:prefLabel " Slightly gravelly" ;
@@ -1424,6 +1528,7 @@ asc:Family
 .
 asc:G
   a asc:Class ;
+  a asc:Gravel-nature ;
   skos:definition "[OR] 10-<20%" ;
   skos:notation "G" ;
   skos:prefLabel "Gravelly" ;
@@ -1607,6 +1712,11 @@ asc:GY
   skos:notation "GY" ;
   skos:prefLabel "Humose-Acidic " ;
 .
+asc:Gravel-nature
+  a owl:Class ;
+  rdfs:subClassOf asc:Class ;
+  skos:prefLabel "Nature of gravel" ;
+.
 asc:Greatgroup
   a owl:Class ;
   rdfs:label "Soil great group" ;
@@ -1624,6 +1734,7 @@ asc:Greatgroup
 .
 asc:H
   a asc:Class ;
+  a asc:Gravel-nature ;
   skos:definition "[OR] 20-50%" ;
   skos:notation "H" ;
   skos:prefLabel "Moderately gravelly" ;
@@ -1785,6 +1896,25 @@ asc:HX
 asc:HY
   a asc:Order ;
   a skos:Concept ;
+  asc:family-comment "The classes below are primarily for use in the Redoxic and Oxyaquic suborders, and possibly the Extratidal and Salic suborders. The criteria may be partly applicable to the Supratidal and Hypersalic suborders eg. using the terms surface soil and maximum subsoil texture. The different A horizon thickness criteria for great groups with a Clear or abrupt textural B horizon allows alignment with their adjacent but drier equivalent soil orders." ;
+  asc:suborder asc:BT ;
+  asc:suborder asc:CS ;
+  asc:suborder asc:CW ;
+  asc:suborder asc:DT ;
+  asc:suborder asc:ED ;
+  asc:suborder asc:EG ;
+  asc:suborder asc:EW ;
+  asc:suborder asc:IU ;
+  asc:suborder asc:IV ;
+  asc:suborder-comment """The features used in the definitions of the first seven suborders differ from those used elsewhere in the classification in that the classes are essentially based on the frequency of tidal or freshwater inundation and the nature of the soil surface. This is thought to be an appropriate approach as the key feature of Hydrosols is their wetness. The references in parenthesis to vegetation in some definitions are merely indicating accessory properties of the class which may aid identification of what are essentially wetness criteria, for example, the presence of certain mangrove species will normally indicate a regular frequency of tidal wetting. Although it may be difficult to identify the Extratidal suborder by the low frequency of tidal inundation, there is usually a distinct boundary between this zone and the often bare, salt-encrusted Supratidal zone. This boundary is commonly marked by a low (0.1 - 0.2 m) 'scarp'. The three tidal-affected Suborders of Intertidal, Supratidal and Extratidal are largely based on data from Cook and Mayo (1977).
+
+For the purposes of soil classification, Hydrosols located within Intermittently Closed and Open Lakes and Lagoons (ICOLLS) are considered to be tidal.
+
+Where inundation at the perimeter of larger water bodies is cyclical as a result of seiches or from variability in rainfall and runoff, it is often difficult to decide if currently submerged soils are either Subaqueous, Redoxic or Oxyaquic. Their classification will depend on conditions at the time of sampling and knowledge of the frequency and duration of any drying on exposure. With some submerged soils, evidence of prior surface soil aeration such as the development of mottles, soil structure or very low pHw suggests that the soils are not Subaqueous, i.e. subject to permanent saturation. If the period of exposure is insufficient to allow substantial soil aeration and there is no evidence of oxidation and drying, then the soils are considered to be Subaqueous.
+
+In the Salic suborder the salinisation may or may not be human-induced. Saline water tables may arise as a result of a sequence of wetter-than-average years, or they may result from activities such as a tree clearing and/or unwise irrigation practices. With time it is likely that some of the human-induced saline soils will tend to those of the Hypersalic suborder, as evidenced in some of the saline valleys of the Western Australian wheat belt. It also follows that a wide range of soils is likely to occur in the Salic suborder.
+
+In the Redoxic and Oxyaquic suborders water tables are normally non-saline. However exceptions may occur where these soils are underlain by sulfuric and/or sulfidic materials, as described by Walker (1972). It should be noted that the use of mottling as a diagnostic criterion in the former suborder does not necessarily imply that oxidising and reducing conditions are currently occurring in the soil in most years.""" ;
   dcterms:description """This order is designed to accommodate a range of seasonally or permanently wet soils and thus there is some diversity within the order. The key criterion is saturation of the major part of the soil profile for prolonged periods (2-3 months) in most years. Some Hydrosols are permanently submerged. The soils may or may not experience reducing conditions for all or part of the period of saturation, and thus manifestations of reduction and oxidation such as gley colours and ochrous mottles may or may not be present.
 
 Saturation by a water table may not necessarily be caused by low soil permeability. Often site drainage will be the most important factor, while in other well-known cases tidal influence is dominant. The relevant Field Handbook drainage classes are very poorly and poorly drained.
@@ -1801,8 +1931,367 @@ A difficult question arises as to how artificially drained soils are best treate
 
 In the case of irrigated soils, the main example is when more or less permanent flood irrigation is employed to grow rice. This would be expected to change, for example, a Chromosol to a Chromosolic Hydrosol. It should be noted that the definition of the order is deliberately somewhat equivocal in that the duration and frequency of saturation of a precise section of the profile are not specifically defined. Lack of water table data is one reason, but it is also thought that a degree of flexibility is required for the definition. It is recognised that the extent of soil wetness can seldom be assessed by a single inspection of a particular site. However, in the author's experience judicious questioning of people with local knowledge, together with the soil scientist's assessment of soil and site drainage and climatic environment, can usually achieve a satisfactory resolution of the problem.""" ;
   skos:definition "Soils other than Organosols, Podosols and Vertosols in which the major part of the soil profile is saturated for at least 2-3 months in most years." ;
+  skos:narrower asc:HY-BT ;
+  skos:narrower asc:HY-CS ;
+  skos:narrower asc:HY-CW ;
+  skos:narrower asc:HY-DT ;
+  skos:narrower asc:HY-ED ;
+  skos:narrower asc:HY-EG ;
+  skos:narrower asc:HY-EW ;
+  skos:narrower asc:HY-IU ;
+  skos:narrower asc:HY-IV ;
   skos:notation "HY" ;
   skos:prefLabel "Hydrosols" ;
+.
+asc:HY-BT
+  a asc:Suborder ;
+  asc:classifier asc:BT ;
+  asc:greatgroup asc:BG ;
+  asc:greatgroup asc:CB ;
+  asc:greatgroup asc:CX ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EQ ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FQ ;
+  asc:greatgroup asc:FR ;
+  asc:greatgroup asc:GR ;
+  asc:greatgroup asc:GT ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup asc:JM ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:greatgroup-comment "High salt contents usually tend to obliterate the original morphology, but where this can still be identified, great groups may be established on this basis." ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:HY ;
+  skos:notation "HY-BT" ;
+  skos:prefLabel "Extratidal Hydrosol" ;
+.
+asc:HY-CS
+  a asc:Suborder ;
+  asc:classifier asc:CS ;
+  asc:greatgroup asc:BZ ;
+  asc:greatgroup asc:CC ;
+  asc:greatgroup asc:CD ;
+  asc:greatgroup asc:DQ ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FY ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:HY ;
+  skos:notation "HY-CS" ;
+  skos:prefLabel "Hypersalic Hydrosol" ;
+.
+asc:HY-CW
+  a asc:Suborder ;
+  asc:classifier asc:CW ;
+  asc:greatgroup asc:AQ ;
+  asc:greatgroup asc:BV ;
+  asc:greatgroup asc:CF ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FW ;
+  asc:greatgroup asc:FX ;
+  asc:greatgroup asc:FY ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IY ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JB ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:greatgroup-comment "Conventional horizon nomenclature is inapplicable to these soils, hence the use of arbitrary depth limits." ;
+  asc:subgroup asc:BW ;
+  asc:subgroup asc:CE ;
+  asc:subgroup asc:EH ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup-comment "The following three subgroups will only be applicable to the Histic-Hypersulfidic and Histic-Hyposulfidic great groups." ;
+  skos:broader asc:HY ;
+  skos:notation "HY-CW" ;
+  skos:prefLabel "Intertidal Hydrosol" ;
+.
+asc:HY-DT
+  a asc:Suborder ;
+  asc:classifier asc:DT ;
+  asc:greatgroup asc:BG ;
+  asc:greatgroup asc:CB ;
+  asc:greatgroup asc:CX ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EQ ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FQ ;
+  asc:greatgroup asc:FR ;
+  asc:greatgroup asc:GR ;
+  asc:greatgroup asc:GT ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup asc:JM ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:greatgroup-comment "The following great groups will not all be relevant for each of these two suborders. For example, the Rudosolic great group will not be required for the Redoxic suborder." ;
+  asc:subgroup asc:AF ;
+  asc:subgroup asc:AG ;
+  asc:subgroup asc:AH ;
+  asc:subgroup asc:AI ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AU ;
+  asc:subgroup asc:AV ;
+  asc:subgroup asc:AX ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:BA ;
+  asc:subgroup asc:BB ;
+  asc:subgroup asc:BC ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CL ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DH ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DL ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:EF ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:EO ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:EY ;
+  asc:subgroup asc:EZ ;
+  asc:subgroup asc:FD ;
+  asc:subgroup asc:FV ;
+  asc:subgroup asc:GD ;
+  asc:subgroup asc:GP ;
+  asc:subgroup asc:GU ;
+  asc:subgroup asc:GW ;
+  asc:subgroup asc:GX ;
+  asc:subgroup asc:GY ;
+  asc:subgroup asc:HC ;
+  asc:subgroup asc:HO ;
+  asc:subgroup asc:IT ;
+  asc:subgroup-comment "It is thought that the following subgroups will cater for most situations, although obviously some will not be relevant for particular great groups. As examples, the Acidic subgroups will not be required for the Kurosolic great groups, nor the Sodic and Natric classes for the Sodosolic great group. Although presently not listed, a Petrocalcic subgroup may be required for the Calcarosolic great group. If so, a definition is available above. Some additional subgroups will be required for the Sulfuric and Sulfidic great groups as knowledge of these soils increases eg. a possible subdivision could be based on the nature of the soil profile above the sulfuric or sulfidic materials which commonly occur as a D horizon. In the case of the Rudosolic and Tenosolic great groups, the most appropriate subgroups will be those used for the relevant suborders and great groups of Rudosols and Tenosols." ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:HY ;
+  skos:notation "HY-DT" ;
+  skos:prefLabel "Oxyaquic Hydrosol" ;
+.
+asc:HY-ED
+  a asc:Suborder ;
+  asc:classifier asc:ED ;
+  asc:greatgroup asc:BG ;
+  asc:greatgroup asc:CB ;
+  asc:greatgroup asc:CX ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EQ ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FQ ;
+  asc:greatgroup asc:FR ;
+  asc:greatgroup asc:GR ;
+  asc:greatgroup asc:GT ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup asc:JM ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:greatgroup-comment "The following great groups will not all be relevant for each of these two suborders. For example, the Rudosolic great group will not be required for the Redoxic suborder." ;
+  asc:subgroup asc:AF ;
+  asc:subgroup asc:AG ;
+  asc:subgroup asc:AH ;
+  asc:subgroup asc:AI ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AU ;
+  asc:subgroup asc:AV ;
+  asc:subgroup asc:AX ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:BA ;
+  asc:subgroup asc:BB ;
+  asc:subgroup asc:BC ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CL ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DH ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DL ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:EF ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:EO ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:EY ;
+  asc:subgroup asc:EZ ;
+  asc:subgroup asc:FD ;
+  asc:subgroup asc:FV ;
+  asc:subgroup asc:GD ;
+  asc:subgroup asc:GP ;
+  asc:subgroup asc:GU ;
+  asc:subgroup asc:GW ;
+  asc:subgroup asc:GX ;
+  asc:subgroup asc:GY ;
+  asc:subgroup asc:HC ;
+  asc:subgroup asc:HO ;
+  asc:subgroup asc:IT ;
+  asc:subgroup-comment "It is thought that the following subgroups will cater for most situations, although obviously some will not be relevant for particular great groups. As examples, the Acidic subgroups will not be required for the Kurosolic great groups, nor the Sodic and Natric classes for the Sodosolic great group. Although presently not listed, a Petrocalcic subgroup may be required for the Calcarosolic great group. If so, a definition is available above. Some additional subgroups will be required for the Sulfuric and Sulfidic great groups as knowledge of these soils increases eg. a possible subdivision could be based on the nature of the soil profile above the sulfuric or sulfidic materials which commonly occur as a D horizon. In the case of the Rudosolic and Tenosolic great groups, the most appropriate subgroups will be those used for the relevant suborders and great groups of Rudosols and Tenosols." ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:HY ;
+  skos:notation "HY-ED" ;
+  skos:prefLabel "Redoxic Hydrosol" ;
+.
+asc:HY-EG
+  a asc:Suborder ;
+  asc:classifier asc:EG ;
+  asc:greatgroup asc:BG ;
+  asc:greatgroup asc:CB ;
+  asc:greatgroup asc:CX ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:EQ ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FQ ;
+  asc:greatgroup asc:FR ;
+  asc:greatgroup asc:GR ;
+  asc:greatgroup asc:GT ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup asc:JM ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:greatgroup-comment "High salt contents usually tend to obliterate the original morphology, but where this can still be identified, great groups may be established on this basis." ;
+  asc:subgroup asc:DZ ;
+  asc:subgroup asc:HL ;
+  asc:subgroup asc:HM ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup-comment "The following three subgroups have been identified for several great groups in the Salic suborder. Other possibly relevant subgroups may be found listed below in the subgroups for the Redoxic and Oxyaquic suborders." ;
+  skos:broader asc:HY ;
+  skos:notation "HY-EG" ;
+  skos:prefLabel "Salic Hydrosol" ;
+.
+asc:HY-EW
+  a asc:Suborder ;
+  asc:classifier asc:EW ;
+  asc:greatgroup asc:BZ ;
+  asc:greatgroup asc:CD ;
+  asc:greatgroup asc:DQ ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FY ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:HY ;
+  skos:notation "HY-EW" ;
+  skos:prefLabel "Supratidal Hydrosol" ;
+.
+asc:HY-IU
+  a asc:Suborder ;
+  asc:classifier asc:IU ;
+  asc:greatgroup asc:AQ ;
+  asc:greatgroup asc:BV ;
+  asc:greatgroup asc:CF ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FW ;
+  asc:greatgroup asc:FX ;
+  asc:greatgroup asc:FY ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IY ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JB ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:greatgroup-comment "Conventional horizon nomenclature is inapplicable to these soils, hence the use of arbitrary depth limits." ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:HY ;
+  skos:notation "HY-IU" ;
+  skos:prefLabel "Subtidal Hydrosol" ;
+.
+asc:HY-IV
+  a asc:Suborder ;
+  asc:classifier asc:IV ;
+  asc:greatgroup asc:AQ ;
+  asc:greatgroup asc:BV ;
+  asc:greatgroup asc:CF ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:FW ;
+  asc:greatgroup asc:FX ;
+  asc:greatgroup asc:FY ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IY ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JB ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment """Because of lack of data no Great Groups are presently proposed for the Subtidal and Subaqueous Hydrosols. Further studies may lead to additional great groups across all Suborders.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:greatgroup-comment "Conventional horizon nomenclature is inapplicable to these soils, hence the use of arbitrary depth limits." ;
+  asc:subgroup-comment """No subgroups for the Subtidal, Subaqueous, Supratidal, Extratidal and Hypersalic Hydrosols are formally proposed at present because of insufficient data.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:HY ;
+  skos:notation "HY-IV" ;
+  skos:prefLabel "Subaqueous Hydrosol" ;
 .
 asc:HZ
   a asc:Alteration ;
@@ -1813,6 +2302,7 @@ asc:HZ
 .
 asc:I
   a asc:Class ;
+  a asc:Gravel-nature ;
   skos:definition "[OR] >50%" ;
   skos:notation "I" ;
   skos:prefLabel "Very gravelly" ;
@@ -1860,6 +2350,12 @@ asc:IF
   skos:definition "[OR] Soils that are more or less freely drained and are never saturated for more than several days unless rain is falling and contain organic materials which occur as in Definition (ii) of Organosols." ;
   skos:notation "IF" ;
   skos:prefLabel "Folic" ;
+.
+asc:IG
+  a asc:Class ;
+  skos:definition "[PO] Soils with a Bhs/Bs horizon." ;
+  skos:notation "IG" ;
+  skos:prefLabel "Humosesquic/Sesquic" ;
 .
 asc:IH
   a asc:Class ;
@@ -1955,6 +2451,13 @@ asc:IZ
   skos:definition "[VE] Other soils in which hypersulfidic material occurs within the upper 1.5 m of the profile." ;
   skos:notation "IZ" ;
   skos:prefLabel "Hypersulfidic" ;
+.
+asc:J
+  a asc:Class ;
+  a asc:Texture ;
+  skos:definition "Dominated by organic materials" ;
+  skos:notation "J" ;
+  skos:prefLabel "Peaty" ;
 .
 asc:JA
   a asc:Class ;
@@ -2139,12 +2642,264 @@ There may be difficulty differentiating between Kandosols and Arenosols, where t
 asc:KU
   a asc:Order ;
   a skos:Concept ;
+  asc:colourclass asc:AA ;
+  asc:colourclass asc:AB ;
+  asc:colourclass asc:AC ;
+  asc:colourclass asc:AD ;
+  asc:colourclass asc:AE ;
+  asc:colourclass-comment "The dominant colour class in the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is:" ;
+  asc:family-comment "1 This refers to the most clayey field texture category." ;
+  asc:family-criteria asc:A ;
+  asc:family-criteria asc:B ;
+  asc:family-criteria asc:C ;
+  asc:family-criteria asc:D ;
+  asc:family-criteria asc:E ;
+  asc:family-criteria asc:F ;
+  asc:family-criteria asc:G ;
+  asc:family-criteria asc:H ;
+  asc:family-criteria asc:I ;
+  asc:family-criteria asc:J ;
+  asc:family-criteria asc:K ;
+  asc:family-criteria asc:L ;
+  asc:family-criteria asc:M ;
+  asc:family-criteria asc:N ;
+  asc:family-criteria asc:NR ;
+  asc:family-criteria asc:O ;
+  asc:family-criteria asc:SR ;
+  asc:family-criteria asc:T ;
+  asc:family-criteria asc:U ;
+  asc:family-criteria asc:V ;
+  asc:family-criteria asc:W ;
+  asc:family-criteria asc:WR ;
+  asc:family-criteria asc:X ;
+  asc:family-criteria asc:Y ;
   dcterms:description "Soils with strong texture contrast between A horizons and strongly acid B horizons. Many of these soils have some unusual subsoil chemical features (high magnesium, sodium and aluminium)." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/KU"^^xsd:anyURI ;
   rdfs:comment "The relevance of sodicity in strongly acid soils is open to question as in theory the presence of aluminium in such soils should counterbalance the usual deleterious effect of sodium (via dispersion) on soil physical properties. Unpublished data from many localities in Australia imply that for B horizons the critical limits of pHw 5.5 and ESP of 6 to distinguish dispersive and non-dispersive soils seems to generally work in practice, although as might be expected, some soils do not behave as predicted. For this reason, sodicity is also used in Kurosols, but at a lower hierarchical level, to cater for those soils which have an ESP > 6 and may disperse in spite of having a pHw less than 5.5. The role of the high exchangeable magnesium in many Kurosols is largely unknown." ;
   skos:definition "Soils other than Hydrosols with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is strongly acid." ;
+  skos:narrower asc:KU-AA ;
   skos:notation "KU" ;
   skos:prefLabel "Kurosols" ;
+.
+asc:KU-AA
+  a asc:Suborder ;
+  asc:classifier asc:AA ;
+  asc:greatgroup asc:AF ;
+  asc:greatgroup asc:AG ;
+  asc:greatgroup asc:AH ;
+  asc:greatgroup asc:DB ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:FD ;
+  asc:greatgroup asc:GP ;
+  asc:greatgroup-comment """These will vary somewhat among the various colour class suborders, but it is likely that the subdivisions given below will apply to most.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A feature of the soils classified is the common occurrence of high subsoil exchangeable magnesium with or without sodium. In spite of an upper B2t horizon that is strongly acid, Mesotrophic great groups are more common than the Dystrophic forms. This is often related to relatively high magnesium values.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AV ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:AZ ;
+  asc:subgroup asc:BA ;
+  asc:subgroup asc:BB ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:EF ;
+  asc:subgroup asc:EO ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:EY ;
+  asc:subgroup asc:EZ ;
+  asc:subgroup asc:HB ;
+  asc:subgroup-comment """The subgroups listed will not all be relevant for every great group. eg. Sodic classes will not be required for the Natric great groups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A significant proportion of the soils classified to date have mottled B2t horizons which suggests a trend to poorer internal drainage in the Kurosols compared to Chromosols.""" ;
+  skos:broader asc:KU ;
+  skos:notation "KU-AA" ;
+  skos:prefLabel "Red Kurosol" ;
+.
+asc:KU-AB
+  a asc:Suborder ;
+  asc:classifier asc:AB ;
+  asc:greatgroup asc:AF ;
+  asc:greatgroup asc:AG ;
+  asc:greatgroup asc:AH ;
+  asc:greatgroup asc:DB ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:FD ;
+  asc:greatgroup asc:GP ;
+  asc:greatgroup-comment """These will vary somewhat among the various colour class suborders, but it is likely that the subdivisions given below will apply to most.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A feature of the soils classified is the common occurrence of high subsoil exchangeable magnesium with or without sodium. In spite of an upper B2t horizon that is strongly acid, Mesotrophic great groups are more common than the Dystrophic forms. This is often related to relatively high magnesium values.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AV ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:AZ ;
+  asc:subgroup asc:BA ;
+  asc:subgroup asc:BB ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:EF ;
+  asc:subgroup asc:EO ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:EY ;
+  asc:subgroup asc:EZ ;
+  asc:subgroup asc:HB ;
+  asc:subgroup-comment """The subgroups listed will not all be relevant for every great group. eg. Sodic classes will not be required for the Natric great groups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A significant proportion of the soils classified to date have mottled B2t horizons which suggests a trend to poorer internal drainage in the Kurosols compared to Chromosols.""" ;
+  skos:broader asc:KU ;
+  skos:notation "KU-AB" ;
+  skos:prefLabel "Brown Kurosol" ;
+.
+asc:KU-AC
+  a asc:Suborder ;
+  asc:classifier asc:AC ;
+  asc:greatgroup asc:AF ;
+  asc:greatgroup asc:AG ;
+  asc:greatgroup asc:AH ;
+  asc:greatgroup asc:DB ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:FD ;
+  asc:greatgroup asc:GP ;
+  asc:greatgroup-comment """These will vary somewhat among the various colour class suborders, but it is likely that the subdivisions given below will apply to most.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A feature of the soils classified is the common occurrence of high subsoil exchangeable magnesium with or without sodium. In spite of an upper B2t horizon that is strongly acid, Mesotrophic great groups are more common than the Dystrophic forms. This is often related to relatively high magnesium values.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AV ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:AZ ;
+  asc:subgroup asc:BA ;
+  asc:subgroup asc:BB ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:EF ;
+  asc:subgroup asc:EO ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:EY ;
+  asc:subgroup asc:EZ ;
+  asc:subgroup asc:HB ;
+  asc:subgroup-comment """The subgroups listed will not all be relevant for every great group. eg. Sodic classes will not be required for the Natric great groups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A significant proportion of the soils classified to date have mottled B2t horizons which suggests a trend to poorer internal drainage in the Kurosols compared to Chromosols.""" ;
+  skos:broader asc:KU ;
+  skos:notation "KU-AC" ;
+  skos:prefLabel "Yellow Kurosol" ;
+.
+asc:KU-AD
+  a asc:Suborder ;
+  asc:classifier asc:AD ;
+  asc:greatgroup asc:AF ;
+  asc:greatgroup asc:AG ;
+  asc:greatgroup asc:AH ;
+  asc:greatgroup asc:DB ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:FD ;
+  asc:greatgroup asc:GP ;
+  asc:greatgroup-comment """These will vary somewhat among the various colour class suborders, but it is likely that the subdivisions given below will apply to most.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A feature of the soils classified is the common occurrence of high subsoil exchangeable magnesium with or without sodium. In spite of an upper B2t horizon that is strongly acid, Mesotrophic great groups are more common than the Dystrophic forms. This is often related to relatively high magnesium values.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AV ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:AZ ;
+  asc:subgroup asc:BA ;
+  asc:subgroup asc:BB ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:EF ;
+  asc:subgroup asc:EO ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:EY ;
+  asc:subgroup asc:EZ ;
+  asc:subgroup asc:HB ;
+  asc:subgroup-comment """The subgroups listed will not all be relevant for every great group. eg. Sodic classes will not be required for the Natric great groups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A significant proportion of the soils classified to date have mottled B2t horizons which suggests a trend to poorer internal drainage in the Kurosols compared to Chromosols.""" ;
+  skos:broader asc:KU ;
+  skos:notation "KU-AD" ;
+  skos:prefLabel "Grey Kurosol" ;
+.
+asc:KU-AE
+  a asc:Suborder ;
+  asc:classifier asc:AE ;
+  asc:greatgroup asc:AF ;
+  asc:greatgroup asc:AG ;
+  asc:greatgroup asc:AH ;
+  asc:greatgroup asc:DB ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:FD ;
+  asc:greatgroup asc:GP ;
+  asc:greatgroup-comment """These will vary somewhat among the various colour class suborders, but it is likely that the subdivisions given below will apply to most.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A feature of the soils classified is the common occurrence of high subsoil exchangeable magnesium with or without sodium. In spite of an upper B2t horizon that is strongly acid, Mesotrophic great groups are more common than the Dystrophic forms. This is often related to relatively high magnesium values.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:AV ;
+  asc:subgroup asc:AY ;
+  asc:subgroup asc:AZ ;
+  asc:subgroup asc:BA ;
+  asc:subgroup asc:BB ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:EF ;
+  asc:subgroup asc:EO ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:EY ;
+  asc:subgroup asc:EZ ;
+  asc:subgroup asc:HB ;
+  asc:subgroup-comment """The subgroups listed will not all be relevant for every great group. eg. Sodic classes will not be required for the Natric great groups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+A significant proportion of the soils classified to date have mottled B2t horizons which suggests a trend to poorer internal drainage in the Kurosols compared to Chromosols.""" ;
+  skos:broader asc:KU ;
+  skos:notation "KU-AE" ;
+  skos:prefLabel "Black Kurosol" ;
 .
 asc:L
   a asc:Class ;
@@ -2166,6 +2921,13 @@ asc:N
   skos:definition "ZL–ZCL (25–35% clay and silt 25% or more)" ;
   skos:notation "N" ;
   skos:prefLabel "Silty" ;
+.
+asc:NR
+  a asc:Class ;
+  a asc:Water-repellence ;
+  skos:definition "Water absorbed in 10 seconds or less" ;
+  skos:notation "NR" ;
+  skos:prefLabel "Non water repellent" ;
 .
 asc:O
   a asc:Class ;
@@ -2219,6 +2981,46 @@ asc:OF
 asc:OR
   a asc:Order ;
   a skos:Concept ;
+  asc:family-comment """Texture classes specific to organic materials (and consistent with horizon definitions in the Field Handbook) describe the dominant texture of the uppermost organic materials, horizons or layers. These classes provide a useful insight to the formation processes of and inherent vulnerabilities to the uppermost organic materials.
+
+Granular is applied if there is a layer at least 0.2 m thick that has a distinct granular or subangular blocky type of pedality (see Field Handbook). This condition occurs in some peat soils that have either naturally dried out, or have been drained or drained and cultivated, and are also known as earthy or ripened peats. In Australia it is known to occur with sapric peats, but it is uncertain if it occurs with hemic or fibric peats.
+
+Ashy and Vitric reflect the influence of fire.""" ;
+  asc:family-criteria asc:B ;
+  asc:family-criteria asc:C ;
+  asc:family-criteria asc:D ;
+  asc:family-criteria asc:E ;
+  asc:family-criteria asc:F ;
+  asc:family-criteria asc:G ;
+  asc:family-criteria asc:H ;
+  asc:family-criteria asc:HZ ;
+  asc:family-criteria asc:I ;
+  asc:family-criteria asc:JZ ;
+  asc:family-criteria asc:K ;
+  asc:family-criteria asc:L ;
+  asc:family-criteria asc:M ;
+  asc:family-criteria asc:N ;
+  asc:family-criteria asc:O ;
+  asc:family-criteria asc:OA ;
+  asc:family-criteria asc:OB ;
+  asc:family-criteria asc:OC ;
+  asc:family-criteria asc:OD ;
+  asc:family-criteria asc:OE ;
+  asc:family-criteria asc:OF ;
+  asc:family-criteria asc:P ;
+  asc:family-criteria asc:T ;
+  asc:family-criteria asc:U ;
+  asc:family-criteria asc:V ;
+  asc:family-criteria asc:W ;
+  asc:family-criteria asc:X ;
+  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:Z ;
+  asc:suborder asc:BW ;
+  asc:suborder asc:CE ;
+  asc:suborder asc:EH ;
+  asc:suborder-comment """The terms fibric, hemic and sapric are essentially the same as defined in the World Reference Base (2015) and Soil Taxonomy (Soil Survey Staff 2014) and give an indication of the relative decomposition of the organic materials If the proportions of peats in a profile are such that no peat type is dominant then the peat type with the most advanced level of decomposition should be selected.
+
+In some north Queensland seasonal swamps, thick peats can have 0.3–0.4 m of sapric over hemic and/or fibric peat. Conversely many organic moorland soils found in the remote south western wilderness area of Tasmania often grade from fibric and hemic peat through to an underlying sapric peat. When more data are available it may be necessary to modify the Suborder definitions to cater for soils where the type of peat changes with depth.""" ;
   dcterms:description "This class caters for most soils dominated by organic materials Although they are found from the wet tropics to the alpine regions, areas are mostly small except in south west Tasmania. There have been few previous attempts to subdivide these soils and substantial data are limited to Tasmania." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/OR"^^xsd:anyURI ;
   rdfs:comment "Soils with peaty horizons that do not meet the organic materials requirements of Organosols are catered for in other Orders, commonly Hydrosols. Organosols may classify as a buried soil if overlain by aeolian or fluvial deposits that may have undergone other developmental processes. If the overlying material is less than 0.3 m and can only qualify as a Rudosol, it is regarded as a depositional phase of the Organosol below." ;
@@ -2226,8 +3028,101 @@ asc:OR
 
 1. Have more than 0.4 m of organic materials within the upper 0.8 m. The required thickness may either extend down from the surface or be taken cumulatively within the upper 0.8 m; or
 2. Have organic materials extending from the surface to a minimum depth of 0.1 m; these either overlie a mineral soil horizon or unconsolidated mineral material no thicker than the organic materials above, or directly overlie rock or other hard layers, partially weathered or decomposed rock or saprolite, or overlie fragmental material such as gravel, cobbles or stones in which the interstices are filled or partially filled with organic material. In some soils there may be layers of humose, melacic and/or melanic horizon material underlying the organic materials and overlying the substrate.""" ;
+  skos:narrower asc:OR-BW ;
+  skos:narrower asc:OR-CE ;
+  skos:narrower asc:OR-EH ;
   skos:notation "OR" ;
   skos:prefLabel "Organosols" ;
+.
+asc:OR-BW
+  a asc:Suborder ;
+  asc:classifier asc:BW ;
+  asc:greatgroup asc:AI ;
+  asc:greatgroup asc:AR ;
+  asc:greatgroup asc:BC ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:IF ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment "It is likely that not all of the great groups below will be applicable to each suborder. It is also likely that other great groups will be required as knowledge increases." ;
+  asc:subgroup asc:CZ ;
+  asc:subgroup asc:DD ;
+  asc:subgroup asc:DU ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:FS ;
+  asc:subgroup asc:GF ;
+  asc:subgroup asc:HD ;
+  asc:subgroup asc:IJ ;
+  asc:subgroup-comment """The following subgroups may not be relevant to all great groups of each suborder, and future investigations may reveal additional subgroups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:OR ;
+  skos:notation "OR-BW" ;
+  skos:prefLabel "Fibric Organosol" ;
+.
+asc:OR-CE
+  a asc:Suborder ;
+  asc:classifier asc:CE ;
+  asc:greatgroup asc:AI ;
+  asc:greatgroup asc:AR ;
+  asc:greatgroup asc:BC ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:IF ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment "It is likely that not all of the great groups below will be applicable to each suborder. It is also likely that other great groups will be required as knowledge increases." ;
+  asc:subgroup asc:CZ ;
+  asc:subgroup asc:DD ;
+  asc:subgroup asc:DU ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:FS ;
+  asc:subgroup asc:GF ;
+  asc:subgroup asc:HD ;
+  asc:subgroup asc:IJ ;
+  asc:subgroup-comment """The following subgroups may not be relevant to all great groups of each suborder, and future investigations may reveal additional subgroups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:OR ;
+  skos:notation "OR-BW" ;
+  skos:prefLabel "Hemic Organosol" ;
+.
+asc:OR-EH
+  a asc:Suborder ;
+  asc:classifier asc:EH ;
+  asc:greatgroup asc:AI ;
+  asc:greatgroup asc:AR ;
+  asc:greatgroup asc:BC ;
+  asc:greatgroup asc:EU ;
+  asc:greatgroup asc:EV ;
+  asc:greatgroup asc:IF ;
+  asc:greatgroup asc:IW ;
+  asc:greatgroup asc:IX ;
+  asc:greatgroup asc:IZ ;
+  asc:greatgroup asc:JA ;
+  asc:greatgroup asc:JC ;
+  asc:greatgroup-comment "It is likely that not all of the great groups below will be applicable to each suborder. It is also likely that other great groups will be required as knowledge increases." ;
+  asc:subgroup asc:CZ ;
+  asc:subgroup asc:DD ;
+  asc:subgroup asc:DU ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:FS ;
+  asc:subgroup asc:GF ;
+  asc:subgroup asc:HD ;
+  asc:subgroup asc:IJ ;
+  asc:subgroup-comment """The following subgroups may not be relevant to all great groups of each suborder, and future investigations may reveal additional subgroups.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  skos:broader asc:OR ;
+  skos:notation "OR-EH" ;
+  skos:prefLabel "Sapric Organosol" ;
 .
 asc:Order
   a owl:Class ;
@@ -2254,14 +3149,228 @@ asc:P
 asc:PO
   a asc:Order ;
   a skos:Concept ;
+  asc:family-criteria asc:A ;
+  asc:family-criteria asc:B ;
+  asc:family-criteria asc:C ;
+  asc:family-criteria asc:D ;
+  asc:family-criteria asc:E ;
+  asc:family-criteria asc:F ;
+  asc:family-criteria asc:G ;
+  asc:family-criteria asc:H ;
+  asc:family-criteria asc:I ;
+  asc:family-criteria asc:J ;
+  asc:family-criteria asc:K ;
+  asc:family-criteria asc:L ;
+  asc:family-criteria asc:M ;
+  asc:family-criteria asc:N ;
+  asc:family-criteria asc:NR ;
+  asc:family-criteria asc:O ;
+  asc:family-criteria asc:SR ;
+  asc:family-criteria asc:T ;
+  asc:family-criteria asc:U ;
+  asc:family-criteria asc:V ;
+  asc:family-criteria asc:W ;
+  asc:family-criteria asc:WR ;
+  asc:family-criteria asc:X ;
+  asc:family-criteria asc:Y ;
+  asc:suborder asc:AL ;
+  asc:suborder asc:AM ;
+  asc:suborder asc:EJ ;
+  asc:suborder asc:JD ;
+  asc:suborder asc:JE ;
+  asc:suborder-comment "These are based on soil and site drainage conditions. The intention is to separate soils with no short-term saturation in the B horizon, those with short-term saturation of the B horizon, and those that are saturated for long periods in the B horizon." ;
   dcterms:description "Soils with B horizons dominated by the accumulation of compounds of organic matter, aluminium and/or iron. These soils are recognised world-wide, and Australia is particularly noted for its 'giant' forms. Podosols are typically found in close proximity to the coast and on islands comprised of quartz sand." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/PO"^^xsd:anyURI ;
   rdfs:comment """Extensive revisions of the classification of Spodosols and Podzols have taken place in the USA (with world-wide input) and New Zealand. It is clear that there is considerable diversity of opinion on the desirability, nature and efficacy of chemical criteria to define Spodosols/Podzols. For this reason the present proposal for Australian 'podzols' has deliberately avoided the use of chemical diagnostic criteria.
 
 Some Podosols with deep diagnostic B horizons may classify initially as Bleached Arenosols. Only deep examination of the soil profile can confirm the order of such soils.""" ;
   skos:definition "Soils which possess either a Bs horizon (visible dominance of iron compounds), a Bhs horizon (organic-aluminium and iron compounds), or a Bh horizon (organic-aluminium compounds). These horizons may occur singly in a profile or in combination (see Podosol diagnostic horizons)." ;
+  skos:narrower asc:PO-AL ;
+  skos:narrower asc:PO-AM ;
+  skos:narrower asc:PO-EJ ;
+  skos:narrower asc:PO-JD ;
+  skos:narrower asc:PO-JE ;
   skos:notation "PO" ;
   skos:prefLabel "Podosols" ;
+.
+asc:PO-AL
+  a asc:Suborder ;
+  asc:classifier asc:AL ;
+  asc:greatgroup asc:CO ;
+  asc:greatgroup asc:EB ;
+  asc:greatgroup asc:EK ;
+  asc:greatgroup asc:IG ;
+  asc:greatgroup-comment """Classes are based on observable B horizon characteristics reflecting the dominance of organic or iron compounds and their distribution in the accumulation zone. The organic accumulations can usually be recognised by their dark colours and the iron compounds by generally bright colours. Aluminium is always present, usually complexed by organic matter and therefore not usually visible, except in some horizons where large amounts of amorphous aluminium and silica (imogolite-allophane complexes) may induce a yellowish brown colouration. Yellowish brown bands in poorly-drained B horizons should not be interpreted as evidence of iron compounds without chemical verification.
+
+In the soils classified the most common class in the Aeric suborder is the Sesquic great group, but Humic is most common in the Semiaquic and Aquic Suborders.""" ;
+  asc:subgroup asc:BI ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BY ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CN ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DJ ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DV ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:DX ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:GD ;
+  asc:subgroup asc:HN ;
+  asc:subgroup-comment """Each class listed below may not be relevant for every great group of each suborder.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizons of many Podosols may have a distinct surface layer of lighter coloured sand with clean quartz grains and discrete lumps of organic matter and charcoal, giving the layer a speckled appearance. Below this layer, a dark A1 horizon may occur. Because the great majority of Australian Podosols have a bleached A2 horizon, this attribute is not used in the classification. Similarly, the great majority have a B horizon pHw of less than 5.5, hence acidic subgroups have not been used.""" ;
+  skos:broader asc:PO ;
+  skos:notation "PO-AL" ;
+  skos:prefLabel "Aeric Podosol" ;
+.
+asc:PO-AM
+  a asc:Suborder ;
+  asc:classifier asc:AM ;
+  asc:greatgroup asc:CG ;
+  asc:greatgroup asc:IH ;
+  asc:greatgroup-comment """Classes are based on observable B horizon characteristics reflecting the dominance of organic or iron compounds and their distribution in the accumulation zone. The organic accumulations can usually be recognised by their dark colours and the iron compounds by generally bright colours. Aluminium is always present, usually complexed by organic matter and therefore not usually visible, except in some horizons where large amounts of amorphous aluminium and silica (imogolite-allophane complexes) may induce a yellowish brown colouration. Yellowish brown bands in poorly-drained B horizons should not be interpreted as evidence of iron compounds without chemical verification.
+
+In the soils classified the most common class in the Aeric suborder is the Sesquic great group, but Humic is most common in the Semiaquic and Aquic Suborders.""" ;
+  asc:subgroup asc:BI ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BY ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CN ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DJ ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DV ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:DX ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:GD ;
+  asc:subgroup asc:HN ;
+  asc:subgroup-comment """Each class listed below may not be relevant for every great group of each suborder.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizons of many Podosols may have a distinct surface layer of lighter coloured sand with clean quartz grains and discrete lumps of organic matter and charcoal, giving the layer a speckled appearance. Below this layer, a dark A1 horizon may occur. Because the great majority of Australian Podosols have a bleached A2 horizon, this attribute is not used in the classification. Similarly, the great majority have a B horizon pHw of less than 5.5, hence acidic subgroups have not been used.""" ;
+  skos:broader asc:PO ;
+  skos:notation "PO-AM" ;
+  skos:prefLabel "Aquic Podosol" ;
+.
+asc:PO-EJ
+  a asc:Suborder ;
+  asc:classifier asc:EJ ;
+  asc:greatgroup asc:CG ;
+  asc:greatgroup asc:CI ;
+  asc:greatgroup asc:CJ ;
+  asc:greatgroup asc:CO ;
+  asc:greatgroup asc:EB ;
+  asc:greatgroup asc:EK ;
+  asc:greatgroup asc:IH ;
+  asc:greatgroup-comment """Classes are based on observable B horizon characteristics reflecting the dominance of organic or iron compounds and their distribution in the accumulation zone. The organic accumulations can usually be recognised by their dark colours and the iron compounds by generally bright colours. Aluminium is always present, usually complexed by organic matter and therefore not usually visible, except in some horizons where large amounts of amorphous aluminium and silica (imogolite-allophane complexes) may induce a yellowish brown colouration. Yellowish brown bands in poorly-drained B horizons should not be interpreted as evidence of iron compounds without chemical verification.
+
+In the soils classified the most common class in the Aeric suborder is the Sesquic great group, but Humic is most common in the Semiaquic and Aquic Suborders.""" ;
+  asc:subgroup asc:BI ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BY ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CN ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DJ ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DV ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:DX ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:GD ;
+  asc:subgroup asc:HN ;
+  asc:subgroup-comment """Each class listed below may not be relevant for every great group of each suborder.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizons of many Podosols may have a distinct surface layer of lighter coloured sand with clean quartz grains and discrete lumps of organic matter and charcoal, giving the layer a speckled appearance. Below this layer, a dark A1 horizon may occur. Because the great majority of Australian Podosols have a bleached A2 horizon, this attribute is not used in the classification. Similarly, the great majority have a B horizon pHw of less than 5.5, hence acidic subgroups have not been used.""" ;
+  skos:broader asc:PO ;
+  skos:notation "PO-EJ" ;
+  skos:prefLabel "Semiaquic Podosol" ;
+.
+asc:PO-JD
+  a asc:Suborder ;
+  asc:classifier asc:JD ;
+  asc:greatgroup asc:CG ;
+  asc:greatgroup asc:IH ;
+  asc:greatgroup-comment """Classes are based on observable B horizon characteristics reflecting the dominance of organic or iron compounds and their distribution in the accumulation zone. The organic accumulations can usually be recognised by their dark colours and the iron compounds by generally bright colours. Aluminium is always present, usually complexed by organic matter and therefore not usually visible, except in some horizons where large amounts of amorphous aluminium and silica (imogolite-allophane complexes) may induce a yellowish brown colouration. Yellowish brown bands in poorly-drained B horizons should not be interpreted as evidence of iron compounds without chemical verification.
+
+In the soils classified the most common class in the Aeric suborder is the Sesquic great group, but Humic is most common in the Semiaquic and Aquic Suborders.""" ;
+  asc:subgroup asc:BI ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BY ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CN ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DJ ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DV ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:DX ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:GD ;
+  asc:subgroup asc:HN ;
+  asc:subgroup-comment """Each class listed below may not be relevant for every great group of each suborder.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizons of many Podosols may have a distinct surface layer of lighter coloured sand with clean quartz grains and discrete lumps of organic matter and charcoal, giving the layer a speckled appearance. Below this layer, a dark A1 horizon may occur. Because the great majority of Australian Podosols have a bleached A2 horizon, this attribute is not used in the classification. Similarly, the great majority have a B horizon pHw of less than 5.5, hence acidic subgroups have not been used.""" ;
+  skos:broader asc:PO ;
+  skos:notation "PO-JD" ;
+  skos:prefLabel "Aquic-Sulfuric Podosol" ;
+.
+asc:PO-JE
+  a asc:Suborder ;
+  asc:classifier asc:JE ;
+  asc:greatgroup asc:CG ;
+  asc:greatgroup asc:IH ;
+  asc:greatgroup-comment """Classes are based on observable B horizon characteristics reflecting the dominance of organic or iron compounds and their distribution in the accumulation zone. The organic accumulations can usually be recognised by their dark colours and the iron compounds by generally bright colours. Aluminium is always present, usually complexed by organic matter and therefore not usually visible, except in some horizons where large amounts of amorphous aluminium and silica (imogolite-allophane complexes) may induce a yellowish brown colouration. Yellowish brown bands in poorly-drained B horizons should not be interpreted as evidence of iron compounds without chemical verification.
+
+In the soils classified the most common class in the Aeric suborder is the Sesquic great group, but Humic is most common in the Semiaquic and Aquic Suborders.""" ;
+  asc:subgroup asc:BI ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BY ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CN ;
+  asc:subgroup asc:DG ;
+  asc:subgroup asc:DJ ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DV ;
+  asc:subgroup asc:DW ;
+  asc:subgroup asc:DX ;
+  asc:subgroup asc:EC ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:GD ;
+  asc:subgroup asc:HN ;
+  asc:subgroup-comment """Each class listed below may not be relevant for every great group of each suborder.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizons of many Podosols may have a distinct surface layer of lighter coloured sand with clean quartz grains and discrete lumps of organic matter and charcoal, giving the layer a speckled appearance. Below this layer, a dark A1 horizon may occur. Because the great majority of Australian Podosols have a bleached A2 horizon, this attribute is not used in the classification. Similarly, the great majority have a B horizon pHw of less than 5.5, hence acidic subgroups have not been used.""" ;
+  skos:broader asc:PO ;
+  skos:notation "PO-JE" ;
+  skos:prefLabel "Aquic-Hypersulfidic Podosol" ;
+.
+asc:Q
+  a asc:Clay-content ;
+  skos:definition "<45% clay" ;
+  skos:notation "Q" ;
+  skos:prefLabel "Fine" ;
+.
+asc:R
+  a asc:Clay-content ;
+  skos:definition "45 - 60% clay" ;
+  skos:notation "R" ;
+  skos:prefLabel "Medium fine" ;
 .
 asc:RE
   a asc:Order ;
@@ -2306,15 +3415,44 @@ Rudosols in arid climatic zones form under a variety of processes (i.e. dust acc
   skos:notation "RU" ;
   skos:prefLabel "Rudosols" ;
 .
-asc:RUCD
-  a asc:Class ;
-  skos:definition "[RU] Soils that directly overlie hard rock." ;
-  skos:notation "CD" ;
-  skos:prefLabel "Lithic" ;
+asc:S
+  a asc:Clay-content ;
+  skos:definition ">60% clay" ;
+  skos:notation "S" ;
+  skos:prefLabel "Very fine" ;
 .
 asc:SO
   a asc:Order ;
   a skos:Concept ;
+  asc:colourclass asc:AA ;
+  asc:colourclass asc:AB ;
+  asc:colourclass asc:AC ;
+  asc:colourclass asc:AD ;
+  asc:colourclass asc:AE ;
+  asc:colourclass-comment "The dominant colour class in the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is:" ;
+  asc:family-criteria asc:A ;
+  asc:family-criteria asc:B ;
+  asc:family-criteria asc:C ;
+  asc:family-criteria asc:D ;
+  asc:family-criteria asc:E ;
+  asc:family-criteria asc:F ;
+  asc:family-criteria asc:G ;
+  asc:family-criteria asc:H ;
+  asc:family-criteria asc:I ;
+  asc:family-criteria asc:K ;
+  asc:family-criteria asc:L ;
+  asc:family-criteria asc:M ;
+  asc:family-criteria asc:N ;
+  asc:family-criteria asc:NR ;
+  asc:family-criteria asc:O ;
+  asc:family-criteria asc:SR ;
+  asc:family-criteria asc:T ;
+  asc:family-criteria asc:U ;
+  asc:family-criteria asc:V ;
+  asc:family-criteria asc:W ;
+  asc:family-criteria asc:WR ;
+  asc:family-criteria asc:X ;
+  asc:family-criteria asc:Y ;
   dcterms:description "Soils with strong texture contrast between A horizons and sodic B horizons which are not strongly acid. Australia is noteworthy for the extent and diversity of sodic soils (Isbell 1995)." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/SO"^^xsd:anyURI ;
   rdfs:comment """There is convincing evidence from the Riverine Plain of south eastern Australia that soils with sodic clay B horizons (ESP 25-30) which are strongly subplastic behave very differently in terms of permeability to the more commonly found plastic sodic clay B horizons which are characterised by low to very low saturated hydraulic conductivity (McIntyre 1979). It is on this basis that subplastic sodic soils are excluded from Sodosols, because of their very different land use properties.
@@ -2327,8 +3465,234 @@ Increasing experience in many parts of Australia is confirming that the Emerson 
 
 Data from Loveday and Pyle (1973) and unpublished data available to the original author Ray Isbell suggest that a dispersive soil will usually indicate sodicity, ie. ESP of 6 or greater. The data of Murphy (1995) indicate that whereas Emerson class 1 and the more strongly dispersive soils of class 2 are a reliable indicator of sodicity, whereas class 3 is a more variable predictor. Emerson classes of 5 or greater or a Loveday and Pyle score of zero strongly suggest soils are non-sodic. There is less evidence that the dispersion tests give a reliable indication of the degree of sodicity; factors such as extent of initial slaking and initial salt content in the aggregates, and the amount of magnesium and amount and form of aluminium on the exchange complex (Emerson 1994), can also influence the rapidity of dispersion. Nevertheless, the data of Loveday and Pyle measuring dispersion after 2 hours and 20 hours showed that the rate of dispersion could be used as a guide to ESP. This relationship does not apply to the subplastic soils of the Riverine Plain where subsoils with an ESP of 25-30 do not disperse unless remoulded (Blackmore 1976). Other anomalous results occur in a small minority of normal plastic soils in which dispersion will not occur even after remoulding in spite of an ESP much greater than 6 and a pHw as high as neutral. In at least some of these non-dispersive soils the typical sodic soil morphology is present, ie. a conspicuously bleached A2 horizon abruptly overlying a B2t horizon with prismatic or columnar structure, suggesting the low hydraulic conductivity expected of a sodic B horizon.""" ;
   skos:definition "Soils with a clear or abrupt textural B horizon and in which the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is sodic and not strongly acid. Hydrosols and soils with strongly subplastic upper B2t horizons are excluded." ;
+  skos:narrower asc:SO-AA ;
+  skos:narrower asc:SO-AB ;
+  skos:narrower asc:SO-AC ;
+  skos:narrower asc:SO-AD ;
+  skos:narrower asc:SO-AE ;
   skos:notation "SO" ;
   skos:prefLabel "Sodosols" ;
+.
+asc:SO-AA
+  a asc:Suborder ;
+  asc:classifier asc:AA ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BK ;
+  asc:greatgroup asc:CR ;
+  asc:greatgroup asc:DP ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:ES ;
+  asc:greatgroup asc:FN ;
+  asc:greatgroup asc:FO ;
+  asc:greatgroup asc:FP ;
+  asc:greatgroup asc:IE ;
+  asc:greatgroup-comment """Some Great Group soils are much more common in certain colour Suborders than others. The Duric and Pedaric Great Groups are known only from the arid zone, the former being particularly widespread in Western Australia and the latter in western Queensland and New South Wales, and in South Australia.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup asc:AF ;
+  asc:subgroup asc:AG ;
+  asc:subgroup asc:AH ;
+  asc:subgroup asc:BD ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CQ ;
+  asc:subgroup asc:CV ;
+  asc:subgroup asc:DA ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:FB ;
+  asc:subgroup-comment """Not every Subgroup defined below will be required or be appropriate for each Great Group of each Suborder. Some possible attributes have not been used for various reasons, e.g. bleaching has not been used because the great majority of soils in the class probably are bleached. Structure has not been used because of the diverse range that is encountered in these particular soils.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The calcareous classes above approximately correspond to those of Wetherby and Oades (1975) as follows: Hypocalcic - Class IV, Lithocalcic - Class III B and III C, Supracalcic - Class III B, Hypercalcic - Class III A, Calcic - Class I and IIIA. In the Lithocalcic and Supracalcic classes the coarse fragments may be >0.2 m in size and soft carbonate may or may not be present.""" ;
+  skos:broader asc:SO ;
+  skos:notation "SO-AA" ;
+  skos:prefLabel "Red Sodosol" ;
+.
+asc:SO-AB
+  a asc:Suborder ;
+  asc:classifier asc:AB ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BK ;
+  asc:greatgroup asc:CR ;
+  asc:greatgroup asc:DP ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:ES ;
+  asc:greatgroup asc:FN ;
+  asc:greatgroup asc:FO ;
+  asc:greatgroup asc:FP ;
+  asc:greatgroup asc:IE ;
+  asc:greatgroup-comment """Some Great Group soils are much more common in certain colour Suborders than others. The Duric and Pedaric Great Groups are known only from the arid zone, the former being particularly widespread in Western Australia and the latter in western Queensland and New South Wales, and in South Australia.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup asc:AF ;
+  asc:subgroup asc:AG ;
+  asc:subgroup asc:AH ;
+  asc:subgroup asc:BD ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CQ ;
+  asc:subgroup asc:CV ;
+  asc:subgroup asc:DA ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:FB ;
+  asc:subgroup-comment """Not every Subgroup defined below will be required or be appropriate for each Great Group of each Suborder. Some possible attributes have not been used for various reasons, e.g. bleaching has not been used because the great majority of soils in the class probably are bleached. Structure has not been used because of the diverse range that is encountered in these particular soils.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The calcareous classes above approximately correspond to those of Wetherby and Oades (1975) as follows: Hypocalcic - Class IV, Lithocalcic - Class III B and III C, Supracalcic - Class III B, Hypercalcic - Class III A, Calcic - Class I and IIIA. In the Lithocalcic and Supracalcic classes the coarse fragments may be >0.2 m in size and soft carbonate may or may not be present.""" ;
+  skos:broader asc:SO ;
+  skos:notation "SO-AB" ;
+  skos:prefLabel "Brown Sodosol" ;
+.
+asc:SO-AC
+  a asc:Suborder ;
+  asc:classifier asc:AC ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BK ;
+  asc:greatgroup asc:CR ;
+  asc:greatgroup asc:DP ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:ES ;
+  asc:greatgroup asc:FN ;
+  asc:greatgroup asc:FO ;
+  asc:greatgroup asc:FP ;
+  asc:greatgroup asc:IE ;
+  asc:greatgroup-comment """Some Great Group soils are much more common in certain colour Suborders than others. The Duric and Pedaric Great Groups are known only from the arid zone, the former being particularly widespread in Western Australia and the latter in western Queensland and New South Wales, and in South Australia.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup asc:AF ;
+  asc:subgroup asc:AG ;
+  asc:subgroup asc:AH ;
+  asc:subgroup asc:BD ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CQ ;
+  asc:subgroup asc:CV ;
+  asc:subgroup asc:DA ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:FB ;
+  asc:subgroup-comment """Not every Subgroup defined below will be required or be appropriate for each Great Group of each Suborder. Some possible attributes have not been used for various reasons, e.g. bleaching has not been used because the great majority of soils in the class probably are bleached. Structure has not been used because of the diverse range that is encountered in these particular soils.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The calcareous classes above approximately correspond to those of Wetherby and Oades (1975) as follows: Hypocalcic - Class IV, Lithocalcic - Class III B and III C, Supracalcic - Class III B, Hypercalcic - Class III A, Calcic - Class I and IIIA. In the Lithocalcic and Supracalcic classes the coarse fragments may be >0.2 m in size and soft carbonate may or may not be present.""" ;
+  skos:broader asc:SO ;
+  skos:notation "SO-AC" ;
+  skos:prefLabel "Yellow Sodosol" ;
+.
+asc:SO-AD
+  a asc:Suborder ;
+  asc:classifier asc:AD ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BK ;
+  asc:greatgroup asc:CR ;
+  asc:greatgroup asc:DP ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:ES ;
+  asc:greatgroup asc:FN ;
+  asc:greatgroup asc:FO ;
+  asc:greatgroup asc:FP ;
+  asc:greatgroup asc:IE ;
+  asc:greatgroup-comment """Some Great Group soils are much more common in certain colour Suborders than others. The Duric and Pedaric Great Groups are known only from the arid zone, the former being particularly widespread in Western Australia and the latter in western Queensland and New South Wales, and in South Australia.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup asc:AF ;
+  asc:subgroup asc:AG ;
+  asc:subgroup asc:AH ;
+  asc:subgroup asc:BD ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CQ ;
+  asc:subgroup asc:CV ;
+  asc:subgroup asc:DA ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:FB ;
+  asc:subgroup-comment """Not every Subgroup defined below will be required or be appropriate for each Great Group of each Suborder. Some possible attributes have not been used for various reasons, e.g. bleaching has not been used because the great majority of soils in the class probably are bleached. Structure has not been used because of the diverse range that is encountered in these particular soils.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The calcareous classes above approximately correspond to those of Wetherby and Oades (1975) as follows: Hypocalcic - Class IV, Lithocalcic - Class III B and III C, Supracalcic - Class III B, Hypercalcic - Class III A, Calcic - Class I and IIIA. In the Lithocalcic and Supracalcic classes the coarse fragments may be >0.2 m in size and soft carbonate may or may not be present.""" ;
+  skos:broader asc:SO ;
+  skos:notation "SO-AD" ;
+  skos:prefLabel "Grey Sodosol" ;
+.
+asc:SO-AE
+  a asc:Suborder ;
+  asc:classifier asc:AE ;
+  asc:greatgroup asc:BJ ;
+  asc:greatgroup asc:BK ;
+  asc:greatgroup asc:CR ;
+  asc:greatgroup asc:DP ;
+  asc:greatgroup asc:DZ ;
+  asc:greatgroup asc:EA ;
+  asc:greatgroup asc:ES ;
+  asc:greatgroup asc:FN ;
+  asc:greatgroup asc:FO ;
+  asc:greatgroup asc:FP ;
+  asc:greatgroup asc:IE ;
+  asc:greatgroup-comment """Some Great Group soils are much more common in certain colour Suborders than others. The Duric and Pedaric Great Groups are known only from the arid zone, the former being particularly widespread in Western Australia and the latter in western Queensland and New South Wales, and in South Australia.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
+  asc:subgroup asc:AF ;
+  asc:subgroup asc:AG ;
+  asc:subgroup asc:AH ;
+  asc:subgroup asc:BD ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CK ;
+  asc:subgroup asc:CQ ;
+  asc:subgroup asc:CV ;
+  asc:subgroup asc:DA ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DK ;
+  asc:subgroup asc:DN ;
+  asc:subgroup asc:EM ;
+  asc:subgroup asc:EX ;
+  asc:subgroup asc:FB ;
+  asc:subgroup-comment """Not every Subgroup defined below will be required or be appropriate for each Great Group of each Suborder. Some possible attributes have not been used for various reasons, e.g. bleaching has not been used because the great majority of soils in the class probably are bleached. Structure has not been used because of the diverse range that is encountered in these particular soils.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+The calcareous classes above approximately correspond to those of Wetherby and Oades (1975) as follows: Hypocalcic - Class IV, Lithocalcic - Class III B and III C, Supracalcic - Class III B, Hypercalcic - Class III A, Calcic - Class I and IIIA. In the Lithocalcic and Supracalcic classes the coarse fragments may be >0.2 m in size and soft carbonate may or may not be present.""" ;
+  skos:broader asc:SO ;
+  skos:notation "SO-AE" ;
+  skos:prefLabel "Black Sodosol" ;
+.
+asc:SR
+  a asc:Water-repellence ;
+  skos:definition "2 Molar ethanol takes more than 10 seconds to be absorbed into soil" ;
+  skos:notation "SR" ;
+  skos:prefLabel "Strongly water repellent" ;
 .
 asc:Suborder
   a owl:Class ;
@@ -2462,6 +3826,7 @@ asc:TE-AT
   skos:narrower asc:TE-AT-JQ ;
   skos:narrower asc:TE-AT-JW ;
   skos:narrower asc:TE-AT-JX ;
+  skos:notation "TE-AT" ;
   skos:prefLabel "Bleached Tenosol" ;
 .
 asc:TE-AT-AK
@@ -2678,6 +4043,7 @@ asc:TE-AW
   skos:narrower asc:TE-AW-JV ;
   skos:narrower asc:TE-AW-JW ;
   skos:narrower asc:TE-AW-JX ;
+  skos:notation "TE-AW" ;
   skos:prefLabel "Bleached-Leptic Tenosol" ;
 .
 asc:TE-AW-BU
@@ -2801,6 +4167,7 @@ asc:TE-BE
   skos:narrower asc:TE-BE-GF ;
   skos:narrower asc:TE-BE-HF ;
   skos:narrower asc:TE-BE-IA ;
+  skos:notation "TE-BE" ;
   skos:prefLabel "Chernic Tenosol" ;
 .
 asc:TE-BE-AK
@@ -2931,6 +4298,7 @@ asc:TE-BF
   skos:narrower asc:TE-BF-EA ;
   skos:narrower asc:TE-BF-EM ;
   skos:narrower asc:TE-BF-GE ;
+  skos:notation "TE-BF" ;
   skos:prefLabel "Chernic-Leptic Tenosol" ;
 .
 asc:TE-BF-BJ
@@ -3016,6 +4384,7 @@ asc:TE-CY
   skos:narrower asc:TE-CY-EA ;
   skos:narrower asc:TE-CY-EM ;
   skos:narrower asc:TE-CY-GE ;
+  skos:notation "TE-CY" ;
   skos:prefLabel "Leptic Tenosol" ;
 .
 asc:TE-CY-BJ
@@ -3106,6 +4475,7 @@ asc:TE-IL
   skos:narrower asc:TE-IL-EM ;
   skos:narrower asc:TE-IL-GF ;
   skos:narrower asc:TE-IL-IA ;
+  skos:notation "TE-IL" ;
   skos:prefLabel "Sesqui-Nodular Tenosol" ;
 .
 asc:TE-IL-AP
@@ -3219,6 +4589,7 @@ asc:TE-IM
   skos:narrower asc:TE-IM-EM ;
   skos:narrower asc:TE-IM-GF ;
   skos:narrower asc:TE-IM-HF ;
+  skos:notation "TE-IM" ;
   skos:prefLabel "Calcenic Tenosol" ;
 .
 asc:TE-IM-AK
@@ -3336,6 +4707,30 @@ asc:V
 asc:VE
   a asc:Order ;
   a skos:Concept ;
+  asc:colourclass asc:AA ;
+  asc:colourclass asc:AB ;
+  asc:colourclass asc:AC ;
+  asc:colourclass asc:AD ;
+  asc:colourclass asc:AE ;
+  asc:colourclass-comment """The dominant colour class in the major part of the upper 0.5 m of the B2 horizon (or the major part of the entire B2 horizon if it is less than 0.5 m thick) is:
+
+Of the soils entered in the data base, the most common class for the first edition was Black (40%) which is probably a reflection of the agricultural importance of these soils.""" ;
+  asc:family-comment "Because of the uniform clayey nature of these soils and their usual lack of distinct horizonation, several of the usual family criteria are not appropriate for Vertosols. Field texture in these soils may not be a reliable guide to actual clay content (see Field Handbook), and it may also be difficult to achieve consistent results between operators. Hence it is thought more appropriate to provide for a subdivision of actual clay content as determined by laboratory analysis. The classes used are similar to those used for clayey particle-size classes in Soil Taxonomy (Soil Survey Staff 2014). Other criteria used are gravel content of surface and A1 horizon and soil depth." ;
+  asc:family-criteria asc:E ;
+  asc:family-criteria asc:F ;
+  asc:family-criteria asc:G ;
+  asc:family-criteria asc:H ;
+  asc:family-criteria asc:I ;
+  asc:family-criteria asc:Q ;
+  asc:family-criteria asc:R ;
+  asc:family-criteria asc:S ;
+  asc:family-criteria asc:T ;
+  asc:family-criteria asc:U ;
+  asc:family-criteria asc:V ;
+  asc:family-criteria asc:W ;
+  asc:family-criteria asc:X ;
+  asc:family-criteria asc:Y ;
+  asc:suborder asc:AM ;
   dcterms:description "Clay soils with shrink-swell properties that exhibit strong cracking when dry and at depth have slickensides and/or lenticular peds. Although many soils exhibit gilgai microrelief, this feature is not used in their definition. Australia has the greatest area and diversity of cracking clay soils of any country in the world." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/VE"^^xsd:anyURI ;
   rdfs:comment """In some clay soils it may be difficult to decide if sufficient cracks are present, or at the time of inspection the soil may be too moist to exhibit cracking. Also, in arid zone clay soils which commonly have high salt contents, the soil structure may be so fine and strong granular, or 'puffy', that it is difficult to decide if cracks are present or not. In such soils it is also obviously difficult to discern slickensides and/or lenticular peds. In yet other clay soils (up to 50% clay or more) cracks may develop but slickensides and/or lenticular peds are apparently not present.
@@ -3345,9 +4740,75 @@ Because cracking, slickensides and/or lenticular peds are essentially used as ev
 
 1.  A clay field texture or 35% or more clay throughout the solum except for thin, surface crusty horizons 30 mm or less thick and
 2. When dry, open cracks occur at some time in most years1. These are at least 5 mm wide and extend upward to the surface or to the base of any plough layer, peaty horizon, self-mulching horizon, or thin, surface crusty horizon; and
-3. Slickensides and/or lenticular peds occur at some depth in the solum. """ ;
+3. Slickensides and/or lenticular peds occur at some depth in the solum. 
+
+1 Note that there is no crack frequency criterion as in the Factual Key (Northcote 1979).""" ;
+  skos:narrower asc:VE-AM ;
   skos:notation "VE" ;
   skos:prefLabel "Vertosols" ;
+.
+asc:VE-AM
+  a asc:Suborder ;
+  asc:classifier asc:AM ;
+  asc:greatgroup asc:BH ;
+  asc:greatgroup asc:DF ;
+  asc:greatgroup asc:DW ;
+  asc:greatgroup asc:EI ;
+  asc:greatgroup asc:GS ;
+  asc:greatgroup-comment """These may not all apply to each suborder, in particular our knowledge of the Aquic suborder is limited.
+
+Apart from the Peaty forms, each of the above soil surface conditions tends to reform despite cultivation or surface trampling. There may be a problem in identifying the self-mulching condition in periods of initial drying, i.e. in assessing the stability of the surface flake which forms following rainfall. If there is doubt as to whether a soil is self-mulching or has only a pedal surface, it is suggested that the latter condition be recorded, i.e. use the self-mulching great group only for those soils where the condition is not in doubt. It may be difficult to determine the surface condition if a dense grass sward is present. In this situation it will be necessary to look for a patch of bare ground, or even to kill the grass with herbicide and return at a later date. Note also that large soil units bounded by cracks are not considered to be coarse peds. It is usually necessary to examine these soils in the moist state to determine their degree of pedality.""" ;
+  asc:subgroup asc:AT ;
+  asc:subgroup asc:BJ ;
+  asc:subgroup asc:BL ;
+  asc:subgroup asc:BN ;
+  asc:subgroup asc:BP ;
+  asc:subgroup asc:BR ;
+  asc:subgroup asc:BU ;
+  asc:subgroup asc:BZ ;
+  asc:subgroup asc:CD ;
+  asc:subgroup asc:CU ;
+  asc:subgroup asc:DB ;
+  asc:subgroup asc:DC ;
+  asc:subgroup asc:DQ ;
+  asc:subgroup asc:DZ ;
+  asc:subgroup asc:EG ;
+  asc:subgroup asc:EP ;
+  asc:subgroup asc:EU ;
+  asc:subgroup asc:EV ;
+  asc:subgroup asc:FM ;
+  asc:subgroup asc:FY ;
+  asc:subgroup asc:FZ ;
+  asc:subgroup asc:GA ;
+  asc:subgroup asc:GB ;
+  asc:subgroup asc:GG ;
+  asc:subgroup asc:GH ;
+  asc:subgroup asc:GI ;
+  asc:subgroup asc:GJ ;
+  asc:subgroup asc:GK ;
+  asc:subgroup asc:GL ;
+  asc:subgroup asc:GM ;
+  asc:subgroup asc:GN ;
+  asc:subgroup asc:GO ;
+  asc:subgroup asc:GQ ;
+  asc:subgroup asc:HE ;
+  asc:subgroup asc:IW ;
+  asc:subgroup asc:IX ;
+  asc:subgroup asc:IZ ;
+  asc:subgroup asc:JA ;
+  asc:subgroup asc:JC ;
+  asc:subgroup asc:JF ;
+  asc:subgroup asc:JG ;
+  asc:subgroup asc:JH ;
+  asc:subgroup asc:JI ;
+  asc:subgroup-comment """It is thought that the following subgroups will be required for most of the suborders and great groups. Note that some of the differentiating criteria are not mutually exclusive, and thus sometimes it has been a subjective decision as to which attributes have priority in the key.
+
+If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.
+
+It should be noted that all the Endoacidic soils classified are also Endohypersodic, with some also being Epihypersodic. Additionally, some Epicalcareous-Epihypersodic soils are Endoacidic at depth. It is not possible to cater for all these combinations.""" ;
+  skos:broader asc:VE ;
+  skos:notation "VE-AM" ;
+  skos:prefLabel "Aquic Vertosol" ;
 .
 asc:W
   a asc:Class ;
@@ -3355,6 +4816,18 @@ asc:W
   skos:definition "1.0–<1.5 m" ;
   skos:notation "W" ;
   skos:prefLabel "Deep" ;
+.
+asc:WR
+  a asc:Class ;
+  a asc:Water-repellence ;
+  skos:definition "Water takes more than 10 seconds and 2 Molar ethanol takes 10 seconds or less to be absorbed into soil" ;
+  skos:notation "WR" ;
+  skos:prefLabel "Water repellent" ;
+.
+asc:Water-repellence
+  a owl:Class ;
+  rdfs:subClassOf asc:Class ;
+  skos:prefLabel "Water repellence" ;
 .
 asc:X
   a asc:Class ;
@@ -3405,7 +4878,7 @@ asc:family-criteria
   a owl:ObjectProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Family criteria" ;
-  rdfs:range asc:Family ;
+  rdfs:range asc:Class ;
   rdfs:subPropertyOf dcterms:relation ;
 .
 asc:greatgroup
