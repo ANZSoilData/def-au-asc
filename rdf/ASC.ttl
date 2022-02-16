@@ -31,6 +31,7 @@ asc:
 .
 asc:A
   a asc:Thickness ;
+  a skos:Concept ;
   skos:definition "< 0.1 m" ;
   skos:notation "A" ;
   skos:prefLabel "Thin" ;
@@ -404,6 +405,7 @@ asc:Alteration
 .
 asc:B
   a asc:Thickness ;
+  a skos:Concept ;
   skos:altLabel "Moderately thick" ;
   skos:definition "[OR] 0.1–<0.3 m" ;
   skos:notation "B" ;
@@ -623,6 +625,7 @@ asc:BZ
 .
 asc:C
   a asc:Thickness ;
+  a skos:Concept ;
   skos:definition "[OR] 0.3–0.6 m" ;
   skos:notation "C" ;
   skos:prefLabel "Thick" ;
@@ -1700,6 +1703,7 @@ asc:Class
   skos:member asc:JV ;
   skos:member asc:JW ;
   skos:member asc:JX ;
+  skos:prefLabel "Classifier" ;
 .
 asc:Clay-content
   a owl:Class ;
@@ -1723,6 +1727,7 @@ asc:ColourClass
 .
 asc:D
   a asc:Thickness ;
+  a skos:Concept ;
   skos:definition "[OR] >0.6 m" ;
   skos:notation "D" ;
   skos:prefLabel "Very thick" ;
@@ -2382,6 +2387,7 @@ asc:Depth
 .
 asc:E
   a asc:Gravel-nature ;
+  a skos:Concept ;
   skos:definition "[OR] <2%" ;
   skos:notation "E" ;
   skos:prefLabel "Non-gravelly" ;
@@ -2632,6 +2638,7 @@ asc:EZ
 .
 asc:F
   a asc:Gravel-nature ;
+  a skos:Concept ;
   skos:definition "[OR] 2-<10%" ;
   skos:notation "F" ;
   skos:prefLabel " Slightly gravelly" ;
@@ -3056,6 +3063,7 @@ asc:Family
 .
 asc:G
   a asc:Gravel-nature ;
+  a skos:Concept ;
   skos:definition "[OR] 10-<20%" ;
   skos:notation "G" ;
   skos:prefLabel "Gravelly" ;
@@ -3272,6 +3280,7 @@ asc:Gravel-nature
 .
 asc:H
   a asc:Gravel-nature ;
+  a skos:Concept ;
   skos:definition "[OR] 20-50%" ;
   skos:notation "H" ;
   skos:prefLabel "Moderately gravelly" ;
@@ -3853,12 +3862,14 @@ If a diagnostic feature in the key begins more than 1.5 m from the soil surface 
 .
 asc:HZ
   a asc:Alteration ;
+  a skos:Concept ;
   skos:definition "[OR] ash material" ;
   skos:notation "HZ" ;
   skos:prefLabel "Ashy" ;
 .
 asc:I
   a asc:Gravel-nature ;
+  a skos:Concept ;
   skos:definition "[OR] >50%" ;
   skos:notation "I" ;
   skos:prefLabel "Very gravelly" ;
@@ -4021,6 +4032,7 @@ asc:IZ
 .
 asc:J
   a asc:Texture ;
+  a skos:Concept ;
   skos:definition "Dominated by organic materials" ;
   skos:notation "J" ;
   skos:prefLabel "Peaty" ;
@@ -4189,12 +4201,14 @@ asc:JX
 .
 asc:JZ
   a asc:Alteration ;
+  a skos:Concept ;
   skos:definition "[OR] ≥20% fusic material" ;
   skos:notation "JZ" ;
   skos:prefLabel "Vitric" ;
 .
 asc:K
   a asc:Texture ;
+  a skos:Concept ;
   skos:definition "S–LS–CS (up to 10% clay)" ;
   skos:notation "K" ;
   skos:prefLabel "Sandy" ;
@@ -4849,66 +4863,77 @@ A significant proportion of the soils classified to date have mottled B2t horizo
 .
 asc:L
   a asc:Texture ;
+  a skos:Concept ;
   skos:definition "SL–L (10–20% clay)" ;
   skos:notation "L" ;
   skos:prefLabel "Loamy" ;
 .
 asc:M
   a asc:Texture ;
+  a skos:Concept ;
   skos:definition "SCL–CL (20–35% clay)" ;
   skos:notation "M" ;
   skos:prefLabel "Clay loamy" ;
 .
 asc:N
   a asc:Texture ;
+  a skos:Concept ;
   skos:definition "ZL–ZCL (25–35% clay and silt 25% or more)" ;
   skos:notation "N" ;
   skos:prefLabel "Silty" ;
 .
 asc:NR
   a asc:Water-repellence ;
+  a skos:Concept ;
   skos:definition "Water absorbed in 10 seconds or less" ;
   skos:notation "NR" ;
   skos:prefLabel "Non water repellent" ;
 .
 asc:O
   a asc:Texture ;
+  a skos:Concept ;
   skos:definition "LC–MC–HC (> 35% clay)" ;
   skos:notation "O" ;
   skos:prefLabel "Clayey" ;
 .
 asc:OA
   a asc:Organic-type ;
+  a skos:Concept ;
   skos:definition "[OR] Fibric peat" ;
   skos:notation "OA" ;
   skos:prefLabel "Fibric peat" ;
 .
 asc:OB
   a asc:Organic-type ;
+  a skos:Concept ;
   skos:definition "[OR] Hemic peat" ;
   skos:notation "OB" ;
   skos:prefLabel "Hemic peat" ;
 .
 asc:OC
   a asc:Organic-type ;
+  a skos:Concept ;
   skos:definition "[OR] Sapric peat" ;
   skos:notation "OC" ;
   skos:prefLabel "Sapric peat" ;
 .
 asc:OD
   a asc:Organic-type ;
+  a skos:Concept ;
   skos:definition "[OR] Sandy peat" ;
   skos:notation "OD" ;
   skos:prefLabel "Sandy peat" ;
 .
 asc:OE
   a asc:Organic-type ;
+  a skos:Concept ;
   skos:definition "[OR] Loamy peat" ;
   skos:notation "OE" ;
   skos:prefLabel "Loamy peat" ;
 .
 asc:OF
   a asc:Organic-type ;
+  a skos:Concept ;
   skos:definition "[OR] Clayey peat" ;
   skos:notation "OF" ;
   skos:prefLabel "Clayey peat" ;
@@ -5102,6 +5127,7 @@ asc:Organic-type
 .
 asc:P
   a asc:Alteration ;
+  a skos:Concept ;
   skos:definition "[OR] Granular or subangular blocky type of pedality" ;
   skos:notation "P" ;
   skos:prefLabel "Granular" ;
@@ -5327,12 +5353,14 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
 .
 asc:Q
   a asc:Clay-content ;
+  a skos:Concept ;
   skos:definition "<45% clay" ;
   skos:notation "Q" ;
   skos:prefLabel "Fine" ;
 .
 asc:R
   a asc:Clay-content ;
+  a skos:Concept ;
   skos:definition "45 - 60% clay" ;
   skos:notation "R" ;
   skos:prefLabel "Medium fine" ;
@@ -6056,6 +6084,7 @@ asc:RU-HH
 .
 asc:S
   a asc:Clay-content ;
+  a skos:Concept ;
   skos:definition ">60% clay" ;
   skos:notation "S" ;
   skos:prefLabel "Very fine" ;
@@ -6334,6 +6363,7 @@ The calcareous classes above approximately correspond to those of Wetherby and O
 .
 asc:SR
   a asc:Water-repellence ;
+  a skos:Concept ;
   skos:definition "2 Molar ethanol takes more than 10 seconds to be absorbed into soil" ;
   skos:notation "SR" ;
   skos:prefLabel "Strongly water repellent" ;
@@ -6457,6 +6487,7 @@ asc:Suborder
 .
 asc:T
   a asc:Depth ;
+  a skos:Concept ;
   skos:definition "<0.25 m" ;
   skos:notation "T" ;
   skos:prefLabel "Very shallow" ;
@@ -6974,12 +7005,14 @@ asc:Thickness
 .
 asc:U
   a asc:Depth ;
+  a skos:Concept ;
   skos:definition "0.25–<0.5 m" ;
   skos:notation "U" ;
   skos:prefLabel "Shallow" ;
 .
 asc:V
   a asc:Depth ;
+  a skos:Concept ;
   skos:definition "0.5–<1.0 m" ;
   skos:notation "V" ;
   skos:prefLabel "Moderately deep" ;
@@ -7418,12 +7451,14 @@ It should be noted that all the Endoacidic soils classified are also Endohyperso
 .
 asc:W
   a asc:Depth ;
+  a skos:Concept ;
   skos:definition "1.0–<1.5 m" ;
   skos:notation "W" ;
   skos:prefLabel "Deep" ;
 .
 asc:WR
   a asc:Water-repellence ;
+  a skos:Concept ;
   skos:definition "Water takes more than 10 seconds and 2 Molar ethanol takes 10 seconds or less to be absorbed into soil" ;
   skos:notation "WR" ;
   skos:prefLabel "Water repellent" ;
@@ -7439,12 +7474,14 @@ asc:Water-repellence
 .
 asc:X
   a asc:Depth ;
+  a skos:Concept ;
   skos:definition "1.5–5 m" ;
   skos:notation "X" ;
   skos:prefLabel "Very deep" ;
 .
 asc:Y
   a asc:Depth ;
+  a skos:Concept ;
   skos:definition ">5 m" ;
   skos:notation "Y" ;
   skos:prefLabel "Giant" ;
