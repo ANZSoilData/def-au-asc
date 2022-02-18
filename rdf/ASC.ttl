@@ -41,13 +41,15 @@ asc:A
   skos:prefLabel "Thin" ;
 .
 asc:A-horizons
-  a skos:Concept ;
+  a owl:Class ;
+  a skos:Collection ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/A-horizons"^^xsd:anyURI ;
   skos:exactMatch <http://anzsoil.org/def/au/asls/soil-profile/horizons-A> ;
-  skos:narrower asc:A1-horizon ;
-  skos:narrower asc:A2-horizon ;
-  skos:narrower asc:A2-horizon-bleached ;
-  skos:narrower asc:Ap-horizon ;
+  skos:member asc:A1-horizon ;
+  skos:member asc:A2-horizon ;
+  skos:member asc:A2-horizon-bleached ;
+  skos:member asc:Ap-horizon ;
+  skos:notation "mg" ;
   skos:prefLabel "A horizons" ;
 .
 asc:A1-horizon
@@ -70,6 +72,7 @@ asc:A2-horizon-bleached
   skos:broadMatch <http://anzsoil.org/def/au/asls/soil-profile/horizon-A2> ;
   skos:broadMatch <http://anzsoil.org/def/au/asls/soil-profile/horizons-bleached> ;
   skos:definition "80% or more of the horizon is bleached. Bleached horizons are defined in terms of Munsell Soil Color notation for dry soil. For all hues, value 7 or greater and chroma 4 or less or where adjacent horizons have hues 5YR or redder, value 6 or greater with chroma 4 or less." ;
+  skos:notation "mk" ;
   skos:prefLabel "Conspicuously bleached A2 horizon" ;
 .
 asc:AA
@@ -444,10 +447,16 @@ asc:Alteration
   skos:member asc:P ;
   skos:prefLabel "Nature of altered organic materials" ;
 .
+asc:Alteration-instances
+  a skos:Collection ;
+  skos:member asc:OR-altered ;
+  skos:prefLabel "Instances of family criteria related to Alteration" ;
+.
 asc:Andic-properties
   a skos:Concept ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/Andic-properties"^^xsd:anyURI ;
   skos:definition "These occur in soils which contain significant amounts of volcanic glass and short-range-order minerals such as allophane. Chemical tests and Soil Taxonomy requirements are given in Soil Survey Staff (1999)." ;
+  skos:notation "aa" ;
   skos:prefLabel "Andic properties" ;
 .
 asc:Ap-horizon
@@ -466,12 +475,14 @@ asc:Argic-horizon
 This use of the term 'argic' varies from its use in the World Reference Base (2015).
 
 The most common known occurrences are in the mallee dune landscapes of Victoria-South Australia.""" ;
+  skos:notation "ab" ;
   skos:prefLabel "Argic horizon" ;
 .
 asc:Ash-material
   a skos:Concept ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/Ash-material"^^xsd:anyURI ;
   skos:definition "The carbon-rich material that remains after the burning of organic materials e.g. P horizons (peat) or O horizons (organic debris). In some cases, humose soil material with >10% organic carbon may also ignite to produce ash material. Ash material may occur on the surface, or as one or more layers in soil horizons or distributed along former root channels." ;
+  skos:notation "abc" ;
   skos:prefLabel "Ash material" ;
 .
 asc:B
@@ -495,6 +506,7 @@ In some shallow, stony soils B horizon material may only be present in fissures 
 
 Note: A B1 horizon is a transitional horizon between A and B, which is dominated by properties characteristic of an underlying B2.""" ;
   skos:exactMatch <http://anzsoil.org/def/au/asls/soil-profile/horizons-B> ;
+  skos:notation "ac" ;
   skos:prefLabel "B horizons" ;
   skos:related asc:Transitional-horizons ;
 .
@@ -713,6 +725,7 @@ asc:BZ
 asc:Base-status
   a skos:Concept ;
   skos:definition "This refers to the sum of exchangeable basic cations (Ca, Mg, K and Na) expressed in cmol (+) kg-1 clay. This sum is obtained by multiplying the sum of the reported basic cations (which are determined on a soil fine earth basis) by 100 and dividing by the clay percentage of the sample. Where this is not available it may be approximated from the field texture using the figures given on pp. 118-120 of the Field Handbook. Three classes are defined: Dystrophic - the sum is less than 5; Mesotrophic - the sum is between 5 and 15 inclusive; Eutrophic - the sum is greater than 15. An estimate of the sum of basic cations for the B horizon of an individual soil may be obtained from its classification if the B horizon maximum texture is recorded in the family criteria." ;
+  skos:notation "ad" ;
   skos:prefLabel "Base status" ;
   skos:related asc:B-horizons ;
   skos:related asc:Dystrophic ;
@@ -730,6 +743,7 @@ asc:Basi-horizons
 asc:Bauxitic-horizon
   a skos:Concept ;
   skos:definition "One which contains more than 20% (visual abundance estimate) of bauxite nodules or concretions which are mostly uncemented, and has a minimum thickness of 0.1 m." ;
+  skos:notation "ae" ;
   skos:prefLabel "Bauxitic horizon" ;
 .
 asc:Bh-Basi-horizons
@@ -789,30 +803,12 @@ asc:CA
   a asc:Order ;
   a skos:Concept ;
   asc:family-comment "Use of the term A horizon may be inappropriate for some of these soils because of either minimal development due to an arid environment, or common surface deflation or accumulation caused by wind. Hence it is thought better to use the term surface soil for texture and to delete the thickness criteria. In general, surface soil in this context will probably be in the range of 0.1-0.2 m in thickness. For the Calcarosols, a criterion is used to indicate the thickness above the upper boundary of the Bk horizon." ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:CA-B-texture ;
+  asc:family-criteria asc:CA-depth ;
+  asc:family-criteria asc:CA-gravel ;
+  asc:family-criteria asc:CA-surface-texture ;
+  asc:family-criteria asc:CA-thickness ;
+  asc:family-criteria asc:CA-water ;
   asc:suborder asc:BD ;
   asc:suborder asc:CQ ;
   asc:suborder asc:CV ;
@@ -851,6 +847,17 @@ In dune landscapes, where these soils frequently occur, it is common to find evi
   skos:narrower asc:CA-JT ;
   skos:notation "CA" ;
   skos:prefLabel "Calcarosols" ;
+.
+asc:CA-B-texture
+  a skos:Collection ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "3 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture3" ;
+  skos:related asc:B-horizons ;
 .
 asc:CA-BD
   a asc:Suborder ;
@@ -1074,6 +1081,54 @@ If a diagnostic feature in the key begins more than 1.5 m from the soil surface 
   skos:notation "CA-JT" ;
   skos:prefLabel "Carbonatic Calcarosol" ;
 .
+asc:CA-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:CA-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
+asc:CA-surface-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "Surface soil texture" ;
+.
+asc:CA-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "Thickness of soil above upper boundary of Bk horizon (if present)" ;
+.
+asc:CA-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:CB
   a asc:Class ;
   a skos:Concept ;
@@ -1138,30 +1193,12 @@ asc:CH
   asc:colourclass-comment """The dominant colour class in the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is:
 
 The Red and Brown Suborders account for the majority of the profiles classified.""" ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:CH-A1-texture ;
+  asc:family-criteria asc:CH-B-texture ;
+  asc:family-criteria asc:CH-depth ;
+  asc:family-criteria asc:CH-gravel ;
+  asc:family-criteria asc:CH-thickness ;
+  asc:family-criteria asc:CH-water ;
   dcterms:description "Soils with strong texture contrast between A horizons and B horizons. The latter are not strongly acid and are not sodic. The soils of this order are among the most widespread soils used for agriculture in Australia, particularly those with red subsoils." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/CH"^^xsd:anyURI ;
   rdfs:comment "In the case of those soils with strongly subplastic B horizons, care needs to be taken to ensure if they qualify for the clear or abrupt textural B horizon. As far as is presently known, such soils appear to be largely confined to the Riverine Plain of south eastern Australia." ;
@@ -1173,6 +1210,17 @@ The Red and Brown Suborders account for the majority of the profiles classified.
   skos:narrower asc:CH-AE ;
   skos:notation "CH" ;
   skos:prefLabel "Chromosols" ;
+.
+asc:CH-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
 .
 asc:CH-AA
   a asc:Suborder ;
@@ -1474,6 +1522,54 @@ A large proportion of the profiles classified so far have a Haplic Subgroup. Thi
   skos:notation "CH-AE" ;
   skos:prefLabel "Black Chromosol" ;
 .
+asc:CH-B-texture
+  a skos:Collection ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "1 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture1" ;
+  skos:related asc:B-horizons ;
+.
+asc:CH-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:CH-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
+asc:CH-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
+.
+asc:CH-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:CI
   a asc:Class ;
   a skos:Concept ;
@@ -1633,12 +1729,14 @@ asc:CZ
 asc:Calcareous
   a skos:Concept ;
   skos:definition "Presence of carbonate segregations or fine earth (soil matrix) effervescence with 1M HCl." ;
+  skos:notation "af" ;
   skos:prefLabel "Calcareous" ;
   skos:related asc:Fine-earth ;
 .
 asc:Calcareous-horizon
   a skos:Concept ;
   skos:definition "An horizon that is usually identified as a Bk, BCk, 2Bk or 2BCk horizon, or one containing fragments of a cemented (suffix 'm') equivalent of these horizons. As noted in the Field Handbook, the suffix k is usually recorded only if there are more than 10% of the calcareous segregations. However in soil with no carbonate except for one horizon with few (2-10%) segregations, this could be designated with a suffix k. See also calcrete, calcrete pan and cemented pans." ;
+  skos:notation "ag" ;
   skos:prefLabel "Calcareous horizon" ;
   skos:related asc:Calcrete ;
   skos:related asc:Calcrete-pan ;
@@ -1647,6 +1745,7 @@ asc:Calcareous-horizon
 asc:Calcrete
   a skos:Concept ;
   skos:definition "In the Field Handbook calcrete is described as both a pan (ie. a soil horizon, such as Bkm) and as a substrate material. However, the definition is the same in both cases, viz 'any cemented terrestrial carbonate accumulation that may vary significantly in morphology and degree of cementation'. The latter may be regarded as indicating the material must be hard. According to this broad definition, calcrete can obviously encompass a wide range of calcareous material although not the common soft segregations of finely divided carbonate, nor accumulations of pedogenic carbonate in the form of discrete nodules or concretions. Unfortunately, the term has been widely used in southern Australia for an almost infinite variety of forms of calcium carbonate. For the purposes of this classification, the term is used strictly as defined in the Field Handbook. See also calcrete pan and cemented pans." ;
+  skos:notation "ah" ;
   skos:prefLabel "Calcrete" ;
   skos:related asc:Calcrete-pan ;
   skos:related asc:Cemented-pans ;
@@ -1655,6 +1754,7 @@ asc:Calcrete
 asc:Calcrete-pan
   a skos:Concept ;
   skos:definition "A moderately, strongly or very strongly cemented layer of calcrete which is either continuous, or if discontinuous or broken, consists of at least 90% of hard calcrete fragments, most of which are more than 0.2 m in smallest dimension." ;
+  skos:notation "ai" ;
   skos:prefLabel "Calcrete pan" ;
   skos:related asc:Calcrete ;
   skos:related asc:Hard ;
@@ -1662,19 +1762,45 @@ asc:Calcrete-pan
 asc:Carbic-materials
   a skos:Concept ;
   skos:definition "Organic debris that has accumulated by colluvial and alluvial processes when torrential rain follows extensive bushfires. The material has a low bulk density (<1 t m-3) and consists of variably carbonised plant remains, ranging from little-altered vegetative material to charcoal and humified plant debris." ;
+  skos:notation "aj" ;
   skos:prefLabel "Carbic materials" ;
 .
 asc:Carbonate-classes
   a skos:Concept ;
   skos:definition """<p>The following table is a summary of the classes used in the classification for various kinds and amount of calcium carbonate.</p>
-<table>
-<tr><th>class</th><th>soft carbonate</th><th>hard carbonate</th></tr>
-<tr><td>Hypocalcic</td><td>&gt;0 &amp; &lt;2%	</td><td>&lt;20%</td></tr>
-<tr><td>Calcic	/td><td>2-20%</td><td>&lt;20%</td></tr>
-<tr><td>Hypercalcic/td><td>	&gt;20%</td><td>&lt;20%</td></tr>
-<tr><td>Supracalcic/td><td>	&ge;0%</td><td>20-50%</td></tr>
-<tr><td>Lithocalcic/td><td>	&ge;0%</td><td>&gt;50%</td></tr>
-</table>"""^^rdf:HTML ;
+      <table cellpadding=\"8\" >
+        <tr>
+          <th></th>
+          <th>soft carbonate</th>
+          <th>hard carbonate</th>
+        </tr>
+        <tr>
+          <td>Hypocalcic</td>
+          <td>>0 &amp; &lt;2%</td>
+          <td>&lt;20%</td>
+        </tr>
+        <tr>
+          <td>Calcic</td>
+          <td>2-20%</td>
+          <td>&lt;20%</td>
+        </tr>
+        <tr>
+          <td>Hypercalcic</td>
+          <td>>20%</td>
+          <td>&lt;20%</td>
+        </tr>
+        <tr>
+          <td>Supracalcic</td>
+          <td>&ge;0%</td>
+          <td>20-50%</td>
+        </tr>
+        <tr>
+          <td>Lithocalcic</td>
+          <td>&ge;0%</td>
+          <td>>50%</td>
+        </tr>
+      </table>"""^^rdf:HTML ;
+  skos:notation "ak" ;
   skos:prefLabel "Carbonate classes" ;
 .
 asc:Cemented-pans
@@ -1682,6 +1808,7 @@ asc:Cemented-pans
   skos:definition """In the Field Handbook a pan is defined as an indurated and/or cemented soil horizon and thus horizons such as Bcm, Bkm and Bqm could be interpreted to represent strongly developed B horizons, with consequent effects on the classification of some soils, eg. Kandosols and Tenosols. The Field Handbook also recognised that it can be difficult to determine if materials such as calcrete, ferricrete, silcrete etc. are indeed soil horizons or are better identified as substrate materials, ie. do not show pedological development or are paleo-features.
 
 To avoid the above problem, cemented layers such as calcrete, siliceous pan, red-brown hardpan, ferricrete, petroferric horizon and petroreticulate are recognised as diagnostic substrate features and hence excluded as criteria of B horizon development. Note that the Podosol diagnostic horizons are not regarded as substrate materials.""" ;
+  skos:notation "al" ;
   skos:prefLabel "Cemented pans" ;
   skos:related asc:B-horizons ;
   skos:related asc:Calcrete ;
@@ -1928,7 +2055,13 @@ asc:Clay-content
   skos:member asc:Q ;
   skos:member asc:R ;
   skos:member asc:S ;
-  skos:prefLabel "Clay content" ;
+  skos:prefLabel "Clay content values" ;
+.
+asc:Clay-instances
+  a skos:Collection ;
+  skos:member asc:VE-B-Clay ;
+  skos:member asc:VE-upper-Clay ;
+  skos:prefLabel "Instances of family criteria related to Clay Content" ;
 .
 asc:Clear-or-abrupt-textural-B-horizon
   a skos:Concept ;
@@ -1945,6 +2078,7 @@ Note: The field textures listed in (a) and (b) above must be regarded only as gu
 </p><p>
 Note also that the above definition is similar but not directly equivalent to that of the duplex primary profile form of the Factual Key (Northcote, 1979).
 </p>"""^^rdf:HTML ;
+  skos:notation "am" ;
   skos:prefLabel "Clear or abrupt textural B horizon" ;
   skos:related asc:B-horizons ;
 .
@@ -1967,6 +2101,7 @@ Greyish, greenish and bluish colours found in wet soils and defined by specific 
   skos:member asc:AC ;
   skos:member asc:AD ;
   skos:member asc:AE ;
+  skos:notation "an" ;
   skos:prefLabel "Colour Classes" ;
 .
 asc:Coquina
@@ -1978,6 +2113,7 @@ A detrital substrate consisting of cemented shells or shell fragments. The const
 <p>
 Coquina substrate: Shell block quarry, Hamelin Pool, Western Australia.
 </p>"""^^rdf:HTML ;
+  skos:notation "mi" ;
   skos:prefLabel "Coquina" ;
 .
 asc:D
@@ -2055,27 +2191,11 @@ asc:DE
   asc:colourclass-comment """The dominant colour class in the major part of the upper 0.5 m of the B2 horizon (or the major part of the entire B2 horizon if it is less than 0.5 m thick) is:
 
 The upper 0.5 m of the B2 horizon is used as the diagnostic section for colour in Dermosols, Ferrosols and Kandosols because of the often indistinct A-B horizon boundaries in these soils compared with those in Chromosols, Kurosols and Sodosols.""" ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:DE-A1-texture ;
+  asc:family-criteria asc:DE-A1-thickness ;
+  asc:family-criteria asc:DE-B-texture ;
+  asc:family-criteria asc:DE-depth ;
+  asc:family-criteria asc:DE-gravel ;
   dcterms:description "Soils with structured B2 horizons and lacking a strong texture-contrast between the A and B horizons. Although there is some diversity within the order, it brings together a range of soils with some important properties in common." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/DE"^^xsd:anyURI ;
   rdfs:comment "Some clayey soils in the arid zone which are relatively high in salt tend to have strong, fine blocky structure. It may be difficult to decide if they are Vertosols or Dermosols because of an apparent lack of cracking and slickensides or lenticular peds. The use of shrinkage measurements such as those discussed under vertic properties will help to resolve this situation." ;
@@ -2092,6 +2212,26 @@ The upper 0.5 m of the B2 horizon is used as the diagnostic section for colour i
   skos:narrower asc:DE-AE ;
   skos:notation "DE" ;
   skos:prefLabel "Dermosols" ;
+.
+asc:DE-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
+.
+asc:DE-A1-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizon (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
 .
 asc:DE-AA
   a asc:Suborder ;
@@ -2428,6 +2568,38 @@ In some dystrophic Dermosols there can be a problem with the definition of Sodic
   skos:notation "DE-AE" ;
   skos:prefLabel "Black Dermosol" ;
 .
+asc:DE-B-texture
+  a skos:Collection ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "2 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture2" ;
+  skos:related asc:B-horizons ;
+.
+asc:DE-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:DE-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+.
 asc:DF
   a asc:Class ;
   a skos:Concept ;
@@ -2631,11 +2803,13 @@ asc:DZ
 asc:Deflation
   a skos:Concept ;
   skos:definition "Erosion by wind of loose material from flat areas of dry, unconsolidated sediments such as those occurring in deserts, dry lake beds and floodplains." ;
+  skos:notation "mo" ;
   skos:prefLabel "Deflation" ;
 .
 asc:Densipan
   a skos:Concept ;
   skos:definition "An earthy pan which is very fine sandy (0.02-0.05 mm). Fragments, both wet and dry, slake in water. Densipans are less stable on exposure than underlying or overlying horizons." ;
+  skos:notation "mp" ;
   skos:prefLabel "Densipan" ;
 .
 asc:Depth
@@ -2650,16 +2824,36 @@ asc:Depth
   skos:member asc:Y ;
   skos:prefLabel "Soil depth" ;
 .
+asc:Depth-instances
+  a skos:Collection ;
+  skos:member asc:CA-depth ;
+  skos:member asc:CH-depth ;
+  skos:member asc:DE-depth ;
+  skos:member asc:FE-depth ;
+  skos:member asc:HY-depth ;
+  skos:member asc:KA-depth ;
+  skos:member asc:KU-depth ;
+  skos:member asc:OR-depth ;
+  skos:member asc:PO-depth ;
+  skos:member asc:RE-depth ;
+  skos:member asc:RU-depth ;
+  skos:member asc:SO-depth ;
+  skos:member asc:TE-depth ;
+  skos:member asc:VE-depth ;
+  skos:prefLabel "Instances of family criteria related to Soil Depth" ;
+.
 asc:Diagnostic_features
   a skos:Concept ;
   skos:definition """The Australian Soil Classification uses a set of defined attributes, horizons and materials in the key to assign a soil profile to a class. Collectively these concepts are called diagnostic features. Diagnostic features were selected, as far as possible, on the basis of their likely significance to land use and soil management. Ranking of classes in the various keys is subjective and arbitrary to a varying extent (Isbell et al. 1997).
 
 Some diagnostic features occur at or near the soil surface or must occur within a specified soil depth. However, others do not have a depth criterion. Although the Australian Soil Classification has no depth restriction, at the Great Group and Subgroup levels it is permissible to consider whether a diagnostic feature that occurs at considerable depth should apply. As a guide, if the feature begins below 1.5 m, judgement on the impact of this feature on soil performance may need to be made. The class relating to this diagnostic feature may not be the only option in the key. If it is considered that this feature has minimal influence on the performance of the soil and there are other options in the key, it is permissible to consider the next option.""" ;
+  skos:notation "abx" ;
   skos:prefLabel "Diagnostic features" ;
 .
 asc:Dystrophic
   a skos:Concept ;
   skos:definition "Base status is less than 5 cmol (+) kg-1 clay." ;
+  skos:notation "ap" ;
   skos:prefLabel "Dystrophic" ;
   skos:related asc:Base-status ;
 .
@@ -2846,6 +3040,7 @@ In some dystrophic soils, problems can arise when low levels of exchangeable sod
 A related problem is the sensitivity of the analytical procedures when values for exchangeable cations and CEC and ECEC are very low. It is probably not advisable to calculate ESP when the CEC or ECEC is 3 cmol (+) kg-1 or less and exchangeable sodium is 0.3 cmol (+) kg-1 or less. As an indicator of sodicity, such calculations are likely to be quite misleading.
 
 Finally, it must be remembered that the effect of ESP on behaviour such as dispersion is also influenced by other soil properties such as organic matter content, clay mineralogy, cation composition, sesquioxide content, and particularly electrolyte concentration of the soil and of any applied irrigation water.""" ;
+  skos:notation "aq" ;
   skos:prefLabel "ESP (Exchangeable sodium percentage)" ;
   skos:related asc:KU ;
   skos:related asc:pH ;
@@ -2930,6 +3125,7 @@ asc:EZ
 asc:Eutrophic
   a skos:Concept ;
   skos:definition "Base status is greater than 15 cmol (+) kg-1 clay. If the soil horizon is not calcareous and field pH is 7 or greater, the soil will typically classify as eutrophic." ;
+  skos:notation "ar" ;
   skos:prefLabel "Eutrophic" ;
   skos:related asc:Base-status ;
 .
@@ -2980,30 +3176,12 @@ asc:FE
   asc:colourclass asc:AD ;
   asc:colourclass asc:AE ;
   asc:colourclass-comment "The dominant colour class in the major part of the upper 0.5 m of the B2 horizon (or the major part of the entire B2 horizon if it is less than 0.5 m thick) is:" ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:FE-A1-texture ;
+  asc:family-criteria asc:FE-A1-thickness ;
+  asc:family-criteria asc:FE-B-texture ;
+  asc:family-criteria asc:FE-depth ;
+  asc:family-criteria asc:FE-gravel ;
+  asc:family-criteria asc:FE-water ;
   dcterms:description "Soils with B2 horizons which are high in free iron oxide and lacking a strong texture-contrast between the A and B horizons." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/FE"^^xsd:anyURI ;
   rdfs:comment "These soils are almost entirely formed on either mafic or ultramafic igneous rocks, their metamorphic equivalents, or alluvium derived therefrom. Although these soils do not occupy large areas in Australia, they are widely recognised and often intensively used because of their favourable physical properties. The most common forms have B2 horizons with a strong grade of pedality; such horizons typically have polyhedral compound peds up to 10-15 mm, usually with smooth and often shiny faces, which break down readily to primary peds about 5 mm or less in size. However forms also occur with a very fine granular structure which may appear massive in place. Horizons are usually high in clay and subplastic." ;
@@ -3018,6 +3196,26 @@ asc:FE
   skos:narrower asc:FE-AE ;
   skos:notation "FE" ;
   skos:prefLabel "Ferrosols" ;
+.
+asc:FE-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
+.
+asc:FE-A1-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A1 horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
 .
 asc:FE-AA
   a asc:Suborder ;
@@ -3194,6 +3392,44 @@ The Haplic subgroup is the most common in the Ferrosols classified to date, foll
   skos:notation "FE-AE" ;
   skos:prefLabel "Black Ferrosol" ;
 .
+asc:FE-B-texture
+  a skos:Collection ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "1 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture1" ;
+  skos:related asc:B-horizons ;
+.
+asc:FE-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:FE-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:Gravel ;
+.
+asc:FE-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:FF
   a asc:Class ;
   a skos:Concept ;
@@ -3358,14 +3594,28 @@ asc:Family
   skos:member asc:Z ;
   skos:prefLabel "Family criteria values" ;
 .
+asc:Family-criteria-instances
+  a skos:Collection ;
+  skos:member asc:Alteration-instances ;
+  skos:member asc:Clay-instances ;
+  skos:member asc:Depth-instances ;
+  skos:member asc:Gravel-instances ;
+  skos:member asc:Organic-instances ;
+  skos:member asc:Texture-instances ;
+  skos:member asc:Thickness-instances ;
+  skos:member asc:Water-instances ;
+  skos:prefLabel "Instances of family criteria" ;
+.
 asc:Ferric-horizon
   a skos:Concept ;
   skos:definition "One which contains more than 20% (visual abundance estimate) of ferruginous nodules or concretions which are mostly uncemented, and has a minimum thickness of 0.1 m. Most of the nodules contain at least some manganese, and in some situations the majority (if not all) of the nodules may be transported from elsewhere." ;
+  skos:notation "as" ;
   skos:prefLabel "Ferric horizon" ;
 .
 asc:Ferricrete
   a skos:Concept ;
   skos:definition "In the Field Handbook ferricrete is described as both a pan (ie. a soil horizon, such as Bcm) and as a substrate material. However, the definition is the same in both cases viz. 'indurated material rich in hydrated oxides of iron (usually goethite an hematite) occurring as cemented nodules and/or concretions, or as massive sheets'. This material has been commonly referred to in local usage as laterite, duricrust or ironstone. Indurated blocks or extremely coarse irregular forms (>60 mm) are defined as a petroferric horizon." ;
+  skos:notation "ml" ;
   skos:prefLabel "Ferricrete" ;
   skos:related asc:Petroferric-horizon ;
 .
@@ -3381,21 +3631,25 @@ asc:Field-texture
 Field textures may differ from textures derived from laboratory particle size analysis. Discrepancies may arise in soils with high organic matter, silt, fine sand or soft carbonate contents, and in soils with strongly subplastic B horizons.
 
 If there are apparent discrepancies between field texture and laboratory data, the first step is to repeat both assessments if possible. If these remain unchanged the classifiers should use their own judgement based on how they think the soil behaves. In some cases field textures may be a better guide to soil behaviour than particle size data. In all circumstances, careful sampling for analysis is required to avoid the mixing of adjacent horizons, which could result in inconsistencies between field texture and laboratory data.""" ;
+  skos:notation "kc" ;
   skos:prefLabel "Field texture" ;
 .
 asc:Fine-earth
   a skos:Concept ;
   skos:definition "The less than 2 mm fraction of the soil, typically obtained by passing soil material through a 2 mm sieve." ;
+  skos:notation "mm" ;
   skos:prefLabel "Fine earth" ;
 .
-asc:Fre-iron-oxide
+asc:Free-iron-oxide
   a skos:Concept ;
   skos:definition "This is 'pedogenic iron' formed by weathering of ferrous-containing primary minerals. It is determined by citrate-dithionite extract (Rayment and Lyons 2011 Method 13C1). Citrate-dithionite reacts with secondary crystalline iron oxides (e.g. hematite, goethite, lepidocrocite and maghemite) and poorly crystalline amorphous minerals but not magnetite and ilmenite." ;
+  skos:notation "md" ;
   skos:prefLabel "Free iron oxide" ;
 .
 asc:Fusic-material
   a skos:Concept ;
   skos:definition "A coarse fraction comprising hard, cemented (fused) ceramic-like porous fragments located within ashy material known to be derived from burnt peat. Fusic material was first observed and defined in Iraq by Fitzpatrick (2004) and more recently in a range of burnt inland Acid Sulfate Soil profiles in the lower Murray-Darling Basin by Grealish et al. (2010)." ;
+  skos:notation "da" ;
   skos:prefLabel "Fusic material" ;
 .
 asc:G
@@ -3607,6 +3861,7 @@ asc:GY
 asc:Gley-colours
   a skos:Concept ;
   skos:definition "Greyish, greenish and bluish colours found in wet soils and defined by specific Munsell Soil Color Charts - usually 10Y - 5GY and Gley charts 1 & 2. (Munsell Color 2010)" ;
+  skos:notation "mj" ;
   skos:prefLabel "Gley colours" ;
 .
 asc:Glossary
@@ -3644,7 +3899,7 @@ For clarity in this publication the levels in the classification are capitalised
   skos:member asc:Ferricrete ;
   skos:member asc:Field-texture ;
   skos:member asc:Fine-earth ;
-  skos:member asc:Fre-iron-oxide ;
+  skos:member asc:Free-iron-oxide ;
   skos:member asc:Fusic-material ;
   skos:member asc:Gley-colours ;
   skos:member asc:Grade-of-pedality ;
@@ -3733,13 +3988,33 @@ Moderate - peds well formed and evident but not distinct in undisplaced soil. Wh
 Strong - peds quite distinct in undisplaced soil. When displaced more than 2/3 of soil material consists of peds.
 
 More details are found in the Field Handbook.""" ;
+  skos:notation "me" ;
   skos:prefLabel "Grade of pedality" ;
 .
 asc:Gravel
   a skos:Concept ;
   skos:definition "This refers to the amount (visual abundance estimate) of gravel-sized (2-60 mm) materials. Gravels maybe be subdivided into 3 sizes classes - fine gravel (2-6 mm), medium gravel (6-20 mm) and coarse gravel (20-60mm). Gravels include hard (when moist) coarse non-pedogenic fragments (coarse fragments in the Field Handbook) and segregations of pedogenic origin. The most common examples of the latter are carbonate and ferruginous nodules and/or concretions." ;
+  skos:notation "at" ;
   skos:prefLabel "Gravel" ;
   skos:related asc:Hard ;
+.
+asc:Gravel-instances
+  a skos:Collection ;
+  skos:member asc:CA-gravel ;
+  skos:member asc:CH-gravel ;
+  skos:member asc:DE-gravel ;
+  skos:member asc:FE-gravel ;
+  skos:member asc:HY-gravel ;
+  skos:member asc:KA-gravel ;
+  skos:member asc:KU-gravel ;
+  skos:member asc:OR-gravel ;
+  skos:member asc:PO-gravel ;
+  skos:member asc:RE-Gravel ;
+  skos:member asc:RU-Gravel ;
+  skos:member asc:SO-gravel ;
+  skos:member asc:TE-Gravel ;
+  skos:member asc:VE-gravel ;
+  skos:prefLabel "Instances of family criteria related to Gravel" ;
 .
 asc:Gravel-nature
   a owl:Class ;
@@ -3755,11 +4030,13 @@ asc:Gravel-nature
 asc:Gritty
   a skos:Concept ;
   skos:definition "Soil layer/s with a distinct sharp gritty feel due to the presence of gritty coarse sand (0.2-2 mm) and, if present, fine gravel (particle size 2-6 mm). Gritty material composed of angular or subangular quartz or other hard rock fragments." ;
+  skos:notation "abd" ;
   skos:prefLabel "Gritty" ;
 .
 asc:Gypsic-horizon
   a skos:Concept ;
   skos:definition "One which contains more than 20% of visible gypsum that is apparently of pedogenic origin, and has a minimum thickness of 0.1 m. Where the upper boundary of the gypsic horizon first occurs below 1.0 m depth it is disregarded in the classification." ;
+  skos:notation "au" ;
   skos:prefLabel "Gypsic horizon" ;
 .
 asc:H
@@ -3939,6 +4216,13 @@ asc:HY
   a asc:Order ;
   a skos:Concept ;
   asc:family-comment "The classes below are primarily for use in the Redoxic and Oxyaquic suborders, and possibly the Extratidal and Salic suborders. The criteria may be partly applicable to the Supratidal and Hypersalic suborders eg. using the terms surface soil and maximum subsoil texture. The different A horizon thickness criteria for great groups with a Clear or abrupt textural B horizon allows alignment with their adjacent but drier equivalent soil orders." ;
+  asc:family-criteria asc:HY-A-thickness ;
+  asc:family-criteria asc:HY-A1-texture ;
+  asc:family-criteria asc:HY-A1-thickness ;
+  asc:family-criteria asc:HY-B-texture ;
+  asc:family-criteria asc:HY-depth ;
+  asc:family-criteria asc:HY-gravel ;
+  asc:family-criteria asc:HY-water ;
   asc:suborder asc:BT ;
   asc:suborder asc:CS ;
   asc:suborder asc:CW ;
@@ -3984,6 +4268,48 @@ In the case of irrigated soils, the main example is when more or less permanent 
   skos:narrower asc:HY-IV ;
   skos:notation "HY" ;
   skos:prefLabel "Hydrosols" ;
+  skos:related asc:Clear-or-abrupt-textural-B-horizon ;
+  skos:related asc:Horizon ;
+.
+asc:HY-A-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present (for Chromosolic, Kurosolic and Sodosolic Great Groups)" ;
+  skos:related asc:A-horizons ;
+.
+asc:HY-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
+.
+asc:HY-A1-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizons (O2, P1 or P2) if present (for all other Great Groups)" ;
+  skos:related asc:A1-horizon ;
+.
+asc:HY-B-texture
+  a skos:Collection ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "1 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture1" ;
+  skos:related asc:B-horizons ;
 .
 asc:HY-BT
   a asc:Suborder ;
@@ -4344,6 +4670,36 @@ If a diagnostic feature in the key begins more than 1.5 m from the soil surface 
   skos:notation "HY-IV" ;
   skos:prefLabel "Subaqueous Hydrosol" ;
 .
+asc:HY-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:HY-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
+asc:HY-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:HZ
   a asc:Alteration ;
   a skos:Concept ;
@@ -4354,6 +4710,7 @@ asc:HZ
 asc:Hard
   a skos:Concept ;
   skos:definition "In the classification hard is used as a general term to indicate strength. Hard nodules or segregations means their strength is such that they cannot be broken between the thumb and forefinger; ie. strong in the Field Handbook. When referring to pans hard means moderately cemented or stronger (Field Handbook). When referring to substrate material hard means moderately strong or stronger (Field Handbook)." ;
+  skos:notation "av" ;
   skos:prefLabel "Hard" ;
 .
 asc:Hemic-Peat
@@ -4364,11 +4721,13 @@ asc:Hemic-Peat
 asc:Horizon
   a skos:Concept ;
   skos:definition "A soil horizon is a layer of soil, approximately parallel to the land surface, with morphological properties different from the layers below and above it (Field Handbook). The term horizon is used in two ways in this classification, firstly relating to the horizon notation; e.g. O, P, A, B, C, D etc. (as in the Field Handbook) and secondly in association with a specific property of a layer, e.g. melanic, humose, ferric, petroferric, argic etc." ;
+  skos:notation "aw" ;
   skos:prefLabel "Horizon" ;
 .
 asc:Human-activities
   a skos:Concept ;
   skos:definition "Activities by humans which have caused a profound modification, mixing, truncation or burial of the original soil horizons, or the creation of new soil parent materials. Normal agricultural operations, including land planing, artificial drainage and flooding, are excluded. Similarly the application of liquid wastes, bore water and other irrigation waters are also excluded" ;
+  skos:notation "ma" ;
   skos:prefLabel "Human activities" ;
 .
 asc:Humose-horizon
@@ -4402,6 +4761,7 @@ The hydrogen peroxide field test (Ahern et al. 2004) may be used as a field indi
 *A substantial drop in pH arising from incubation is regarded as an overall decrease of at least 0.5 pH unit.
 
 **A stable pH is assumed to have been reached after at least 8 weeks of incubation when either the decrease in pH is <0.1 pH unit over at least a 14 day period, or the pH begins to increase.""" ;
+  skos:notation "db" ;
   skos:prefLabel "Hypersulfidic material" ;
 .
 asc:Hyposulfidic-material
@@ -4417,6 +4777,7 @@ The field pH peroxide test (Ahern et al. 2004) may be used as a field indicator 
 1A substantial drop in pH arising from incubation is regarded as an overall decrease of at least 0.5 pH unit.
 
 2A stable pH is assumed to have been reached after at least 8 weeks of incubation when either the decrease in pH is <0.1 pH unit over at least a 14 day period, or the pH begins to increase.""" ;
+  skos:notation "dc" ;
   skos:prefLabel "Hyposulfidic material" ;
   skos:related asc:Fine-earth ;
 .
@@ -4775,30 +5136,12 @@ asc:KA
   asc:colourclass asc:AD ;
   asc:colourclass asc:AE ;
   asc:colourclass-comment "The dominant colour class in the major part of the upper 0.5 m of the B2 horizon (or the major part of the entire B2 horizon if it is less than 0.5 m thick) is:" ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:KA-A-thickness ;
+  asc:family-criteria asc:KA-A1-texture ;
+  asc:family-criteria asc:KA-B-texture ;
+  asc:family-criteria asc:KA-depth ;
+  asc:family-criteria asc:KA-gravel ;
+  asc:family-criteria asc:KA-water ;
   dcterms:description "This order accommodates those soils which lack strong texture contrast, have massive or only weakly structured B horizons, and are not calcareous throughout. The soils of this order range throughout the continent, often occurring locally as very large areas." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/KA"^^xsd:anyURI ;
   rdfs:comment """Because of the lack of clearly defined horizons in some of these soils (particularly the red forms) with thick sola, there can be argument as to how to identify the limits of the B2 horizon.
@@ -4817,6 +5160,26 @@ There may be difficulty differentiating between Kandosols and Arenosols, where t
   skos:narrower asc:KA-AE ;
   skos:notation "KA" ;
   skos:prefLabel "Kandosols" ;
+.
+asc:KA-A-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A horizon thickness plus the thickness of organic horizon (O2, P1 or P2) if present" ;
+  skos:related asc:A-horizons ;
+.
+asc:KA-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
 .
 asc:KA-AA
   a asc:Suborder ;
@@ -5143,6 +5506,44 @@ In some of the Dystrophic Kandosols there may be a future need to modify the def
   skos:notation "KA-AE" ;
   skos:prefLabel "Black Kandosol" ;
 .
+asc:KA-B-texture
+  a skos:Collection ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "1 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture1" ;
+.
+asc:KA-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:KA-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+.
+asc:KA-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:KU
   a asc:Order ;
   a skos:Concept ;
@@ -5153,30 +5554,12 @@ asc:KU
   asc:colourclass asc:AE ;
   asc:colourclass-comment "The dominant colour class in the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is:" ;
   asc:family-comment "1 This refers to the most clayey field texture category." ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:KU-A1-texture ;
+  asc:family-criteria asc:KU-B-texture ;
+  asc:family-criteria asc:KU-depth ;
+  asc:family-criteria asc:KU-gravel ;
+  asc:family-criteria asc:KU-thickness ;
+  asc:family-criteria asc:KU-water ;
   dcterms:description "Soils with strong texture contrast between A horizons and strongly acid B horizons. Many of these soils have some unusual subsoil chemical features (high magnesium, sodium and aluminium)." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/KU"^^xsd:anyURI ;
   rdfs:comment "The relevance of sodicity in strongly acid soils is open to question as in theory the presence of aluminium in such soils should counterbalance the usual deleterious effect of sodium (via dispersion) on soil physical properties. Unpublished data from many localities in Australia imply that for B horizons the critical limits of pHw 5.5 and ESP of 6 to distinguish dispersive and non-dispersive soils seems to generally work in practice, although as might be expected, some soils do not behave as predicted. For this reason, sodicity is also used in Kurosols, but at a lower hierarchical level, to cater for those soils which have an ESP > 6 and may disperse in spite of having a pHw less than 5.5. The role of the high exchangeable magnesium in many Kurosols is largely unknown." ;
@@ -5188,6 +5571,17 @@ asc:KU
   skos:narrower asc:KU-AE ;
   skos:notation "KU" ;
   skos:prefLabel "Kurosols" ;
+.
+asc:KU-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture" ;
+  skos:related asc:A1-horizon ;
 .
 asc:KU-AA
   a asc:Suborder ;
@@ -5414,6 +5808,54 @@ A significant proportion of the soils classified to date have mottled B2t horizo
   skos:notation "KU-AE" ;
   skos:prefLabel "Black Kurosol" ;
 .
+asc:KU-B-texture
+  a skos:Collection ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "1 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture1" ;
+  skos:related asc:B-horizons ;
+.
+asc:KU-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:KU-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
+asc:KU-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A1 horizon thickness " ;
+  skos:related asc:A1-horizon ;
+.
+asc:KU-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:L
   a asc:Texture ;
   a skos:Concept ;
@@ -5424,16 +5866,19 @@ asc:L
 asc:LOI
   a skos:Concept ;
   skos:definition "An analytical test involving strongly heating (\"igniting\") a sample of the material at a specified temperature, allowing volatile substances to escape, until its mass ceases to change. This simple test is used to estimate total organic carbon and carbonate. See method 6G1 in Rayment and Lyons (2011)." ;
+  skos:notation "mq" ;
   skos:prefLabel "Loss-on-ignition (LOI)" ;
 .
 asc:Lamellae
   a skos:Concept ;
   skos:definition "Thin, often discontinuous, layers of clay-enriched material." ;
+  skos:notation "abe" ;
   skos:prefLabel "Lamellae" ;
 .
 asc:Layer
   a skos:Concept ;
   skos:definition "A general term for a distinct band of soil or other material approximately parallel to the land surface. By comparison, the term horizon refers to a layer where a notation (e.g. O, P, A, B, C, D) or a specific property (e.g. melanic, humose, ferric, petroferric, argic) has been assigned to the layer. See definition of Horizon." ;
+  skos:notation "abf" ;
   skos:prefLabel "Layer" ;
 .
 asc:M
@@ -5446,32 +5891,38 @@ asc:M
 asc:MBO
   a skos:Concept ;
   skos:definition "Amorphous gels that contain high concentrations of iron monosulfide minerals (general formula FeS). These minerals form in the base of low-flow surface water bodies in acid sulfate soil?influenced environments. M BOs are highly reactive in the presence of oxygen, breaking down in a matter of minutes to produce free iron and acidity. The reactions are controlled by the presence of oxygen in the water, and their disturbance can cause significant deoxygenation events in natural waters, killing aquatic life. MBOs may sometimes be referred to as iron monosulfides, monosulfides or acid volatile sulfides (Sullivan et al. 2018a)." ;
+  skos:notation "abg" ;
   skos:prefLabel "Monosulfidic black ooze (MBO)" ;
 .
 asc:MLWS
   a skos:Concept ;
   skos:definition "The average of all low water observations at the time of the spring tides over a period of time, preferably 19 years. " ;
+  skos:notation "dd" ;
   skos:prefLabel "Mean Low Water Springs (MLWS)" ;
   skos:related <https://www.icsm.gov.au/education/tidal-interface-compendium-related-terms> ;
 .
 asc:Major-part
   a skos:Concept ;
   skos:definition "The requirement must be met over more than half the specified thickness." ;
+  skos:notation "mc" ;
   skos:prefLabel "Major part" ;
 .
 asc:Manganic-horizon
   a skos:Concept ;
   skos:definition "One which contains more than 20% (visual abundance estimate) of black manganiferous nodules or concretions which are mostly uncemented, and has a minimum thickness of 0.1 m. Most nodules also contain some iron." ;
+  skos:notation "ca" ;
   skos:prefLabel "Manganic horizon" ;
 .
 asc:Marl
   a skos:Concept ;
   skos:definition "A loose, earthy material consisting chiefly of an intimate mixture of clay and calcium carbonate, commonly formed in freshwater lakes. The carbonate content may range from about 30 to 90% (Bates and Jackson 1987)." ;
+  skos:notation "ay" ;
   skos:prefLabel "Marl" ;
 .
 asc:Melacic-horizon
   a skos:Concept ;
   skos:definition "As for melanic horizon but pH (1:5 H2O) is less than 5.5 and there is no structure requirement." ;
+  skos:notation "ba" ;
   skos:prefLabel "Melacic horizon" ;
   skos:related asc:Melanic-horizon ;
   skos:related asc:pH ;
@@ -5487,6 +5938,7 @@ b. a minimum thickness of 0.2 m (in soils with a clear or abrupt textural B hori
 c. the major part of the horizon has more than a weak grade of structure in which the most common ped size is 10-20 mm or less. This condition may be waived for an Ap horizon or when dry consistence strength is weak or less.
 
 d. pHw (1:5 H2O) is 5.5 or greater throughout the major part of the horizon.""" ;
+  skos:notation "az" ;
   skos:prefLabel "Melanic horizon" ;
   skos:related asc:Clear-or-abrupt-textural-B-horizon ;
   skos:related asc:ColourClass ;
@@ -5495,6 +5947,7 @@ d. pHw (1:5 H2O) is 5.5 or greater throughout the major part of the horizon.""" 
 asc:Mesotrophic
   a skos:Concept ;
   skos:definition "Base status is between 5 and 15 cmol (+) kg-1 clay inclusive." ;
+  skos:notation "bb" ;
   skos:prefLabel "Mesotrophic" ;
   skos:related asc:Base-status ;
 .
@@ -5503,11 +5956,13 @@ asc:Monosulfidic-materials
   skos:definition """Of the three kinds of sulfidic materials, monosulfidic material is the only one that contains high concentrations of detectable monosulfides (≥ 0.01% acid volatile sulfide). Monosulfidic material is conceptually similar to monosulfidic black ooze [MBO (Sullivan et al. 2002)]. However, it differs from MBO in that monosulfidic material encompasses a wider array of soil textures and consistencies. For example, monosulfidic material includes sands with > 0.01% acid volatile sulfide, which are excluded (on the basis of soil consistence) from being MBOs.
 
 Field identification features for monosulfidic material include: (i) complete saturation; (ii) an ooze -like consistency and low bulk density (for non-sands); (iii) a change in colour on exposure from black (dark) to greyish (lighter) colours; (iv) the lead acetate test paper for hydrogen sulfide, and (v) a \"rotten egg\" smell of hydrogen sulfide using the so-called 'whiff test' of Darmody et al., (1977) (Caution: hydrogen sulfide is a toxic gas and care should be taken with this test - a broad sweep of the hand to the nose in the open air whilst approaching a small sample of the material is commonly""" ;
+  skos:notation "de" ;
   skos:prefLabel "Monosulfidic materials" ;
 .
 asc:Mottled-horizon
   a skos:Concept ;
   skos:definition "A horizon in which mottle abundance is greater than 10% (visual abundance estimate) and contrast between colours is distinct to prominent. Colour patterns due to biological or mechanical mixing, and inclusions of weathered substrate materials, are not included. As pointed out (see Comment - Hydrosols), mottling does not necessarily imply that oxidising and reducing conditions are currently occurring in the soil in most years." ;
+  skos:notation "bc" ;
   skos:prefLabel "Mottled horizon" ;
   skos:related asc:HY ;
 .
@@ -5582,35 +6037,12 @@ asc:OR
 Granular is applied if there is a layer at least 0.2 m thick that has a distinct granular or subangular blocky type of pedality (see Field Handbook). This condition occurs in some peat soils that have either naturally dried out, or have been drained or drained and cultivated, and are also known as earthy or ripened peats. In Australia it is known to occur with sapric peats, but it is uncertain if it occurs with hemic or fibric peats.
 
 Ashy and Vitric reflect the influence of fire.""" ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:HZ ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:JZ ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:OA ;
-  asc:family-criteria asc:OB ;
-  asc:family-criteria asc:OC ;
-  asc:family-criteria asc:OD ;
-  asc:family-criteria asc:OE ;
-  asc:family-criteria asc:OF ;
-  asc:family-criteria asc:P ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
-  asc:family-criteria asc:Z ;
+  asc:family-criteria asc:OR-altered ;
+  asc:family-criteria asc:OR-depth ;
+  asc:family-criteria asc:OR-gravel ;
+  asc:family-criteria asc:OR-thickness ;
+  asc:family-criteria asc:OR-underlying-texture ;
+  asc:family-criteria asc:OR-upper-texture ;
   asc:suborder asc:BW ;
   asc:suborder asc:CE ;
   asc:suborder asc:EH ;
@@ -5723,6 +6155,69 @@ If a diagnostic feature in the key begins more than 1.5 m from the soil surface 
   skos:notation "OR-EH" ;
   skos:prefLabel "Sapric Organosol" ;
 .
+asc:OR-altered
+  a skos:Collection ;
+  skos:member asc:HZ ;
+  skos:member asc:JZ ;
+  skos:member asc:P ;
+  skos:note "(use only if feature present; choose dominant feature if more than one present)" ;
+  skos:prefLabel "Nature of altered organic materials" ;
+  skos:related asc:Organic-materials ;
+.
+asc:OR-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:note "(measured from the soil surface including organic horizons)" ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:OR-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface horizon" ;
+  skos:related asc:Gravel ;
+.
+asc:OR-thickness
+  a skos:Collection ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:note "(sum of the consecutive O1, O2, P1 and P2 horizons)" ;
+  skos:prefLabel "Cumulative thickness of uppermost organic materials" ;
+  skos:related asc:Organic-materials ;
+.
+asc:OR-underlying-texture
+  a skos:Collection ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:member asc:Z ;
+  skos:prefLabel "Dominant texture of the B, C or D horizons directly underlying the deepest organic materials" ;
+  skos:related asc:Organic-materials ;
+.
+asc:OR-upper-texture
+  a skos:Collection ;
+  skos:member asc:OA ;
+  skos:member asc:OB ;
+  skos:member asc:OC ;
+  skos:member asc:OD ;
+  skos:member asc:OE ;
+  skos:member asc:OF ;
+  skos:member asc:Z ;
+  skos:prefLabel "Dominant type or texture of the uppermost organic materials (O2, P1 or P2 if present)" ;
+  skos:related asc:Organic-materials ;
+.
 asc:Order
   a owl:Class ;
   a skos:Collection ;
@@ -5749,6 +6244,11 @@ asc:Order
   skos:member asc:VE ;
   skos:prefLabel "Soil order" ;
 .
+asc:Organic-instances
+  a skos:Collection ;
+  skos:member asc:OR-upper-texture ;
+  skos:prefLabel "Instances of family criteria related to Organic materials" ;
+.
 asc:Organic-materials
   a skos:Concept ;
   skos:definition """<p>
@@ -5762,11 +6262,27 @@ This definition is the same as that used in Soil Taxonomy and is very similar to
 </p><p>
 Loss-on-ignition (LOI) may also be used as an estimate of organic carbon. For non-calcareous soils, the relationship between organic carbon and LOI was found by Spain et al. (1982) to be influenced by clay content. This is due to losses of structural water from clay minerals affecting the result. For the range of organic carbon contents of interest, approximate conversions are:
 </p>
-<table><tr><th></th><th>Clay (%)</th><th>LOI</th></tr>
-<tr><td>when clay is</td><td>&lt;20%</td><td>2.0 x organic carbon</td></tr>
-<tr><td>when clay is</td><td>20-60%</td><td>	2.3 x organic carbon</td></tr>
-<tr><td>when clay is</td><td>&gt;60%	</td><td>2.7 x organic carbon.</td></tr>
-</table>"""^^rdf:HTML ;
+      <table border cellpadding=8 class=\"border\" >
+        <tr>
+          <th></th>
+          <th>Clay (%)</th>
+          <th>LOI</th>
+        </tr>
+        <tr>
+          <td valign=TOP rowspan=\"3\">when clay is</td>
+          <td>&lt;20%</td>
+          <td>2.0 x organic carbon</td>
+        </tr>
+        <tr>
+          <td>20-60%</td>
+          <td>2.3 x organic carbon</td>
+        </tr>
+        <tr>
+          <td>> &gt;60%</td>
+          <td>2.7 x organic carbon.</td>
+        </tr>
+      </table>"""^^rdf:HTML ;
+  skos:notation "bd" ;
   skos:prefLabel "Organic materials" ;
 .
 asc:Organic-type
@@ -5791,30 +6307,12 @@ asc:P
 asc:PO
   a asc:Order ;
   a skos:Concept ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:PO-A1-texture ;
+  asc:family-criteria asc:PO-A1-thickness ;
+  asc:family-criteria asc:PO-B-texture ;
+  asc:family-criteria asc:PO-depth ;
+  asc:family-criteria asc:PO-gravel ;
+  asc:family-criteria asc:PO-water ;
   asc:suborder asc:AL ;
   asc:suborder asc:AM ;
   asc:suborder asc:EJ ;
@@ -5834,6 +6332,26 @@ Some Podosols with deep diagnostic B horizons may classify initially as Bleached
   skos:narrower asc:PO-JE ;
   skos:notation "PO" ;
   skos:prefLabel "Podosols" ;
+.
+asc:PO-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
+.
+asc:PO-A1-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizon (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
 .
 asc:PO-AL
   a asc:Suborder ;
@@ -5902,6 +6420,15 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
   skos:broader asc:PO ;
   skos:notation "PO-AM" ;
   skos:prefLabel "Aquic Podosol" ;
+.
+asc:PO-B-texture
+  a skos:Collection ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "1 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture1" ;
+  skos:related asc:B-horizons ;
 .
 asc:PO-EJ
   a asc:Suborder ;
@@ -6007,17 +6534,49 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
   skos:notation "PO-JE" ;
   skos:prefLabel "Aquic-Hypersulfidic Podosol" ;
 .
+asc:PO-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:PO-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:Gravel ;
+.
+asc:PO-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:Peat
-  a skos:Concept ;
+  a owl:Class ;
+  a skos:Collection ;
   skos:definition "As noted in the Field Handbook, peats may be assessed by examining the degree of decomposition and distinctness of plant remains. This may be assisted by using a modification of the von Post field test (see Avery, 1990 p.90), in which a sample of the wet peat is squeezed in the closed hand and the colour of the liquid expressed, the proportion extruded between the fingers, and the nature of the plant residues are observed. Refer to the Field Handbook for further information." ;
-  skos:narrower asc:Fibric-Peat ;
-  skos:narrower asc:Hemic-Peat ;
-  skos:narrower asc:Sapric-Peat ;
+  skos:member asc:Fibric-Peat ;
+  skos:member asc:Hemic-Peat ;
+  skos:member asc:Sapric-Peat ;
+  skos:notation "be" ;
   skos:prefLabel "Peat" ;
 .
 asc:Peaty-horizon
   a skos:Concept ;
   skos:definition "This is a surface or near surface layer of organic materials at least 0.2 m thick overlying mineral soil and which does not qualify as an Organosol. Such soils are designated as a peaty subgroup. In cases where the soil has a surface layer of organic materials less than 0.2 m thick but does not qualify for an Organosol (eg. as in Definition (ii) of Organosols), it will be recognised at the family level as having a peaty 'texture'. The one exception occurs in the Leptic Tenosols where a subpeaty subgroup is provided. In the peaty and subpeaty subgroups there will be a repetition of texture at the family level." ;
+  skos:notation "bf" ;
   skos:prefLabel "Peaty horizon (P and O2 horizons in Field Handbook)" ;
   skos:related asc:OR ;
   skos:related asc:Organic-materials ;
@@ -6026,16 +6585,19 @@ asc:Peaty-horizon
 asc:Pedologic-organisation
   a skos:Concept ;
   skos:definition "This is broad term used to describe soil formation, which includes all changes in soil material resulting from the effect of physical, chemical and biological processes. Results of these processes include horizonation, colour differences, presence of pedality and texture and/or consistence changes." ;
+  skos:notation "mf" ;
   skos:prefLabel "Pedologic organisation" ;
 .
 asc:Petroferric-horizon
   a skos:Concept ;
   skos:definition "Ferruginous, ferromanganiferous or aluminous nodules or concretions cemented in place into indurated blocks or extremely coarse irregular pieces (>60 mm). This horizon is commonly referred to as ferricrete." ;
+  skos:notation "bg" ;
   skos:prefLabel "Petroferric horizon" ;
 .
 asc:Petroreticulate-horizon
   a skos:Concept ;
   skos:definition "A reticulate horizon (see below) that is always indurated in the greater part both before and after exposure." ;
+  skos:notation "bi" ;
   skos:prefLabel "Petroreticulate horizon" ;
   skos:related asc:Reticulate-horizon ;
 .
@@ -6047,16 +6609,18 @@ asc:Pipey-B-horizons
   skos:related asc:PO ;
 .
 asc:Podosol-diagnostic-horizons
-  a skos:Concept ;
+  a owl:Class ;
+  a skos:Collection ;
   skos:definition "The various B horizons defined below consist of illuvial accumulations of amorphous organic matter-aluminium and aluminium-silica complexes, with or without iron in various combinations. Although some may qualify as cemented pans, they are not to be regarded as substrate materials." ;
-  skos:narrower asc:Basi-horizons ;
-  skos:narrower asc:Bh-Basi-horizons ;
-  skos:narrower asc:Bh-Bhs-horizons ;
-  skos:narrower asc:Bh-Bs-horizons ;
-  skos:narrower asc:Bh-horizons ;
-  skos:narrower asc:Bhs-horizons ;
-  skos:narrower asc:Bs-horizons ;
-  skos:narrower asc:Pipey-B-horizons ;
+  skos:member asc:Basi-horizons ;
+  skos:member asc:Bh-Basi-horizons ;
+  skos:member asc:Bh-Bhs-horizons ;
+  skos:member asc:Bh-Bs-horizons ;
+  skos:member asc:Bh-horizons ;
+  skos:member asc:Bhs-horizons ;
+  skos:member asc:Bs-horizons ;
+  skos:member asc:Pipey-B-horizons ;
+  skos:notation "bj" ;
   skos:prefLabel "Podosol diagnostic horizons" ;
   skos:related asc:B-horizons ;
   skos:related asc:Cemented-pans ;
@@ -6085,20 +6649,11 @@ asc:RE
   asc:colourclass asc:AE ;
   asc:colourclass-comment "Soils in which the dominant colour class in the major part of the upper 1.0 m of the soil profile is:" ;
   asc:family-comment "Use of the term A horizon may be inappropriate for some of these soils because of either minimal development due to an arid environment, or common surface deflation or accumulation caused by wind. Hence it is thought better to use the term surface soil for texture and to delete the thickness criteria. In general, surface soil in this context will probably be in the range of 0.1-0.2 m in thickness." ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:RE-Gravel ;
+  asc:family-criteria asc:RE-depth ;
+  asc:family-criteria asc:RE-subsurface-texture ;
+  asc:family-criteria asc:RE-surface-texture ;
+  asc:family-criteria asc:RE-water ;
   asc:greatgroup-comment """No Great Groups are presently proposed for the Hypergypsic and Stratic Suborders as data are limited, plus the limited pedological development of these soils means that subsoils are generally only weakly developed.
 
 If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
@@ -6562,6 +7117,17 @@ The calcareous classes above approximately correspond to those of Wetherby and O
   skos:notation "RE-GZ" ;
   skos:prefLabel "Bleached Arenosol" ;
 .
+asc:RE-Gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of surface and/or A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
 asc:RE-JN
   a asc:Suborder ;
   a skos:Concept ;
@@ -6598,29 +7164,44 @@ asc:RE-JT
   skos:notation "RE-JT" ;
   skos:prefLabel "Carbonatic Arenosol" ;
 .
+asc:RE-depth
+  a skos:Collection ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:RE-subsurface-texture
+  a skos:Collection ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:prefLabel "Maximum texture below the surface or A1 (within the upper 1.0 m of the soil soil profile)" ;
+  skos:related asc:Soil-profile ;
+.
+asc:RE-surface-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:prefLabel "Soil surface texture" ;
+.
+asc:RE-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:RU
   a asc:Order ;
   a skos:Concept ;
   asc:family-comment "There are obvious problems in applying the usual family criteria to Rudosols. By definition, A horizons have minimal development and hence may be difficult to recognise, and in some classes the texture is set by definition, e.g. the Arenic suborder is sandy. Hence it is thought better to use the term surface soil for texture and to delete the thickness criteria and not refer to any classes for subsoil texture. By definition, subsoil texture must be the same as surface soil unless the profile is stratified, in which case the situation is usually too complex to manage satisfactorily. Gravel content of surface soil can be usefully used for several suborders. In general, surface soil in this context will probably be in the range of 0.1-0.2 m in thickness." ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:RU-Gravel ;
+  asc:family-criteria asc:RU-depth ;
+  asc:family-criteria asc:RU-texture ;
+  asc:family-criteria asc:RU-water ;
   asc:greatgroup-comment """No great groups are presently proposed for the Hypergypsic, Carbic, Lutic or Stratic suborders as data are very limited.
 
 If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification.""" ;
@@ -6766,6 +7347,16 @@ asc:RU-GV
   skos:notation "RU-GV" ;
   skos:prefLabel "Lutic Rudosol" ;
 .
+asc:RU-Gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of surface soil (visual estimate)" ;
+  skos:related asc:Gravel ;
+.
 asc:RU-HG
   a asc:Suborder ;
   a skos:Concept ;
@@ -6792,6 +7383,34 @@ asc:RU-HH
   skos:notation "RU-HH" ;
   skos:prefLabel "Clastic Rudosol" ;
 .
+asc:RU-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:RU-texture
+  a skos:Collection ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "Surface soil texture" ;
+.
+asc:RU-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:Reactive-aluminium-test
   a skos:Concept ;
   skos:definition """<p>
@@ -6803,14 +7422,42 @@ Using the procedure of Fieldes and Perrott (1966), 1 drop of saturated sodium fl
 </p><p>
 Caution: sodium fluoride is a toxic liquid, and care should be taken with this test.)
 </p>
-<table><tr><th>Reactivity Class</th><th>Class Definition</th></tr>
-<tr><td>0 non-reactive</td><td>No colour within 2 minutes.</td></tr>
-<tr><td>1 very weak</td><td>Pale red or light red (5R 6/1) just discernible within 2 minutes.</td></tr>
-<tr><td>2 weak</td><td>Pale red or light red (5R 6/1) within 1 minute.</td></tr>
-<tr><td>3 moderate</td><td>Red or weak red (5R 4 or5/-) within 1 minute.</td></tr>
-<tr><td>4 strong</td><td>Dusky red or dark red (5R 3/-) after 10 seconds.</td></tr>
-<tr><td>5 very strong	</td><td>Dusky red or dark red (5R 3/-) within 10 seconds.</td></tr>
-</table>"""^^rdf:HTML ;
+      <table border cellpadding=8 >
+        <tr>
+          <th>Reactivity Class</th>
+          <th>Class Definition</th>
+        </tr>
+        <tr>
+          <td>0 non-reactive</td>
+          <td>No colour within 2 minutes.</td>
+        </tr>
+        <tr>
+          <td>1 very weak</td>
+          <td>Pale red or light red (5R 6/1) <br>
+            just discernible within 2 minutes.</td>
+        </tr>
+        <tr>
+          <td>2 weak</td>
+          <td>Pale red or light red (5R 6/1) <br>
+            within 1 minute.</td>
+        </tr>
+        <tr>
+          <td>3 moderate</td>
+          <td>Red or weak red (5R 4 or5/-) <br>
+            within 1 minute.</td>
+        </tr>
+        <tr>
+          <td>4 strong</td>
+          <td>Dusky red or dark red (5R 3/-) <br>
+            after 10 seconds.</td>
+        </tr>
+        <tr>
+          <td>5 very strong</td>
+          <td>Dusky red or dark red (5R 3/-) <br>
+            within 10 seconds.</td>
+        </tr>
+      </table>"""^^rdf:HTML ;
+  skos:notation "bk" ;
   skos:prefLabel "Reactive aluminium test" ;
 .
 asc:Red-brown-hardpan
@@ -6824,12 +7471,14 @@ Red-brown hardpan (around level of geo pick head): Murchison District, Western A
 </p><p>
 Photo credit: Department of Primary Industries and Regional Development, Western Australia
 </p>"""^^rdf:HTML ;
+  skos:notation "bl" ;
   skos:prefLabel "Red-brown hardpan" ;
   skos:related asc:Hard ;
 .
 asc:Reticulate-horizon
   a skos:Concept ;
   skos:definition "This is intended for strongly developed reddish, yellowish and greyish or white, more or less reticulately mottled horizons that can be hand-augered or cut with a spade. Ferruginous nodules or concretions may be present but are not diagnostic. When moist the material usually has at least a firm consistence strength, but following exposure the material may irreversibly harden. At depth it may grade into mottled saprolite." ;
+  skos:notation "bm" ;
   skos:prefLabel "Reticulate horizon" ;
 .
 asc:S
@@ -6848,29 +7497,12 @@ asc:SO
   asc:colourclass asc:AD ;
   asc:colourclass asc:AE ;
   asc:colourclass-comment "The dominant colour class in the major part of the upper 0.2 m of the B2t horizon (or the major part of the entire B2t horizon if it is less than 0.2 m thick) is:" ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:SO-A1-texture ;
+  asc:family-criteria asc:SO-B-texture ;
+  asc:family-criteria asc:SO-depth ;
+  asc:family-criteria asc:SO-gravel ;
+  asc:family-criteria asc:SO-thickness ;
+  asc:family-criteria asc:SO-water ;
   dcterms:description "Soils with strong texture contrast between A horizons and sodic B horizons which are not strongly acid. Australia is noteworthy for the extent and diversity of sodic soils (Isbell 1995)." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/SO"^^xsd:anyURI ;
   rdfs:comment """There is convincing evidence from the Riverine Plain of south eastern Australia that soils with sodic clay B horizons (ESP 25-30) which are strongly subplastic behave very differently in terms of permeability to the more commonly found plastic sodic clay B horizons which are characterised by low to very low saturated hydraulic conductivity (McIntyre 1979). It is on this basis that subplastic sodic soils are excluded from Sodosols, because of their very different land use properties.
@@ -6890,6 +7522,17 @@ Data from Loveday and Pyle (1973) and unpublished data available to the original
   skos:narrower asc:SO-AE ;
   skos:notation "SO" ;
   skos:prefLabel "Sodosols" ;
+.
+asc:SO-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture" ;
+  skos:related asc:A1-horizon ;
 .
 asc:SO-AA
   a asc:Suborder ;
@@ -7111,6 +7754,54 @@ The calcareous classes above approximately correspond to those of Wetherby and O
   skos:notation "SO-AE" ;
   skos:prefLabel "Black Sodosol" ;
 .
+asc:SO-B-texture
+  a skos:Collection ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "1 This refers to the most clayey field texture category." ;
+  skos:prefLabel "B horizon maximum texture1" ;
+  skos:related asc:B-horizons ;
+.
+asc:SO-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:SO-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
+asc:SO-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A horizon thickness" ;
+  skos:related asc:A-horizons ;
+.
+asc:SO-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:SR
   a asc:Water-repellence ;
   a skos:Concept ;
@@ -7126,11 +7817,13 @@ asc:Sapric-Peat
 asc:Silcrete
   a skos:Concept ;
   skos:definition "In the Field Handbook silcrete is described as both a pan (ie. a soil horizon, such as Bqm) and as a substrate material. However, the definition is the same in both cases, viz strongly indurated siliceous material cemented by, and largely composed of, forms of silica, including quartz, chalcedony, opal and chert." ;
+  skos:notation "abz" ;
   skos:prefLabel "Silcrete" ;
 .
 asc:Siliceous-pan
   a skos:Concept ;
   skos:definition "A moderately, strongly or very strongly cemented layer enriched with silica and commonly described as silcrete. The pan is either continuous, or if discontinuous or broken, consists of at least 90% of hard fragments, most of which are more than 0.2 m in smallest dimension." ;
+  skos:notation "abt" ;
   skos:prefLabel "Siliceous pan" ;
 .
 asc:Slickensides
@@ -7144,11 +7837,13 @@ Slickensides
 </p><p>
 Photo credit: tba
 </p>""" ;
+  skos:notation "mb" ;
   skos:prefLabel "Slickensides and/or lenticular peds" ;
 .
 asc:Sodic
   a skos:Concept ;
   skos:definition "The ESP of the fine earth soil material is 6 or greater." ;
+  skos:notation "bn" ;
   skos:prefLabel "Sodic" ;
   skos:related asc:ESP ;
   skos:related asc:Fine-earth ;
@@ -7156,6 +7851,7 @@ asc:Sodic
 asc:Soil
   a skos:Concept ;
   skos:definition "A natural body consisting of layers or horizons of mineral and/or organic constituents of variable thickness which differ from their parent material in the their morphological, physical, chemical and mineralogical properties and their biological characteristics (Birkeland 1984). Note that Anthroposols are not strictly natural bodies and the properties of some Rudosols and Arenosols may not differ much from their parent materials." ;
+  skos:notation "aby" ;
   skos:prefLabel "Soil" ;
   skos:related asc:AN ;
   skos:related asc:RE ;
@@ -7168,6 +7864,7 @@ asc:Soil-depth
 In soils underlain by unconsolidated materials, the unconsolidated materials can be included in soil depth calculations.
 
 At the Family level, soil depth will be taken to mean either thickness of the soil profile or depth to cemented pans, other cemented materials, rock or saprock. In a particular soil it will be evident from the classification which criterion is used. However, depth to a thin ironpan will not be used because of the extremely irregular and convoluted nature of most such pans.""" ;
+  skos:notation "bo" ;
   skos:prefLabel "Soil depth" ;
   skos:related asc:A-horizons ;
   skos:related asc:B-horizons ;
@@ -7180,12 +7877,14 @@ At the Family level, soil depth will be taken to mean either thickness of the so
 asc:Soil-profile
   a skos:Concept ;
   skos:definition "A general term for a vertical section of soil from the surface through all its horizons to parent material, other consolidated substrate material or selected depth in unconsolidated material. Commonly abbreviated to the term soil. Compare with solum. See also Soil depth." ;
+  skos:notation "ka" ;
   skos:prefLabel "Soil profile" ;
   skos:related asc:Solum ;
 .
 asc:Solum
   a skos:Concept ;
   skos:definition "The surface and subsoil layers that have undergone the same soil forming conditions. In terms of soil horizon designations, a solum consists of A and B horizons and their transitional horizons and P and O2 horizons. The O1 horizon is excluded from the solum as it has yet to be subject to significant soil forming conditions. A solum does not have a maximum or a minimum thickness. Compare with soil profile. Plural sola." ;
+  skos:notation "kb" ;
   skos:prefLabel "Solum" ;
   skos:related asc:Soil-profile ;
 .
@@ -7198,6 +7897,7 @@ asc:Strongly-acid
 - pHCa is less than 4.6.
 
 - pHw <5.5 should be used as the critical limit when it is available.""" ;
+  skos:notation "bp" ;
   skos:prefLabel "Strongly acid" ;
   skos:related asc:Fine-earth ;
   skos:related asc:pH ;
@@ -7205,6 +7905,7 @@ asc:Strongly-acid
 asc:Strongly-coherent-B-horizon
   a skos:Concept ;
   skos:definition "These are Podosol B horizons in which the consistence strength ranges from very firm to strong throughout (ie. force 4-5), or they contain subhorizons with these properties. Included are pan-like materials that have been variously described as ortstein, coffee rock or sandrock. The consistence properties are usually independent of soil water status." ;
+  skos:notation "bq" ;
   skos:prefLabel "Strongly coherent B horizon" ;
   skos:related asc:B-horizons ;
   skos:related asc:PO ;
@@ -7212,12 +7913,14 @@ asc:Strongly-coherent-B-horizon
 asc:Strongly-developed
   a skos:Concept ;
   skos:definition "This is a broad term used to describe strong evidence of pedologic organization. It includes obvious horizonation such as strongly contrasting colour differences, the presence of pedality and accumulations, and texture and/or consistence changes between horizons." ;
+  skos:notation "abj" ;
   skos:prefLabel "Strongly developed" ;
 .
 asc:Strongly-subplastic
   a skos:Concept ;
   skos:definition """Field texture increases greater than 2 texture groups after 10 minutes kneading.
 Compare with subplastic.""" ;
+  skos:notation "abk" ;
   skos:prefLabel "Strongly subplastic" ;
 .
 asc:Subaqueous-soil
@@ -7227,6 +7930,7 @@ asc:Subaqueous-soil
 Sediments in shallow water environments undergo soil forming processes (Demas and Rabenhorst 1999, 2001), are capable of supporting rooted plants, and meet the definition of pedologic organisation used in the ASC to distinguish soil material.
 
 The depth range of the water column where these soils may be found is not known, and an arbitrary depth of 2.5 meters below the surface or MLWS is used. This aligns closely with the definitions of subaqueous and submerged soils adopted by the USDA.""" ;
+  skos:notation "df" ;
   skos:prefLabel "Subaqueous soil" ;
   skos:related asc:Pedologic-organisation ;
 .
@@ -7351,11 +8055,13 @@ asc:Subplastic
   a skos:Concept ;
   skos:definition """Field texture increases 1 to 2 texture groups after 10 minutes kneading.
 Compare with strongly subplastic.""" ;
+  skos:notation "mh" ;
   skos:prefLabel "Subplastic" ;
 .
 asc:Subtidal-soil
   a skos:Concept ;
   skos:definition "This is permanently saturated Subaqueous soil material bordering intertidal flats or other coastal features adjacent to MLWS (e.g. beaches, dunes, headlands)." ;
+  skos:notation "dg" ;
   skos:prefLabel "Subtidal soil" ;
 .
 asc:Sulfidic-materials
@@ -7369,6 +8075,7 @@ It is usually possible to assess in the field, the likelihood of soil layers or 
 Extensive revisions of the Australian classification of sulfidic materials have been proposed by Sullivan et al., (2010) and there is considerable diversity of opinion on the desirability, nature and efficacy of detailed chemical criteria to define sulfidic materials. For this reason Soil Taxonomy (Soil Survey Staff 2014) and the World Reference Base (2015) have deliberately avoided the use of chemical (e.g. Acid Base Accounting) and mineralogical criteria. However, this broad definition of sulfidic materials is deliberately general in nature.
 
 Three kinds of sulfidic materials are distinguished, based essentially on the specific nature and amounts of the various oxidisable sulfur minerals present and the neutralizing capacity of the material. The three kinds defined elsewhere in the glossary are: (i) hypersulfidic material, (ii) hyposulfidic material and (iii) monosulfidic material.""" ;
+  skos:notation "br" ;
   skos:prefLabel "Sulfidic materials" ;
   skos:related asc:Hypersulfidic-material ;
   skos:related asc:Hyposulfidic-material ;
@@ -7381,6 +8088,7 @@ asc:Sulfuric-materials
 - yellow mottles and coatings of jarosite (hue of 2.5Y or yellower and chroma of about 6 or more).
 
 - underlying hypersulfidic material.""" ;
+  skos:notation "bs" ;
   skos:note "1 This definition is similar to that in Soil Taxonomy (Soil Survey Staff, 1999) but modified slightly by Dr David Dent, Sullivan et al. (2010) and colleagues in CSIRO." ;
   skos:prefLabel "Sulfuric materials" ;
   skos:related asc:pH ;
@@ -7402,30 +8110,12 @@ asc:TE
   asc:colourclass asc:AE ;
   asc:colourclass-comment "The dominant colour class in the major part of the upper 0.5 m of the profile (or the entire profile if it is less than 0.5 m thick) is:" ;
   asc:family-comment "Note that in some suborders the soil depth may be the same as A1 horizon thickness. In those suborders it will not be relevant to record maximum B horizon texture." ;
-  asc:family-criteria asc:A ;
-  asc:family-criteria asc:B ;
-  asc:family-criteria asc:C ;
-  asc:family-criteria asc:D ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:J ;
-  asc:family-criteria asc:K ;
-  asc:family-criteria asc:L ;
-  asc:family-criteria asc:M ;
-  asc:family-criteria asc:N ;
-  asc:family-criteria asc:NR ;
-  asc:family-criteria asc:O ;
-  asc:family-criteria asc:SR ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:WR ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:TE-A1-texture ;
+  asc:family-criteria asc:TE-A1-thickness ;
+  asc:family-criteria asc:TE-B-texture ;
+  asc:family-criteria asc:TE-Gravel ;
+  asc:family-criteria asc:TE-depth ;
+  asc:family-criteria asc:TE-water ;
   asc:greatgroup-comment "If a diagnostic feature in the key begins more than 1.5 m from the soil surface it may not have a significant impact on the performance of the soil. Refer to diagnostic features in the glossary for guidance on the use of such features in the classification." ;
   asc:subgroup-comment """These have been grouped into the various suborders, but not all subgroups will be appropriate for each great group of a particular suborder.
 
@@ -7468,6 +8158,27 @@ This third edition of the Australian Soil Classification removes the Orthic term
   skos:narrower asc:TE-IM ;
   skos:notation "TE" ;
   skos:prefLabel "Tenosols" ;
+.
+asc:TE-A1-texture
+  a skos:Collection ;
+  skos:member asc:J ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:prefLabel "A1 horizon texture or the texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Organic-materials ;
+.
+asc:TE-A1-thickness
+  a skos:Collection ;
+  skos:member asc:A ;
+  skos:member asc:B ;
+  skos:member asc:C ;
+  skos:member asc:D ;
+  skos:prefLabel "A1 horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present" ;
+  skos:related asc:A1-horizon ;
 .
 asc:TE-AA
   a asc:Suborder ;
@@ -7759,6 +8470,17 @@ asc:TE-AW
   skos:notation "TE-AW" ;
   skos:prefLabel "Bleached-Leptic Tenosol" ;
 .
+asc:TE-B-texture
+  a skos:Collection ;
+  skos:member asc:K ;
+  skos:member asc:L ;
+  skos:member asc:M ;
+  skos:member asc:N ;
+  skos:member asc:O ;
+  skos:note "2 This refers to the most clayey field texture category. This may include a transitional C/B horizon." ;
+  skos:prefLabel "B horizon maximum texture2" ;
+  skos:related asc:B-horizons ;
+.
 asc:TE-BE
   a asc:Suborder ;
   a skos:Concept ;
@@ -7833,6 +8555,17 @@ asc:TE-CY
   skos:notation "TE-CY" ;
   skos:prefLabel "Leptic Tenosol" ;
 .
+asc:TE-Gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
 asc:TE-IL
   a asc:Suborder ;
   a skos:Concept ;
@@ -7881,9 +8614,29 @@ asc:TE-IM
   skos:notation "TE-IM" ;
   skos:prefLabel "Calcenic Tenosol" ;
 .
+asc:TE-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:TE-water
+  a skos:Collection ;
+  skos:member asc:NR ;
+  skos:member asc:SR ;
+  skos:member asc:WR ;
+  skos:prefLabel "Water repellence of surface soil" ;
+  skos:related asc:Water-repellence ;
+.
 asc:Tephric-materials
   a skos:Concept ;
   skos:definition "These consist dominantly of tephra - unconsolidated, non-weathered or only slightly altered primary pyroclastic products of explosive volcanic eruptions. They include ash, cinders, lapilli, scoria, pumice and pumice-like vesicular pyroclastics. Volcanic bombs may occur, and some exotic ejecta such as limestone fragments." ;
+  skos:notation "bu" ;
   skos:prefLabel "Tephric materials" ;
 .
 asc:Texture
@@ -7898,6 +8651,34 @@ asc:Texture
   skos:member asc:O ;
   skos:prefLabel "Texture" ;
 .
+asc:Texture-instances
+  a skos:Collection ;
+  skos:member asc:CA-B-texture ;
+  skos:member asc:CA-surface-texture ;
+  skos:member asc:CH-A1-texture ;
+  skos:member asc:CH-B-texture ;
+  skos:member asc:DE-A1-texture ;
+  skos:member asc:DE-B-texture ;
+  skos:member asc:FE-A1-texture ;
+  skos:member asc:FE-B-texture ;
+  skos:member asc:HY-A1-texture ;
+  skos:member asc:HY-B-texture ;
+  skos:member asc:KA-A1-texture ;
+  skos:member asc:KA-B-texture ;
+  skos:member asc:KU-A1-texture ;
+  skos:member asc:KU-B-texture ;
+  skos:member asc:OR-underlying-texture ;
+  skos:member asc:PO-A1-texture ;
+  skos:member asc:PO-B-texture ;
+  skos:member asc:RE-subsurface-texture ;
+  skos:member asc:RE-surface-texture ;
+  skos:member asc:RU-texture ;
+  skos:member asc:SO-A1-texture ;
+  skos:member asc:SO-B-texture ;
+  skos:member asc:TE-A1-texture ;
+  skos:member asc:TE-B-texture ;
+  skos:prefLabel "Instances of family criteria related to texture" ;
+.
 asc:Thickness
   a owl:Class ;
   a skos:Collection ;
@@ -7908,9 +8689,26 @@ asc:Thickness
   skos:member asc:D ;
   skos:prefLabel "Thickness" ;
 .
+asc:Thickness-instances
+  a skos:Collection ;
+  skos:member asc:CA-thickness ;
+  skos:member asc:CH-thickness ;
+  skos:member asc:DE-A1-thickness ;
+  skos:member asc:FE-A1-thickness ;
+  skos:member asc:HY-A-thickness ;
+  skos:member asc:HY-A1-thickness ;
+  skos:member asc:KA-A-thickness ;
+  skos:member asc:KU-thickness ;
+  skos:member asc:OR-thickness ;
+  skos:member asc:PO-A1-thickness ;
+  skos:member asc:SO-thickness ;
+  skos:member asc:TE-A1-thickness ;
+  skos:prefLabel "Instances of family criteria related to thickness" ;
+.
 asc:Thin-ironpan
   a skos:Concept ;
   skos:definition "Commonly a thin (2-10 mm) black to dark reddish pan cemented by iron, iron and manganese, or iron-organic matter complexes. Rarely 40mm thick. It has a wavy or convolute form and usually occurs as a single pan. It is also known as a placic horizon (Soil Survey Staff 1994)." ;
+  skos:notation "bv" ;
   skos:prefLabel "Thin ironpan" ;
 .
 asc:Transitional-horizons
@@ -7920,6 +8718,7 @@ asc:Transitional-horizons
 - Horizons dominated by properties of one horizon but having subordinate properties of another eg. BC. The first symbol indicates that the properties of the horizon so designated dominate the transitional horizon.
 
 - Horizons with two distinct parts that have recognisable properties of the two kinds of horizons indicated by the capital letters eg. C/B. The first symbol is that of the horizon with the greater volume. Most of the individual parts of one horizon component are surrounded by the other.""" ;
+  skos:notation "bw" ;
   skos:prefLabel "Transitional horizons" ;
 .
 asc:U
@@ -7932,6 +8731,7 @@ asc:U
 asc:Unconsolidated-mineral-materials
   a skos:Concept ;
   skos:definition "This term is used to describe various unconsolidated materials below the solum, such as some C horizons, buried soils, sedimentary deposits of alluvial, colluvial or aeolian origin, and transported ferruginous nodules or concretions, such as occur in some ferric and bauxitic horizons. Many of these sediments may be defined as D horizons." ;
+  skos:notation "bx" ;
   skos:prefLabel "Unconsolidated mineral materials" ;
   skos:related asc:Bauxitic-horizon ;
   skos:related asc:Ferric-horizon ;
@@ -7955,20 +8755,10 @@ asc:VE
 
 Of the soils entered in the data base, the most common class for the first edition was Black (40%) which is probably a reflection of the agricultural importance of these soils.""" ;
   asc:family-comment "Because of the uniform clayey nature of these soils and their usual lack of distinct horizonation, several of the usual family criteria are not appropriate for Vertosols. Field texture in these soils may not be a reliable guide to actual clay content (see Field Handbook), and it may also be difficult to achieve consistent results between operators. Hence it is thought more appropriate to provide for a subdivision of actual clay content as determined by laboratory analysis. The classes used are similar to those used for clayey particle-size classes in Soil Taxonomy (Soil Survey Staff 2014). Other criteria used are gravel content of surface and A1 horizon and soil depth." ;
-  asc:family-criteria asc:E ;
-  asc:family-criteria asc:F ;
-  asc:family-criteria asc:G ;
-  asc:family-criteria asc:H ;
-  asc:family-criteria asc:I ;
-  asc:family-criteria asc:Q ;
-  asc:family-criteria asc:R ;
-  asc:family-criteria asc:S ;
-  asc:family-criteria asc:T ;
-  asc:family-criteria asc:U ;
-  asc:family-criteria asc:V ;
-  asc:family-criteria asc:W ;
-  asc:family-criteria asc:X ;
-  asc:family-criteria asc:Y ;
+  asc:family-criteria asc:VE-B-Clay ;
+  asc:family-criteria asc:VE-depth ;
+  asc:family-criteria asc:VE-gravel ;
+  asc:family-criteria asc:VE-upper-Clay ;
   asc:suborder asc:AM ;
   dcterms:description "Clay soils with shrink-swell properties that exhibit strong cracking when dry and at depth have slickensides and/or lenticular peds. Although many soils exhibit gilgai microrelief, this feature is not used in their definition. Australia has the greatest area and diversity of cracking clay soils of any country in the world." ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/VE"^^xsd:anyURI ;
@@ -8375,6 +9165,43 @@ It should be noted that all the Endoacidic soils classified are also Endohyperso
   skos:notation "VE-AM" ;
   skos:prefLabel "Aquic Vertosol" ;
 .
+asc:VE-B-Clay
+  a skos:Collection ;
+  skos:member asc:Q ;
+  skos:member asc:R ;
+  skos:member asc:S ;
+  skos:prefLabel "B horizon maximum clay content" ;
+  skos:related asc:B-horizons ;
+.
+asc:VE-depth
+  a skos:Collection ;
+  skos:member asc:T ;
+  skos:member asc:U ;
+  skos:member asc:V ;
+  skos:member asc:W ;
+  skos:member asc:X ;
+  skos:member asc:Y ;
+  skos:prefLabel "Soil depth" ;
+  skos:related asc:Soil-depth ;
+.
+asc:VE-gravel
+  a skos:Collection ;
+  skos:member asc:E ;
+  skos:member asc:F ;
+  skos:member asc:G ;
+  skos:member asc:H ;
+  skos:member asc:I ;
+  skos:prefLabel "Gravel of surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Gravel ;
+.
+asc:VE-upper-Clay
+  a skos:Collection ;
+  skos:member asc:Q ;
+  skos:member asc:R ;
+  skos:member asc:S ;
+  skos:prefLabel "Clay content of upper 0.1 m (excluding any surface crusty horizon)" ;
+.
 asc:Vertic-properties
   a skos:Concept ;
   skos:definition """Soil material with a clayey field texture (ie. light clay, medium clay, heavy clay) or 35% or more clay, which cracks strongly when dry and has slickensides and/or lenticular peds. See also Comment following the definition of Vertosols.
@@ -8392,6 +9219,7 @@ There is obviously a need for further testing of all shrinkage methods on a wide
 For present classification purposes it is difficult to give firm guidelines. In the interim, a linear shrinkage of about 8% or greater by the modified version or about 12% or greater by the standard linear shrinkage (and/or a plasticity index > 32-36) will help differentiate soils with vertic properties from others.
 
 1The linear extensibility (LE) of a soil layer is the product of the thickness, in centimetres, multiplied by the COLE of the layer in question. The LE of a soil is the sum of these products for all soil horizons (Soil Survey Staff 1999).""" ;
+  skos:notation "by" ;
   skos:prefLabel "Vertic properties" ;
   skos:related asc:B-horizons ;
   skos:related asc:Slickensides ;
@@ -8400,6 +9228,7 @@ For present classification purposes it is difficult to give firm guidelines. In 
 asc:Vesicular-pores
   a skos:Concept ;
   skos:definition "Soil pores characterised by the presence of vesicles or bubble-like structures, often associated with surface horizons and high salt concentrations in dry environments." ;
+  skos:notation "mn" ;
   skos:prefLabel "Vesicular pores" ;
 .
 asc:W
@@ -8416,6 +9245,21 @@ asc:WR
   skos:notation "WR" ;
   skos:prefLabel "Water repellent" ;
 .
+asc:Water-instances
+  a skos:Collection ;
+  skos:member asc:CA-water ;
+  skos:member asc:CH-water ;
+  skos:member asc:FE-water ;
+  skos:member asc:HY-water ;
+  skos:member asc:KA-water ;
+  skos:member asc:KU-water ;
+  skos:member asc:PO-water ;
+  skos:member asc:RE-water ;
+  skos:member asc:RU-water ;
+  skos:member asc:SO-water ;
+  skos:member asc:TE-water ;
+  skos:prefLabel "Instances of family criteria related to water repellence" ;
+.
 asc:Water-repellence
   a owl:Class ;
   a skos:Collection ;
@@ -8424,11 +9268,13 @@ asc:Water-repellence
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
+  skos:notation "abh" ;
   skos:prefLabel "Water repellence" ;
 .
 asc:Weakly-coherent-B-horizon
   a skos:Concept ;
   skos:definition "These are Podosol B horizons in which the consistence strength ranges from loose to firm (ie. force 0-3), although they may contain firm to very firm lumps (ie. force 3-4) associated with accumulations of organic compounds, and occasionally there may be some hard sesquioxide nodules present. They do not contain pans of any kind." ;
+  skos:notation "bz" ;
   skos:prefLabel "Weakly coherent B horizon" ;
   skos:related asc:B-horizons ;
   skos:related asc:Hard ;
@@ -8437,11 +9283,13 @@ asc:Weakly-coherent-B-horizon
 asc:Weakly-developed
   a skos:Concept ;
   skos:definition "This is a broad term used to describe weak evidence of pedologic organization. It includes poorly expressed horizonation such as minimal colour differences, weak pedality, few accumulations and little, if any, texture and/or consistence changes between horizons." ;
+  skos:notation "abi" ;
   skos:prefLabel "Weakly developed" ;
 .
 asc:Wet-panning
   a skos:Concept ;
   skos:definition "A process where material is added to a pan and gently agitated in water. Materials with a low specific gravity are allowed to spill out of the pan, whereas materials with a higher specific gravity sink to the bottom of the sediment during agitation and remain within the pan for examination. For a detailed description of the method, readers are referred to British Geological Survey (2001)." ;
+  skos:notation "jr" ;
   skos:prefLabel "Wet panning" ;
 .
 asc:X
@@ -8494,7 +9342,7 @@ asc:family-criteria
   a owl:ObjectProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Family criteria" ;
-  rdfs:range asc:Family ;
+  rdfs:range skos:Collection ;
   rdfs:subPropertyOf dcterms:relation ;
 .
 asc:greatgroup
@@ -8517,6 +9365,7 @@ asc:pH
 - pHw of 5.5 is approximately equivalent to pHCa of 4.6
 
 - pHw of 4.0 is approximately equivalent to pHCa of 3.5""" ;
+  skos:notation "bh" ;
   skos:prefLabel "pH" ;
 .
 asc:subgroup
