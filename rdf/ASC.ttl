@@ -20,7 +20,7 @@ asc:
   dcterms:description "The Australian Soil Classification provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key." ;
   dcterms:isVersionOf "Isbell, R.F. (1996;2002;2016;2021) The Australian Soil Classification (3rd edn). CSIRO Publishing, Melbourne" ;
   dcterms:license <http://creativecommons.org/licences/by/4.0> ;
-  dcterms:modified "2022-02-17" ;
+  dcterms:modified "2022-02-22" ;
   dcterms:publisher <http://www.publish.csiro.au/> ;
   dcterms:rights "copyright CSIRO 2009, 2016, 2021. All rights reserved." ;
   dcterms:source "Isbell, R.F. (1996;2002;2016;2021) The Australian Soil Classification (3rd edn). CSIRO Publishing, Melbourne" ;
@@ -127,6 +127,8 @@ asc:AF
   skos:definition "[SO] Soils in which the major part of the B2t horizon is dystrophic." ;
   skos:notation "AF" ;
   skos:prefLabel "Dystrophic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Dystrophic ;
 .
 asc:AG
   a asc:Class ;
@@ -140,6 +142,8 @@ asc:AG
   skos:definition "[SO] Soils in which the major part of the B2t horizon is mesotrophic." ;
   skos:notation "AG" ;
   skos:prefLabel "Mesotrophic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Mesotrophic ;
 .
 asc:AH
   a asc:Class ;
@@ -153,6 +157,9 @@ asc:AH
   skos:definition "[SO] Soils in which the major part of the B2t horizon is eutrophic but the B and BC horizons are not calcareous." ;
   skos:notation "AH" ;
   skos:prefLabel "Eutrophic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Eutrophic ;
 .
 asc:AI
   a asc:Class ;
@@ -168,6 +175,9 @@ asc:AI
   skos:definition "[TE] Soils in which the major part of the solum is strongly acid." ;
   skos:notation "AI" ;
   skos:prefLabel "Acidic  " ;
+  skos:related asc:Major-part ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Strongly-acid ;
 .
 asc:AJ
   a asc:Class ;
@@ -176,6 +186,9 @@ asc:AJ
   skos:definition "[KA] Soils in which the major part of the B2 horizon is strongly acid and mottled." ;
   skos:notation "AJ" ;
   skos:prefLabel "Acidic-Mottled" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Mottled-horizon ;
+  skos:related asc:Strongly-acid ;
 .
 asc:AK
   a asc:Class ;
@@ -186,6 +199,8 @@ asc:AK
   skos:definition "[TE] Soils which have andic properties and has formed in basaltic tephric materials that may be visibly stratified." ;
   skos:notation "AK" ;
   skos:prefLabel "Andic " ;
+  skos:related asc:Andic-properties ;
+  skos:related asc:Tephric-material ;
 .
 asc:AL
   a asc:Class ;
@@ -193,6 +208,7 @@ asc:AL
   skos:definition "[PO] Soils with free drainage, ie. rapidly drained. There is no restriction to through drainage in the B horizon or within the substrate. There is no perching of water within the B horizon or saturation due to a high ground water table. The B horizons are weakly coherent and porous. They are often brightly coloured, and lack evidence of seasonal reduction." ;
   skos:notation "AL" ;
   skos:prefLabel "Aeric" ;
+  skos:related asc:B-horizon ;
 .
 asc:AM
   a asc:Class ;
@@ -201,6 +217,9 @@ asc:AM
   skos:definition "[VE] Soils with stagnant water on the soil surface and/or saturation of some part of the upper 0.5 m more or less continuously for prolonged periods in most years. The length of a 'prolonged period' is probably in the order of 2-3 continuous months. Evidence of wetness may be indicated by the presence of mottling and gley colours (chroma of 2 or less)." ;
   skos:notation "AM" ;
   skos:prefLabel "Aquic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Bh-horizon ;
+  skos:related asc:Gley-colours ;
 .
 asc:AN
   a asc:Order ;
@@ -250,6 +269,11 @@ There will be instances where the question is how much truncation results in ‘
   skos:narrower asc:AN-IT ;
   skos:notation "AN" ;
   skos:prefLabel "Anthroposols" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:CH ;
+  skos:related asc:DE ;
+  skos:related asc:HY ;
+  skos:related asc:Human-activities ;
 .
 asc:AN-HR
   a asc:Suborder ;
@@ -323,6 +347,8 @@ asc:AO
   skos:definition "[TE] Soils in which the profile is not or only slightly gravelly (<20% >2mm) throughout, the soil material is either loose or only weakly coherent both moist and dry, may have aeolian cross bedding, and the texture is dominantly sandy (i.e. field textures of S-LS-CS) in >80% of the profile and no layer with a clay content of >15% (i.e. field texture of SL+)." ;
   skos:notation "AO" ;
   skos:prefLabel "Arenic " ;
+  skos:related asc:Gravel ;
+  skos:related asc:Soil-profile ;
 .
 asc:AP
   a asc:Class ;
@@ -335,6 +361,8 @@ asc:AP
   skos:definition "[TE] Soils with an argic horizon within the solum." ;
   skos:notation "AP" ;
   skos:prefLabel "Argic " ;
+  skos:related asc:Argic-horizon ;
+  skos:related asc:B-horizon ;
 .
 asc:AQ
   a asc:Class ;
@@ -353,6 +381,11 @@ asc:AR
   skos:definition "[TE] Soils in which the major part of the solum is not strongly acid and no part of the solum is calcareous." ;
   skos:notation "AR" ;
   skos:prefLabel "Basic  " ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:AS
   a asc:Class ;
@@ -364,6 +397,9 @@ asc:AS
   skos:definition "[TE] Soils with a bauxitic horizon." ;
   skos:notation "AS" ;
   skos:prefLabel "Bauxitic  " ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Bauxitic-horizon ;
+  skos:related asc:Gravel ;
 .
 asc:AT
   a asc:Class ;
@@ -379,6 +415,8 @@ asc:AT
   skos:definition "[VE] Soils with a conspicuously bleached A2 horizon." ;
   skos:notation "AT" ;
   skos:prefLabel "Bleached " ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
 .
 asc:AU
   a asc:Class ;
@@ -388,6 +426,10 @@ asc:AU
   skos:definition "[KA] Soils with a conspicuously bleached A2 horizon and a B2 horizon in which the major part is strongly acid." ;
   skos:notation "AU" ;
   skos:prefLabel "Bleached-Acidic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Strongly-acid ;
 .
 asc:AV
   a asc:Class ;
@@ -399,6 +441,10 @@ asc:AV
   skos:definition "[KU] Soils with a conspicuously bleached A2 horizon and a ferric horizon within the solum." ;
   skos:notation "AV" ;
   skos:prefLabel "Bleached-Ferric" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Solum ;
 .
 asc:AW
   a asc:Class ;
@@ -407,6 +453,10 @@ asc:AW
   skos:definition "[TE] Soils with a conspicuously bleached A2 horizon, and are underlain within 0.5 m of the surface by a calcrete pan ; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite." ;
   skos:notation "AW" ;
   skos:prefLabel "Bleached-Leptic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:Calcrete-pan ;
+  skos:related asc:Hard ;
 .
 asc:AX
   a asc:Class ;
@@ -414,6 +464,9 @@ asc:AX
   skos:definition "[HY] Soils with a conspicuously bleached A2 horizon and a B2 horizon in which the major part has an exchangeable Ca/Mg ratio of less than 0.1." ;
   skos:notation "AX" ;
   skos:prefLabel "Bleached-Magnesic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:B-horizon ;
 .
 asc:AY
   a asc:Class ;
@@ -427,6 +480,10 @@ asc:AY
   skos:definition "[TE] Soils with a conspicuously bleached A2 horizon and a manganic horizon within the solum." ;
   skos:notation "AY" ;
   skos:prefLabel "Bleached-Manganic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:Manganic-horizon ;
+  skos:related asc:Solum ;
 .
 asc:AZ
   a asc:Class ;
@@ -437,6 +494,11 @@ asc:AZ
   skos:definition "[KU] Soils with a conspicuously bleached A2 horizon and the major part of the B2t horizon is mottled." ;
   skos:notation "AZ" ;
   skos:prefLabel "Bleached-Mottled" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
 .
 asc:Alteration
   a owl:Class ;
@@ -493,7 +555,7 @@ asc:B
   skos:notation "B" ;
   skos:prefLabel "Medium" ;
 .
-asc:B-horizons
+asc:B-horizon
   a skos:Concept ;
   dcterms:identifier "http://anzsoil.org/def/au/asc-glossary/B-horizons"^^xsd:anyURI ;
   skos:definition """The definition of a B horizon has historically differed between the Field Handbook and the A ustralian Soil Classification. The following amended definition of a B horizon is now adopted in both publications.
@@ -507,8 +569,8 @@ In some shallow, stony soils B horizon material may only be present in fissures 
 Note: A B1 horizon is a transitional horizon between A and B, which is dominated by properties characteristic of an underlying B2.""" ;
   skos:exactMatch <http://anzsoil.org/def/au/asls/soil-profile/horizons-B> ;
   skos:notation "ac" ;
-  skos:prefLabel "B horizons" ;
-  skos:related asc:Transitional-horizons ;
+  skos:prefLabel "B horizon" ;
+  skos:related asc:Transitional-horizon ;
 .
 asc:BA
   a asc:Class ;
@@ -520,6 +582,10 @@ asc:BA
   skos:definition "[KU] Soils with a conspicuously bleached A2 horizon and a B horizon in which at least the lower part is sodic." ;
   skos:notation "BA" ;
   skos:prefLabel "Bleached-Sodic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Sodic ;
 .
 asc:BB
   a asc:Class ;
@@ -530,6 +596,10 @@ asc:BB
   skos:definition "[KU] Soils with a conspicuously bleached A2 horizon and a B horizon in which at least 0.3 m has vertic properties." ;
   skos:notation "BB" ;
   skos:prefLabel "Bleached-Vertic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Vertic-properties ;
 .
 asc:BC
   a asc:Class ;
@@ -543,6 +613,12 @@ asc:BC
   skos:definition "[TE] Other soils in which at least some part of the solum is calcareous." ;
   skos:notation "BC" ;
   skos:prefLabel "Calcareous   " ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Solum ;
 .
 asc:BD
   a asc:Class ;
@@ -555,6 +631,9 @@ asc:BD
   skos:definition "[SO] Other soils with a calcareous horizon. (See carbonate classes)." ;
   skos:notation "BD" ;
   skos:prefLabel "Calcic" ;
+  skos:related asc:Calcareous-horizon ;
+  skos:related asc:Carbonate-classes ;
+  skos:related asc:Fine-earth ;
 .
 asc:BE
   a asc:Class ;
@@ -564,6 +643,11 @@ asc:BE
   skos:definition "[TE] Soils with a peaty, humose, melacic or melanic horizon. A conspicuously bleached A2 horizon is not present." ;
   skos:notation "BE" ;
   skos:prefLabel "Chernic" ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:Humose-horizon ;
+  skos:related asc:Melacic-horizon ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Peaty-horizon ;
 .
 asc:BF
   a asc:Class ;
@@ -572,6 +656,13 @@ asc:BF
   skos:definition "[TE] Soils with a peaty, humose, melacic or melanic horizon, and are underlain within 0.5 m of the surface by a calcrete pan; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite. An unbleached A2 horizon may be present between the dark surface horizons and the substrate material." ;
   skos:notation "BF" ;
   skos:prefLabel "Chernic-Leptic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:Calcrete-pan ;
+  skos:related asc:Hard ;
+  skos:related asc:Humose-horizon ;
+  skos:related asc:Melacic-horizon ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Peaty-horizon ;
 .
 asc:BG
   a asc:Class ;
@@ -580,6 +671,10 @@ asc:BG
   skos:definition "[HY] Other soils with a clear or abrupt textural B horizon and the pHw in the major part of the upper 0.2 m of the B2 horizon is not strongly acid." ;
   skos:notation "BG" ;
   skos:prefLabel "Chromosolic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Strongly-acid ;
+  skos:related asc:pH ;
 .
 asc:BH
   a asc:Class ;
@@ -594,6 +689,8 @@ asc:BI
   skos:definition "[PO] Other soils with a densipan present in the A2 horizon." ;
   skos:notation "BI" ;
   skos:prefLabel "Densic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:Densipan ;
 .
 asc:BJ
   a asc:Class ;
@@ -611,6 +708,8 @@ asc:BJ
   skos:definition "[VE] Soils with a red-brown hardpan either within or directly underlying the B horizon." ;
   skos:notation "BJ" ;
   skos:prefLabel "Duric " ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Red-brown-hardpan ;
 .
 asc:BK
   a asc:Class ;
@@ -620,6 +719,9 @@ asc:BK
   skos:definition "[SO] Soils in which the upper 0.2 m of the B2t horizon (or the B2t horizon if it is less than 0.2 m thick) has a strong blocky or polyhedral structure in which average ped size is usually in the range of 5-20 mm. There is very weak adhesion between peds (when dry it is very easy to insert a spade into the upper B2t horizon). Salt contents are usually high, resulting in weak dry strength and a bulk density of about 1.3 t m-3 or less. In some soils the B2t horizons may be weakly subplastic. A common feature (but not diagnostic) of the overlying A horizons is the presence of a band of vesicular pores near the surface or on the underside of any surface flake." ;
   skos:notation "BK" ;
   skos:prefLabel "Pedaric" ;
+  skos:related asc:A-horizons ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Vesicular-pores ;
 .
 asc:BL
   a asc:Class ;
@@ -627,6 +729,9 @@ asc:BL
   skos:definition "[VE] Other soils in which the major part of the solum below 0.5 m is strongly acid." ;
   skos:notation "BL" ;
   skos:prefLabel "Endoacidic" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:BN
   a asc:Class ;
@@ -634,6 +739,8 @@ asc:BN
   skos:definition "[VE] Other soils in which the upper 0.1 m of the solum is sodic." ;
   skos:notation "BN" ;
   skos:prefLabel "Episodic" ;
+  skos:related asc:Sodic ;
+  skos:related asc:Solum ;
 .
 asc:BP
   a asc:Class ;
@@ -642,6 +749,8 @@ asc:BP
   skos:definition "[VE] Other soils in which some subhorizon of the solum below 0.5 m has an ESP of 15 or greater." ;
   skos:notation "BP" ;
   skos:prefLabel "Endohypersodic" ;
+  skos:related asc:ESP ;
+  skos:related asc:Solum ;
 .
 asc:BR
   a asc:Class ;
@@ -650,6 +759,8 @@ asc:BR
   skos:definition "[VE] Other soils in which some subsurface horizon within the upper 0.5 m of the solum has an ESP of 15 or greater." ;
   skos:notation "BR" ;
   skos:prefLabel "Epihypersodic" ;
+  skos:related asc:ESP ;
+  skos:related asc:Solum ;
 .
 asc:BT
   a asc:Class ;
@@ -676,6 +787,11 @@ asc:BU
   skos:definition "[VE] Soils with a ferric horizon within the solum" ;
   skos:notation "BU" ;
   skos:prefLabel "Ferric " ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Gravel ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Solum ;
 .
 asc:BV
   a asc:Class ;
@@ -691,6 +807,8 @@ asc:BW
   skos:definition "[OR] Soils in which the dominant organic material, by thickness, is fibric peat." ;
   skos:notation "BW" ;
   skos:prefLabel "Fibric" ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Peat ;
 .
 asc:BX
   a asc:Class ;
@@ -698,6 +816,7 @@ asc:BX
   skos:definition "[RU] Soils in which the gravel consists dominantly of mostly rounded materials that have been transported by streams or by wave action." ;
   skos:notation "BX" ;
   skos:prefLabel "Fluvic" ;
+  skos:related asc:Gravel ;
 .
 asc:BY
   a asc:Class ;
@@ -705,6 +824,7 @@ asc:BY
   skos:definition "[PO] Other soils with a weakly coherent B horizon." ;
   skos:notation "BY" ;
   skos:prefLabel "Fragic" ;
+  skos:related asc:Weakly-coherent-B-horizon ;
 .
 asc:BZ
   a asc:Class ;
@@ -721,22 +841,25 @@ asc:BZ
   skos:definition "[VE] Other soils with a gypsic horizon within the B or BC horizon." ;
   skos:notation "BZ" ;
   skos:prefLabel "Gypsic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Gypsic-horizon ;
+  skos:related asc:Soil-profile ;
 .
 asc:Base-status
   a skos:Concept ;
   skos:definition "This refers to the sum of exchangeable basic cations (Ca, Mg, K and Na) expressed in cmol (+) kg-1 clay. This sum is obtained by multiplying the sum of the reported basic cations (which are determined on a soil fine earth basis) by 100 and dividing by the clay percentage of the sample. Where this is not available it may be approximated from the field texture using the figures given on pp. 118-120 of the Field Handbook. Three classes are defined: Dystrophic - the sum is less than 5; Mesotrophic - the sum is between 5 and 15 inclusive; Eutrophic - the sum is greater than 15. An estimate of the sum of basic cations for the B horizon of an individual soil may be obtained from its classification if the B horizon maximum texture is recorded in the family criteria." ;
   skos:notation "ad" ;
   skos:prefLabel "Base status" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
   skos:related asc:Dystrophic ;
   skos:related asc:Eutrophic ;
   skos:related asc:Fine-earth ;
   skos:related asc:Mesotrophic ;
 .
-asc:Basi-horizons
+asc:Basi-horizon
   a skos:Concept ;
   skos:definition "These are brown, yellow-brown or pale brown cemented horizons that immediately underlie Bh horizons in some poorly drained Podosols. Despite their colour these horizons have low contents of acid oxalate-extractable iron but significant amounts of oxalate-extractable aluminium and silica. The cementing agency appears to be an imogolite-allophane complex with some organic-aluminium compounds. These horizons give a rapid strong or very strong response to the reactive aluminium test. Because of their bright colour and cementation many of these horizons have been included as ortstein in the past." ;
-  skos:prefLabel "Basi horizons" ;
+  skos:prefLabel "Basi horizon" ;
   skos:related asc:PO ;
   skos:related asc:Reactive-aluminium-test ;
 .
@@ -746,46 +869,46 @@ asc:Bauxitic-horizon
   skos:notation "ae" ;
   skos:prefLabel "Bauxitic horizon" ;
 .
-asc:Bh-Basi-horizons
+asc:Bh-Basi-horizon
   a skos:Concept ;
   skos:definition "Typical Bh horizons dominated by organic-aluminium compounds which may be weakly coherent or cemented and overlie a cemented Basi horizon." ;
-  skos:prefLabel "Bh/Basi horizons" ;
+  skos:prefLabel "Bh/Basi horizon" ;
   skos:related asc:Weakly-coherent-B-horizon ;
 .
-asc:Bh-Bhs-horizons
+asc:Bh-Bhs-horizon
   a skos:Concept ;
   skos:definition "These have a subhorizon, dominated by organic and aluminium compounds with relatively low iron (Bh), overlying the major horizon with prominent organic and iron compounds (Bhs). The dark horizon (Bh) may undulate but is usually discontinuous, and rests on or grades into a Bhs with a range in consistence as described above." ;
-  skos:prefLabel "Bh/Bhs horizons" ;
+  skos:prefLabel "Bh/Bhs horizon" ;
 .
-asc:Bh-Bs-horizons
+asc:Bh-Bs-horizon
   a skos:Concept ;
   skos:definition "The dark Bh horizon may be weakly or strongly coherent, but is usually discontinuous and grades quickly to a brightly coloured and weakly coherent Bs horizon." ;
-  skos:prefLabel "Bh/Bs horizons" ;
+  skos:prefLabel "Bh/Bs horizon" ;
   skos:related asc:Strongly-coherent-B-horizon ;
   skos:related asc:Weakly-coherent-B-horizon ;
 .
-asc:Bh-horizons
+asc:Bh-horizon
   a skos:Concept ;
   skos:definition "Organic-aluminium compounds are strongly dominant with little or no evidence of iron compounds. Such horizons have a uniform appearance laterally and are relatively uniform vertically although concentrations of carbon and aluminium and the degree of coherence or cementation may change with depth. The horizons may be weakly or strongly coherent, or contain strongly coherent or cemented sub-horizons or pans, or overlie other kinds of pans or clay D horizons. Bh horizons are non-reactive or give only a weak response to the reactive aluminium test. Colours are usually dark with values <4 and chromas <3. In typical Bh horizons the sand grains are uncoated and the organic-aluminium complex is precipitated between the grains (Farmer et al. 1983)." ;
-  skos:prefLabel "Bh horizons" ;
+  skos:prefLabel "Bh horizon" ;
   skos:related asc:Reactive-aluminium-test ;
   skos:related asc:Strongly-coherent-B-horizon ;
 .
-asc:Bhs-horizons
+asc:Bhs-horizon
   a skos:Concept ;
   skos:definition "Iron and organic compounds are both prominent with the organic compounds distributed as streaks, patches or lumps so that concentrations of iron, aluminium and organic compounds have marked spatial variation. Such horizons may contain firm lumps of organic compounds but otherwise are weakly coherent and highly permeable, or they may be strongly coherent throughout, or contain strongly coherent subhorizons or pans. Bhs horizons always contain significant amounts of oxalate-extractable iron and aluminium and frequently silica, ie. imogolite-allophane complex is usually present in significant amounts and the horizons give a moderate to very strong response to the reactive aluminium test. As a guide, Bhs horizons usually have a hue of 2.5YR to 10YR, and value/chroma of 3/3, 3/4, 3/6, 4/3 or 4/4." ;
-  skos:prefLabel "Bhs horizons" ;
+  skos:prefLabel "Bhs horizon" ;
   skos:related asc:Reactive-aluminium-test ;
   skos:related asc:Strongly-coherent-B-horizon ;
   skos:related asc:Weakly-coherent-B-horizon ;
 .
-asc:Bs-horizons
+asc:Bs-horizon
   a skos:Concept ;
   skos:definition """The usually bright colours indicate that iron compounds are strongly dominant or co-dominant and there is little evidence of organic compounds, apart from a few usually discontinuous patches in the upper B horizon or a thin band (< 0.05 m thick) at the A2/B junction. The upper boundary of the B horizon may be very uneven but otherwise the horizons are relatively uniform laterally. Iron concentrations may increase or decrease with depth. No strongly coherent Bs horizons have been recorded. Bs horizons may be non-reactive or give only a weak response to the reactive aluminium test. As a guide, Bs horizons usually have a hue of 5, 7.5 or 10YR, a value of 4 or 5, and a chroma of 4 - 8.
 
 Note that the presence of a thin ironpan (placic horizon), which will be designated as Bsm, is not to be regarded as a Podosol diagnostic horizon because it may also occur in the B horizon of other soils, eg. Tenosols and Kandosols, and may also be present in C horizons or even parent rocks.""" ;
-  skos:prefLabel "Bs horizons" ;
-  skos:related asc:B-horizons ;
+  skos:prefLabel "Bs horizon" ;
+  skos:related asc:B-horizon ;
   skos:related asc:KA ;
   skos:related asc:PO ;
   skos:related asc:Reactive-aluminium-test ;
@@ -857,7 +980,7 @@ asc:CA-B-texture
   skos:member asc:O ;
   skos:note "3 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture3" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:CA-BD
   a asc:Suborder ;
@@ -1136,6 +1259,11 @@ asc:CB
   skos:definition "[HY] Soils which are calcareous throughout the soil profile, or at least below the A1 or Ap horizon or to a depth of 0.2 m if the A1 horizon is only weakly developed, and do not have a clear or abrupt textural B horizon." ;
   skos:notation "CB" ;
   skos:prefLabel "Calcarosolic" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Ap-horizon ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Soil-profile ;
 .
 asc:CC
   a asc:Class ;
@@ -1145,6 +1273,7 @@ asc:CC
   skos:definition "[RU] The major part of the upper 0.5 m of the profile consists of materials dominated (>50%) by halite crystals." ;
   skos:notation "CC" ;
   skos:prefLabel "Halic" ;
+  skos:related asc:Soil-profile ;
 .
 asc:CD
   a asc:Class ;
@@ -1158,6 +1287,9 @@ asc:CD
   skos:definition "[VE] Other soils in which the major part of the upper 0.5 m of the solum is whole coloured." ;
   skos:notation "CD" ;
   skos:prefLabel "Haplic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:CE
   a asc:Class ;
@@ -1166,6 +1298,10 @@ asc:CE
   skos:definition "[OR] Soils in which the dominant organic material, by thickness, is hemic peat." ;
   skos:notation "CE" ;
   skos:prefLabel "Hemic" ;
+  skos:related asc:Fibric-Peat ;
+  skos:related asc:Hemic-Peat ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Peat ;
 .
 asc:CF
   a asc:Class ;
@@ -1173,6 +1309,7 @@ asc:CF
   skos:definition "[HY] Soils which are dominated by organic materials to a depth of 0.5 m." ;
   skos:notation "CF" ;
   skos:prefLabel "Histic" ;
+  skos:related asc:Organic-material ;
 .
 asc:CG
   a asc:Class ;
@@ -1181,6 +1318,8 @@ asc:CG
   skos:definition "[PO] Soils with only a Bh/Basi horizon." ;
   skos:notation "CG" ;
   skos:prefLabel "Humic" ;
+  skos:related asc:Bh-Basi-horizon ;
+  skos:related asc:Bh-horizon ;
 .
 asc:CH
   a asc:Order ;
@@ -1529,7 +1668,7 @@ asc:CH-B-texture
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture1" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:CH-depth
   a skos:Collection ;
@@ -1576,6 +1715,7 @@ asc:CI
   skos:definition "[PO] oils with a Bh/Bhs horizon." ;
   skos:notation "CI" ;
   skos:prefLabel "Humic/Humosesquic" ;
+  skos:related asc:Bh-Bhs-horizon ;
 .
 asc:CJ
   a asc:Class ;
@@ -1583,6 +1723,7 @@ asc:CJ
   skos:definition "[PO] Soils with a Bh/Bs horizon." ;
   skos:notation "CJ" ;
   skos:prefLabel "Humic/Sesquic" ;
+  skos:related asc:Bh-Bs-horizon ;
 .
 asc:CK
   a asc:Class ;
@@ -1600,6 +1741,7 @@ asc:CK
   skos:definition "[TE] Soils with a humose horizon." ;
   skos:notation "CK" ;
   skos:prefLabel "Humose  " ;
+  skos:related asc:Humose-horizon ;
 .
 asc:CL
   a asc:Class ;
@@ -1607,6 +1749,8 @@ asc:CL
   skos:definition "[HY] Soils with a humose horizon and a B2 horizon in which the major part has an exchangeable Ca/Mg ratio of less than 0.1." ;
   skos:notation "CL" ;
   skos:prefLabel "Humose-Magnesic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Humose-horizon ;
 .
 asc:CM
   a asc:Class ;
@@ -1616,6 +1760,9 @@ asc:CM
   skos:definition "[KA] Soils with a humose horizon and the major part of the B2 horizon is mottled." ;
   skos:notation "CM" ;
   skos:prefLabel "Humose-Mottled" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Humose-horizon ;
+  skos:related asc:Mottled-horizon ;
 .
 asc:CN
   a asc:Class ;
@@ -1623,6 +1770,8 @@ asc:CN
   skos:definition "[PO] Soils with a humose horizon and a strongly coherent B horizon." ;
   skos:notation "CN" ;
   skos:prefLabel "Humose-Parapanic" ;
+  skos:related asc:Humose-horizon ;
+  skos:related asc:Strongly-coherent-B-horizon ;
 .
 asc:CO
   a asc:Class ;
@@ -1630,6 +1779,7 @@ asc:CO
   skos:definition "[PO] Soils with only a Bhs horizon." ;
   skos:notation "CO" ;
   skos:prefLabel "Humosesquic" ;
+  skos:related asc:Bhs-horizon ;
 .
 asc:CP
   a asc:Class ;
@@ -1638,6 +1788,9 @@ asc:CP
   skos:definition "[RE] Soils in which the upper 0.1 m of the soil profile consists of more than 20% fine-earth carbonate (visual estimate using a 10 x hand lens), and/or has a strong effervescence with 1 M HC1, and/or contains more than 8% 1 (by analysis) of fine-earth carbonate." ;
   skos:notation "CP" ;
   skos:prefLabel "Hypervescent" ;
+  skos:related asc:Carbonate-classes ;
+  skos:related asc:Fine-earth ;
+  skos:related asc:Solum ;
 .
 asc:CQ
   a asc:Class ;
@@ -1652,6 +1805,9 @@ asc:CQ
   skos:definition "[TE] Other soils in which the calcareous horizon contains less than 20% of hard calcrete fragments and/or carbonate nodules or concretions." ;
   skos:notation "CQ" ;
   skos:prefLabel "Hypercalcic    " ;
+  skos:related asc:Calcareous-horizon ;
+  skos:related asc:Calcrete ;
+  skos:related asc:Carbonate-classes ;
 .
 asc:CR
   a asc:Class ;
@@ -1659,6 +1815,10 @@ asc:CR
   skos:definition "[SO] Other soils in which the major part of the upper 0.2 m of the B2t horizon is mottled and has an ESP greater than 25." ;
   skos:notation "CR" ;
   skos:prefLabel "Hypernatric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
 .
 asc:CS
   a asc:Class ;
@@ -1675,6 +1835,10 @@ asc:CU
   skos:definition "[VE] Soils in which some subsurface horizon within the upper 0.5 m of the solum has an ESP of 15 or greater and the major part of the upper 0.5 m of the solum is strongly acid." ;
   skos:notation "CU" ;
   skos:prefLabel "Epihypersodic-Epiacidic" ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:CV
   a asc:Class ;
@@ -1687,6 +1851,7 @@ asc:CV
   skos:definition "[SO] Soils in which the carbonate is evident only as a slight to moderate effervescence (1M HCl), and/or contain less than 2% soft finely divided carbonate, and have less than 20% hard carbonate nodules or concretions." ;
   skos:notation "CV" ;
   skos:prefLabel "Hypocalcic" ;
+  skos:related asc:Hard ;
 .
 asc:CW
   a asc:Class ;
@@ -1701,6 +1866,9 @@ asc:CX
   skos:definition "[HY] Soils with a clear or abrupt textural B horizon and the major part of the upper 0.2 m of the B2 horizon is strongly acid." ;
   skos:notation "CX" ;
   skos:prefLabel "Kurosolic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Strongly-acid ;
 .
 asc:CY
   a asc:Class ;
@@ -1712,6 +1880,8 @@ asc:CY
   skos:definition "[TE] Soils which are underlain within 0.5 m of the surface by a calcrete pan; hard unweathered rock or other hard materials; or partially weathered or decomposed rock or saprolite." ;
   skos:notation "CY" ;
   skos:prefLabel "Leptic " ;
+  skos:related asc:Calcrete-pan ;
+  skos:related asc:Hard ;
 .
 asc:CZ
   a asc:Class ;
@@ -1725,6 +1895,8 @@ asc:CZ
   skos:definition "[TE] Soils which overlie hard rock." ;
   skos:notation "CZ" ;
   skos:prefLabel "Lithic " ;
+  skos:related asc:Hard ;
+  skos:related asc:Organic-material ;
 .
 asc:Calcareous
   a skos:Concept ;
@@ -1759,11 +1931,11 @@ asc:Calcrete-pan
   skos:related asc:Calcrete ;
   skos:related asc:Hard ;
 .
-asc:Carbic-materials
+asc:Carbic-material
   a skos:Concept ;
   skos:definition "Organic debris that has accumulated by colluvial and alluvial processes when torrential rain follows extensive bushfires. The material has a low bulk density (<1 t m-3) and consists of variably carbonised plant remains, ranging from little-altered vegetative material to charcoal and humified plant debris." ;
   skos:notation "aj" ;
-  skos:prefLabel "Carbic materials" ;
+  skos:prefLabel "Carbic material" ;
 .
 asc:Carbonate-classes
   a skos:Concept ;
@@ -1810,7 +1982,7 @@ asc:Cemented-pans
 To avoid the above problem, cemented layers such as calcrete, siliceous pan, red-brown hardpan, ferricrete, petroferric horizon and petroreticulate are recognised as diagnostic substrate features and hence excluded as criteria of B horizon development. Note that the Podosol diagnostic horizons are not regarded as substrate materials.""" ;
   skos:notation "al" ;
   skos:prefLabel "Cemented pans" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
   skos:related asc:Calcrete ;
   skos:related asc:KA ;
   skos:related asc:Petroreticulate-horizon ;
@@ -2080,7 +2252,7 @@ Note also that the above definition is similar but not directly equivalent to th
 </p>"""^^rdf:HTML ;
   skos:notation "am" ;
   skos:prefLabel "Clear or abrupt textural B horizon" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:ColourClass
   a owl:Class ;
@@ -2136,6 +2308,9 @@ asc:DA
   skos:definition "[TE] Soils in which the calcareous horizon contains more than 50% of hard calcrete fragments and/or carbonate nodules or concretions." ;
   skos:notation "DA" ;
   skos:prefLabel "Lithocalcic " ;
+  skos:related asc:Calcareous-horizon ;
+  skos:related asc:Calcrete ;
+  skos:related asc:Gravel ;
 .
 asc:DB
   a asc:Class ;
@@ -2150,6 +2325,8 @@ asc:DB
   skos:definition "[VE] Soils in which the major part of the B horizon has an exchangeable Ca/Mg ratio of less than 0.1." ;
   skos:notation "DB" ;
   skos:prefLabel "Magnesic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
 .
 asc:DC
   a asc:Class ;
@@ -2167,6 +2344,9 @@ asc:DC
   skos:definition "[VE] Soils with a manganic horizon within the solum." ;
   skos:notation "DC" ;
   skos:prefLabel "Manganic   " ;
+  skos:related asc:Manganic-horizon ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Solum ;
 .
 asc:DD
   a asc:Class ;
@@ -2179,6 +2359,8 @@ asc:DD
   skos:definition "[TE] Soils which overlie marl." ;
   skos:notation "DD" ;
   skos:prefLabel "Marly " ;
+  skos:related asc:Marl ;
+  skos:related asc:Organic-material ;
 .
 asc:DE
   a asc:Order ;
@@ -2577,7 +2759,7 @@ asc:DE-B-texture
   skos:member asc:O ;
   skos:note "2 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture2" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:DE-depth
   a skos:Collection ;
@@ -2606,6 +2788,7 @@ asc:DF
   skos:definition "[VE] Soils with a massive or weak blocky (usually > 50 mm peds) A horizon, and there is no surface crusty horizon." ;
   skos:notation "DF" ;
   skos:prefLabel "Massive" ;
+  skos:related asc:A-horizons ;
 .
 asc:DG
   a asc:Class ;
@@ -2622,6 +2805,7 @@ asc:DG
   skos:definition "[TE] Soils with a melacic horizon." ;
   skos:notation "DG" ;
   skos:prefLabel "Melacic  " ;
+  skos:related asc:Melacic-horizon ;
 .
 asc:DH
   a asc:Class ;
@@ -2629,6 +2813,9 @@ asc:DH
   skos:definition "[HY] Soils with a melacic horizon and a B2 horizon in which the major part has an exchangeable Ca/Mg ratio of less than 0.1." ;
   skos:notation "DH" ;
   skos:prefLabel "Melacic-Magnesic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Melacic-horizon ;
 .
 asc:DI
   a asc:Class ;
@@ -2638,6 +2825,9 @@ asc:DI
   skos:definition "[KA] Soils with a melacic horizon and the major part of the B2 horizon is mottled." ;
   skos:notation "DI" ;
   skos:prefLabel "Melacic-Mottled" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Melacic-horizon ;
 .
 asc:DJ
   a asc:Class ;
@@ -2645,6 +2835,8 @@ asc:DJ
   skos:definition "[PO] Soils with a melacic horizon and a strongly coherent B horizon." ;
   skos:notation "DJ" ;
   skos:prefLabel "Melacic-Parapanic" ;
+  skos:related asc:Melacic-horizon ;
+  skos:related asc:Strongly-coherent-B-horizon ;
 .
 asc:DK
   a asc:Class ;
@@ -2663,6 +2855,7 @@ asc:DK
   skos:definition "[TE] Soils with a melanic horizon." ;
   skos:notation "DK" ;
   skos:prefLabel "Melanic   " ;
+  skos:related asc:Melanic-horizon ;
 .
 asc:DL
   a asc:Class ;
@@ -2670,6 +2863,8 @@ asc:DL
   skos:definition "[HY] Soils with a melanic horizon and a conspicuously bleached A2 horizon." ;
   skos:notation "DL" ;
   skos:prefLabel "Melanic-Bleached" ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:Melanic-horizon ;
 .
 asc:DM
   a asc:Class ;
@@ -2680,6 +2875,10 @@ asc:DM
   skos:definition "[KA] Soils with a melanic horizon and the major part of the B2 horizon is mottled." ;
   skos:notation "DM" ;
   skos:prefLabel "Melanic-Mottled" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Mottled-horizon ;
 .
 asc:DN
   a asc:Class ;
@@ -2692,6 +2891,9 @@ asc:DN
   skos:definition "[SO] Soils with a melanic horizon and a B horizon in which at least 0.3m has vertic properties." ;
   skos:notation "DN" ;
   skos:prefLabel "Melanic-Vertic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Vertic-properties ;
 .
 asc:DO
   a asc:Class ;
@@ -2699,6 +2901,7 @@ asc:DO
   skos:definition "[KA] Soils with massive to weakly structured (about 10 mm subangular blocky parting to finer granules) B horizons that are very porous with a weak consistence strength when moist. Bulk density appears to be relatively low. (See Comment below)." ;
   skos:notation "DO" ;
   skos:prefLabel "Mellic" ;
+  skos:related asc:B-horizon ;
 .
 asc:DP
   a asc:Class ;
@@ -2706,6 +2909,9 @@ asc:DP
   skos:definition "[SO] Other soils in which the major part of the upper 0.2 m of the B2t horizon has an ESP between 15 and 25." ;
   skos:notation "DP" ;
   skos:prefLabel "Mesonatric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
 .
 asc:DQ
   a asc:Class ;
@@ -2719,6 +2925,11 @@ asc:DQ
   skos:definition "[VE] Soils in which the major part of the upper 0.5 m of the solum is mottled." ;
   skos:notation "DQ" ;
   skos:prefLabel "Mottled" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Solum ;
 .
 asc:DR
   a asc:Class ;
@@ -2727,6 +2938,7 @@ asc:DR
   skos:definition "[TE] Soils with all the requirements of a humose horizon except the thickness." ;
   skos:notation "DR" ;
   skos:prefLabel "Subhumose    " ;
+  skos:related asc:Humose-horizon ;
 .
 asc:DT
   a asc:Class ;
@@ -2734,6 +2946,7 @@ asc:DT
   skos:definition "[HY] Other soils with a seasonal or permanent water table and in which the major part of the soil profile (or the subsoil if the profile is stratified) is whole coloured." ;
   skos:notation "DT" ;
   skos:prefLabel "Oxyaquic" ;
+  skos:related asc:Soil-profile ;
 .
 asc:DU
   a asc:Class ;
@@ -2747,6 +2960,7 @@ asc:DU
   skos:definition "[TE] Soils which overlie partially weathered or decomposed rock or saprolite." ;
   skos:notation "DU" ;
   skos:prefLabel "Paralithic" ;
+  skos:related asc:Organic-material ;
 .
 asc:DV
   a asc:Class ;
@@ -2754,6 +2968,7 @@ asc:DV
   skos:definition "[PO] Soils with a strongly coherent B horizon." ;
   skos:notation "DV" ;
   skos:prefLabel "Parapanic" ;
+  skos:related asc:Strongly-coherent-B-horizon ;
 .
 asc:DW
   a asc:Class ;
@@ -2767,6 +2982,7 @@ asc:DW
   skos:definition "[VE] Soils with a surface peaty horizon." ;
   skos:notation "DW" ;
   skos:prefLabel "Peaty " ;
+  skos:related asc:Peaty-horizon ;
 .
 asc:DX
   a asc:Class ;
@@ -2774,6 +2990,8 @@ asc:DX
   skos:definition "[PO] Soils with a peaty horizon and a strongly coherent B horizon." ;
   skos:notation "DX" ;
   skos:prefLabel "Peaty-Parapanic" ;
+  skos:related asc:Peaty-horizon ;
+  skos:related asc:Strongly-coherent-B-horizon ;
 .
 asc:DY
   a asc:Class ;
@@ -2781,6 +2999,8 @@ asc:DY
   skos:definition "[CA] Soils in which the major part of the B horizon has a grade of structure that is stronger than weak." ;
   skos:notation "DY" ;
   skos:prefLabel "Pedal" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
 .
 asc:DZ
   a asc:Class ;
@@ -2799,6 +3019,10 @@ asc:DZ
   skos:definition "[VE] Soils in which the B horizon directly overlies a calcrete pan." ;
   skos:notation "DZ" ;
   skos:prefLabel "Petrocalcic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Calcrete-pan ;
+  skos:related asc:Hard ;
 .
 asc:Deflation
   a skos:Concept ;
@@ -2879,6 +3103,12 @@ asc:EA
   skos:definition "[TE] Soils which overlie ferricrete, a petroferric horizon or a petroreticulate horizon." ;
   skos:notation "EA" ;
   skos:prefLabel "Petroferric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Ferricrete ;
+  skos:related asc:Petroferric-horizon ;
+  skos:related asc:Petroreticulate-horizon ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Solum ;
 .
 asc:EB
   a asc:Class ;
@@ -2886,6 +3116,7 @@ asc:EB
   skos:definition "[PO] Soils with a pipey B horizon." ;
   skos:notation "EB" ;
   skos:prefLabel "Pipey" ;
+  skos:related asc:Pipey-B-horizon ;
 .
 asc:EC
   a asc:Class ;
@@ -2897,6 +3128,9 @@ asc:EC
   skos:definition "[TE] Soils with a thin ironpan." ;
   skos:notation "EC" ;
   skos:prefLabel "Placic " ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Thin-ironpan ;
 .
 asc:ED
   a asc:Class ;
@@ -2904,13 +3138,16 @@ asc:ED
   skos:definition "[HY] Soils with a seasonal or permanent water table and in which the major part of the soil profile (or the subsoil if the profile is stratified) is mottled." ;
   skos:notation "ED" ;
   skos:prefLabel "Redoxic" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Soil-profile ;
 .
 asc:EE
   a asc:Class ;
   a skos:Concept ;
-  skos:definition "[CA} Soils in which the A horizon directly overlies a Bk horizon consisting almost entirely of soft carbonate (>80%)." ;
+  skos:definition "[CA] Soils in which the A horizon directly overlies a Bk horizon consisting almost entirely of soft carbonate (>80%)." ;
   skos:notation "EE" ;
   skos:prefLabel "Rendic" ;
+  skos:related asc:A-horizons ;
 .
 asc:EF
   a asc:Class ;
@@ -2925,6 +3162,8 @@ asc:EF
   skos:definition "[TE] Soils which overlie a reticulate horizon." ;
   skos:notation "EF" ;
   skos:prefLabel "Reticulate  " ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Reticulate-horizon ;
 .
 asc:EG
   a asc:Class ;
@@ -2941,6 +3180,10 @@ asc:EH
   skos:definition "[OR] Soils in which the dominant organic material, by thickness, is sapric peat." ;
   skos:notation "EH" ;
   skos:prefLabel "Sapric" ;
+  skos:related asc:Fibric-Peat ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Peat ;
+  skos:related asc:Sapric-Peat ;
 .
 asc:EI
   a asc:Class ;
@@ -2955,6 +3198,7 @@ asc:EJ
   skos:definition "[PO] Soils with short-term saturation in the B horizon. The saturation may be caused by impedance within the B horizon, perching of water by substrate material, or by seasonally high groundwater tables. The duration of saturation may range from several days to several weeks but is insufficient to reduce and remove significant amounts of the accumulated iron. However, there may be a greater accumulation of organic compounds and less iron in the zone of maximum saturation." ;
   skos:notation "EJ" ;
   skos:prefLabel "Semiaquic" ;
+  skos:related asc:B-horizon ;
 .
 asc:EK
   a asc:Class ;
@@ -2962,6 +3206,7 @@ asc:EK
   skos:definition "[PO] Soils with only a Bs horizon." ;
   skos:notation "EK" ;
   skos:prefLabel "Sesquic" ;
+  skos:related asc:Bs-horizon ;
 .
 asc:EL
   a asc:Class ;
@@ -2982,6 +3227,9 @@ asc:EM
   skos:definition "[TE] Soils which overlie a siliceous pan." ;
   skos:notation "EM" ;
   skos:prefLabel "Silpanic " ;
+  skos:related asc:A-horizons ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Siliceous-pan ;
 .
 asc:EN
   a asc:Class ;
@@ -2989,6 +3237,7 @@ asc:EN
   skos:definition "[FE] Soils with an A horizon having a very fine granular structure (<2 mm) and a dry consistence strength that is weak to very weak. The horizon usually has a low bulk density and may be water repellent." ;
   skos:notation "EN" ;
   skos:prefLabel "Snuffy" ;
+  skos:related asc:A-horizons ;
 .
 asc:EO
   a asc:Class ;
@@ -3001,6 +3250,8 @@ asc:EO
   skos:definition "[KU] Other soils with a B horizon in which at least the lower part is sodic." ;
   skos:notation "EO" ;
   skos:prefLabel "Sodic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Sodic ;
 .
 asc:EP
   a asc:Class ;
@@ -3008,6 +3259,10 @@ asc:EP
   skos:definition "[VE] Soils in which the upper 0.1 m of the solum is sodic and the major part of the upper 0.5 m of the solum is strongly acid." ;
   skos:notation "EP" ;
   skos:prefLabel "Episodic-Epiacidic" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:EQ
   a asc:Class ;
@@ -3015,6 +3270,10 @@ asc:EQ
   skos:definition "[HY] Soils with a clear or abrupt textural B horizon which is sodic and not strongly acid in the major part of the upper 0.2 m of the B2 horizon." ;
   skos:notation "EQ" ;
   skos:prefLabel "Sodosolic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
+  skos:related asc:Strongly-acid ;
 .
 asc:ER
   a asc:Class ;
@@ -3030,6 +3289,9 @@ asc:ES
   skos:definition "[SO] Other soils in which the major part of the upper 0.2 m of the B2t horizon has an ESP between 6 and <15." ;
   skos:notation "ES" ;
   skos:prefLabel "Subnatric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
 .
 asc:ESP
   a skos:Concept ;
@@ -3053,6 +3315,9 @@ asc:ET
   skos:definition "[DE] Soils in which the major part of the B2 horizon is strongly subplastic." ;
   skos:notation "ET" ;
   skos:prefLabel "Subplastic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Strongly-subplastic ;
 .
 asc:EU
   a asc:Class ;
@@ -3069,6 +3334,8 @@ asc:EU
   skos:note "[RU] Note: The sulfidic Great Group can be replaced by the following Great Groups where appropriate evidence is available:" ;
   skos:note "[VE] Note: The sulfidic subgroup can be replaced by the following subgroups where appropriate evidence is available:" ;
   skos:prefLabel "Sulfidic" ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Sulfidic-material ;
 .
 asc:EV
   a asc:Class ;
@@ -3085,6 +3352,8 @@ asc:EV
   skos:note "[RU] Note: The sulfuric Great Group can be replaced by the following [IW] Great Group where appropriate evidence is available:" ;
   skos:note "[VE] Note: The sulfuric subgroup can be replaced by the following [IW] subgroup where appropriate evidence is available:" ;
   skos:prefLabel "Sulfuric" ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Sulfuric-material ;
 .
 asc:EW
   a asc:Class ;
@@ -3104,6 +3373,8 @@ asc:EX
   skos:definition "[SO] Other soils with a B horizon in which at least 0.3m has vertic properties." ;
   skos:notation "EX" ;
   skos:prefLabel "Vertic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Vertic-properties ;
 .
 asc:EY
   a asc:Class ;
@@ -3113,6 +3384,8 @@ asc:EY
   skos:definition "[KU] Soils with a humose horizon and a conspicuously bleached A2 horizon." ;
   skos:notation "EY" ;
   skos:prefLabel "Humose-Bleached" ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:Humose-horizon ;
 .
 asc:EZ
   a asc:Class ;
@@ -3121,6 +3394,8 @@ asc:EZ
   skos:definition "[KU] Soils with a melacic horizon and a conspicuously bleached A2 horizon." ;
   skos:notation "EZ" ;
   skos:prefLabel "Melacic-Bleached" ;
+  skos:related asc:A2-horizon-bleached ;
+  skos:related asc:Melacic-horizon ;
 .
 asc:Eutrophic
   a skos:Concept ;
@@ -3149,6 +3424,11 @@ asc:FB
   skos:definition "[TE] Soils in which the calcareous horizon contains 20-50% of hard calcrete fragments and/or carbonate nodules or concretions." ;
   skos:notation "FB" ;
   skos:prefLabel "Supracalcic   " ;
+  skos:related asc:Calcareous-horizon ;
+  skos:related asc:Calcrete ;
+  skos:related asc:Carbonate-classes ;
+  skos:related asc:Gravel ;
+  skos:related asc:Hard ;
 .
 asc:FC
   a asc:Class ;
@@ -3158,6 +3438,9 @@ asc:FC
   skos:definition "[TE] Soils with a melanic horizon and at least some part of the B, BC or C/B horizon (if present) is calcareous." ;
   skos:notation "FC" ;
   skos:prefLabel "Melanic-Calcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Soil-profile ;
 .
 asc:FD
   a asc:Class ;
@@ -3166,6 +3449,9 @@ asc:FD
   skos:definition "[KU] Other soils in which the major part of the upper 0.2 m of the B2t horizon is sodic." ;
   skos:notation "FD" ;
   skos:prefLabel "Natric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
 .
 asc:FE
   a asc:Order ;
@@ -3399,7 +3685,7 @@ asc:FE-B-texture
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture1" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:FE-depth
   a skos:Collection ;
@@ -3437,6 +3723,7 @@ asc:FF
   skos:definition "[TE] Soils with all the requirements of a melacic horizon except the thickness." ;
   skos:notation "FF" ;
   skos:prefLabel "Submelacic     " ;
+  skos:related asc:Melacic-horizon ;
 .
 asc:FG
   a asc:Class ;
@@ -3445,6 +3732,7 @@ asc:FG
   skos:definition "[TE] Soils with all the requirements of a melanic horizon except the thickness." ;
   skos:notation "FG" ;
   skos:prefLabel "Submelanic     " ;
+  skos:related asc:Melanic-horizon ;
 .
 asc:FH
   a asc:Class ;
@@ -3452,6 +3740,7 @@ asc:FH
   skos:definition "[RE] Other soils that, other than the surface horizon, have a sand texture (<5% clay) throughout at least the upper 1.0 m of the soil profile." ;
   skos:notation "FH" ;
   skos:prefLabel "Palic" ;
+  skos:related asc:Soil-profile ;
 .
 asc:FJ
   a asc:Class ;
@@ -3470,6 +3759,8 @@ asc:FK
   skos:definition "[TE] Soils which have a ferric horizon and overlies a red-brown hardpan." ;
   skos:notation "FK" ;
   skos:prefLabel "Ferric-Duric" ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Red-brown-hardpan ;
 .
 asc:FL
   a asc:Class ;
@@ -3477,6 +3768,9 @@ asc:FL
   skos:definition "[CA] Soils in which the B horizon is strongly subplastic and the B or BC horizon contains a gypsic horizon." ;
   skos:notation "FL" ;
   skos:prefLabel "Gypsic-Subplastic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Gypsic-horizon ;
+  skos:related asc:Strongly-subplastic ;
 .
 asc:FM
   a asc:Class ;
@@ -3484,6 +3778,10 @@ asc:FM
   skos:definition "[VE] Soils in which the major part of the upper 0.5 m of the solum is calcareous and some subsurface horizon within this depth has an ESP of 15 or greater." ;
   skos:notation "FM" ;
   skos:prefLabel "Epicalcareous-Epihypersodic" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:FN
   a asc:Class ;
@@ -3491,6 +3789,10 @@ asc:FN
   skos:definition "[SO] Soils in which the major part of the upper 0.2 m of the B2t horizon is mottled and has an ESP between 6 and <15." ;
   skos:notation "FN" ;
   skos:prefLabel "Mottled-Subnatric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
 .
 asc:FO
   a asc:Class ;
@@ -3498,6 +3800,10 @@ asc:FO
   skos:definition "[SO] Soils in which the major part of the upper 0.2 m of the B2t horizon is mottled and has an ESP between 15 and 25." ;
   skos:notation "FO" ;
   skos:prefLabel "Mottled-Mesonatric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
 .
 asc:FP
   a asc:Class ;
@@ -3505,6 +3811,10 @@ asc:FP
   skos:definition "[SO] Other soils in which the major part of the upper 0.2 m of the B2t horizon is mottled and has an ESP greater than 25." ;
   skos:notation "FP" ;
   skos:prefLabel "Mottled-Hypernatric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
 .
 asc:FQ
   a asc:Class ;
@@ -3512,6 +3822,7 @@ asc:FQ
   skos:definition "[HY] Soils with structured B2 horizons and which apart from wetness fulfil the requirements for Dermosols." ;
   skos:notation "FQ" ;
   skos:prefLabel "Dermosolic" ;
+  skos:related asc:B-horizon ;
 .
 asc:FR
   a asc:Class ;
@@ -3519,6 +3830,7 @@ asc:FR
   skos:definition "[HY] Other soils with B2 horizons and which apart from wetness fulfil the requirements for Kandosols." ;
   skos:notation "FR" ;
   skos:prefLabel "Kandosolic" ;
+  skos:related asc:B-horizon ;
 .
 asc:FS
   a asc:Class ;
@@ -3526,6 +3838,8 @@ asc:FS
   skos:definition "[OR] Soils with a layer (or layers) of unconsolidated mineral material within or below the organic materials but within 0.8 m of the surface." ;
   skos:notation "FS" ;
   skos:prefLabel "Terric" ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Unconsolidated-mineral-material ;
 .
 asc:FU
   a asc:Class ;
@@ -3535,6 +3849,10 @@ asc:FU
   skos:definition "[TE] Soils with a melacic horizon and the major part of the B horizon (if present) is not strongly acid but the B and BC or C/B horizons are not calcareous." ;
   skos:notation "FU" ;
   skos:prefLabel "Melacic-Basic  " ;
+  skos:related asc:Major-part ;
+  skos:related asc:Melacic-horizon ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Strongly-acid ;
 .
 asc:FV
   a asc:Class ;
@@ -3548,6 +3866,11 @@ asc:FV
   skos:definition "[TE] Soils with a melanic horizon and the major part of the B horizon (if present) is strongly acid." ;
   skos:notation "FV" ;
   skos:prefLabel "Melanic-Acidic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Strongly-acid ;
 .
 asc:FW
   a asc:Class ;
@@ -3571,6 +3894,10 @@ asc:FY
   skos:definition "[VE] Other soils in which the major part of the upper 0.5 m of the solum is calcareous." ;
   skos:notation "FY" ;
   skos:prefLabel "Epicalcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Solum ;
 .
 asc:FZ
   a asc:Class ;
@@ -3578,6 +3905,9 @@ asc:FZ
   skos:definition "[VE] Other soils in which the major part of the solum below 0.5 m is calcareous." ;
   skos:notation "FZ" ;
   skos:prefLabel "Endocalcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:Family
   a owl:Class ;
@@ -3665,6 +3995,9 @@ asc:GA
   skos:definition "[VE] Other soils in which the major part of the upper 0.5 m of the solum is strongly acid." ;
   skos:notation "GA" ;
   skos:prefLabel "Epiacidic" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GB
   a asc:Class ;
@@ -3672,6 +4005,10 @@ asc:GB
   skos:definition "[VE] Soils in which the major part of the upper 0.5 m of the solum is calcareous and an ESP of 15 or greater occurs in some subhorizon of the solum below 0.5 m." ;
   skos:notation "GB" ;
   skos:prefLabel "Epicalcareous-Endohypersodic" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:GC
   a asc:Class ;
@@ -3679,6 +4016,9 @@ asc:GC
   skos:definition "[DE] Soils with a melacic horizon and a reticulate horizon which occurs below the B2 horizon." ;
   skos:notation "GC" ;
   skos:prefLabel "Melacic-Reticulate" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Melacic-horizon ;
+  skos:related asc:Reticulate-horizon ;
 .
 asc:GD
   a asc:Class ;
@@ -3687,6 +4027,9 @@ asc:GD
   skos:definition "[PO] Soils with a peaty horizon and a thin ironpan which occurs within or directly underlying the B horizon." ;
   skos:notation "GD" ;
   skos:prefLabel "Peaty-Placic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Peaty-horizon ;
+  skos:related asc:Thin-ironpan ;
 .
 asc:GE
   a asc:Class ;
@@ -3697,6 +4040,10 @@ asc:GE
   skos:definition "[TE] Soils which contains a ferric horizon and directly overlies ferricrete, a petroferric horizon or a petroreticulate horizon." ;
   skos:notation "GE" ;
   skos:prefLabel "Ferric-Petroferric" ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Ferricrete ;
+  skos:related asc:Petroferric-horizon ;
+  skos:related asc:Petroreticulate-horizon ;
 .
 asc:GF
   a asc:Class ;
@@ -3709,6 +4056,7 @@ asc:GF
   skos:definition "[TE] Soils which overlie other unconsolidated mineral materials." ;
   skos:notation "GF" ;
   skos:prefLabel "Regolithic " ;
+  skos:related asc:Unconsolidated-mineral-material ;
 .
 asc:GG
   a asc:Class ;
@@ -3716,6 +4064,10 @@ asc:GG
   skos:definition "[VE] Soils in which the upper 0.1 m of the solum is sodic and the major part of the solum below 0.5 m is strongly acid." ;
   skos:notation "GG" ;
   skos:prefLabel "Episodic-Endoacidic" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GH
   a asc:Class ;
@@ -3723,6 +4075,10 @@ asc:GH
   skos:definition "[VE] Soils in which the upper 0.1 m of the solum is sodic and the major part of the upper 0.5 m of the solum is calcareous." ;
   skos:notation "GH" ;
   skos:prefLabel "Episodic-Epicalcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
+  skos:related asc:Solum ;
 .
 asc:GI
   a asc:Class ;
@@ -3730,6 +4086,10 @@ asc:GI
   skos:definition "[VE] Soils in which the upper 0.1 m of the solum is sodic and the major part of the solum below 0.5 m is calcareous." ;
   skos:notation "GI" ;
   skos:prefLabel "Episodic-Endocalcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
+  skos:related asc:Solum ;
 .
 asc:GJ
   a asc:Class ;
@@ -3737,6 +4097,10 @@ asc:GJ
   skos:definition "[VE] Soils in which the major part of the upper 0.5 m of the solum is calcareous and the major part of the solum below 0.5 m is strongly acid." ;
   skos:notation "GJ" ;
   skos:prefLabel "Epicalcareous-Endoacidic" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GK
   a asc:Class ;
@@ -3744,6 +4108,10 @@ asc:GK
   skos:definition "[VE] Soils in which the major part of the upper 0.5 m of the solum is strongly acid and mottled." ;
   skos:notation "GK" ;
   skos:prefLabel "Epiacidic-Mottled" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GL
   a asc:Class ;
@@ -3751,6 +4119,10 @@ asc:GL
   skos:definition "[VE] Soils in which the major part of the solum below 0.5 m is strongly acid and mottled." ;
   skos:notation "GL" ;
   skos:prefLabel "Endoacidic-Mottled" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GM
   a asc:Class ;
@@ -3758,6 +4130,10 @@ asc:GM
   skos:definition "[VE] Soils in which the major part of the solum below 0.5 m is calcareous and some subhorizon of the solum below 0.5 m has an ESP of 15 or greater." ;
   skos:notation "GM" ;
   skos:prefLabel "Endocalcareous-Endohypersodic" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:GN
   a asc:Class ;
@@ -3765,6 +4141,9 @@ asc:GN
   skos:definition "[VE] Soils in which some subsurface horizon within the upper 0.5 m of the solum has an ESP of 15 or greater and the major part of the solum below 0.5 m is strongly acid." ;
   skos:notation "GN" ;
   skos:prefLabel "Epihypersodic-Endoacidic " ;
+  skos:related asc:ESP ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GO
   a asc:Class ;
@@ -3772,6 +4151,10 @@ asc:GO
   skos:definition "[VE] Soils in which some subsurface horizon within the upper 0.5 m of the solum has an ESP of 15 or greater and the major part of the solum below 0.5 m is calcareous." ;
   skos:notation "GO" ;
   skos:prefLabel "Epihypersodic-Endocalcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:GP
   a asc:Class ;
@@ -3780,6 +4163,9 @@ asc:GP
   skos:definition "[KU] Soils with an exchangeable Ca/Mg ratio of less than 0.1 in the major part of the B2t horizon, and the major part of the upper 0.2 m of the B2t horizon is sodic." ;
   skos:notation "GP" ;
   skos:prefLabel "Magnesic-Natric" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
 .
 asc:GQ
   a asc:Class ;
@@ -3787,6 +4173,10 @@ asc:GQ
   skos:definition "[VE] Soils in which the upper 0.1 m of the solum is sodic and a gypsic horizon is present within the B or BC horizon." ;
   skos:notation "GQ" ;
   skos:prefLabel "Episodic-Gypsic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Gypsic-horizon ;
+  skos:related asc:Sodic ;
+  skos:related asc:Solum ;
 .
 asc:GR
   a asc:Class ;
@@ -3801,6 +4191,7 @@ asc:GS
   skos:definition "[VE] Soils with a pedal (stronger than weak grade, blocky or polyhedral) A horizon which is either not or only weakly self-mulching, and there is no surface crusty horizon. Some soils after wetting and drying may form a thin 5-10 mm surface flake which cracks into irregular polygons (plates) 30-100 mm diameter. These may be readily separated and removed from the underlying pedal clay." ;
   skos:notation "GS" ;
   skos:prefLabel "Epipedal" ;
+  skos:related asc:A-horizons ;
 .
 asc:GT
   a asc:Class ;
@@ -3818,6 +4209,10 @@ asc:GU
   skos:definition "[TE] Soils with a humose horizon and at least some part of the B, BC or C/B horizon (if present) is calcareous." ;
   skos:notation "GU" ;
   skos:prefLabel "Humose-Calcareous" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Humose-horizon ;
+  skos:related asc:Soil-profile ;
 .
 asc:GV
   a asc:Class ;
@@ -3835,6 +4230,11 @@ asc:GW
   skos:definition "[KA] Soils with a ferric horizon within the solum and a B2 horizon in which the major part is strongly acid." ;
   skos:notation "GW" ;
   skos:prefLabel "Ferric-Acidic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GX
   a asc:Class ;
@@ -3844,6 +4244,11 @@ asc:GX
   skos:definition "[KA] Soils with a manganic horizon within the solum and a B2 horizon in which the major part is strongly acid." ;
   skos:notation "GX" ;
   skos:prefLabel "Manganic-Acidic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Manganic-horizon ;
+  skos:related asc:Solum ;
+  skos:related asc:Strongly-acid ;
 .
 asc:GY
   a asc:Class ;
@@ -3857,6 +4262,11 @@ asc:GY
   skos:definition "[TE] Soils with a humose horizon and the major part of the B horizon (if present) is strongly acid." ;
   skos:notation "GY" ;
   skos:prefLabel "Humose-Acidic " ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Humose-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Strongly-acid ;
 .
 asc:Gley-colours
   a skos:Concept ;
@@ -3876,14 +4286,14 @@ For clarity in this publication the levels in the classification are capitalised
   skos:member asc:Andic-properties ;
   skos:member asc:Argic-horizon ;
   skos:member asc:Ash-material ;
-  skos:member asc:B-horizons ;
+  skos:member asc:B-horizon ;
   skos:member asc:Base-status ;
   skos:member asc:Bauxitic-horizon ;
   skos:member asc:Calcareous ;
   skos:member asc:Calcareous-horizon ;
   skos:member asc:Calcrete ;
   skos:member asc:Calcrete-pan ;
-  skos:member asc:Carbic-materials ;
+  skos:member asc:Carbic-material ;
   skos:member asc:Carbonate-classes ;
   skos:member asc:Cemented-pans ;
   skos:member asc:Clear-or-abrupt-textural-B-horizon ;
@@ -3923,9 +4333,9 @@ For clarity in this publication the levels in the classification are capitalised
   skos:member asc:Melacic-horizon ;
   skos:member asc:Melanic-horizon ;
   skos:member asc:Mesotrophic ;
-  skos:member asc:Monosulfidic-materials ;
+  skos:member asc:Monosulfidic-material ;
   skos:member asc:Mottled-horizon ;
-  skos:member asc:Organic-materials ;
+  skos:member asc:Organic-material ;
   skos:member asc:Peat ;
   skos:member asc:Peaty-horizon ;
   skos:member asc:Pedologic-organisation ;
@@ -3950,12 +4360,12 @@ For clarity in this publication the levels in the classification are capitalised
   skos:member asc:Subaqueous-soil ;
   skos:member asc:Subplastic ;
   skos:member asc:Subtidal-soil ;
-  skos:member asc:Sulfidic-materials ;
-  skos:member asc:Sulfuric-materials ;
-  skos:member asc:Tephric-materials ;
+  skos:member asc:Sulfidic-material ;
+  skos:member asc:Sulfuric-material ;
+  skos:member asc:Tephric-material ;
   skos:member asc:Thin-ironpan ;
-  skos:member asc:Transitional-horizons ;
-  skos:member asc:Unconsolidated-mineral-materials ;
+  skos:member asc:Transitional-horizon ;
+  skos:member asc:Unconsolidated-mineral-material ;
   skos:member asc:Vertic-properties ;
   skos:member asc:Vesicular-pores ;
   skos:member asc:Water-repellence ;
@@ -4052,6 +4462,9 @@ asc:HA
   skos:definition "[DE] Soils with a melanic horizon and a B horizon in which at least the lower part is sodic." ;
   skos:notation "HA" ;
   skos:prefLabel "Melanic-Sodic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Sodic ;
 .
 asc:HB
   a asc:Class ;
@@ -4062,6 +4475,10 @@ asc:HB
   skos:definition "[KU] Soils in which the major part of the B2t horizon is mottled and at least the lower part of the B horizon is sodic." ;
   skos:notation "HB" ;
   skos:prefLabel "Mottled-Sodic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
+  skos:related asc:Sodic ;
 .
 asc:HC
   a asc:Class ;
@@ -4072,6 +4489,10 @@ asc:HC
   skos:definition "[KA] Soils with a ferric horizon within the solum and a B horizon in which at least the lower part is sodic." ;
   skos:notation "HC" ;
   skos:prefLabel "Ferric-Sodic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Sodic ;
+  skos:related asc:Solum ;
 .
 asc:HD
   a asc:Class ;
@@ -4079,6 +4500,8 @@ asc:HD
   skos:definition "[OR] Soils in which the organic materials directly overlie fragmental material such as Gravel, cobbles or stones in which the interstices are filled or partially filled with organic material." ;
   skos:notation "HD" ;
   skos:prefLabel "Rudaceous" ;
+  skos:related asc:Gravel ;
+  skos:related asc:Organic-material ;
 .
 asc:HE
   a asc:Class ;
@@ -4087,6 +4510,10 @@ asc:HE
 Soils in which the major part of the solum below 0.5 m is calcareous and the major part of the upper 0.5 m of the solum is mottled.""" ;
   skos:notation "HE" ;
   skos:prefLabel "Endocalcareous-Mottled" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Mottled-horizon ;
+  skos:related asc:Solum ;
 .
 asc:HF
   a asc:Class ;
@@ -4097,6 +4524,8 @@ asc:HF
   skos:definition "[TE] Soils which have formed in tephric materials that may be visibly stratified." ;
   skos:notation "HF" ;
   skos:prefLabel "Tephric " ;
+  skos:related asc:Gravel ;
+  skos:related asc:Tephric-material ;
 .
 asc:HG
   a asc:Class ;
@@ -4104,6 +4533,7 @@ asc:HG
   skos:definition "[RU] Soils in which the upper 0.5 m (or less if the profile is shallower) consists dominantly of carbic materials." ;
   skos:notation "HG" ;
   skos:prefLabel "Carbic" ;
+  skos:related asc:Carbic-material ;
 .
 asc:HH
   a asc:Class ;
@@ -4111,6 +4541,7 @@ asc:HH
   skos:definition "[RU] Soils that consist dominantly of unconsolidated mineral materials which are gravelly (>10% >2 mm). The gravel may occur as distinct layers, or be uniformly or irregularly distributed." ;
   skos:notation "HH" ;
   skos:prefLabel "Clastic" ;
+  skos:related asc:Gravel ;
 .
 asc:HI
   a asc:Class ;
@@ -4118,6 +4549,7 @@ asc:HI
   skos:definition "[RU] Soils in which the gravel consists of usually unsorted material with a wide size range. It is largely colluvial mass movement debris, including scree and talus, and landslide, mudflow and creep deposits." ;
   skos:notation "HI" ;
   skos:prefLabel "Colluvic" ;
+  skos:related asc:Gravel ;
 .
 asc:HJ
   a asc:Class ;
@@ -4125,6 +4557,7 @@ asc:HJ
   skos:definition "[RU] Other soils in which the unconsolidated mineral materials are dominated by gravel which mostly consists of rock or mineral fragments." ;
   skos:notation "HJ" ;
   skos:prefLabel "Lithosolic" ;
+  skos:related asc:Gravel ;
 .
 asc:HK
   a asc:Class ;
@@ -4132,6 +4565,8 @@ asc:HK
   skos:definition "[CA] Soils in which the upper 0.1 m of the solum consists of dominantly soft, finely divided carbonate (visual estimate), and/or contains more than 40%2 (by analysis) of soft, finely divided carbonate." ;
   skos:notation "HK" ;
   skos:prefLabel "Supravescent" ;
+  skos:related asc:Carbonate-classes ;
+  skos:related asc:Solum ;
 .
 asc:HL
   a asc:Class ;
@@ -4139,6 +4574,8 @@ asc:HL
   skos:definition "[HY] Other soils with sulfidic materials in the A or near surface horizons." ;
   skos:notation "HL" ;
   skos:prefLabel "Episulfidic" ;
+  skos:related asc:A-horizons ;
+  skos:related asc:Sulfidic-material ;
 .
 asc:HM
   a asc:Class ;
@@ -4146,6 +4583,9 @@ asc:HM
   skos:definition "[HY] Soils with sulfidic materials in the A or near surface horizons and which directly overlie a calcrete pan." ;
   skos:notation "HM" ;
   skos:prefLabel "Episulfidic-Petrocalcic" ;
+  skos:related asc:A-horizons ;
+  skos:related asc:Calcrete-pan ;
+  skos:related asc:Sulfidic-material ;
 .
 asc:HN
   a asc:Class ;
@@ -4153,6 +4593,10 @@ asc:HN
   skos:definition "[PO] Soils with a densipan present in the A2 horizon and a thin ironpan which occurs within or directly underlying the B horizon." ;
   skos:notation "HN" ;
   skos:prefLabel "Densic-Placic" ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Densipan ;
+  skos:related asc:Thin-ironpan ;
 .
 asc:HO
   a asc:Class ;
@@ -4162,6 +4606,10 @@ asc:HO
   skos:definition "[KA] Soils in which the major part of the B2 horizon is strongly acid and at least the lower part of the B horizon is sodic." ;
   skos:notation "HO" ;
   skos:prefLabel "Acidic-Sodic" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Sodic ;
+  skos:related asc:Strongly-acid ;
 .
 asc:HR
   a asc:Class ;
@@ -4309,7 +4757,7 @@ asc:HY-B-texture
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture1" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:HY-BT
   a asc:Suborder ;
@@ -4706,6 +5154,7 @@ asc:HZ
   skos:definition "[OR] ash material" ;
   skos:notation "HZ" ;
   skos:prefLabel "Ashy" ;
+  skos:related asc:Ash-material ;
 .
 asc:Hard
   a skos:Concept ;
@@ -4745,7 +5194,7 @@ Figure 2. Limits of organic and humose soil materials (after Avery 1990).
 The dashed line is used for materials seldom saturated with water.
 </p>"""^^rdf:HTML ;
   skos:prefLabel "Humose horizon" ;
-  skos:related asc:Organic-materials ;
+  skos:related asc:Organic-material ;
   skos:related asc:TE-CY ;
 .
 asc:Hypersulfidic-material
@@ -4796,6 +5245,7 @@ asc:IA
   skos:definition "[TE] Soils with a transitional horizon (C/B) occurring in fissures in the parent rock or saprolite which contains between 10 and 50% of B horizon material (including pedogenic carbonate)." ;
   skos:notation "IA" ;
   skos:prefLabel "Inceptic " ;
+  skos:related asc:B-horizon ;
 .
 asc:IB
   a asc:Class ;
@@ -4804,6 +5254,9 @@ asc:IB
   skos:definition "[RE] Soils that are not calcareous in the A1 or Ap horizon, or to a depth of 0.2 m if the A1 horizon is only weakly developed." ;
   skos:notation "IB" ;
   skos:prefLabel "Epibasic" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Ap-horizon ;
+  skos:related asc:Calcareous ;
 .
 asc:IC
   a asc:Class ;
@@ -4820,6 +5273,7 @@ asc:ID
   skos:definition "[TE] Soils with all the requirements for a peaty horizon except the thickness." ;
   skos:notation "ID" ;
   skos:prefLabel "Subpeaty   " ;
+  skos:related asc:Peaty-horizon ;
 .
 asc:IE
   a asc:Class ;
@@ -4828,6 +5282,8 @@ asc:IE
   skos:definition "[SO] Soils with fine earth effervescence (1M HCl) throughout the solum." ;
   skos:notation "IE" ;
   skos:prefLabel "Effervescent" ;
+  skos:related asc:Fine-earth ;
+  skos:related asc:Solum ;
 .
 asc:IF
   a asc:Class ;
@@ -4835,6 +5291,7 @@ asc:IF
   skos:definition "[OR] Soils that are more or less freely drained and are never saturated for more than several days unless rain is falling and contain organic materials which occur as in Definition (ii) of Organosols." ;
   skos:notation "IF" ;
   skos:prefLabel "Folic" ;
+  skos:related asc:Organic-material ;
 .
 asc:IG
   a asc:Class ;
@@ -4842,6 +5299,8 @@ asc:IG
   skos:definition "[PO] Soils with a Bhs/Bs horizon." ;
   skos:notation "IG" ;
   skos:prefLabel "Humosesquic/Sesquic" ;
+  skos:related asc:Bhs-horizon ;
+  skos:related asc:Bs-horizon ;
 .
 asc:IH
   a asc:Class ;
@@ -4849,6 +5308,7 @@ asc:IH
   skos:definition "[PO] Soils with a Bh/Basi horizon." ;
   skos:notation "IH" ;
   skos:prefLabel "Humic/Alsilic" ;
+  skos:related asc:Bh-Basi-horizon ;
 .
 asc:IJ
   a asc:Class ;
@@ -4856,6 +5316,10 @@ asc:IJ
   skos:definition "[OR] Soils in which layers of humose, melacic and/or melanic horizon material underlie the organic materials and overlie the substrate." ;
   skos:notation "IJ" ;
   skos:prefLabel "Modic" ;
+  skos:related asc:Humose-horizon ;
+  skos:related asc:Melacic-horizon ;
+  skos:related asc:Melanic-horizon ;
+  skos:related asc:Organic-material ;
 .
 asc:IL
   a asc:Class ;
@@ -4864,6 +5328,9 @@ asc:IL
   skos:definition "[TE] Soils with a ferric or bauxitic horizon (nodules or concretions) that is at least 0.2 m thick and occupies >50% of the solum depth. The solum depth excludes cemented layers. Genetically these soils may be closely related to Podosols" ;
   skos:notation "IL" ;
   skos:prefLabel "Sesqui-Nodular" ;
+  skos:related asc:Bauxitic-horizon ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Solum ;
 .
 asc:IM
   a asc:Class ;
@@ -4872,6 +5339,9 @@ asc:IM
   skos:definition "[TE] Soils with a horizon containing more than 20% of fine earth carbonate that is at least 0.2 m thick." ;
   skos:notation "IM" ;
   skos:prefLabel "Calcenic" ;
+  skos:related asc:Carbonate-classes ;
+  skos:related asc:Fine-earth ;
+  skos:related asc:Horizon ;
 .
 asc:IS
   a asc:Class ;
@@ -4881,6 +5351,8 @@ asc:IS
   skos:definition "[TE] Soils which contain a ferric horizon and which overlie a reticulate horizon." ;
   skos:notation "IS" ;
   skos:prefLabel "Ferric-Reticulate" ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Reticulate-horizon ;
 .
 asc:IT
   a asc:Class ;
@@ -4889,6 +5361,8 @@ asc:IT
   skos:definition "[HY] Soils that have been partly modified by high temperature burning of organic materials. Such soils have surface layers that comprise >20% of fusic material." ;
   skos:notation "IT" ;
   skos:prefLabel "Fusic" ;
+  skos:related asc:Fusic-material ;
+  skos:related asc:Organic-material ;
 .
 asc:IU
   a asc:Class ;
@@ -4914,6 +5388,9 @@ asc:IW
   skos:definition "[VE] Soils in which both monosulfidic material and sulfuric material (at least 0.15 m thick) occur within the upper 1.5 m of the profile." ;
   skos:notation "IW" ;
   skos:prefLabel "Monosulfidic - Sulfuric" ;
+  skos:related asc:Monosulfidic-material ;
+  skos:related asc:Soil-profile ;
+  skos:related asc:Sulfuric-material ;
 .
 asc:IX
   a asc:Class ;
@@ -4925,6 +5402,9 @@ asc:IX
   skos:definition "[VE] Soils in which both monosulfidic material and hypersulfidic material occur within the upper 1.5 m of the profile." ;
   skos:notation "IX" ;
   skos:prefLabel "Monohypersulfidic" ;
+  skos:related asc:Hypersulfidic-material ;
+  skos:related asc:Monosulfidic-material ;
+  skos:related asc:Soil-profile ;
 .
 asc:IY
   a asc:Class ;
@@ -4932,6 +5412,9 @@ asc:IY
   skos:definition "[HY] Soils which are dominated by organic materials to a depth of 0.5 m and which have hypersulfidic material within the upper 1.5 m of the profile." ;
   skos:notation "IY" ;
   skos:prefLabel "Histic-Hypersulfidic" ;
+  skos:related asc:Hypersulfidic-material ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Soil-profile ;
 .
 asc:IZ
   a asc:Class ;
@@ -4943,6 +5426,8 @@ asc:IZ
   skos:definition "[VE] Other soils in which hypersulfidic material occurs within the upper 1.5 m of the profile." ;
   skos:notation "IZ" ;
   skos:prefLabel "Hypersulfidic" ;
+  skos:related asc:Hypersulfidic-material ;
+  skos:related asc:Soil-profile ;
 .
 asc:J
   a asc:Texture ;
@@ -4961,6 +5446,9 @@ asc:JA
   skos:definition "[VE] Soils in which both monosulfidic material and hyposulfidic material occur within the upper 1.5 m of the profile." ;
   skos:notation "JA" ;
   skos:prefLabel "Monohyposulfidic" ;
+  skos:related asc:Hyposulfidic-material ;
+  skos:related asc:Monosulfidic-material ;
+  skos:related asc:Soil-profile ;
 .
 asc:JB
   a asc:Class ;
@@ -4968,6 +5456,9 @@ asc:JB
   skos:definition "[HY] Other soils which are dominated by organic materials to a depth of 0.5 m and which have hyposulfidic material within the upper 1.5 m of the profile." ;
   skos:notation "JB" ;
   skos:prefLabel "Histic-Hyposulfidic" ;
+  skos:related asc:Hyposulfidic-material ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Soil-profile ;
 .
 asc:JC
   a asc:Class ;
@@ -4979,6 +5470,8 @@ asc:JC
   skos:definition "[VE] Other soils with hyposulfidic material within the upper 1.5 m of the profile." ;
   skos:notation "JC" ;
   skos:prefLabel "Hyposulfidic" ;
+  skos:related asc:Hyposulfidic-material ;
+  skos:related asc:Soil-profile ;
 .
 asc:JD
   a asc:Class ;
@@ -4986,6 +5479,9 @@ asc:JD
   skos:definition "[PO] Soils with long-term saturation in the B horizon and sulfuric material (at least 15 cm thick) is present in the A or B horizons." ;
   skos:notation "JD" ;
   skos:prefLabel "Aquic-Sulfuric" ;
+  skos:related asc:A-horizons ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Sulfuric-material ;
 .
 asc:JE
   a asc:Class ;
@@ -4993,6 +5489,9 @@ asc:JE
   skos:definition "[PO] Soils with long-term saturation in the B horizon and hypersulfidic material is present in the A or B horizons." ;
   skos:notation "JE" ;
   skos:prefLabel "Aquic-Hypersulfidic" ;
+  skos:related asc:A-horizons ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Hypersulfidic-material ;
 .
 asc:JF
   a asc:Class ;
@@ -5000,6 +5499,10 @@ asc:JF
   skos:definition "[VE] Soils with a ferric horizon within the solum, and in which the major part of the solum below 0.5m has an ESP of 15 or greater." ;
   skos:notation "JF" ;
   skos:prefLabel "Ferric-Endohypersodic " ;
+  skos:related asc:ESP ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:JG
   a asc:Class ;
@@ -5007,6 +5510,10 @@ asc:JG
   skos:definition "[VE] Soils with a manganic horizon within the solum, and in which the major part of the solum below 0.5m has an ESP of 15 or greater." ;
   skos:notation "JG" ;
   skos:prefLabel "Manganic-Endohypersodic" ;
+  skos:related asc:ESP ;
+  skos:related asc:Major-part ;
+  skos:related asc:Manganic-horizon ;
+  skos:related asc:Solum ;
 .
 asc:JH
   a asc:Class ;
@@ -5014,6 +5521,10 @@ asc:JH
   skos:definition "[VE] Soils with a ferric horizon within the solum, and in which the major part of the solum below 0.5m is calcareous." ;
   skos:notation "JH" ;
   skos:prefLabel "Ferric-Endocalcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Ferric-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Solum ;
 .
 asc:JI
   a asc:Class ;
@@ -5021,6 +5532,10 @@ asc:JI
   skos:definition "[VE] Soils with a manganic horizon within the solum, and in which the major part of the solum below 0.5m is calcareous." ;
   skos:notation "JI" ;
   skos:prefLabel "Manganic-Endocalcareous" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Major-part ;
+  skos:related asc:Manganic-horizon ;
+  skos:related asc:Solum ;
 .
 asc:JK
   a asc:Class ;
@@ -5028,6 +5543,8 @@ asc:JK
   skos:definition "[RE] The major part of the upper 0.5 m of the soil profile consists of materials with < 50% halite crystals." ;
   skos:notation "JK" ;
   skos:prefLabel "Subhalic" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Soil-profile ;
 .
 asc:JL
   a asc:Class ;
@@ -5035,6 +5552,7 @@ asc:JL
   skos:definition "[RE] Soils with a layer or horizon, other than the surface horizon, that has a clayey sand or loamy sand texture (about 5-10% clay) that begins within the upper 1.0 m of the soil profile." ;
   skos:notation "JL" ;
   skos:prefLabel "Tenic" ;
+  skos:related asc:Soil-profile ;
 .
 asc:JM
   a asc:Class ;
@@ -5049,6 +5567,10 @@ asc:JN
   skos:definition "[RE] Other soils which are calcareous throughout (at least the upper 1.0 m of the soil profile), or calcareous at least below the A1 or Ap horizon, or calcareous within a depth of 0.2 m (whichever is shallower)" ;
   skos:notation "JN" ;
   skos:prefLabel "Calsilic" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:Ap-horizon ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Soil-profile ;
 .
 asc:JP
   a asc:Class ;
@@ -5056,6 +5578,8 @@ asc:JP
   skos:definition "[RE] Soils with a layer or horizon, other than the surface horizon, that has a light sandy loam texture (about 10-15% clay) that begins within the upper 1.0 m of the soil profile. Kandic Arenosols have affinities with Kandosols but are too sandy." ;
   skos:notation "JP" ;
   skos:prefLabel "Kandic" ;
+  skos:related asc:Horizon ;
+  skos:related asc:Soil-profile ;
 .
 asc:JQ
   a asc:Class ;
@@ -5066,6 +5590,8 @@ asc:JQ
   skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel." ;
   skos:notation "JQ" ;
   skos:prefLabel "Gritty" ;
+  skos:related asc:Gritty ;
+  skos:related asc:Major-part ;
 .
 asc:JR
   a asc:Class ;
@@ -5073,6 +5599,8 @@ asc:JR
   skos:definition "[RE] Soils in which the major part of the upper 1.5 m of the soil profile consists of visible heavy or opaque minerals (>3%) that may also be visibly stratified (identifiable by wet panning in the field)." ;
   skos:notation "JR" ;
   skos:prefLabel "Gravic" ;
+  skos:related asc:Major-part ;
+  skos:related asc:Soil-profile ;
 .
 asc:JT
   a asc:Class ;
@@ -5081,6 +5609,10 @@ asc:JT
   skos:definition "[RE] Soils which are calcareous throughout (at least the upper 1.0 m of the soil profile). The upper 0.1 m of the soil profile consists of dominantly fine earth carbonate (visual estimate) and/or contains more than 40% (by analysis) of fine earth carbonate." ;
   skos:notation "JT" ;
   skos:prefLabel "Carbonatic" ;
+  skos:related asc:Calcareous ;
+  skos:related asc:Carbonate-classes ;
+  skos:related asc:Fine-earth ;
+  skos:related asc:Solum ;
 .
 asc:JU
   a asc:Class ;
@@ -5088,6 +5620,7 @@ asc:JU
   skos:definition "[RU] Soils that directly overlie a coquina substrate." ;
   skos:notation "JU" ;
   skos:prefLabel "Coquinic" ;
+  skos:related asc:Coquina ;
 .
 asc:JV
   a asc:Class ;
@@ -5096,6 +5629,9 @@ asc:JV
   skos:definition "[TE] Soils in which a major part of the upper 1.0 m has a distinct gritty feel and overlies a siliceous pan." ;
   skos:notation "JV" ;
   skos:prefLabel "Gritty-Silpanic " ;
+  skos:related asc:Gritty ;
+  skos:related asc:Major-part ;
+  skos:related asc:Siliceous-pan ;
 .
 asc:JW
   a asc:Class ;
@@ -5104,6 +5640,9 @@ asc:JW
   skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel and overlies hard rock." ;
   skos:notation "JW" ;
   skos:prefLabel "Gritty-Lithic " ;
+  skos:related asc:Gritty ;
+  skos:related asc:Hard ;
+  skos:related asc:Major-part ;
 .
 asc:JX
   a asc:Class ;
@@ -5112,6 +5651,8 @@ asc:JX
   skos:definition "[TE] Soils in which the major part of the upper 1.0 m has a distinct gritty feel and overlies partially weathered or decomposed rock or saprolite." ;
   skos:notation "JX" ;
   skos:prefLabel "Gritty-Paralithic" ;
+  skos:related asc:Gritty ;
+  skos:related asc:Major-part ;
 .
 asc:JZ
   a asc:Alteration ;
@@ -5119,6 +5660,7 @@ asc:JZ
   skos:definition "[OR] ≥20% fusic material" ;
   skos:notation "JZ" ;
   skos:prefLabel "Vitric" ;
+  skos:related asc:Fusic-material ;
 .
 asc:K
   a asc:Texture ;
@@ -5815,7 +6357,7 @@ asc:KU-B-texture
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture1" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:KU-depth
   a skos:Collection ;
@@ -5951,13 +6493,13 @@ asc:Mesotrophic
   skos:prefLabel "Mesotrophic" ;
   skos:related asc:Base-status ;
 .
-asc:Monosulfidic-materials
+asc:Monosulfidic-material
   a skos:Concept ;
   skos:definition """Of the three kinds of sulfidic materials, monosulfidic material is the only one that contains high concentrations of detectable monosulfides (≥ 0.01% acid volatile sulfide). Monosulfidic material is conceptually similar to monosulfidic black ooze [MBO (Sullivan et al. 2002)]. However, it differs from MBO in that monosulfidic material encompasses a wider array of soil textures and consistencies. For example, monosulfidic material includes sands with > 0.01% acid volatile sulfide, which are excluded (on the basis of soil consistence) from being MBOs.
 
 Field identification features for monosulfidic material include: (i) complete saturation; (ii) an ooze -like consistency and low bulk density (for non-sands); (iii) a change in colour on exposure from black (dark) to greyish (lighter) colours; (iv) the lead acetate test paper for hydrogen sulfide, and (v) a \"rotten egg\" smell of hydrogen sulfide using the so-called 'whiff test' of Darmody et al., (1977) (Caution: hydrogen sulfide is a toxic gas and care should be taken with this test - a broad sweep of the hand to the nose in the open air whilst approaching a small sample of the material is commonly""" ;
   skos:notation "de" ;
-  skos:prefLabel "Monosulfidic materials" ;
+  skos:prefLabel "Monosulfidic material" ;
 .
 asc:Mottled-horizon
   a skos:Concept ;
@@ -6061,6 +6603,15 @@ In some north Queensland seasonal swamps, thick peats can have 0.3–0.4 m of sa
   skos:narrower asc:OR-EH ;
   skos:notation "OR" ;
   skos:prefLabel "Organosols" ;
+  skos:related asc:CK ;
+  skos:related asc:DG ;
+  skos:related asc:DK ;
+  skos:related asc:Diagnostic_features ;
+  skos:related asc:Gravel ;
+  skos:related asc:Hard ;
+  skos:related asc:Organic-material ;
+  skos:related asc:Peat ;
+  skos:related asc:Peaty-horizon ;
 .
 asc:OR-BW
   a asc:Suborder ;
@@ -6162,7 +6713,7 @@ asc:OR-altered
   skos:member asc:P ;
   skos:note "(use only if feature present; choose dominant feature if more than one present)" ;
   skos:prefLabel "Nature of altered organic materials" ;
-  skos:related asc:Organic-materials ;
+  skos:related asc:Organic-material ;
 .
 asc:OR-depth
   a skos:Collection ;
@@ -6193,7 +6744,7 @@ asc:OR-thickness
   skos:member asc:D ;
   skos:note "(sum of the consecutive O1, O2, P1 and P2 horizons)" ;
   skos:prefLabel "Cumulative thickness of uppermost organic materials" ;
-  skos:related asc:Organic-materials ;
+  skos:related asc:Organic-material ;
 .
 asc:OR-underlying-texture
   a skos:Collection ;
@@ -6204,7 +6755,7 @@ asc:OR-underlying-texture
   skos:member asc:O ;
   skos:member asc:Z ;
   skos:prefLabel "Dominant texture of the B, C or D horizons directly underlying the deepest organic materials" ;
-  skos:related asc:Organic-materials ;
+  skos:related asc:Organic-material ;
 .
 asc:OR-upper-texture
   a skos:Collection ;
@@ -6216,7 +6767,7 @@ asc:OR-upper-texture
   skos:member asc:OF ;
   skos:member asc:Z ;
   skos:prefLabel "Dominant type or texture of the uppermost organic materials (O2, P1 or P2 if present)" ;
-  skos:related asc:Organic-materials ;
+  skos:related asc:Organic-material ;
 .
 asc:Order
   a owl:Class ;
@@ -6249,7 +6800,7 @@ asc:Organic-instances
   skos:member asc:OR-upper-texture ;
   skos:prefLabel "Instances of family criteria related to Organic materials" ;
 .
-asc:Organic-materials
+asc:Organic-material
   a skos:Concept ;
   skos:definition """<p>
 These are plant-derived organic accumulations that are either:
@@ -6283,7 +6834,7 @@ Loss-on-ignition (LOI) may also be used as an estimate of organic carbon. For no
         </tr>
       </table>"""^^rdf:HTML ;
   skos:notation "bd" ;
-  skos:prefLabel "Organic materials" ;
+  skos:prefLabel "Organic material" ;
 .
 asc:Organic-type
   a owl:Class ;
@@ -6332,6 +6883,12 @@ Some Podosols with deep diagnostic B horizons may classify initially as Bleached
   skos:narrower asc:PO-JE ;
   skos:notation "PO" ;
   skos:prefLabel "Podosols" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Bh-horizon ;
+  skos:related asc:Bhs-horizon ;
+  skos:related asc:Bs-horizon ;
+  skos:related asc:Podosol-diagnostic-horizons ;
+  skos:related asc:Soil-profile ;
 .
 asc:PO-A1-texture
   a skos:Collection ;
@@ -6387,6 +6944,11 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
   skos:broader asc:PO ;
   skos:notation "PO-AL" ;
   skos:prefLabel "Aeric Podosol" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Diagnostic_features ;
+  skos:related asc:pH ;
 .
 asc:PO-AM
   a asc:Suborder ;
@@ -6420,6 +6982,11 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
   skos:broader asc:PO ;
   skos:notation "PO-AM" ;
   skos:prefLabel "Aquic Podosol" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Diagnostic_features ;
+  skos:related asc:pH ;
 .
 asc:PO-B-texture
   a skos:Collection ;
@@ -6428,7 +6995,7 @@ asc:PO-B-texture
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture1" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:PO-EJ
   a asc:Suborder ;
@@ -6467,6 +7034,11 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
   skos:broader asc:PO ;
   skos:notation "PO-EJ" ;
   skos:prefLabel "Semiaquic Podosol" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Diagnostic_features ;
+  skos:related asc:pH ;
 .
 asc:PO-JD
   a asc:Suborder ;
@@ -6500,6 +7072,11 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
   skos:broader asc:PO ;
   skos:notation "PO-JD" ;
   skos:prefLabel "Aquic-Sulfuric Podosol" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Diagnostic_features ;
+  skos:related asc:pH ;
 .
 asc:PO-JE
   a asc:Suborder ;
@@ -6533,6 +7110,11 @@ The term 'parapanic' is meant to imply 'pan-like'. Note also that the A1 horizon
   skos:broader asc:PO ;
   skos:notation "PO-JE" ;
   skos:prefLabel "Aquic-Hypersulfidic Podosol" ;
+  skos:related asc:A1-horizon ;
+  skos:related asc:A2-horizon ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Diagnostic_features ;
+  skos:related asc:pH ;
 .
 asc:PO-depth
   a skos:Collection ;
@@ -6553,6 +7135,7 @@ asc:PO-gravel
   skos:member asc:H ;
   skos:member asc:I ;
   skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
 asc:PO-water
@@ -6579,7 +7162,7 @@ asc:Peaty-horizon
   skos:notation "bf" ;
   skos:prefLabel "Peaty horizon (P and O2 horizons in Field Handbook)" ;
   skos:related asc:OR ;
-  skos:related asc:Organic-materials ;
+  skos:related asc:Organic-material ;
   skos:related asc:TE-CY ;
 .
 asc:Pedologic-organisation
@@ -6601,28 +7184,28 @@ asc:Petroreticulate-horizon
   skos:prefLabel "Petroreticulate horizon" ;
   skos:related asc:Reticulate-horizon ;
 .
-asc:Pipey-B-horizons
+asc:Pipey-B-horizon
   a skos:Concept ;
   skos:definition "are characterised by pipes of bleached A2 horizon that penetrate both vertically and sometimes laterally >0.5 m into the B horizon, giving a tongued boundary on a profile face. The pipes are usually enclosed by dark organic compounds forming the pipe walls of Bh or Bh/Bhs materials which usually have a weak to firm consistence strength (ie. force 2-3) and are brittle when dry. The bleached A2 material consists of clean quartz grains that have lost any oxide coatings. In 'giant' Podosols the pipes may penetrate >6 m into the B horizon." ;
-  skos:prefLabel "Pipey B horizons" ;
-  skos:related asc:B-horizons ;
+  skos:prefLabel "Pipey B horizon" ;
+  skos:related asc:B-horizon ;
   skos:related asc:PO ;
 .
 asc:Podosol-diagnostic-horizons
   a owl:Class ;
   a skos:Collection ;
   skos:definition "The various B horizons defined below consist of illuvial accumulations of amorphous organic matter-aluminium and aluminium-silica complexes, with or without iron in various combinations. Although some may qualify as cemented pans, they are not to be regarded as substrate materials." ;
-  skos:member asc:Basi-horizons ;
-  skos:member asc:Bh-Basi-horizons ;
-  skos:member asc:Bh-Bhs-horizons ;
-  skos:member asc:Bh-Bs-horizons ;
-  skos:member asc:Bh-horizons ;
-  skos:member asc:Bhs-horizons ;
-  skos:member asc:Bs-horizons ;
-  skos:member asc:Pipey-B-horizons ;
+  skos:member asc:Basi-horizon ;
+  skos:member asc:Bh-Basi-horizon ;
+  skos:member asc:Bh-Bhs-horizon ;
+  skos:member asc:Bh-Bs-horizon ;
+  skos:member asc:Bh-horizon ;
+  skos:member asc:Bhs-horizon ;
+  skos:member asc:Bs-horizon ;
+  skos:member asc:Pipey-B-horizon ;
   skos:notation "bj" ;
   skos:prefLabel "Podosol diagnostic horizons" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
   skos:related asc:Cemented-pans ;
 .
 asc:Q
@@ -7761,7 +8344,7 @@ asc:SO-B-texture
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
   skos:prefLabel "B horizon maximum texture1" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:SO-depth
   a skos:Collection ;
@@ -7867,7 +8450,7 @@ At the Family level, soil depth will be taken to mean either thickness of the so
   skos:notation "bo" ;
   skos:prefLabel "Soil depth" ;
   skos:related asc:A-horizons ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
   skos:related asc:Calcareous-horizon ;
   skos:related asc:Cemented-pans ;
   skos:related asc:Podosol-diagnostic-horizons ;
@@ -7907,7 +8490,7 @@ asc:Strongly-coherent-B-horizon
   skos:definition "These are Podosol B horizons in which the consistence strength ranges from very firm to strong throughout (ie. force 4-5), or they contain subhorizons with these properties. Included are pan-like materials that have been variously described as ortstein, coffee rock or sandrock. The consistence properties are usually independent of soil water status." ;
   skos:notation "bq" ;
   skos:prefLabel "Strongly coherent B horizon" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
   skos:related asc:PO ;
 .
 asc:Strongly-developed
@@ -8064,7 +8647,7 @@ asc:Subtidal-soil
   skos:notation "dg" ;
   skos:prefLabel "Subtidal soil" ;
 .
-asc:Sulfidic-materials
+asc:Sulfidic-material
   a skos:Concept ;
   skos:definition """These are soil materials containing detectable inorganic sulfides (≥0.01% sulfidic sulfur) that can exist as horizons or layers at least 30 mm thick or as surficial features. The laboratory measurements of sulfidic sulfur include elemental sulfur as well as various iron sulfide minerals such as pyrite, greigite, mackinawite, marcasite, iron (II) sulfide and pyrrhotite. Ahern et al., (2004) describe a range of methods used in Australia and their applicability. The preferred laboratory method for dry soil samples is the chromium reducible method (SCR) (Sullivan et al. 2000). Where monosulfidic material is suspected, the samples should be analysed using the chromium reducible method in field condition with minimal disturbance arising from storage, desiccation etc.
 
@@ -8076,12 +8659,12 @@ Extensive revisions of the Australian classification of sulfidic materials have 
 
 Three kinds of sulfidic materials are distinguished, based essentially on the specific nature and amounts of the various oxidisable sulfur minerals present and the neutralizing capacity of the material. The three kinds defined elsewhere in the glossary are: (i) hypersulfidic material, (ii) hyposulfidic material and (iii) monosulfidic material.""" ;
   skos:notation "br" ;
-  skos:prefLabel "Sulfidic materials" ;
+  skos:prefLabel "Sulfidic material" ;
   skos:related asc:Hypersulfidic-material ;
   skos:related asc:Hyposulfidic-material ;
-  skos:related asc:Monosulfidic-materials ;
+  skos:related asc:Monosulfidic-material ;
 .
-asc:Sulfuric-materials
+asc:Sulfuric-material
   a skos:Concept ;
   skos:definition """Soil material that has a pH less than 4 (1:1 by weight in water, or in a minimum of water to permit measurement) when measured in dry season conditions as a result of the oxidation of sulfidic materials (defined above). This material has commonly been called actual acid sulfate soil. Evidence that low pH is caused by oxidation of sulfides is one of the following:
 
@@ -8090,7 +8673,7 @@ asc:Sulfuric-materials
 - underlying hypersulfidic material.""" ;
   skos:notation "bs" ;
   skos:note "1 This definition is similar to that in Soil Taxonomy (Soil Survey Staff, 1999) but modified slightly by Dr David Dent, Sullivan et al. (2010) and colleagues in CSIRO." ;
-  skos:prefLabel "Sulfuric materials" ;
+  skos:prefLabel "Sulfuric material" ;
   skos:related asc:pH ;
 .
 asc:T
@@ -8169,7 +8752,7 @@ asc:TE-A1-texture
   skos:member asc:O ;
   skos:prefLabel "A1 horizon texture or the texture of organic horizons (O2, P1 or P2) if present" ;
   skos:related asc:A1-horizon ;
-  skos:related asc:Organic-materials ;
+  skos:related asc:Organic-material ;
 .
 asc:TE-A1-thickness
   a skos:Collection ;
@@ -8479,7 +9062,7 @@ asc:TE-B-texture
   skos:member asc:O ;
   skos:note "2 This refers to the most clayey field texture category. This may include a transitional C/B horizon." ;
   skos:prefLabel "B horizon maximum texture2" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:TE-BE
   a asc:Suborder ;
@@ -8633,7 +9216,7 @@ asc:TE-water
   skos:prefLabel "Water repellence of surface soil" ;
   skos:related asc:Water-repellence ;
 .
-asc:Tephric-materials
+asc:Tephric-material
   a skos:Concept ;
   skos:definition "These consist dominantly of tephra - unconsolidated, non-weathered or only slightly altered primary pyroclastic products of explosive volcanic eruptions. They include ash, cinders, lapilli, scoria, pumice and pumice-like vesicular pyroclastics. Volcanic bombs may occur, and some exotic ejecta such as limestone fragments." ;
   skos:notation "bu" ;
@@ -8711,7 +9294,7 @@ asc:Thin-ironpan
   skos:notation "bv" ;
   skos:prefLabel "Thin ironpan" ;
 .
-asc:Transitional-horizons
+asc:Transitional-horizon
   a skos:Concept ;
   skos:definition """There are slight differences in the definitions of these horizons between the Soil Survey Manual (Soil Survey Division Staff 1993) and the Field Handbook. The definition used in this classification is that used in the Soil Survey Manual, viz:
 
@@ -8719,7 +9302,7 @@ asc:Transitional-horizons
 
 - Horizons with two distinct parts that have recognisable properties of the two kinds of horizons indicated by the capital letters eg. C/B. The first symbol is that of the horizon with the greater volume. Most of the individual parts of one horizon component are surrounded by the other.""" ;
   skos:notation "bw" ;
-  skos:prefLabel "Transitional horizons" ;
+  skos:prefLabel "Transitional horizon" ;
 .
 asc:U
   a asc:Depth ;
@@ -8728,11 +9311,11 @@ asc:U
   skos:notation "U" ;
   skos:prefLabel "Shallow" ;
 .
-asc:Unconsolidated-mineral-materials
+asc:Unconsolidated-mineral-material
   a skos:Concept ;
   skos:definition "This term is used to describe various unconsolidated materials below the solum, such as some C horizons, buried soils, sedimentary deposits of alluvial, colluvial or aeolian origin, and transported ferruginous nodules or concretions, such as occur in some ferric and bauxitic horizons. Many of these sediments may be defined as D horizons." ;
   skos:notation "bx" ;
-  skos:prefLabel "Unconsolidated mineral materials" ;
+  skos:prefLabel "Unconsolidated mineral material" ;
   skos:related asc:Bauxitic-horizon ;
   skos:related asc:Ferric-horizon ;
 .
@@ -8780,6 +9363,11 @@ Because cracking, slickensides and/or lenticular peds are essentially used as ev
   skos:narrower asc:VE-AM ;
   skos:notation "VE" ;
   skos:prefLabel "Vertosols" ;
+  skos:related asc:B-horizon ;
+  skos:related asc:Major-part ;
+  skos:related asc:Slickensides ;
+  skos:related asc:Solum ;
+  skos:related asc:Vertic-properties ;
 .
 asc:VE-AA
   a asc:Suborder ;
@@ -8844,6 +9432,7 @@ It should be noted that all the Endoacidic soils classified are also Endohyperso
   skos:broader asc:VE ;
   skos:notation "VE-AA" ;
   skos:prefLabel "Red Vertosol" ;
+  skos:related asc:Diagnostic_features ;
 .
 asc:VE-AB
   a asc:Suborder ;
@@ -9171,7 +9760,7 @@ asc:VE-B-Clay
   skos:member asc:R ;
   skos:member asc:S ;
   skos:prefLabel "B horizon maximum clay content" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
 .
 asc:VE-depth
   a skos:Collection ;
@@ -9221,7 +9810,7 @@ For present classification purposes it is difficult to give firm guidelines. In 
 1The linear extensibility (LE) of a soil layer is the product of the thickness, in centimetres, multiplied by the COLE of the layer in question. The LE of a soil is the sum of these products for all soil horizons (Soil Survey Staff 1999).""" ;
   skos:notation "by" ;
   skos:prefLabel "Vertic properties" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
   skos:related asc:Slickensides ;
   skos:related asc:VE ;
 .
@@ -9276,7 +9865,7 @@ asc:Weakly-coherent-B-horizon
   skos:definition "These are Podosol B horizons in which the consistence strength ranges from loose to firm (ie. force 0-3), although they may contain firm to very firm lumps (ie. force 3-4) associated with accumulations of organic compounds, and occasionally there may be some hard sesquioxide nodules present. They do not contain pans of any kind." ;
   skos:notation "bz" ;
   skos:prefLabel "Weakly coherent B horizon" ;
-  skos:related asc:B-horizons ;
+  skos:related asc:B-horizon ;
   skos:related asc:Hard ;
   skos:related asc:PO ;
 .
@@ -9317,46 +9906,39 @@ asc:classifier
   a owl:ObjectProperty ;
   rdfs:label "Differentiating class" ;
   rdfs:range asc:Class ;
-  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:colourclass
   a owl:ObjectProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Applicable Colour class" ;
   rdfs:range asc:ColourClass ;
-  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:colourclass-comment
   a owl:AnnotationProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Colour class comment" ;
-  rdfs:subPropertyOf skos:note ;
 .
 asc:family-comment
   a owl:AnnotationProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Family comment" ;
-  rdfs:subPropertyOf skos:note ;
 .
 asc:family-criteria
   a owl:ObjectProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Family criteria" ;
   rdfs:range skos:Collection ;
-  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:greatgroup
   a owl:ObjectProperty ;
   rdfs:domain asc:Suborder ;
   rdfs:label "Applicable Great group" ;
   rdfs:range asc:Class ;
-  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:greatgroup-comment
   a owl:AnnotationProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Great group comment" ;
-  rdfs:subPropertyOf skos:note ;
 .
 asc:pH
   a skos:Concept ;
@@ -9373,26 +9955,22 @@ asc:subgroup
   rdfs:domain asc:Suborder ;
   rdfs:label "Applicable Subgroup" ;
   rdfs:range asc:Class ;
-  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:subgroup-comment
   a owl:AnnotationProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Subgroup comment" ;
-  rdfs:subPropertyOf skos:note ;
 .
 asc:suborder
   a owl:ObjectProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Applicable suborder" ;
   rdfs:range asc:Class ;
-  rdfs:subPropertyOf dcterms:relation ;
 .
 asc:suborder-comment
   a owl:AnnotationProperty ;
   rdfs:domain asc:Order ;
   rdfs:label "Suborder comment" ;
-  rdfs:subPropertyOf skos:note ;
 .
 dc:
   skos:definition "This version has been modified for use in TopBraid: it defines the dc namespace prefix and imports SKOS and DCTerms." ;
