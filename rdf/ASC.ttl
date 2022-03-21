@@ -1039,7 +1039,7 @@ asc:CA-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "3 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture3" ;
+  skos:prefLabel "B horizon maximum texture3 [CA]" ;
   skos:related asc:B-horizon ;
 .
 asc:CA-BD
@@ -1280,7 +1280,7 @@ asc:CA-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [CA]" ;
   skos:related asc:Soil-depth ;
 .
 asc:CA-gravel
@@ -1291,7 +1291,7 @@ asc:CA-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [CA]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -1304,7 +1304,7 @@ asc:CA-surface-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "Surface soil texture" ;
+  skos:prefLabel "Surface soil texture [CA]" ;
 .
 asc:CA-thickness
   a skos:Collection ;
@@ -1313,7 +1313,7 @@ asc:CA-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "Thickness of soil above upper boundary of Bk horizon (if present)" ;
+  skos:prefLabel "Thickness of soil above upper boundary of Bk horizon (if present) [CA]" ;
 .
 asc:CA-water
   a skos:Collection ;
@@ -1321,7 +1321,7 @@ asc:CA-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [CA]" ;
   skos:related asc:Water-repellence ;
 .
 asc:CB
@@ -1437,7 +1437,7 @@ asc:CH-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present [CH]" ;
   skos:related asc:A1-horizon ;
 .
 asc:CH-AA
@@ -1752,7 +1752,7 @@ asc:CH-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture1" ;
+  skos:prefLabel "B horizon maximum texture1 [CH]" ;
   skos:related asc:B-horizon ;
 .
 asc:CH-depth
@@ -1764,7 +1764,7 @@ asc:CH-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [CH]" ;
   skos:related asc:Soil-depth ;
 .
 asc:CH-gravel
@@ -1775,7 +1775,7 @@ asc:CH-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [CH]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -1786,7 +1786,7 @@ asc:CH-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A1 horizon thickness plus thickness of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizons (O2, P1 or P2) if present [CH]" ;
   skos:related asc:A1-horizon ;
 .
 asc:CH-water
@@ -1795,7 +1795,7 @@ asc:CH-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [CH]" ;
   skos:related asc:Water-repellence ;
 .
 asc:CI
@@ -2521,7 +2521,7 @@ asc:DE-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present [DE]" ;
   skos:related asc:A1-horizon ;
 .
 asc:DE-A1-thickness
@@ -2531,7 +2531,7 @@ asc:DE-A1-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A1 horizon thickness plus thickness of organic horizon (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizon (O2, P1 or P2) if present [DE]" ;
   skos:related asc:A1-horizon ;
 .
 asc:DE-AA
@@ -2883,7 +2883,7 @@ asc:DE-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "2 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture2" ;
+  skos:prefLabel "B horizon maximum texture2 [DE]" ;
   skos:related asc:B-horizon ;
 .
 asc:DE-depth
@@ -2895,7 +2895,7 @@ asc:DE-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [DE]" ;
   skos:related asc:Soil-depth ;
 .
 asc:DE-gravel
@@ -2906,7 +2906,7 @@ asc:DE-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [DE]" ;
   skos:related asc:A1-horizon ;
 .
 asc:DF
@@ -3666,7 +3666,7 @@ asc:FE-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present [FE]" ;
   skos:related asc:A1-horizon ;
 .
 asc:FE-A1-thickness
@@ -3676,7 +3676,7 @@ asc:FE-A1-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A1 horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present [FE]" ;
   skos:related asc:A1-horizon ;
 .
 asc:FE-AA
@@ -3866,7 +3866,7 @@ asc:FE-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture1" ;
+  skos:prefLabel "B horizon maximum texture1 [FE]" ;
   skos:related asc:B-horizon ;
 .
 asc:FE-depth
@@ -3878,7 +3878,7 @@ asc:FE-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [FE]" ;
   skos:related asc:Soil-depth ;
 .
 asc:FE-gravel
@@ -3889,7 +3889,7 @@ asc:FE-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [FE]" ;
   skos:related asc:Gravel ;
 .
 asc:FE-water
@@ -3898,7 +3898,7 @@ asc:FE-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [FE]" ;
   skos:related asc:Water-repellence ;
 .
 asc:FF
@@ -4986,7 +4986,7 @@ asc:HY-A-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present (for Chromosolic, Kurosolic and Sodosolic Great Groups)" ;
+  skos:prefLabel "A horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present (for Chromosolic, Kurosolic and Sodosolic Great Groups) [HY]" ;
   skos:related asc:A-horizons ;
 .
 asc:HY-A1-texture
@@ -4998,7 +4998,7 @@ asc:HY-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon texture, or texture of organic horizons (O2, P1 or P2) if present [HY]" ;
   skos:related asc:A1-horizon ;
 .
 asc:HY-A1-thickness
@@ -5008,7 +5008,7 @@ asc:HY-A1-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A1 horizon thickness plus thickness of organic horizons (O2, P1 or P2) if present (for all other Great Groups)" ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizons (O2, P1 or P2) if present (for all other Great Groups) [HY]" ;
   skos:related asc:A1-horizon ;
 .
 asc:HY-B-texture
@@ -5020,7 +5020,7 @@ asc:HY-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture1" ;
+  skos:prefLabel "B horizon maximum texture1 [HY]" ;
   skos:related asc:B-horizon ;
 .
 asc:HY-BT
@@ -5400,7 +5400,7 @@ asc:HY-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [HY]" ;
   skos:related asc:Soil-depth ;
 .
 asc:HY-gravel
@@ -5411,7 +5411,7 @@ asc:HY-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [HY]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -5421,7 +5421,7 @@ asc:HY-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [HY]" ;
   skos:related asc:Water-repellence ;
 .
 asc:HZ
@@ -6029,7 +6029,7 @@ asc:KA-A-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A horizon thickness plus the thickness of organic horizon (O2, P1 or P2) if present" ;
+  skos:prefLabel "A horizon thickness plus the thickness of organic horizon (O2, P1 or P2) if present [KA] " ;
   skos:related asc:A-horizons ;
 .
 asc:KA-A1-texture
@@ -6041,7 +6041,7 @@ asc:KA-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present [KA] " ;
   skos:related asc:A1-horizon ;
 .
 asc:KA-AA
@@ -6382,7 +6382,7 @@ asc:KA-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture1" ;
+  skos:prefLabel "B horizon maximum texture1  [KA] " ;
 .
 asc:KA-depth
   a skos:Collection ;
@@ -6393,7 +6393,7 @@ asc:KA-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [KA]" ;
   skos:related asc:Soil-depth ;
 .
 asc:KA-gravel
@@ -6404,7 +6404,7 @@ asc:KA-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [KA] " ;
   skos:related asc:A1-horizon ;
 .
 asc:KA-water
@@ -6413,7 +6413,7 @@ asc:KA-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [KA] " ;
   skos:related asc:Water-repellence ;
 .
 asc:KU
@@ -6453,7 +6453,7 @@ asc:KU-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture" ;
+  skos:prefLabel "A1 horizon texture [KU] " ;
   skos:related asc:A1-horizon ;
 .
 asc:KU-AA
@@ -6693,7 +6693,7 @@ asc:KU-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture1" ;
+  skos:prefLabel "B horizon maximum texture1 [KU]" ;
   skos:related asc:B-horizon ;
 .
 asc:KU-depth
@@ -6705,7 +6705,7 @@ asc:KU-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [KU]" ;
   skos:related asc:Soil-depth ;
 .
 asc:KU-gravel
@@ -6716,7 +6716,7 @@ asc:KU-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [KU]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -6727,7 +6727,7 @@ asc:KU-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A1 horizon thickness " ;
+  skos:prefLabel "A1 horizon thickness [KU]" ;
   skos:related asc:A1-horizon ;
 .
 asc:KU-water
@@ -6736,7 +6736,7 @@ asc:KU-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [KU]" ;
   skos:related asc:Water-repellence ;
 .
 asc:L
@@ -7081,7 +7081,7 @@ asc:OR-altered
   skos:member asc:JZ ;
   skos:member asc:P ;
   skos:note "(use only if feature present; choose dominant feature if more than one present)" ;
-  skos:prefLabel "Nature of altered organic materials" ;
+  skos:prefLabel "Nature of altered organic materials [OR]" ;
   skos:related asc:Organic-material ;
 .
 asc:OR-depth
@@ -7094,7 +7094,7 @@ asc:OR-depth
   skos:member asc:X ;
   skos:member asc:Y ;
   skos:note "(measured from the soil surface including organic horizons)" ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [OR]" ;
   skos:related asc:Soil-depth ;
 .
 asc:OR-gravel
@@ -7105,7 +7105,7 @@ asc:OR-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface horizon" ;
+  skos:prefLabel "Gravel of the surface horizon [OR]" ;
   skos:related asc:Gravel ;
 .
 asc:OR-thickness
@@ -7115,7 +7115,7 @@ asc:OR-thickness
   skos:member asc:C ;
   skos:member asc:D ;
   skos:note "(sum of the consecutive O1, O2, P1 and P2 horizons)" ;
-  skos:prefLabel "Cumulative thickness of uppermost organic materials" ;
+  skos:prefLabel "Cumulative thickness of uppermost organic materials [OR]" ;
   skos:related asc:Organic-material ;
 .
 asc:OR-underlying-texture
@@ -7127,7 +7127,7 @@ asc:OR-underlying-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:member asc:Z ;
-  skos:prefLabel "Dominant texture of the B, C or D horizons directly underlying the deepest organic materials" ;
+  skos:prefLabel "Dominant texture of the B, C or D horizons directly underlying the deepest organic materials [OR]" ;
   skos:related asc:Organic-material ;
 .
 asc:OR-upper-texture
@@ -7140,7 +7140,7 @@ asc:OR-upper-texture
   skos:member asc:OE ;
   skos:member asc:OF ;
   skos:member asc:Z ;
-  skos:prefLabel "Dominant type or texture of the uppermost organic materials (O2, P1 or P2 if present)" ;
+  skos:prefLabel "Dominant type or texture of the uppermost organic materials (O2, P1 or P2 if present) [OR]" ;
   skos:related asc:Organic-material ;
 .
 asc:Order
@@ -7278,7 +7278,7 @@ asc:PO-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon texture or texture of organic horizons (O2, P1 or P2) if present [PO]" ;
   skos:related asc:A1-horizon ;
 .
 asc:PO-A1-thickness
@@ -7288,7 +7288,7 @@ asc:PO-A1-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A1 horizon thickness plus thickness of organic horizon (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon thickness plus thickness of organic horizon (O2, P1 or P2) if present [PO]" ;
   skos:related asc:A1-horizon ;
 .
 asc:PO-AL
@@ -7378,7 +7378,7 @@ asc:PO-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture1" ;
+  skos:prefLabel "B horizon maximum texture1 [PO]" ;
   skos:related asc:B-horizon ;
 .
 asc:PO-EJ
@@ -7512,7 +7512,7 @@ asc:PO-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [PO]" ;
   skos:related asc:Soil-depth ;
 .
 asc:PO-gravel
@@ -7523,7 +7523,7 @@ asc:PO-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [PO]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -7533,7 +7533,7 @@ asc:PO-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [PO]" ;
   skos:related asc:Water-repellence ;
 .
 asc:Peat
@@ -8117,7 +8117,7 @@ asc:RE-Gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of surface and/or A1 horizon" ;
+  skos:prefLabel "Gravel of surface and/or A1 horizon [RE]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -8165,7 +8165,7 @@ asc:RE-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [RE]" ;
   skos:related asc:Soil-depth ;
 .
 asc:RE-subsurface-texture
@@ -8173,7 +8173,7 @@ asc:RE-subsurface-texture
   dcterms:identifier "http://anzsoil.org/def/au/asc/RE-subsurface-texture"^^xsd:anyURI ;
   skos:member asc:K ;
   skos:member asc:L ;
-  skos:prefLabel "Maximum texture below the surface or A1 (within the upper 1.0 m of the soil soil profile)" ;
+  skos:prefLabel "Maximum texture below the surface or A1 (within the upper 1.0 m of the soil soil profile) [RE]" ;
   skos:related asc:Soil-profile ;
 .
 asc:RE-surface-texture
@@ -8182,7 +8182,7 @@ asc:RE-surface-texture
   skos:member asc:J ;
   skos:member asc:K ;
   skos:member asc:L ;
-  skos:prefLabel "Soil surface texture" ;
+  skos:prefLabel "Soil surface texture [RE]" ;
 .
 asc:RE-water
   a skos:Collection ;
@@ -8190,7 +8190,7 @@ asc:RE-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [RE]" ;
   skos:related asc:Water-repellence ;
 .
 asc:RU
@@ -8361,7 +8361,7 @@ asc:RU-Gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of surface soil (visual estimate)" ;
+  skos:prefLabel "Gravel of surface soil (visual estimate) [RU]" ;
   skos:related asc:Gravel ;
 .
 asc:RU-HG
@@ -8401,7 +8401,7 @@ asc:RU-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [RU]" ;
   skos:related asc:Soil-depth ;
 .
 asc:RU-texture
@@ -8412,7 +8412,7 @@ asc:RU-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "Surface soil texture" ;
+  skos:prefLabel "Surface soil texture [RU]" ;
 .
 asc:RU-water
   a skos:Collection ;
@@ -8420,7 +8420,7 @@ asc:RU-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [RU]" ;
   skos:related asc:Water-repellence ;
 .
 asc:Reactive-aluminium-test
@@ -8548,7 +8548,7 @@ asc:SO-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture" ;
+  skos:prefLabel "A1 horizon texture [SO]" ;
   skos:related asc:A1-horizon ;
 .
 asc:SO-AA
@@ -8783,7 +8783,7 @@ asc:SO-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "1 This refers to the most clayey field texture category." ;
-  skos:prefLabel "B horizon maximum texture1" ;
+  skos:prefLabel "B horizon maximum texture1 [SO]" ;
   skos:related asc:B-horizon ;
 .
 asc:SO-depth
@@ -8795,7 +8795,7 @@ asc:SO-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [SO]" ;
   skos:related asc:Soil-depth ;
 .
 asc:SO-gravel
@@ -8806,7 +8806,7 @@ asc:SO-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of the surface and A1 horizon" ;
+  skos:prefLabel "Gravel of the surface and A1 horizon [SO]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -8817,7 +8817,7 @@ asc:SO-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A horizon thickness" ;
+  skos:prefLabel "A horizon thickness [SO]" ;
   skos:related asc:A-horizons ;
 .
 asc:SO-water
@@ -8826,7 +8826,7 @@ asc:SO-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [SO]" ;
   skos:related asc:Water-repellence ;
 .
 asc:SR
@@ -9216,7 +9216,7 @@ asc:TE-A1-texture
   skos:member asc:M ;
   skos:member asc:N ;
   skos:member asc:O ;
-  skos:prefLabel "A1 horizon texture or the texture of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon texture or the texture of organic horizons (O2, P1 or P2) if present [TE]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Organic-material ;
 .
@@ -9227,7 +9227,7 @@ asc:TE-A1-thickness
   skos:member asc:B ;
   skos:member asc:C ;
   skos:member asc:D ;
-  skos:prefLabel "A1 horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present" ;
+  skos:prefLabel "A1 horizon thickness plus the thickness of organic horizons (O2, P1 or P2) if present [TE]" ;
   skos:related asc:A1-horizon ;
 .
 asc:TE-AA
@@ -9534,7 +9534,7 @@ asc:TE-B-texture
   skos:member asc:N ;
   skos:member asc:O ;
   skos:note "2 This refers to the most clayey field texture category. This may include a transitional C/B horizon." ;
-  skos:prefLabel "B horizon maximum texture2" ;
+  skos:prefLabel "B horizon maximum texture2 [TE]" ;
   skos:related asc:B-horizon ;
 .
 asc:TE-BE
@@ -9619,7 +9619,7 @@ asc:TE-Gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of surface and A1 horizon" ;
+  skos:prefLabel "Gravel of surface and A1 horizon [TE]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -9680,7 +9680,7 @@ asc:TE-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [TE]" ;
   skos:related asc:Soil-depth ;
 .
 asc:TE-water
@@ -9689,7 +9689,7 @@ asc:TE-water
   skos:member asc:NR ;
   skos:member asc:SR ;
   skos:member asc:WR ;
-  skos:prefLabel "Water repellence of surface soil" ;
+  skos:prefLabel "Water repellence of surface soil [TE]" ;
   skos:related asc:Water-repellence ;
 .
 asc:Tephric-material
@@ -10252,7 +10252,7 @@ asc:VE-B-Clay
   skos:member asc:Q ;
   skos:member asc:R ;
   skos:member asc:S ;
-  skos:prefLabel "B horizon maximum clay content" ;
+  skos:prefLabel "B horizon maximum clay content [VE]" ;
   skos:related asc:B-horizon ;
 .
 asc:VE-depth
@@ -10264,7 +10264,7 @@ asc:VE-depth
   skos:member asc:W ;
   skos:member asc:X ;
   skos:member asc:Y ;
-  skos:prefLabel "Soil depth" ;
+  skos:prefLabel "Soil depth [VE]" ;
   skos:related asc:Soil-depth ;
 .
 asc:VE-gravel
@@ -10275,7 +10275,7 @@ asc:VE-gravel
   skos:member asc:G ;
   skos:member asc:H ;
   skos:member asc:I ;
-  skos:prefLabel "Gravel of surface and A1 horizon" ;
+  skos:prefLabel "Gravel of surface and A1 horizon [VE]" ;
   skos:related asc:A1-horizon ;
   skos:related asc:Gravel ;
 .
@@ -10285,7 +10285,7 @@ asc:VE-upper-Clay
   skos:member asc:Q ;
   skos:member asc:R ;
   skos:member asc:S ;
-  skos:prefLabel "Clay content of upper 0.1 m (excluding any surface crusty horizon)" ;
+  skos:prefLabel "Clay content of upper 0.1 m (excluding any surface crusty horizon) [VE]" ;
 .
 asc:Vertic-properties
   a skos:Concept ;
@@ -10348,7 +10348,7 @@ asc:Water-instances
   skos:member asc:RU-water ;
   skos:member asc:SO-water ;
   skos:member asc:TE-water ;
-  skos:prefLabel "Instances of family criteria related to water repellence" ;
+  skos:prefLabel "Instances of family criteria related to water repellence [VE]" ;
 .
 asc:Water-repellence
   a owl:Class ;
