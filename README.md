@@ -8,7 +8,7 @@ This repository is for the preparation and maintenance of a machine-readable rep
 
 The machine and human readable ontology for ASC, referencing the glossary - https://anzsoildata.github.io/def-au-asc/
 
-Discoverable through Research Vocabularies Australia (RVA) https://vocabs.ardc.edu.au/viewById/629
+Discoverable through Research Vocabularies Australia (RVA) - https://vocabs.ardc.edu.au/viewById/629
 
 Contact: 
 [Linda Gregory](https://orcid.org/0000-0002-0693-1899)
