@@ -6,7 +6,7 @@ This repository is for the preparation and maintenance of a machine-readable rep
 - The ASC ontology (OWL representation) of https://catalogue.nla.gov.au/catalog/8558027
 - The Glossary of terms referenced by the ASC (SKOS representation)
 
-The machine and human readable ontology for ASC, referencing the glossary - https://anzsoildata.github.io/def-au-asc/
+The machine- and human-readable ontology for ASC, referencing the glossary - https://anzsoildata.github.io/def-au-asc/
 
 Discoverable through Research Vocabularies Australia (RVA) - https://vocabs.ardc.edu.au/viewById/629
 
