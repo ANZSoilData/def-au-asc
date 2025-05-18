@@ -17,7 +17,7 @@ asc:
   dcterms:contributor <https://orcid.org/0000-0002-3884-3420> ;
   dcterms:created "2016-06-23"^^xsd:date ;
   dcterms:creator <mailto:asris@csiro.au> ;
-  dcterms:description "The Australian Soil Classification provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key." ;
+  dcterms:description "The Australian Soil Classification (3rd edn 2021) provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key." ;
   dcterms:isVersionOf "Isbell, R.F. (1996;2002;2016;2021) The Australian Soil Classification (3rd edn). CSIRO Publishing, Melbourne" ;
   dcterms:license <http://creativecommons.org/licences/by/4.0> ;
   dcterms:modified "2022-03-22" ;
@@ -4495,7 +4495,6 @@ asc:Gley-colours
   skos:prefLabel "Gley colours" ;
 .
 asc:Glossary
-  a owl:Class ;
   a skos:Collection ;
   dcterms:identifier "http://anzsoil.org/def/au/asc/Glossary"^^xsd:anyURI ;
   skos:definition """This glossary does not attempt to define all morphological terms used in the classification. It mainly deals with those that are not defined in the Australian Soil and Land Survey Field Handbook (NCST 2009). As the Field Handbook is currently being revised, some definitions in the glossary are aligned with the new Field Handbook rather than the current (third) edition.
