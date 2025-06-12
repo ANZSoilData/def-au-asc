@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+authors:
+  - family-names: Cox
+    given-names: Simon
+    orcid: https://orcid.org/0000-0002-3884-3420
+title: "Machine-readable representation of The Australian Soil Classification (3rd edn 2021)"
+version: 1.0.0
+doi:  
+url: https://github.com/ANZSoilData/substrate
+url: https://anzsoildata.github.io/def-au-asc/
+url: https://vocabs.ardc.edu.au/viewById/629
+date-released: 2025-05-18
+license: CC0
+license-url: https://creativecommons.org/choose/zero/
+abstract: >
+The Australian Soil Classification (3rd edn 2021) provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key.
+This repository is for the preparation and maintenance of a machine-readable representation of: 
+The ASC ontology (OWL representation) of https://catalogue.nla.gov.au/catalog/8558027
+The Glossary of terms referenced by the ASC (SKOS representation)
