@@ -1,5 +1,8 @@
 # def-au-asc
 
+To cite: ![image](https://github.com/user-attachments/assets/b7bc8f66-2f9c-4776-b50a-7577de60420e)
+
+
 The Australian Soil Classification (3rd edn 2021) provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key. 
 
 This repository is for the preparation and maintenance of a machine-readable representation of:
