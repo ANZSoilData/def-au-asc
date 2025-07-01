@@ -1,17 +1,39 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
 cff-version: 1.2.0
-message: "If you use this dataset, please cite it as below."
+title: >-
+  Resource Description format (RDF) representation of the
+  Australian Soil Classification - GitHub repository code
+  release v1.0.1
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
 authors:
-  - family-names: Cox
-    given-names: Simon
-    orcid: https://orcid.org/0000-0002-3884-3420
-title: "Machine-readable representation of The Australian Soil Classification (3rd edn 2021)"
-version: 1.0.0
-url: "https://anzsoildata.github.io/def-au-asc/"
-url: "https://vocabs.ardc.edu.au/viewById/629"
-url: "https://github.com/ANZSoilData/def-au-asc"
-date-released: 2025-05-18
-license: CC0
-license-url: https://creativecommons.org/choose/zero/
-abstract: "The Australian Soil Classification (3rd edn 2021) provides a framework for organising knowledge about Australian soils by allocating soils to classes via a key.
-This repository is for the preparation and maintenance of a machine-readable representation of the ASC ontology (OWL representation) of https://catalogue.nla.gov.au/catalog/8558027
-and the Glossary of terms referenced by the ASC (SKOS representation)."
+  - given-names: Simon
+    family-names: Cox
+    orcid: 'https://orcid.org/0000-0002-3884-3420'
+repository-code: 'https://github.com/ANZSoilData/def-au-asc'
+url: 'https://anzsoildata.github.io/def-au-asc/'
+repository: 'https://vocabs.ardc.edu.au'
+abstract: >-
+  The Australian Soil Classification (3rd edn 2021) provides
+  a framework for organising knowledge about Australian
+  soils by allocating soils to classes via a key.
+
+  This repository is for the preparation and maintenance of
+  a machine-readable representation of the ASC ontology (OWL
+  representation) of
+  https://catalogue.nla.gov.au/catalog/8558027
+
+  and the Glossary of terms referenced by the ASC (SKOS
+  representation)
+keywords:
+  - soil classification
+  - linked data
+  - vocabularies
+  - Australia
+license: CC-BY-1.0
+version: 1.0.2
+date-released: '2025-07-01'
