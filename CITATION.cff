@@ -4,8 +4,7 @@
 cff-version: 1.2.0
 title: >-
   Resource Description format (RDF) representation of the
-  Australian Soil Classification - GitHub repository code
-  release v1.0.2
+  Australian Soil Classification - GitHub repository code.
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
@@ -33,7 +32,6 @@ keywords:
   - soil classification
   - linked data
   - vocabularies
-  - Australia
 license: CC-BY-1.0
 version: 1.0.2
 date-released: '2025-07-01'
